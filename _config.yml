@@ -106,5 +106,8 @@ tag_archive:
   type: liquid
   path: /tags/
 
-# Google Analytics
-google_analytics: G-H18CKJTCPK
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-H18CKJTCPK"
+    anonymize_ip: false # default
