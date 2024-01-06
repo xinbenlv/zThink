@@ -9,9 +9,10 @@ tags:
 ---
 
 [mathjax]
-<h1>贝祖定理 Bézout's lemma</h1>
+# 贝祖定理 Bézout's lemma
 
-<a href="https://zh.wikipedia.org/wiki/%E8%B2%9D%E7%A5%96%E7%AD%89%E5%BC%8F">贝祖定理</a>
+
+[贝祖定理](https://zh.wikipedia.org/wiki/%E8%B2%9D%E7%A5%96%E7%AD%89%E5%BC%8F)
 
 <h2>定理</h2>
 
