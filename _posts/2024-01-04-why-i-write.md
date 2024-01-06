@@ -1,3 +1,13 @@
+---
+title: "The first blog"
+date: 2024-01-04T15:34:30-04:00
+categories:
+  - blog
+tags:
+  - Jekyll
+  - update
+---
+
 # The first blog
 
 ## Why I write
