@@ -36,11 +36,11 @@ $$M = {ax+by, x,y \in \mathbb{Z}, ax+by>0 }$$。
 $0<= r < d$
 
 然而又有
-$$
+$$\begin{eqnarray}
 a = (ax_0+by_{0}+r)r = a-qd_{0} \\\
   = a-q(ax_0+by_{0)} \\
   = a(1-q)x_{0}+ qby_{0} \\
-$$
+\end{eqnarray}$$
 
 可以定义 $x_1=(1-q)x_{0,}y_1=qy_0$ 满足M的定义，故而$r \in M \cup {0}$ 。用两个等式相交
 
