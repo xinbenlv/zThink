@@ -36,6 +36,7 @@ $$M = {ax+by, x,y \in \mathbb{Z}, ax+by>0 }$$。
 $0<= r < d$
 
 然而又有
+
 $$\begin{eqnarray}
 a &=& (ax_0+by_{0}+r)r \nonumber \\
   &=& a-qd_{0} \nonumber \\
