@@ -57,7 +57,7 @@ plugins:
 
 author:
   name   : "Victor Zhou"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/zzn-pic.jpeg"
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
     - label: "D3Cards"
