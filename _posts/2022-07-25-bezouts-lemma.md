@@ -14,7 +14,7 @@ tags:
 
 [贝祖定理](https://zh.wikipedia.org/wiki/%E8%B2%9D%E7%A5%96%E7%AD%89%E5%BC%8F)
 
-<h2>定理</h2>
+## 定理
 
 <ol>
     <li>对任意整数$a,b,m$，线性丢番图方程 $ax+by=m$ 存在整数解$x,y$的充要条件是$m$是最大公约数$d$的整倍数</li>
