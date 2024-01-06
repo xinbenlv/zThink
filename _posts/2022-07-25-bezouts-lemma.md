@@ -40,7 +40,7 @@ $$
 
 \[
 \begin{array}{c}
-a = (ax_0+by_{0}+r)r = a-qd_{0} \\
+a = (ax_0+by_{0}+r)r = a-qd_{0} \\\
   = a-q(ax_0+by_{0)} \\
   = a(1-q)x_{0}+ qby_{0} \\
 \end{array}
