@@ -44,7 +44,7 @@ This is going to be published to my b.zzn.im very soon.
 
 I am applying [[pkg/"How to Take Smart Notes" by Sönke Ahrens|"How to Take Smart Notes" by Sönke Ahrens]], which is a [[pkg/Zettelkasten 抽屉卡片|Zettelkasten 抽屉卡片]] approach. I rely on [[pkg/Obsidian|Obsidian]] as my main notes taker. I use [[pkg/git|git]], [[pkg/markdown|markdown]] to manage it. And thanks to [[pkg/WorkingCopyApp]], I am able to take notes on the go. I really hope to have [[pkg/闪念胶囊]] app created by [[pkg/Smartisan (锤子科技)]].
 
-It turns out the Jekyll doesn't support wikilink very wel
+It turns out the Jekyll doesn't support wikilink very well yet.
 
 ## How you can participate
 
