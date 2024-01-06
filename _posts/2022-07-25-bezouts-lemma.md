@@ -40,7 +40,7 @@ $0<= r < d$
 $$\begin{eqnarray}
 a &=& (ax_0+by_{0}+r)r \nonumber \\
   &=& a-qd_{0} \nonumber \\
-  &=& a-q(ax_0+by_{0)} \nonumber \\
+  &=& a-q(ax_{0}+by_{0}) \nonumber \\
   &=& a(1-q)x_{0}+ qby_{0} \nonumber \\
 \end{eqnarray}$$
 
