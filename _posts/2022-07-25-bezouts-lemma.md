@@ -37,9 +37,9 @@ $0<= r < d$
 
 然而又有
 $$
-a = (ax<em>0+by</em>{0}+r)r = a-qd_{0}
-  = a-q(ax<em>0+by</em>{0)}
-  = a(1-q)x<em>{0}+ qby</em>{0}
+a = (ax<em>0+by</em>{0}+r)r = a-qd_{0} \\\
+  = a-q(ax<em>0+by</em>{0)} \\\
+  = a(1-q)x<em>{0}+ qby</em>{0} \\\
 $$
 
 可以定义 $x<em>1=(1-q)x</em>{0,}y_1=qy_0$ 满足M的定义，故而$r \in M \cup {0}$ 。用两个等式相交
