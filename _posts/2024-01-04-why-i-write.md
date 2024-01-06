@@ -50,4 +50,4 @@ It turns out the [[pkg/Jekyll]] doesn't support wikilink very well yet.
 
 - You can subscribe to my SubStack.
 - I will try to make it available on [b.zzn.im](https://b.zzn.im)
-- And maybe an auto-audio version via Spotify and other Podcast device.
+- And maybe an auto-audio version via [[pkg/Spotify]] and other [[pkg/Podcast]] device.
