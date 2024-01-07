@@ -58,7 +58,7 @@ plugins:
 author:
   name   : "Victor Zhou"
   avatar : "/assets/images/zzn-pic.jpeg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Founder & CEO at D3Serve Labs, Ethereum EIP Editor, Open standard advocate, smart contract architect, ex-Googler, Alumni of Tsinghua U, Johns Hopkins U, Microsoft Research, Investor w/ AlephCrypto.xyz"
   links:
     - label: "D3Cards"
       icon: "fas fa-fw fa-link"
