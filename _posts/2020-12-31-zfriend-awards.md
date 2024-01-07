@@ -11,16 +11,19 @@ tags:
 
 ## 核心奖项
 
-![最佳书籍奖badge](/assets/blogposts/载友圈最佳书籍奖-300x193.png)
+![最佳书籍奖badge](https://b.zzn.im/assets/blogposts/载友圈最佳书籍奖-300x193.png)
+
 最佳书籍奖：《Educated: A memoir》，（首提嘉宾：LRX）
 
 ![载友圈最佳电影奖](/assets/blogposts/载友圈最佳电影奖-300x193.png)
+
 最佳电影奖：《Tenet（信条）》（首提嘉宾：YS）
 
 ![载友圈最佳电视剧奖](/assets/blogposts/载友圈最佳电视剧奖-300x193.png)
 
+最佳电视剧奖：《The Queen's Gambit （后翼弃兵）》（首提嘉宾：TY）
+
 ## 其他奖项
-- 最佳电视剧奖：《The Queen's Gambit （后翼弃兵）》（首提嘉宾：TY）
 - 最佳网课奖：空缺
 - 最佳电影提名：《Soul》（首提嘉宾：Ago）
 - 最佳电视剧提名：《沉默的真相》，首提嘉宾（SCJ）
