@@ -11,7 +11,7 @@ tags:
 
 ## 核心奖项
 
-![[zThink/assets/blogposts/载友圈最佳书籍奖-300x193.png.png]]
+![](zThink/assets/blogposts/载友圈最佳书籍奖-300x193.png.png)
 最佳书籍奖：《Educated: A memoir》，（首提嘉宾：LRX）
 
 ![[zThink/assets/blogposts/载友圈最佳电影奖-300x193.png.png]]
