@@ -12,12 +12,10 @@ tags:
 ![[zThink/assets/blogposts/载友圈最佳书籍奖-300x193.png.png]]
 最佳书籍奖：《Educated: A memoir》，（首提嘉宾：LRX）
 
-![载友圈最佳电影奖](https://blog.zzn.im/wp-content/uploads/2020/12/载友圈最佳电影奖-300x193.png)
-![[zThink/assets/blogposts/Pasted image 20240107140942.png]]
+![[zThink/assets/blogposts/载友圈最佳电影奖-300x193.png.png]]
 最佳电影奖：《Tenet（信条）》（首提嘉宾：YS）
 
-![载友圈最佳电视剧奖](https://blog.zzn.im/wp-content/uploads/2020/12/载友圈最佳电视剧奖-300x193.png)
-
+![[zThink/assets/blogposts/载友圈最佳电视剧奖-300x193.png.png]]
 最佳电视剧奖：《The Queen's Gambit （后翼弃兵）》（首提嘉宾：TY）
 
 最佳网课奖：空缺
