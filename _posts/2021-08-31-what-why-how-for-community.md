@@ -1,4 +1,14 @@
-Version: 2021-08-31
+---
+title: What, Why and How for Communities
+date: 2021-08-31T16:49:30-08:00
+categories:
+  - blog
+tags:
+  - Jekyll
+  - update
+---
+
+We discuss what, why and how for communities.
 
 ### What
 
