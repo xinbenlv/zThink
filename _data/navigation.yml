@@ -1,4 +1,6 @@
 main:
+  - title: "What I use"
+    url: /blog/what-i-use/
   - title: "Why I write"
     url: /blog/why-i-write/
   - title: "How I write"
