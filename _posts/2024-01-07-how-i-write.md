@@ -33,3 +33,4 @@ I like to be able to
 - [ ] Add audio auto-reading
 - [ ] Add transaltion button
 - [ ] Add share button
+- [ ] Add comment section
