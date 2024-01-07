@@ -1,4 +1,8 @@
 main:
+  - title: "Why I write"
+    url: /posts/why-i-write
+  - title: "How I write"
+    url: /posts/how-i-write
   - title: "Posts"
     url: /posts/
   - title: "Categories"
