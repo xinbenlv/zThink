@@ -1,5 +1,5 @@
 ---
-title: "The first blog"
+title: Why I write
 date: 2024-01-04T15:34:30-04:00
 categories:
   - blog
@@ -7,11 +7,6 @@ tags:
   - Jekyll
   - update
 ---
-
-# The first blog
-
-## Why I write
-
 This is the first and always going to be the first article for my publication.
 I am going to write about why I write and what I am going to write about.
 
@@ -42,12 +37,4 @@ This is going to be published to my b.zzn.im very soon.
 
 ## How I write
 
-I am applying [[pkg/"How to Take Smart Notes" by Sönke Ahrens]], which is a [[pkg/Zettelkasten 抽屉卡片]] approach. I rely on [[pkg/Obsidian]] as my main notes taker. I use [[pkg/git]], [[pkg/markdown]] to manage it. And thanks to [[pkg/WorkingCopyApp]], I am able to take notes on the go. I really hope to have [[pkg/闪念胶囊]] app created by [[pkg/Smartisan (锤子科技)]].
-
-It turns out the [[pkg/Jekyll]] doesn't support wikilink very well yet.
-
-## How you can participate
-
-- You can subscribe to my SubStack.
-- I will try to make it available on [b.zzn.im](https://b.zzn.im)
-- And maybe an auto-audio version via [[pkg/Spotify]] and other [[pkg/Podcast]] device.
+It is covered by a separate article: [How I write](https://b.zzn.im/blog/how-i-write)
