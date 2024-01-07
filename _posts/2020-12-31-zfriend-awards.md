@@ -11,13 +11,13 @@ tags:
 
 ## 核心奖项
 
-![最佳书籍奖badge](assets/blogposts/载友圈最佳书籍奖-300x193.png)
+![最佳书籍奖badge](/assets/blogposts/载友圈最佳书籍奖-300x193.png)
 最佳书籍奖：《Educated: A memoir》，（首提嘉宾：LRX）
 
-![载友圈最佳电影奖](assets/blogposts/载友圈最佳电影奖-300x193.png)
+![载友圈最佳电影奖](/assets/blogposts/载友圈最佳电影奖-300x193.png)
 最佳电影奖：《Tenet（信条）》（首提嘉宾：YS）
 
-![](assets/blogposts/载友圈最佳电视剧奖-300x193.png)
+![载友圈最佳电视剧奖](/assets/blogposts/载友圈最佳电视剧奖-300x193.png)
 
 ## 其他奖项
 - 最佳电视剧奖：《The Queen's Gambit （后翼弃兵）》（首提嘉宾：TY）
