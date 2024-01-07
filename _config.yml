@@ -111,3 +111,5 @@ analytics:
   google:
     tracking_id: "G-GJB6TXQ81S"
     anonymize_ip: false # default
+feed:
+  path: /feed/
