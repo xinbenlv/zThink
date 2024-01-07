@@ -1,3 +1,13 @@
+---
+title: "Netflix、优酷院线、Hulu和Itunes"
+date: 2011-03-28
+categories:
+  - blog
+tags:
+  - Jekyll
+  - update
+---
+
 这几个都是付费的视频服务。
 
 Netflix的特色是Instant Play和每月送一张DVD到你家，可以自己挑喜欢的电影，能够在各种移动设备、电视、PSP和XBox等多种设备上播放。
