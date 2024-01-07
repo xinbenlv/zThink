@@ -1,5 +1,5 @@
 ---
-title: "手推贝祖定理 Bézout's lemma"
+title: "首届载友奖（2020）"
 date: 2020-12-31
 categories:
   - blog
