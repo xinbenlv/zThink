@@ -8,16 +8,8 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-$serif              : "Salsa", Georgia, Times, serif;
-$sans-serif-narrow  : "Salsa", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$serif              : Georgia, Times, serif;
+$sans-serif-narrow  : -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 
 $global-font-family : $serif;
 $header-font-family : $sans-serif-narrow;
-
-body {
-    font-family: "Noto Sans SC", "Salsa";
-}
-
-.archive__item-title {
-    font-family: "Noto Sans SC", "Salsa";
-}
