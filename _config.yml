@@ -112,4 +112,4 @@ analytics:
     tracking_id: "G-GJB6TXQ81S"
     anonymize_ip: false # default
 feed:
-  path: /feed/
+  path: /blog/feed.atom
