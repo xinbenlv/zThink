@@ -13,3 +13,7 @@ $sans-serif-narrow  : "Salsa", -apple-system, BlinkMacSystemFont, "Roboto", "Seg
 
 $global-font-family : $serif;
 $header-font-family : $sans-serif-narrow;
+
+body {
+    font-family: "Salsa";
+}
