@@ -11,8 +11,8 @@ status: draft
 ---
 _This article is an attempt to explain the technical overview of Ethereum to a community of internet engineers. Thanks to P. Hoffman for the encouragement and discussion/review._
 
-Status: Draft
-Last Update: 2024-01-09
+- Status: **Draft**
+- Last Update: 2024-01-09
 ## State Machine
 
 [Ethereum](https://ethereum.org) has been called "a blockchain," "a world computer," but I think the best way to think of it is as "a state machine." This state machine takes input, a _state_ at time $t$ denoted as $\sigma_{t}$, and applies a _state transition function_ $\Upsilon$ with an input _transaction_ $T$ and transitions into $\sigma_{t+1}$, written as
@@ -78,4 +78,5 @@ The term Layer 2 or in short "L2," in contrast to Layer 1, is widely overloaded.
 ## Reference
 - Ethereum yellowpaper: https://ethereum.github.io/yellowpaper/paper.pdf
 - Bitcoin whitepaper: https://bitcoin.org/bitcoin.pdf
+- Combining GHOST and Casper: https://arxiv.org/pdf/2003.03052.pdf
 - Timestamps: https://ethresear.ch/t/network-adjusted-timestamps/4187
