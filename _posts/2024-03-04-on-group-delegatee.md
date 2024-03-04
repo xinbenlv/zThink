@@ -19,6 +19,9 @@ However, an intriguing concept that has yet to be fully explored is the potentia
 
 Imagine a scenario where a trio, Alice, Bob, and Cathy, share a common vision and principles regarding DAO governance. They decide to form a GroupDelegatee. By establishing a Safe or utilizing a 2-of-3 MultiSig Contract Wallet, they craft a shared identity. This approach encourages DAO members to place their trust in the collective rather than in individuals.
 
+Safe is one way to do it, but any multi-sign approach work.
+
+
 ### Advantages of Group Delegatees
 
 The benefits of such a structure are manifold:
