@@ -1,5 +1,5 @@
 ---
-title: "Idea: Group Delegatee: Multi-Brains for Multi-DAOs"
+title: "Group Delegatee: Multi-Brains for Multi-DAOs"
 date: 2024-03-04T00:00:00
 categories:
   - blog
@@ -8,6 +8,8 @@ tags:
   - idea
   - erc-1202
 ---
+
+(This is a DRAFT, currently soliciting feedback from individuals who have experienced with governance)
 
 In the evolving landscape of Decentralized Autonomous Organizations (DAOs), a notable feature has been the capacity for delegate voting. Members may choose between casting their votes directly or entrusting this power to delegates. Traditionally, these delegates have been individuals dedicated to a singular DAO. Their active participation in discussions and decision-making processes has earned them the trust of the DAO's membership.
 
