@@ -9,7 +9,7 @@ tags:
   - erc-1202
 ---
 
-(This is a DRAFT, currently soliciting feedback from individuals who have experienced with governance)
+(This is a DRAFT, currently soliciting feedback from individuals who have experienced with governance, updated: 2024-03-04)
 
 In the evolving landscape of Decentralized Autonomous Organizations (DAOs), a notable feature has been the capacity for delegate voting. Members may choose between casting their votes directly or entrusting this power to delegates. Traditionally, these delegates have been individuals dedicated to a singular DAO. Their active participation in discussions and decision-making processes has earned them the trust of the DAO's membership.
 
@@ -44,3 +44,8 @@ A GroupDelegatee, by virtue of its collective intelligence, stands to gain incre
 The concept of Group Delegatees introduces a nuanced layer to DAO governance, emphasizing the potential for collective intelligence and collaboration. By adopting this model, DAOs could not only enhance their resilience and efficiency but also foster a more interconnected and cooperative ecosystem.
 
 This proposal invites the Ethereum community to consider the merits of Group Delegatees, opening the door to discussions that could shape the future of decentralized governance.
+
+### Request for Comments
+
+This is an idea seeking feedback from community. The first step is reaching out to people who are experienced with crypto / DAO governance for private feedback. When we consolidate their feedback, we will cross-post to major governance forum and social media for public feedback.
+
