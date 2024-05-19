@@ -5,6 +5,8 @@ main:
     url: /blog/why-i-write/
   - title: "How I write"
     url: /blog/how-i-write/
+  - title: "Recommendations"
+    url: /blog/rec/
   - title: "Posts"
     url: /posts/
   - title: "Categories"
