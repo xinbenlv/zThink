@@ -8,8 +8,6 @@ tags:
   - update
 ---
 
-# Recommondations
-
 ## Books
 
 A few books I really enjoyed reading:
