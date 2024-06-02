@@ -1,3 +1,4 @@
+---
 title: "读书笔记 欧利坚合众国"
 date: 2024-06-01
 categories:
@@ -6,6 +7,7 @@ tags:
   - Jekyll
   - update
 ---
+
 ### 读书笔记：《The United States of Europe》 by T.R. Reid
 
 **收获：**  
