@@ -1,3 +1,4 @@
+---
 title: "Why International Flights Often Require Manual Check-In"
 date: 2024-08-13
 categories:
