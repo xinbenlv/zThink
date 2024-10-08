@@ -10,24 +10,30 @@ tags:
   - en-US
   - orange-dao
 ---
-## Idea: TrustMail (codename)
+## Idea: Decentralizing Trust in Emails (codename)
 
 ### Technical Proposal: Scalable Email Anti-Spam System
 
 This proposal outlines a scalable solution to combat email spam using a trust-based, crowd-sourced model combined with optional monetary incentives for message prioritization. The system incorporates three key elements:
 
-1. **Direct Trust**: Anyone you trust should be able to send email to you. Emails from pre-approved addresses or domains bypass spam filters, ensuring reliable communication.
-2. **Extended Trust**: everyone can give trust score to other senders at individual level or domain level. Everyone retrieve trust score of senders out-side of the known sender from their friends by doing a PageRank-style calculation.
-4. **Trust-Based Forwarding**: Non-allowlisted senders who opt not to pay can request trusted individuals to forward messages on their behalf, leveraging social trust to bypass filters.
-5. **Monetary Prioritization**: Non-allowlisted senders can pay recipients for priority reading, offering a way to guarantee email visibility.
+1. **Direct Trust**: Anyone you trust directly should be able to send email to you. Spam filter should not block them. 
+2. **Extended Trust**: Everyone who you don't know, but your friend trust, you can decide if you can trust them by calculate your propagated trust level via a PageRank-style calculation.
+3. **Group Trust**: You can not only trust individual, but also trust a group of senders by their domain name.
+4. **Warm Connection**: A sender who wants to be sent 
+5. **Here's the money, trust me once**: Non-allowlisted senders can pay-to-send emails. Receiver can decide whether to add them to trusted list once they finish reading the paid-to-read email.
 
 Upon receiving an email, the recipient flags the sender as:
 
 - **Trusted for a Limited Time**
 - **Trusted Permanently**
-- **Spam**
+- **Mark as Spammer**
 
-This creates a self-regulating system where trust is earned and managed by users, reducing spam without compromising communication.
+This way, you can ensure reputation / trust based spam-filtering. Everyone is incentivized to do the right thing.
+
+Marketing people can focus on sending email with high quality, removing platforms as intermediaries.
+
+If you read too many "Pay-to-Read"
+
 
 
 ### TrustMail: A Market-Driven Approach to Email Spam Prevention
