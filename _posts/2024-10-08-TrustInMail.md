@@ -1,5 +1,5 @@
 ---
-title: Proposal - Orange Perk Exchange (Phase 1)
+title: Decentralizing Trust in Emails
 date: 2024-10-08
 categories:
   - blog
@@ -7,7 +7,7 @@ tags:
   - en-US
   - idea
 ---
-## Idea: Decentralizing Trust in Emails (codename)
+## Idea: Decentralizing Trust in Emails, Codename TrustInMail
 
 ### Technical Proposal: Scalable Email Anti-Spam System
 
