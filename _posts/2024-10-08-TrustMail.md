@@ -20,8 +20,8 @@ This proposal outlines a scalable solution to combat email spam using a trust-ba
 2. **Extended Trust**: Everyone who you don't know, but your friend trust, you can decide if you can trust them by calculate your propagated trust level via a PageRank-style calculation.
 3. **Group Trust**: You can not only trust individual, but also trust a group of senders by their domain name.
 4. **Warm Connection**: A sender can also ask friend of intended receiver to forward / vouch the email for them so their email could pass the sender's filter for once. If forwarder misuse the trust, they will be panelize by reducing trust level
-5. **Here's the money, trust me once**: Non-trusted senders can send email with digital money (.e.g bitcoin/Ethereum TX) attached to it. Receiver can decide whether to read them based on money value and add them to trusted list once they finish reading.
-6. **One-time pre-approval**: Receiver can distribute their one-time pre-approval in cryptographic signature approaach to the medium/social network when Receiver ask for something and allow people to send them email with respect to that matters.
+5. **Here's the money, trust me once** (aka "Pay to email me"): Non-trusted senders can send email with digital money (.e.g bitcoin/Ethereum TX) attached to it. Receiver can decide whether to read them based on money value and add them to trusted list once they finish reading.
+6. **One-time pre-approval**: Receiver can distribute their one-time pre-approval in cryptographic signature approach to the medium/social network when Receiver ask for something and allow people to send them email with respect to that matters.
 
 Upon receiving an email, the recipient flags the sender as:
 
@@ -32,8 +32,6 @@ Upon receiving an email, the recipient flags the sender as:
 This way, you can ensure reputation / trust based spam-filtering. Everyone is incentivized to do the right thing.
 
 Marketing people can focus on sending email with high quality, removing platforms as intermediaries.
-
-If you read too many "Pay-to-Read"
 
 
 
