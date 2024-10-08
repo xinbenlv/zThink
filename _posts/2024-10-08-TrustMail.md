@@ -4,11 +4,8 @@ date: 2024-10-08
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
-  - startup-notes
   - en-US
-  - orange-dao
+  - idea
 ---
 ## Idea: Decentralizing Trust in Emails (codename)
 
