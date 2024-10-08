@@ -1,6 +1,6 @@
 ---
-title: "Proposal - Orange Perk Exchange (Phase 1)"
-date: 2024-09-18
+title: Proposal - Orange Perk Exchange (Phase 1)
+date: 2024-10-08
 categories:
   - blog
 tags:
@@ -16,10 +16,10 @@ tags:
 
 This proposal outlines a scalable solution to combat email spam using a trust-based, crowd-sourced model combined with optional monetary incentives for message prioritization. The system incorporates three key elements:
 
-1. **Allowlisted Senders**: Emails from pre-approved addresses or domains bypass spam filters, ensuring reliable communication.
-2. **Crowd-Sourced Trust Network**: Sender trust levels are dynamically configured through user feedback. This decentralized trust model allows recipients to influence who can bypass spam filters.
-3. **Monetary Prioritization**: Non-allowlisted senders can pay recipients for priority reading, offering a way to guarantee email visibility.
+1. **Direct Trust**: Anyone you trust should be able to send email to you. Emails from pre-approved addresses or domains bypass spam filters, ensuring reliable communication.
+2. **Extended Trust**: everyone can give trust score to other senders at individual level or domain level. Everyone retrieve trust score of senders out-side of the known sender from their friends by doing a PageRank-style calculation.
 4. **Trust-Based Forwarding**: Non-allowlisted senders who opt not to pay can request trusted individuals to forward messages on their behalf, leveraging social trust to bypass filters.
+5. **Monetary Prioritization**: Non-allowlisted senders can pay recipients for priority reading, offering a way to guarantee email visibility.
 
 Upon receiving an email, the recipient flags the sender as:
 
