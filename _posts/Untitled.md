@@ -1,0 +1,141 @@
+# 当 YouTube 发现自己不是社交媒体：一个被用户纠正的 PMF 故事
+
+2005 年的 YouTube，以为自己要打造一个“人人都有话要说”的社交视频平台。  
+创始人们深受 MySpace、Friendster 启发，口号是 “Everyone has something to share.”  
+他们相信普通人会用视频来表达自己，就像写博客一样。
+
+但很快，他们发现：  
+**没人想看陌生人的生活。**
+
+上传最多的视频不是 vlog，也不是自拍，而是《周六夜现场》的片段、MTV、电影花絮，甚至整部剧。  
+那一年让 YouTube 一夜爆红的《Lazy Sunday》，就是一段未经授权的 SNL 短片。
+
+---
+
+## 一、理想：每个人都是自己的广播台
+
+创始人最初的想法，是做一个视频版的 MySpace：  
+用户可以上传视频、展示自我、互相关注。  
+YouTube 的第一个 slogan “Broadcast Yourself.” 就来自这个愿景。  
+
+然而现实与理想的距离远比他们想的更大。  
+视频上传者们真正想做的，是把有趣的内容转贴给别人看。  
+他们并不想“成为主角”，他们只想“成为转发者”。
+
+---
+
+## 二、现实：所有人都在“搬运”，没人真在“创作”
+
+到了 2006 年，平台的增长完全由“二次传播”驱动：  
+
+- 最火的视频几乎全是电视节目、MV、搞笑片段的转载；  
+- 用户分享的动机不是“表达自我”，而是“让别人看到有趣的东西”；  
+- 平台流量的核心，不是关系链，而是内容链。  
+
+YouTube 被用户“误用”了。  
+而正是这种误用，成了它的 Product-Market Fit。
+
+创始人没有强行矫正方向，而是观察数据，接受了这个事实。  
+他们明白：**如果大多数人都这样用，这可能就是真正的市场。**
+
+---
+
+## 三、第一步：承认“传播”才是核心需求
+
+2006 年起，YouTube 选择与其删除用户，不如拥抱内容方。  
+
+- 与 **Warner Music**（2006 年 9 月）试点“官方入驻 + 授权用曲”；  
+- 与 **CBS、Sony BMG、Universal** 签署内容分发与广告分账协议（2006 年 10 月）；  
+- Google 宣布收购 YouTube 当天，就同步公布多项内容合作。  
+  [参考：Reuters, 2006](https://www.reuters.com/article/businesspro-cbs-youtube-dc-idUSN0932817120061009)
+
+这是一种策略性妥协：  
+> 与其封禁，不如共赢。  
+> 与其反盗版，不如转合作。  
+
+这一步，让 YouTube 在版权高压中活了下来。
+
+---
+
+## 四、第二步：把“风险”变成系统——Content ID 诞生
+
+2007 年 10 月，YouTube 在官方博客发布 **Video Identification（Content ID）** 系统。  
+这是一个自动识别视频版权的工具，允许版权方选择“屏蔽、追踪或变现”。  
+[官方博客：Video Identification Beta, 2007-10-15](https://blog.youtube/news-and-events/video-identification-beta)
+
+这项技术彻底改变了 YouTube 与内容方的关系：  
+以前侵权只能删除；现在可以共享收益。  
+内容识别从“审查”变成了“生意”。  
+[Wired 报道, 2007](https://www.wired.com/2007/10/youtube-content-id/)
+
+---
+
+## 五、第三步：让创作有回报——Partner Program 上线
+
+同年 5 月，YouTube 推出 **Partner Program（创作者分成计划）**。  
+[TechCrunch, 2007](https://techcrunch.com/2007/05/03/youtube-partner-program-offers-revenue-sharing-to-video-creators/)
+
+它允许原创视频作者与 YouTube 分成广告收入。  
+这给了创作者经济一个开端，也标志着平台从“盗版分发”转向“原创激励”。  
+
+Smosh、NigaHiga、Michelle Phan 这一代创作者从此登场。  
+“搬运站”开始变成“创作社区”。
+
+---
+
+## 六、叙事的回正：从“社交”到“内容分发网络”
+
+这些改变的背后，是一次定位的自我修正。  
+YouTube 不再叫自己“社交网站”，而变成“视频分发与创作者平台”。  
+
+联合创始人 **Jawed Karim** 在 2006 年伊利诺伊大学演讲中提到：
+
+> “Our growth wasn’t from people sharing their own lives.  
+> It was from people sharing what they found interesting.”  
+> [YouTube: From Concept to Hypergrowth, 2006](https://www.youtube.com/watch?v=I6IQ_FOCE6I)
+
+而联合创始人 **Steve Chen** 在红杉的播客《Crucible Moments》中回忆：  
+> “We thought it would be about self-expression,  
+> but it became about discovering and distributing culture.”  
+> [Sequoia Podcast: Crucible Moments – YouTube ft. Steve Chen](https://www.sequoiacap.com/article/crucible-moments-youtube/)
+
+他们没有去教育用户，而是被用户教育了。
+
+---
+
+## 七、尾声：一个被误解但更真实的 PMF
+
+YouTube 的早期假设是错的。  
+但它犯的错误足够真实——以至于逼它看清了用户的真实需求。  
+
+人们未必想“表达自己”，但永远想“传播自己喜欢的东西”。  
+
+YouTube 的成长路径，是典型的被用户纠正的 PMF：  
+- 先被盗版推起来，  
+- 再用授权合法化，  
+- 最后靠创作者分账体系稳定增长。  
+
+它不是靠“控制”成功的，而是靠“顺势而为”。
+
+---
+
+## 参考资料
+
+- YouTube 官方博客：[Video Identification Beta](https://blog.youtube/news-and-events/video-identification-beta)（2007）  
+- *Wired*：[YouTube to Debut Copyright ID System](https://www.wired.com/2007/10/youtube-content-id/)（2007）  
+- *TechCrunch*：[YouTube Partner Program Offers Revenue Sharing](https://techcrunch.com/2007/05/03/youtube-partner-program-offers-revenue-sharing-to-video-creators/)（2007）  
+- *Reuters*：[CBS, Sony BMG and Universal sign deals with YouTube](https://www.reuters.com/article/businesspro-cbs-youtube-dc-idUSN0932817120061009)（2006）  
+- Jawed Karim：《[YouTube: From Concept to Hypergrowth](https://www.youtube.com/watch?v=I6IQ_FOCE6I)》（2006）  
+- Sequoia Podcast：《[Crucible Moments – YouTube ft. Steve Chen](https://www.sequoiacap.com/article/crucible-moments-youtube/)》（2023）  
+- Viacom v. YouTube DMCA 案件详情：[CourtListener Case Docket 1:07-cv-02103 (S.D.N.Y.)](https://www.courtlistener.com/docket/4204548/viacom-international-inc-v-youtube-inc/)（2007–2012）
+
+---
+
+## 关于作者
+
+笔者一个创业者，目前正处在项目早期 Product-Market Fit 和增长探索阶段。  
+为了学习历史、理解那些伟大产品在混乱中找到方向的瞬间，我开始写一系列文章，记录这些“找对路的时刻”。  
+
+如果你对这样的主题感兴趣，欢迎收藏、关注，也欢迎写信与我讨论：**blog@zzn.im**
+
+*本文首发于 2025 年，属于「产品早期 PMF 案例研究」系列。*
