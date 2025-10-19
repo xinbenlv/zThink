@@ -1,6 +1,6 @@
 ---
 title: 被用户带偏却带赢YouTube的PMF故事
-date: 2025-10-25
+	date: 2025-10-18
 categories:
   - blog
   - founder-notes
