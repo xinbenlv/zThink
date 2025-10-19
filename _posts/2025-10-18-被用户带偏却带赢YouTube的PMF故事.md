@@ -1,5 +1,5 @@
 ---
-title: 被用户带偏却带赢：YouTube的PMF故事
+title: 被用户带偏却带赢YouTube的PMF故事
 date: 2025-10-25
 categories:
   - blog
