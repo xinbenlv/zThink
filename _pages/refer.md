@@ -1,0 +1,4 @@
+- Mercury Bank: https://mercury.com/r/d3serve
+- Tesla: https://ts.la/zainan78646
+- BodySpec: https://www.bodyspec.com/r/JDSWUp
+- Dropbox: https://www.dropbox.com/referrals/AAADT2yFrouc_7XFKKPiYFfZRDl97K601_Y?src=global9
