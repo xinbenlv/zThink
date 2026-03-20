@@ -1,5 +1,7 @@
 ---
+toc: false
 title: "Netflix、优酷院线、Hulu和Itunes"
+excerpt: "对比Netflix、优酷院线、Hulu和iTunes四种付费视频服务在价格、内容、设备支持等方面的差异。"
 date: 2011-03-28
 categories:
   - blog

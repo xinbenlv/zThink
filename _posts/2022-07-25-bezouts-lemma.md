@@ -1,5 +1,6 @@
 ---
 title: "手推贝祖定理 Bézout's lemma"
+excerpt: "手工推导贝祖定理（Bézout's lemma）的完整证明过程，包括充分性和必要性。"
 date: 2022-07-22
 categories:
   - blog

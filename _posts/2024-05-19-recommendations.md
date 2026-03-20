@@ -1,5 +1,7 @@
 ---
+toc: false
 title: Recommendations
+excerpt: "A curated list of books I highly recommend, from Bill Gates to Vitalik Buterin."
 date: 2024-05-19T09:17:00-07:00
 categories:
   - blog

@@ -1,5 +1,7 @@
 ---
+toc: false
 title: "Group Delegatee: Multi-Brains for Multi-DAOs"
+excerpt: "Exploring the concept of group delegatees in DAO governance — how collectives using multi-sig wallets can serve as more resilient delegates."
 date: 2024-03-04T00:00:00
 categories:
   - blog

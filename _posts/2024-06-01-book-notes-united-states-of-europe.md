@@ -1,5 +1,7 @@
 ---
+toc: false
 title: "读书笔记 欧利坚合众国"
+excerpt: "《The United States of Europe》读书笔记：从二战到2004年，欧盟的历史、关键人物和欧元诞生过程。"
 date: 2024-06-01
 categories:
   - blog

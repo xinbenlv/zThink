@@ -1,5 +1,7 @@
 ---
+toc: false
 title: "Blockchain and Tipping Culture"
+excerpt: "How blockchain could transform tipping from unreliable one-off transactions into a transparent, reputation-based system that rewards good service."
 date: 2024-08-07
 categories:
   - blog

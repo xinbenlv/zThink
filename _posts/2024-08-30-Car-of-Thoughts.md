@@ -1,5 +1,7 @@
 ---
+toc: false
 title: "Car of Thoughts"
+excerpt: "AI is to thinking what the car was to walking — a reflection on how tools from handwriting to AI have amplified human intellectual capacity."
 date: 2024-08-29
 categories:
   - blog

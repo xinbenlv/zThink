@@ -1,5 +1,6 @@
 ---
 title: A deep technical overview of Ethereum
+excerpt: "A technical overview of Ethereum for internet engineers, covering its state machine model, execution layer, and consensus mechanism."
 date: 2024-01-09T22:14:51-08:00
 categories:
   - blog

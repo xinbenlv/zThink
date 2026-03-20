@@ -1,5 +1,7 @@
 ---
+toc: false
 title: "疫情对哪些产业产生影响"
+excerpt: "2020年疫情期间对外卖配送、远程办公、在线教育等产业发展趋势的预测。"
 date: 2024-01-07
 categories:
   - blog
