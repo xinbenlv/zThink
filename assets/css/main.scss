@@ -40,6 +40,8 @@ $text-color: #475569;
 $background-color: #f8fafc;
 $primary-color: #0284c7;
 
+@import "custom";
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
@@ -62,7 +64,7 @@ $primary-color: #0284c7;
   100% { transform: translate(0px, 0px) scale(1); }
 }
 
-.author__profile {
+.sidebar .h-card {
   background-color: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 1.5rem; /* 24px */
@@ -84,13 +86,13 @@ $primary-color: #0284c7;
 /* Decorations for Author Profile */
 
 /* Make sure inner elements stay above background blobs */
-.author__profile > * {
+.sidebar .h-card > * {
   position: relative;
   z-index: 10;
 }
 
 /* Background animated blobs using pseudo-elements */
-.author__profile::before {
+.sidebar .h-card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -107,7 +109,7 @@ $primary-color: #0284c7;
   z-index: 0;
 }
 
-.author__profile::after {
+.sidebar .h-card::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -129,6 +131,7 @@ $primary-color: #0284c7;
 .author__avatar {
   position: relative;
   display: inline-block;
+  margin-bottom: 1rem;
 }
 
 .author__avatar img {
@@ -149,4 +152,56 @@ $primary-color: #0284c7;
   animation: glow-pulse 3s ease-in-out infinite;
   background: linear-gradient(to top right, #38bdf8, #fcd34d, #fb923c); /* sky-400, amber-300, orange-400 */
   z-index: 1;
+}
+
+/* Additional Author Profile Styling */
+.sidebar .author__content {
+  margin-top: 1rem;
+}
+
+.sidebar .author__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #0f172a; /* slate-900 */
+}
+
+.sidebar .author__bio {
+  font-size: 0.875rem;
+  color: #475569; /* slate-600 */
+  line-height: 1.6;
+}
+
+.sidebar .author__urls-wrapper .btn {
+  border-radius: 0.75rem;
+  font-weight: 600;
+  background-color: #0284c7; /* sky-600 */
+  border-color: #0284c7;
+  color: #ffffff;
+  transition: all 0.2s;
+}
+
+.sidebar .author__urls-wrapper .btn:hover {
+  background-color: #0369a1; /* sky-700 */
+  border-color: #0369a1;
+  transform: translateY(-1px);
+}
+
+.sidebar .author__urls {
+  margin-top: 1.5rem;
+}
+
+.sidebar .author__urls li a {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: #64748b; /* slate-500 */
+  transition: all 0.2s;
+}
+
+.sidebar .author__urls li a:hover {
+  background-color: #f1f5f9; /* slate-100 */
+  color: #0f172a; /* slate-900 */
+  text-decoration: none;
 }
