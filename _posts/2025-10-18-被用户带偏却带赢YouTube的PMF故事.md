@@ -1,6 +1,6 @@
 ---
 title: 被用户带偏却带赢YouTube的PMF故事
-excerpt: "YouTube如何从"人人广播台"的社交视频理想，被用户带向盗版内容分享，却意外找到了产品市场契合。"
+excerpt: 'YouTube如何从"人人广播台"的社交视频理想，被用户带向盗版内容分享，却意外找到了产品市场契合。'
 date: 2025-10-18
 categories:
   - blog
