@@ -29,13 +29,7 @@
     {% include page__meta.html locale=locale type=include.type %}
     {% if post.excerpt %}
       <div class="archive__item-excerpt p-summary" itemprop="description">
-        {% assign parts = post.content | markdownify | split: '</h1>' %}
-        {% if parts.size > 1 %}
-          {% assign raw_content = parts[1] %}
-        {% else %}
-          {% assign raw_content = parts[0] %}
-        {% endif %}
-        <p>{{ raw_content | strip_html | truncatewords: 30 }}</p>
+        {{ post.excerpt | markdownify }}
         <div style="margin-top: 1rem;">
           <a href="{{ post.url | relative_url }}" class="btn btn--primary">Read more &rarr;</a>
         </div>
