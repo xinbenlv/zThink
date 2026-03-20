@@ -11,13 +11,14 @@
   {% assign title = post.title %}
 {% endif %}
 
+{% if include.type == "grid" %}
+<div class="related-post__item">
+  <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+  <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+</div>
+{% else %}
 <div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork"{% if post.locale %} lang="{{ post.locale }}"{% endif %}>
-    {% if include.type == "grid" and teaser %}
-      <div class="archive__item-teaser">
-        <img src="{{ teaser | relative_url }}" alt="">
-      </div>
-    {% endif %}
     <h2 class="archive__item-title no_toc p-name" itemprop="headline">
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a class="u-url" href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
@@ -28,7 +29,13 @@
     {% include page__meta.html locale=locale type=include.type %}
     {% if post.excerpt %}
       <div class="archive__item-excerpt p-summary" itemprop="description">
-        {{ post.excerpt | markdownify }}
+        {% assign parts = post.content | markdownify | split: '</h1>' %}
+        {% if parts.size > 1 %}
+          {% assign raw_content = parts[1] %}
+        {% else %}
+          {% assign raw_content = parts[0] %}
+        {% endif %}
+        <p>{{ raw_content | strip_html | truncatewords: 30 }}</p>
         <div style="margin-top: 1rem;">
           <a href="{{ post.url | relative_url }}" class="btn btn--primary">Read more &rarr;</a>
         </div>
@@ -36,3 +43,4 @@
     {% endif %}
   </article>
 </div>
+{% endif %}

@@ -1,17 +1,4 @@
 main:
-  - title: "What I use"
-    url: /blog/what-i-use/
-  - title: "Why I write"
-    url: /blog/why-i-write/
-  - title: "How I write"
-    url: /blog/how-i-write/
-  - title: "Recommendations"
-    url: /blog/recommendations/
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "About"
-    url: /about/
+  - title: "Login if you are a friend"
+    url: /login/
+    class: "masthead__login-btn"
