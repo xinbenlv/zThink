@@ -1,4 +1,31 @@
 
+/* ==========================================================================
+   GLOBAL TYPOGRAPHY & BACKGROUND
+   ========================================================================== */
+
+body, 
+.initial-content {
+    background-color: #f8fafc !important; /* slate-50 */
+    color: #475569 !important; /* slate-600 */
+}
+
+a {
+    color: #0284c7; /* sky-600 */
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #0369a1; /* sky-700 */
+}
+
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.archive__item-title {
+    color: #0f172a !important; /* slate-900 */
+    letter-spacing: -0.025em !important; /* tracking-tight */
+    font-weight: 700 !important;
+}
+
 /* Fix for author card avatar position */
 .sidebar .h-card {
     text-align: center;
@@ -117,32 +144,6 @@ ul.author__urls li a i {
     display: none !important;
 }
 
-/* ==========================================================================
-   GLOBAL TYPOGRAPHY & BACKGROUND
-   ========================================================================== */
-
-body, 
-.initial-content {
-    background-color: #f8fafc !important; /* slate-50 */
-    color: #475569 !important; /* slate-600 */
-}
-
-a {
-    color: #0284c7; /* sky-600 */
-    transition: color 0.2s ease;
-}
-
-a:hover {
-    color: #0369a1; /* sky-700 */
-}
-
-h1, h2, h3, h4, h5, h6,
-.page__title,
-.archive__item-title {
-    color: #0f172a !important; /* slate-900 */
-    letter-spacing: -0.025em !important; /* tracking-tight */
-    font-weight: 700 !important;
-}
 
 
 /* ==========================================================================
@@ -150,56 +151,7 @@ h1, h2, h3, h4, h5, h6,
    ========================================================================== */
 
 .masthead {
-    border-bottom: 1px solid #e2e8f0 !important; /* subtle slate-200 border */
-    background-color: rgba(255, 255, 255, 0.8) !important;
-    backdrop-filter: blur(12px) !important;
-    -webkit-backdrop-filter: blur(12px) !important;
-    position: sticky !important;
-    top: 0;
-    z-index: 50;
-    animation: fadeIn 0.5s ease-out;
-}
-
-.masthead__inner-wrap {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-.site-title {
-    font-weight: 800 !important;
-    color: #0f172a !important; /* slate-900 */
-    letter-spacing: -0.025em;
-}
-
-/* Nav links styling */
-.greedy-nav a {
-    color: #64748b !important; /* slate-500 */
-    border-radius: 0.5rem;
-    padding: 0.5rem 0.75rem !important;
-    margin: 0 0.25rem;
-    transition: all 0.2s ease !important;
-    font-weight: 500;
-}
-
-.greedy-nav a:hover {
-    color: #0f172a !important; /* slate-900 */
-    background-color: #f1f5f9 !important; /* slate-100 */
-    text-decoration: none !important;
-}
-
-/* Hide the default underline animation in MM */
-.greedy-nav .masthead__menu-item:hover {
-    border-bottom-color: transparent !important;
-}
-
-/* Hamburger menu button */
-.greedy-nav__toggle {
-    color: #64748b !important;
-    border-radius: 0.5rem !important;
-}
-
-.greedy-nav__toggle:hover {
-    background-color: #f1f5f9 !important;
+    display: none !important; /* Hide entirely for Coding Horror layout */
 }
 
 /* ==========================================================================
@@ -387,99 +339,38 @@ h1, h2, h3, h4, h5, h6,
 /* Fix MM default wide settings */
 @media (min-width: 64em) {
     .sidebar {
-        width: calc(300px + 2rem);
-        padding-right: 2rem;
-        float: left;
+        width: 300px !important;
+        padding-right: 2rem !important;
+        position: sticky !important;
+        top: 2rem !important;
+        float: left !important;
     }
 
     .page {
-        width: calc(100% - 300px - 2rem);
-        float: right;
+        width: calc(100% - 300px) !important;
+        float: none !important;
+        flex-grow: 1;
+    }
+
+    .initial-content {
+        display: flex !important;
+        align-items: flex-start;
+        max-width: 1200px !important;
+        margin: 0 auto;
+    }
+
+    .initial-content::after {
+        display: none !important; /* clear-fix remove since using flex */
     }
 }
 
-/* ==========================================================================
-   GLOBAL TYPOGRAPHY & BACKGROUND
-   ========================================================================== */
-
-body, 
-.initial-content {
-    background-color: #f8fafc !important; /* slate-50 */
-    color: #475569 !important; /* slate-600 */
-}
-
-a {
-    color: #0284c7; /* sky-600 */
-    transition: color 0.2s ease;
-}
-
-a:hover {
-    color: #0369a1; /* sky-700 */
-}
-
-h1, h2, h3, h4, h5, h6,
-.page__title,
-.archive__item-title {
-    color: #0f172a !important; /* slate-900 */
-    letter-spacing: -0.025em !important; /* tracking-tight */
-    font-weight: 700 !important;
-}
 
 /* ==========================================================================
    MASTHEAD (NAVIGATION)
    ========================================================================== */
 
 .masthead {
-    border-bottom: 1px solid #e2e8f0 !important; /* subtle slate-200 border */
-    background-color: rgba(255, 255, 255, 0.8) !important;
-    backdrop-filter: blur(12px) !important;
-    -webkit-backdrop-filter: blur(12px) !important;
-    position: sticky !important;
-    top: 0;
-    z-index: 50;
-    animation: fadeIn 0.5s ease-out;
-}
-
-.masthead__inner-wrap {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-.site-title {
-    font-weight: 800 !important;
-    color: #0f172a !important; /* slate-900 */
-    letter-spacing: -0.025em;
-}
-
-/* Nav links styling */
-.greedy-nav a {
-    color: #64748b !important; /* slate-500 */
-    border-radius: 0.5rem;
-    padding: 0.5rem 0.75rem !important;
-    margin: 0 0.25rem;
-    transition: all 0.2s ease !important;
-    font-weight: 500;
-}
-
-.greedy-nav a:hover {
-    color: #0f172a !important; /* slate-900 */
-    background-color: #f1f5f9 !important; /* slate-100 */
-    text-decoration: none !important;
-}
-
-/* Hide the default underline animation in MM */
-.greedy-nav .masthead__menu-item:hover {
-    border-bottom-color: transparent !important;
-}
-
-/* Hamburger menu button */
-.greedy-nav__toggle {
-    color: #64748b !important;
-    border-radius: 0.5rem !important;
-}
-
-.greedy-nav__toggle:hover {
-    background-color: #f1f5f9 !important;
+    display: none !important; /* Hide entirely for Coding Horror layout */
 }
 
 /* ==========================================================================
@@ -666,13 +557,27 @@ h1, h2, h3, h4, h5, h6,
 /* Fix MM default wide settings */
 @media (min-width: 64em) {
     .sidebar {
-        width: calc(300px + 2rem);
-        padding-right: 2rem;
-        float: left;
+        width: 300px !important;
+        padding-right: 2rem !important;
+        position: sticky !important;
+        top: 2rem !important;
+        float: left !important;
     }
 
     .page {
-        width: calc(100% - 300px - 2rem);
-        float: right;
+        width: calc(100% - 300px) !important;
+        float: none !important;
+        flex-grow: 1;
+    }
+
+    .initial-content {
+        display: flex !important;
+        align-items: flex-start;
+        max-width: 1200px !important;
+        margin: 0 auto;
+    }
+
+    .initial-content::after {
+        display: none !important; /* clear-fix remove since using flex */
     }
 }

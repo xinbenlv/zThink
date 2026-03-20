@@ -1,0 +1,40 @@
+---
+layout: archive
+---
+{%- assign locale = page.locale | default: layout.locale | default: site.locale %}
+
+{{ content }}
+
+<ul class="taxonomy__index">
+  {% assign postsInYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+  {% for year in postsInYear %}
+    <li>
+      <a href="#{{ year.name }}">
+        <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+{% assign postsByYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+{% for year in postsByYear %}
+  <section id="{{ year.name }}" class="taxonomy__section">
+    <h2 class="archive__subtitle">{{ year.name }}</h2>
+    <div class="entries-dense">
+      <ul style="list-style: none; padding: 0; margin: 0;">
+      {% for post in year.items %}
+        <li style="margin-bottom: 0.5rem; display: flex; align-items: baseline; gap: 1rem;">
+          <time datetime="{{ post.date | date_to_xmlschema }}" style="color: #64748b; font-family: monospace; font-size: 0.9em; flex-shrink: 0;">
+            {{ post.date | date: "%Y-%m-%d" }}
+          </time>
+          <a href="{{ post.url | relative_url }}" style="font-weight: 500; font-size: 1.05rem;">
+            {{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}
+          </a>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+  </section>
+{% endfor %}
