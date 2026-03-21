@@ -5,6 +5,7 @@ date: 2026-02-02
 lang: en
 cover_image:
   src: /assets/blogposts/2026-02-02-prettysafe-address-poison-prevention/image1-spot-the-fake.png
+  thumb: /assets/blogposts/thumbs/prettysafe-spot-the-fake-168.webp
   x: 608
   y: 0
   size: 1536

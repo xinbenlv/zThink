@@ -13,7 +13,18 @@
   <li class="posts-loose-list__item">
     <a href="{{ post.url | relative_url }}" class="posts-loose-list__thumb-link" aria-hidden="true" tabindex="-1">
       <span class="posts-loose-list__thumb-frame">
-        {% if post.cover_image and post.cover_image.src %}
+        {% if post.cover_image and post.cover_image.thumb %}
+          <img
+            src="{{ post.cover_image.thumb | relative_url }}"
+            alt=""
+            class="posts-loose-list__thumb"
+            width="84"
+            height="84"
+            loading="lazy"
+            fetchpriority="low"
+            decoding="async"
+          >
+        {% elsif post.cover_image and post.cover_image.src %}
           <img
             src="{{ post.cover_image.src | relative_url }}"
             alt=""
@@ -21,7 +32,10 @@
             data-crop-x="{{ post.cover_image.x }}"
             data-crop-y="{{ post.cover_image.y }}"
             data-crop-size="{{ post.cover_image.size }}"
+            width="84"
+            height="84"
             loading="lazy"
+            fetchpriority="low"
             decoding="async"
           >
         {% elsif post.header.teaser or post.image %}
@@ -30,7 +44,10 @@
             src="{{ post_image | relative_url }}"
             alt=""
             class="posts-loose-list__thumb"
+            width="84"
+            height="84"
             loading="lazy"
+            fetchpriority="low"
             decoding="async"
           >
         {% endif %}

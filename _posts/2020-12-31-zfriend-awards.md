@@ -6,6 +6,7 @@ date: 2020-12-31
 lang: zh
 cover_image:
   src: /assets/blogposts/载友圈最佳书籍奖-300x193.png
+  thumb: /assets/blogposts/thumbs/zfriend-awards-book-168.webp
   x: 54
   y: 0
   size: 193

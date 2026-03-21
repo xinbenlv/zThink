@@ -21,6 +21,11 @@
       <span class="site-title__text">{{ site.title }}</span>
     </a>
     <div class="masthead__actions">
+      {% if site.search == true %}
+      <button type="button" class="masthead__search-btn search__toggle" aria-label="Open search" title="Search">
+        <i class="fas fa-search masthead__search-icon" aria-hidden="true"></i>
+      </button>
+      {% endif %}
       <div class="masthead__lang-switch" aria-label="Language selector">
         <a
           href="{{ switch_lang | prepend: '/' | append: '/' | relative_url }}"
@@ -29,7 +34,7 @@
           data-en-label="中文"
           data-zh-href="{{ '/en/' | relative_url }}"
           data-zh-label="EN"
-        >{{ switch_label }}</a>
+        ><i class="fas fa-globe-americas masthead__lang-icon" aria-hidden="true"></i><span class="masthead__lang-text">{{ switch_label }}</span></a>
       </div>
       <div class="masthead__links">
         {% for link in site.data.navigation.main %}

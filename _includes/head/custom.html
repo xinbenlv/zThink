@@ -1,0 +1,5 @@
+<link rel="preload" href="{{ '/assets/fonts/inter-400.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ '/assets/fonts/inter-700.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+{% if page.author_profile %}
+<link rel="preload" href="{{ site.author.avatar | relative_url }}" as="image">
+{% endif %}
