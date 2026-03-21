@@ -7,7 +7,6 @@ categories:
   - blog
   - founder-notes
 tags:
-  - zh-CN
   - idea
   - PMF故事
 ---

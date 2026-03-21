@@ -10,15 +10,14 @@ layout: archive
 {% if paginator %}
   {% assign posts = paginator.posts %}
 {% else %}
-  {% assign posts = site.posts %}
+  {% assign posts = site.posts | where_exp: "item", "item.hidden != true" %}
 {% endif %}
 {% if page.filter_lang %}
   {% assign posts = posts | where: "lang", page.filter_lang %}
 {% endif %}
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% include documents-collection.html locale=locale entries=posts type=entries_layout %}
+<div class="entries-dense">
+  {% include posts-loose-list.html posts=posts %}
 </div>
 
 {% include paginator.html locale=locale %}

@@ -1,0 +1,49 @@
+<ul class="posts-loose-list">
+{% for post in include.posts %}
+  {% assign post_image = post.header.teaser | default: post.image | default: site.author.avatar %}
+  <li class="posts-loose-list__item">
+    <a href="{{ post.url | relative_url }}" class="posts-loose-list__thumb-link" aria-hidden="true" tabindex="-1">
+      <span class="posts-loose-list__thumb-frame">
+        <img
+          src="{{ post_image | relative_url }}"
+          alt=""
+          class="posts-loose-list__thumb"
+          loading="lazy"
+          decoding="async"
+        >
+      </span>
+    </a>
+    <div class="posts-loose-list__content">
+      <div class="posts-loose-list__title-row">
+        <a href="{{ post.url | relative_url }}" class="posts-loose-list__title">
+          {% if post.title %}
+            {{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}
+          {% else %}
+            {{ post.excerpt | markdownify | remove: "<p>" | remove: "</p>" | truncatewords: 10 }}
+          {% endif %}
+        </a>
+        {% if post.categories and post.categories.size > 0 %}
+          <span class="posts-loose-list__category-badge">{{ post.categories[0] }}</span>
+        {% endif %}
+      </div>
+      {% if post.excerpt or post.tags and post.tags.size > 0 %}
+        <p class="posts-loose-list__excerpt">
+          {% if post.excerpt %}
+            {{ post.excerpt | markdownify | strip_html | strip }}
+          {% endif %}
+          {% if post.tags and post.tags.size > 0 %}
+            <span class="posts-loose-list__tags" aria-label="Tags">
+              {% for tag in post.tags %}
+                <span class="posts-loose-list__tag">{{ tag }}</span>
+              {% endfor %}
+            </span>
+          {% endif %}
+        </p>
+      {% endif %}
+      <time class="posts-loose-list__date" datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: "%Y-%m-%d" }}
+      </time>
+    </div>
+  </li>
+{% endfor %}
+</ul>

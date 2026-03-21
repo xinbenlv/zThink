@@ -496,6 +496,162 @@ ul.author__urls li a i {
     transform: translateY(-1px);
 }
 
+/* Home page loose list */
+.posts-loose-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.posts-loose-list__item {
+    display: grid;
+    grid-template-columns: 84px minmax(0, 1fr);
+    gap: 1rem;
+    align-items: start;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.posts-loose-list__item:last-child {
+    border-bottom: none;
+}
+
+.posts-loose-list__thumb-link {
+    display: block;
+    text-decoration: none;
+}
+
+.posts-loose-list__thumb-frame {
+    display: block;
+    width: 84px;
+    height: 84px;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    background: linear-gradient(135deg, #e0f2fe 0%, #fef3c7 100%);
+    border: 1px solid #dbeafe;
+    box-shadow: 0 10px 20px -18px rgba(15, 23, 42, 0.45);
+}
+
+.posts-loose-list__thumb {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.posts-loose-list__content {
+    min-width: 0;
+}
+
+.posts-loose-list__title-row {
+    display: block;
+}
+
+.posts-loose-list__title {
+    display: inline;
+    color: #0f172a !important;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.posts-loose-list__title:hover {
+    color: #0284c7 !important;
+}
+
+.posts-loose-list__category-badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0.5rem;
+    vertical-align: baseline;
+    padding: 0.2rem 0.6rem;
+    border-radius: 9999px;
+    background-color: #eff6ff;
+    border: 1px solid #bfdbfe;
+    color: #1d4ed8;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.posts-loose-list__excerpt {
+    margin-top: 0.35rem;
+    margin-bottom: 0;
+    color: #64748b;
+    font-size: 0.92rem;
+    line-height: 1.55;
+}
+
+.posts-loose-list__tags {
+    display: inline;
+    margin-left: 0.45rem;
+    vertical-align: baseline;
+}
+
+.posts-loose-list__tags::before {
+    content: "";
+}
+
+.posts-loose-list__tags > .posts-loose-list__tag {
+    margin-right: 0.35rem;
+}
+
+.posts-loose-list__tags > .posts-loose-list__tag:last-child {
+    margin-right: 0;
+}
+
+.posts-loose-list__tag {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: baseline;
+    gap: 0.35rem;
+    padding: 0.15rem 0.45rem;
+    border-radius: 9999px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    color: #64748b;
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.posts-loose-list__date {
+    display: block;
+    margin-top: 0.45rem;
+    color: #94a3b8;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.82rem;
+}
+
+@media (max-width: 640px) {
+    .posts-loose-list__item {
+        grid-template-columns: 72px minmax(0, 1fr);
+        gap: 0.875rem;
+    }
+
+    .posts-loose-list__thumb-frame {
+        width: 72px;
+        height: 72px;
+    }
+
+    .posts-loose-list__title {
+        font-size: 1rem;
+    }
+
+    .posts-loose-list__excerpt {
+        font-size: 0.88rem;
+    }
+
+    .posts-loose-list__tags {
+        display: inline;
+        margin-left: 0.35rem;
+    }
+}
+
 /* ==========================================================================
    RELATED POSTS ("You May Also Enjoy")
    ========================================================================== */
