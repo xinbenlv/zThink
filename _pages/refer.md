@@ -1,3 +1,9 @@
+---
+title: "Referral Links"
+permalink: /refer/
+sitemap: false
+---
+
 Here is a list of referral links of things I am using and personally like.
 
 - Mercury Bank: https://mercury.com/r/d3serve

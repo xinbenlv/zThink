@@ -1,3 +1,7 @@
+---
+sitemap: false
+---
+
 # Posts Format
 
 This repository expects every post in [`_posts`](/Users/zzn/ws/znotes/zThink/_posts) to use YAML frontmatter.
