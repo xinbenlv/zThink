@@ -2,6 +2,7 @@
 title: "Proposal - Orange Perk Exchange (Phase 1)"
 excerpt: "A proposal for Orange DAO to create a Perk Exchange page where founders can share and discover startup perks and credits."
 date: 2024-09-18
+lang: en
 categories:
   - blog
 tags:

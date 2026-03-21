@@ -3,6 +3,7 @@ toc: false
 title: "5 steps to perform code reviews at Google"
 excerpt: "A practical guide to code reviews based on experience at Google, covering pre-screening, understanding, and evaluating change lists."
 date: 2013-11-19
+lang: en
 categories:
   - blog
 tags:

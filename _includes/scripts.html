@@ -27,6 +27,49 @@
   {% endfor %}
 {% endif %}
 
+{% if page.url == '/' %}
+<script>
+(function() {
+  var languages = [];
+  if (navigator.languages && navigator.languages.length) {
+    languages = navigator.languages.slice();
+  } else if (navigator.language) {
+    languages = [navigator.language];
+  }
+
+  var prefersZh = languages.some(function(language) {
+    return typeof language === 'string' && language.toLowerCase().indexOf('zh') === 0;
+  });
+
+  if (prefersZh && window.location.pathname === '{{ '/' | relative_url }}') {
+    window.location.replace('{{ '/zh/' | relative_url }}');
+  }
+})();
+</script>
+{% endif %}
+
+<script>
+(function() {
+  var switchLink = document.querySelector('.masthead__lang-link');
+  if (!switchLink) return;
+
+  var path = window.location.pathname || '/';
+  var isZh = path === '{{ '/zh/' | relative_url }}' || path.indexOf('{{ '/zh/' | relative_url }}') === 0;
+  var isEn = path === '{{ '/en/' | relative_url }}' || path.indexOf('{{ '/en/' | relative_url }}') === 0 || path === '{{ '/' | relative_url }}';
+
+  if (isZh) {
+    switchLink.href = switchLink.getAttribute('data-zh-href');
+    switchLink.textContent = switchLink.getAttribute('data-zh-label');
+    return;
+  }
+
+  if (isEn) {
+    switchLink.href = switchLink.getAttribute('data-en-href');
+    switchLink.textContent = switchLink.getAttribute('data-en-label');
+  }
+})();
+</script>
+
 <script>
 (function() {
   var content = document.querySelector('.layout--single .page__content');

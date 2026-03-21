@@ -3,6 +3,7 @@ toc: false
 title: "3min connect Slack and Discord with matterbridge"
 excerpt: "A quick guide to bridging Slack and Discord channels using matterbridge with Docker in just 3 minutes."
 date: 2020-03-21T14:41:00-08:00
+lang: en
 categories:
   - blog
 tags:

@@ -3,6 +3,7 @@ toc: false
 title: "Firefox4发布之后，尝试预言一下未来"
 excerpt: "Firefox4发布之际，对浏览器竞争格局、Html5技术趋势及移动硬件发展的若干预测。"
 date: 2011-03-23
+lang: zh
 categories:
   - blog
 tags:

@@ -2,6 +2,7 @@
 title: "Overhead and Min Size"
 excerpt: "How 'overhead' shapes content length, music distribution, and business scale — from Broadway shows to blockchain micro-transactions."
 date: 2024-08-29
+lang: en
 categories:
   - blog
 tags:

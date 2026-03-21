@@ -3,6 +3,7 @@ toc: false
 title: "The Qualitative Leap of On-Chain Reputation"
 excerpt: "How on-chain reputation creates a qualitative leap over traditional systems through openness, decentralization, and fairness."
 date: 2024-05-31
+lang: en
 categories:
   - blog
 tags:

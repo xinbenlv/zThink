@@ -2,6 +2,7 @@
 title: "Startup Notes: Reflections on Accounting"
 excerpt: "An entrepreneur's journey to understanding accounting: from the balance sheet to income statements, demystifying the core logic."
 date: 2024-09-09
+lang: en
 categories:
   - blog
 tags:

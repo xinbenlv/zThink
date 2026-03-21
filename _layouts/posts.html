@@ -5,8 +5,13 @@ layout: archive
 
 {{ content }}
 
+{% assign filtered_posts = site.posts | where_exp: "item", "item.hidden != true" %}
+{% if page.filter_lang %}
+  {% assign filtered_posts = filtered_posts | where: "lang", page.filter_lang %}
+{% endif %}
+
 <ul class="taxonomy__index">
-  {% assign postsInYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+  {% assign postsInYear = filtered_posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
   {% for year in postsInYear %}
     <li>
       <a href="#{{ year.name }}">
@@ -17,7 +22,7 @@ layout: archive
 </ul>
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
-{% assign postsByYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+{% assign postsByYear = filtered_posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
 {% for year in postsByYear %}
   <section id="{{ year.name }}" class="taxonomy__section">
     <h2 class="archive__subtitle">{{ year.name }}</h2>

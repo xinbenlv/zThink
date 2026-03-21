@@ -2,6 +2,7 @@
 title: Trust In Mail
 excerpt: "A technical proposal for decentralized email anti-spam using trust propagation, group trust, and optional pay-to-email mechanisms."
 date: 2024-10-08
+lang: en
 categories:
   - blog
 tags:

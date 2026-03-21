@@ -3,6 +3,7 @@ toc: false
 title: Why I write
 excerpt: "My foundational article on why I write: self-expression, personal growth, connecting with readers, and the joy of creative exploration."
 date: 2024-01-04T15:34:30-04:00
+lang: en
 categories:
   - blog
 tags:

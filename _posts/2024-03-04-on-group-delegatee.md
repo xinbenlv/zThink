@@ -3,6 +3,7 @@ toc: false
 title: "Group Delegatee: Multi-Brains for Multi-DAOs"
 excerpt: "Exploring the concept of group delegatees in DAO governance — how collectives using multi-sig wallets can serve as more resilient delegates."
 date: 2024-03-04T00:00:00
+lang: en
 categories:
   - blog
 tags:
@@ -50,4 +51,3 @@ This proposal invites the Ethereum community to consider the merits of Group Del
 ### Request for Comments
 
 This is an idea seeking feedback from community. The first step is reaching out to people who are experienced with crypto / DAO governance for private feedback. When we consolidate their feedback, we will cross-post to major governance forum and social media for public feedback.
-

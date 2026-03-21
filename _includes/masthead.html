@@ -1,13 +1,46 @@
 <nav class="masthead" aria-label="Primary navigation">
+  {% assign current_lang = '' %}
+  {% if page.filter_lang == 'en' or page.url == '/' or page.url == '/en/' or page.url == '/en' or page.url contains '/en/' %}
+    {% assign current_lang = 'en' %}
+  {% elsif page.filter_lang == 'zh' or page.url == '/zh/' or page.url == '/zh' or page.url contains '/zh/' %}
+    {% assign current_lang = 'zh' %}
+  {% elsif page.lang == 'en' %}
+    {% assign current_lang = 'en' %}
+  {% elsif page.lang == 'zh' %}
+    {% assign current_lang = 'zh' %}
+  {% endif %}
+  {% assign switch_lang = 'zh' %}
+  {% assign switch_label = '中文' %}
+  {% if current_lang == 'zh' %}
+    {% assign switch_lang = 'en' %}
+    {% assign switch_label = 'EN' %}
+  {% endif %}
   <div class="masthead__inner-wrap">
     <a class="site-title" rel="author" href="{{ '/' | relative_url }}">
       <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" class="site-title__avatar" width="32" height="32">
       <span class="site-title__text">{{ site.title }}</span>
     </a>
-    <div class="masthead__links">
-      {% for link in site.data.navigation.main %}
-        <a href="{{ link.url | relative_url }}" class="{{ link.class }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
-      {% endfor %}
+    <div class="masthead__actions">
+      <div class="masthead__lang-switch" aria-label="Language selector">
+        <a
+          href="{{ switch_lang | prepend: '/' | append: '/' | relative_url }}"
+          class="masthead__lang-link"
+          data-en-href="{{ '/zh/' | relative_url }}"
+          data-en-label="中文"
+          data-zh-href="{{ '/en/' | relative_url }}"
+          data-zh-label="EN"
+        >{{ switch_label }}</a>
+      </div>
+      <div class="masthead__links">
+        {% for link in site.data.navigation.main %}
+          <a href="{{ link.url | relative_url }}" class="{{ link.class }}"{% if link.description %} title="{{ link.description }}"{% endif %}>
+            <span class="masthead__link-label">{{ link.title }}</span>
+            {% if link.short_title %}
+              <span class="masthead__link-label-short">{{ link.short_title }}</span>
+            {% endif %}
+          </a>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </nav>

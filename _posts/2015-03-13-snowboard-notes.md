@@ -3,6 +3,7 @@ toc: false
 title: "滑雪板入门课程笔记"
 excerpt: "在Squaw Valley的滑雪板1:1入门课笔记，从正确摔倒姿势到基本滑行技巧的学习心得。"
 date: 2015-03-13
+lang: zh
 categories:
   - blog
 tags:

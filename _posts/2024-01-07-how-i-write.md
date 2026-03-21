@@ -3,6 +3,7 @@ toc: false
 title: How I write
 excerpt: "A living document on my writing workflow: Markdown, Obsidian, Jekyll on GitHub Pages, inspired by the Zettelkasten method."
 date: 2024-01-07T12:23:12-08:00
+lang: en
 categories:
   - blog
 tags:

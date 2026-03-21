@@ -3,6 +3,7 @@ toc: false
 title: "Why the Customer Call Experience Sucks"
 excerpt: "A constructive analysis of why calling customer service is so painful — from wrong numbers to complex menus to repeated identity verification."
 date: 2024-08-03
+lang: en
 categories:
   - blog
 tags:

@@ -3,6 +3,7 @@ toc: false
 title: "首届载友奖（2020）"
 excerpt: "首届\"载友奖\"揭晓——50位嘉宾评委投票评选的年度最佳书籍、电影和电视剧。"
 date: 2020-12-31
+lang: zh
 categories:
   - blog
 tags:

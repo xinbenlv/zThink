@@ -3,6 +3,7 @@ toc: false
 title: "Hamilton's Education, A piece of history insights - 从哈密尔顿的教育经历的得到一点启发"
 excerpt: "从汉密尔顿因教会资格被拒而无法上学的经历，思考教会权力、社会保障与国家形态的关系。"
 date: 2019-07-21
+lang: en
 categories:
   - blog
 tags:

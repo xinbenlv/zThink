@@ -1,4 +1,5 @@
 main:
   - title: "Login if you are a friend"
+    short_title: "Login"
     url: /login/
     class: "masthead__login-btn"

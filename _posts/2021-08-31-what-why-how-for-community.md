@@ -3,6 +3,7 @@ toc: false
 title: What, Why and How for Communities
 excerpt: "A framework for understanding communities: what defines them, why they matter for collaboration, and how to build them."
 date: 2021-08-31T16:49:30-08:00
+lang: en
 categories:
   - blog
 tags:
@@ -55,4 +56,3 @@ Acceptance of such community is majorly based on contribution so there is a open
 - Everyone can contribute
 - Trust, authorities and powers are earned by contributions
 - Contributions are rewarded
-

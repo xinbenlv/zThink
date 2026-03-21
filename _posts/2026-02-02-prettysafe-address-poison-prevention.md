@@ -2,6 +2,7 @@
 title: "Address Poisoning is a Wallet Bug, Not a User's Fault"
 excerpt: "Address poisoning isn't a user problem — it's a wallet UI bug. How wallets enable this $68M attack and how to fix it."
 date: 2026-02-02
+lang: en
 categories:
   - blog
 tags:

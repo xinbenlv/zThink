@@ -3,6 +3,7 @@ toc: false
 title: "Why International Flights Often Require Manual Check-In"
 excerpt: "Why international flights still require manual check-in, and a proposal for standardized APIs between airlines and customs for digital verification."
 date: 2024-08-13
+lang: en
 categories:
   - blog
 tags:

@@ -223,6 +223,42 @@ ul.author__urls li a i {
     letter-spacing: -0.025em;
 }
 
+.masthead__actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.masthead__lang-switch {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #e2e8f0;
+    border-radius: 9999px;
+    background-color: rgba(248, 250, 252, 0.9);
+    box-shadow: 0 1px 2px 0 rgba(15, 23, 42, 0.04);
+}
+
+.masthead__lang-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3rem;
+    padding: 0.375rem 0.75rem;
+    border-radius: 9999px;
+    color: #64748b;
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.masthead__lang-link:hover {
+    background-color: #0f172a;
+    color: #ffffff;
+    box-shadow: 0 1px 2px 0 rgba(15, 23, 42, 0.16);
+}
+
 .masthead__links {
     display: flex;
     align-items: center;
@@ -240,6 +276,10 @@ ul.author__urls li a i {
 
 .masthead__links a:hover {
     color: #0f172a;
+}
+
+.masthead__link-label-short {
+    display: none;
 }
 
 .masthead__login-btn {
@@ -270,6 +310,38 @@ ul.author__urls li a i {
     background-color: #f8fafc !important;
     border-color: #cbd5e1 !important;
     color: #0f172a !important;
+}
+
+@media (max-width: 640px) {
+    .masthead__inner-wrap {
+        gap: 0.75rem;
+    }
+
+    .site-title__text {
+        display: none;
+    }
+
+    .masthead__actions {
+        gap: 0.75rem;
+    }
+
+    .masthead__links {
+        gap: 0.75rem;
+    }
+
+    .masthead__login-btn {
+        max-width: 9.5rem;
+        padding-left: 0.625rem !important;
+        padding-right: 0.625rem !important;
+    }
+
+    .masthead__login-btn .masthead__link-label {
+        display: none;
+    }
+
+    .masthead__login-btn .masthead__link-label-short {
+        display: inline;
+    }
 }
 
 /* Push page content below the fixed header */
@@ -607,6 +679,212 @@ ul.author__urls li a i {
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
     overflow: hidden;
+}
+
+/* Sidebar: Navigation + Categories block (below social icons) */
+.sidebar-nav-sidebar {
+    margin-top: 2rem;
+    padding: 0 1rem;
+    text-align: left;
+}
+
+.sidebar-nav-sidebar__heading {
+    margin-bottom: 0.5rem;
+    color: #0f172a;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.sidebar-nav-sidebar__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav-sidebar__list--nav {
+    margin-bottom: 2rem;
+}
+
+.sidebar-nav-sidebar__list--nav li {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-nav-sidebar__list--categories li {
+    margin-bottom: 0.25rem;
+}
+
+.sidebar-nav-sidebar__link {
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.sidebar-nav-sidebar__link--muted {
+    color: #475569;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sidebar-nav-sidebar__link--muted i {
+    color: #94a3b8;
+}
+
+.sidebar-nav-sidebar__link--accent {
+    color: #0284c7;
+    font-size: 0.9rem;
+}
+
+.sidebar-nav-sidebar__count {
+    color: #94a3b8;
+    font-size: 0.8rem;
+}
+
+/* Small screens: articles first, sidebar below */
+@media (max-width: 63.99em) {
+    #main {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    #main > .page,
+    #main > .archive {
+        order: 1;
+    }
+
+    #main > .page__related {
+        order: 2;
+    }
+
+    #main > .sidebar {
+        order: 3;
+    }
+
+    .sidebar {
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid #e2e8f0;
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center;
+    }
+
+    /*
+     * Minimal Mistakes (_sidebar.scss): below $large, author uses display:table-cell with
+     * .author__avatar width 36px — a 144px image overflows the cell and paints *under* .author__content.
+     * Force block layout so avatar → bio → links stack (no table row).
+     */
+    .sidebar .h-card {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .sidebar .h-card > * {
+        float: none !important;
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        vertical-align: top !important;
+        /* main.scss sets z-index:10 on all children — avoid paint order hiding the avatar */
+        z-index: auto !important;
+    }
+
+    .sidebar .author__avatar {
+        float: none !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-width: 0 !important;
+        margin: 0 0 1rem !important;
+        padding: 0 !important;
+        clear: both !important;
+        overflow: visible !important;
+    }
+
+    .sidebar .author__avatar > a {
+        display: inline-block;
+    }
+
+    .sidebar .author__content {
+        float: none !important;
+        display: block !important;
+        width: 100% !important;
+        max-width: 36rem;
+        margin: 0 auto !important;
+        margin-top: 0 !important;
+        padding: 0 !important;
+        padding-inline: 0 !important;
+        clear: both !important;
+    }
+
+    .sidebar .author__urls-wrapper {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        vertical-align: top !important;
+        position: relative !important;
+        z-index: auto !important;
+    }
+
+    .sidebar .author__name {
+        text-align: center;
+    }
+
+    .sidebar .author__bio {
+        text-align: center;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    ul.author__urls {
+        justify-content: center !important;
+    }
+
+    /* Navigation | Categories — two columns, centered */
+    .sidebar-nav-sidebar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem 1rem;
+        align-items: start;
+        text-align: center;
+        padding: 0 0.5rem;
+        width: 100%;
+        max-width: 36rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sidebar-nav-sidebar__col {
+        min-width: 0;
+    }
+
+    .sidebar-nav-sidebar__heading {
+        text-align: center;
+    }
+
+    .sidebar-nav-sidebar__list {
+        text-align: center;
+    }
+
+    .sidebar-nav-sidebar__list--nav {
+        margin-bottom: 0;
+    }
+
+    .sidebar-nav-sidebar__link--muted {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .sidebar-nav-sidebar__link--accent {
+        display: inline-block;
+        word-break: break-word;
+    }
 }
 
 /* Fix MM default wide settings */
