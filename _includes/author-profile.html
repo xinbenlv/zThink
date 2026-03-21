@@ -244,33 +244,30 @@
       {% include author-profile-custom-links.html %}
     </ul>
 
-    <!-- Coding Horror Style Links & Categories -->
-    <div style="margin-top: 2rem; text-align: left; padding: 0 1rem;">
-      <h4 style="margin-bottom: 0.5rem; color: #0f172a; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em;">Navigation</h4>
-      <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
-        <li style="margin-bottom: 0.5rem;"><a href="/" style="color: #475569; text-decoration: none; font-weight: 500;"><i class="fas fa-home fa-fw" style="margin-right: 0.5rem; color: #94a3b8;"></i>Home</a></li>
-        <li style="margin-bottom: 0.5rem;"><a href="/posts/" style="color: #475569; text-decoration: none; font-weight: 500;"><i class="fas fa-archive fa-fw" style="margin-right: 0.5rem; color: #94a3b8;"></i>Archives</a></li>
-        <li style="margin-bottom: 0.5rem;"><a href="/categories/" style="color: #475569; text-decoration: none; font-weight: 500;"><i class="fas fa-folder-open fa-fw" style="margin-right: 0.5rem; color: #94a3b8;"></i>Categories</a></li>
-        <li style="margin-bottom: 0.5rem;"><a href="/tags/" style="color: #475569; text-decoration: none; font-weight: 500;"><i class="fas fa-tags fa-fw" style="margin-right: 0.5rem; color: #94a3b8;"></i>Tags</a></li>
-      </ul>
+    <!-- Navigation & categories (two columns on small screens via .sidebar-nav-sidebar) -->
+    <div class="sidebar-nav-sidebar">
+      <div class="sidebar-nav-sidebar__col sidebar-nav-sidebar__col--nav">
+        <h4 class="sidebar-nav-sidebar__heading">Navigation</h4>
+        <ul class="sidebar-nav-sidebar__list sidebar-nav-sidebar__list--nav">
+          <li><a href="{{ '/' | relative_url }}" class="sidebar-nav-sidebar__link sidebar-nav-sidebar__link--muted"><i class="fas fa-home fa-fw" aria-hidden="true"></i>Home</a></li>
+          <li><a href="{{ '/posts/' | relative_url }}" class="sidebar-nav-sidebar__link sidebar-nav-sidebar__link--muted"><i class="fas fa-archive fa-fw" aria-hidden="true"></i>Archives</a></li>
+          <li><a href="{{ '/categories/' | relative_url }}" class="sidebar-nav-sidebar__link sidebar-nav-sidebar__link--muted"><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>Categories</a></li>
+          <li><a href="{{ '/tags/' | relative_url }}" class="sidebar-nav-sidebar__link sidebar-nav-sidebar__link--muted"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>Tags</a></li>
+        </ul>
+      </div>
 
-      <h4 style="margin-bottom: 0.5rem; color: #0f172a; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em;">Categories</h4>
-      <ul style="list-style: none; padding: 0; margin: 0;">
-        {% assign categories_max = 0 %}
-        {% for category in site.categories %}
-          {% if category[1].size > categories_max %}
-            {% assign categories_max = category[1].size %}
-          {% endif %}
-        {% endfor %}
-        
-        {% for category in site.categories %}
-          <li style="margin-bottom: 0.25rem;">
-            <a href="{{ category[0] | slugify | prepend: '/categories/#' | relative_url }}" style="color: #0284c7; text-decoration: none; font-size: 0.9rem;">
-              {{ category[0] }} <span style="color: #94a3b8; font-size: 0.8rem;">({{ category[1].size }})</span>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
+      <div class="sidebar-nav-sidebar__col sidebar-nav-sidebar__col--categories">
+        <h4 class="sidebar-nav-sidebar__heading">Categories</h4>
+        <ul class="sidebar-nav-sidebar__list sidebar-nav-sidebar__list--categories">
+          {% for category in site.categories %}
+            <li>
+              <a href="{{ category[0] | slugify | prepend: '/categories/#' | relative_url }}" class="sidebar-nav-sidebar__link sidebar-nav-sidebar__link--accent">
+                {{ category[0] }} <span class="sidebar-nav-sidebar__count">({{ category[1].size }})</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
   </div>
 </div>

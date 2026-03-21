@@ -1,0 +1,16 @@
+<ul style="list-style: none; padding: 0; margin: 0;">
+{% for post in include.posts %}
+  <li style="margin-bottom: 0.5rem; display: flex; align-items: baseline; gap: 1rem;">
+    <time datetime="{{ post.date | date_to_xmlschema }}" style="color: #64748b; font-family: monospace; font-size: 0.9em; flex-shrink: 0;">
+      {{ post.date | date: "%Y-%m-%d" }}
+    </time>
+    <a href="{{ post.url | relative_url }}" style="font-weight: 500; font-size: 1.05rem;">
+      {% if post.title %}
+        {{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}
+      {% else %}
+        {{ post.excerpt | markdownify | remove: "<p>" | remove: "</p>" | truncatewords: 10 }}
+      {% endif %}
+    </a>
+  </li>
+{% endfor %}
+</ul>
