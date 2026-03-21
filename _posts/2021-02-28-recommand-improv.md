@@ -7,8 +7,6 @@ lang: zh
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
 ---
 
 给朋友们推荐“即兴喜剧”这个爱好

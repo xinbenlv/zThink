@@ -7,8 +7,6 @@ lang: zh
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
 ---
 
 这几个都是付费的视频服务。

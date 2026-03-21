@@ -7,7 +7,6 @@ lang: en
 categories:
   - blog
 tags:
-  - Jekyll
   - idea
   - erc-1202
 ---

@@ -7,8 +7,6 @@ lang: en
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
 ---
 
 ### 读书笔记：《The United States of Europe》 by T.R. Reid

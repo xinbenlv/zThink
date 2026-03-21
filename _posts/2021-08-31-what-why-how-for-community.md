@@ -7,8 +7,6 @@ lang: en
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
 ---
 
 We discuss what, why and how for communities.

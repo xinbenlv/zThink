@@ -7,8 +7,6 @@ lang: zh
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
 ---
 
 2020-04-23 写下的，不太完整，之后想到再随时补充。

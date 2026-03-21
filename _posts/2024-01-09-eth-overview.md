@@ -6,8 +6,6 @@ lang: en
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
   - Ethereum
 status: draft
 ---

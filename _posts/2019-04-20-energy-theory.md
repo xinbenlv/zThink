@@ -6,8 +6,6 @@ lang: zh
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
 ---
 
 本文讨论了将事物按照其对正负能量增减的影响分类分析以及相应对应方式的建议。

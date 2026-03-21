@@ -7,8 +7,6 @@ lang: en
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
 ---
 
 ## Books

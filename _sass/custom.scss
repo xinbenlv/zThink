@@ -523,6 +523,7 @@ ul.author__urls li a i {
 
 .posts-loose-list__thumb-frame {
     display: block;
+    position: relative;
     width: 84px;
     height: 84px;
     overflow: hidden;
@@ -537,6 +538,17 @@ ul.author__urls li a i {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.posts-loose-list__thumb--cropped {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    object-fit: unset;
 }
 
 .posts-loose-list__content {
@@ -567,13 +579,14 @@ ul.author__urls li a i {
     vertical-align: baseline;
     padding: 0.2rem 0.6rem;
     border-radius: 9999px;
-    background-color: #eff6ff;
-    border: 1px solid #bfdbfe;
-    color: #1d4ed8;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    color: #64748b;
     font-size: 0.72rem;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 0.02em;
     text-transform: uppercase;
+    text-decoration: none;
     white-space: nowrap;
 }
 
@@ -614,8 +627,9 @@ ul.author__urls li a i {
     border: 1px solid #e2e8f0;
     color: #64748b;
     font-size: 0.72rem;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.2;
+    text-decoration: none;
     white-space: nowrap;
 }
 

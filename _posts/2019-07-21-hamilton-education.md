@@ -7,8 +7,6 @@ lang: en
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
 ---
 
 *By Zainan Zhou, 2019-07-21*

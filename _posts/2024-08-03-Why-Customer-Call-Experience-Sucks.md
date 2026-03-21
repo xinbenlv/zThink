@@ -7,9 +7,6 @@ lang: en
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
-  - en-US
 ---
 
 ### Why the Customer Call Experience Sucks

@@ -6,9 +6,6 @@ lang: en
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
-  - en-US
 ---
 
 In different cultural contexts and technological conditions, the length of creative works, the way content is distributed, and the scale and growth of businesses are all profoundly influenced by the concept of "overhead." Whether it's the duration of a theater production, the distribution method of music, or the operational costs of a business, this concept plays a crucial role across various fields. This article explores these impacts and considers the potential changes that blockchain technology could bring.

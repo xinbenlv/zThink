@@ -6,7 +6,6 @@ lang: en
 categories:
   - blog
 tags:
-  - en-US
   - idea
 ---
 ## Idea: Decentralizing Trust in Emails, Codename TrustInMail

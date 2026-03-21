@@ -7,9 +7,6 @@ lang: en
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
-  - en-US
 ---
 
 In the past, we were accustomed to writing with a pen in hand, which felt like walking barefoot on the ground. Although slow, each step was steady and real. As technology advanced, typing replaced handwriting, and it was as if we had put on shoes, making our strides much lighter. Though we lost the direct contact with the earth, we reached our destinations much faster.

@@ -7,9 +7,6 @@ lang: en
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
-  - en-US
 ---
 
 # Why International Flights Often Require Manual Check-In

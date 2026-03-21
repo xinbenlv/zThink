@@ -7,8 +7,6 @@ lang: en
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
 ---
 
 By <span class="GINGER_SOFTWARE_mark" id="18c826de-f1bc-4226-9c97-cf28ed136b63">Zainan Victor Zhou</span> 2013-11-19

@@ -6,10 +6,7 @@ lang: en
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
   - startup-notes
-  - en-US
   - orange-dao
 ---
 

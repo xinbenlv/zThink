@@ -1,0 +1,40 @@
+---
+layout: archive
+---
+{%- assign locale = page.locale | default: layout.locale | default: site.locale %}
+
+{{ content }}
+
+{% assign sorted_categories = site.categories | sort %}
+
+<ul class="taxonomy__index">
+  {% for category in sorted_categories %}
+    {% assign cat_posts = category[1] | where_exp: "item", "item.hidden != true" %}
+    {% if page.filter_lang %}
+      {% assign cat_posts = cat_posts | where: "lang", page.filter_lang %}
+    {% endif %}
+    {% if cat_posts.size > 0 %}
+    <li>
+      <a href="#{{ category[0] | slugify }}">
+        <strong>{{ category[0] }}</strong> <span class="taxonomy__count">{{ cat_posts.size }}</span>
+      </a>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+{% for category in sorted_categories %}
+  {% assign cat_posts = category[1] | where_exp: "item", "item.hidden != true" %}
+  {% if page.filter_lang %}
+    {% assign cat_posts = cat_posts | where: "lang", page.filter_lang %}
+  {% endif %}
+  {% if cat_posts.size > 0 %}
+  <section id="{{ category[0] | slugify }}" class="taxonomy__section">
+    <h2 class="archive__subtitle">{{ category[0] }}</h2>
+    <div class="entries-dense">
+      {% include posts-dense-list.html posts=cat_posts %}
+    </div>
+    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+  </section>
+  {% endif %}
+{% endfor %}

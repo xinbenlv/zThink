@@ -7,8 +7,6 @@ lang: zh
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
 ---
 
 2010年末到2011年年初烽烟四起

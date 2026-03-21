@@ -7,8 +7,6 @@ lang: en
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
 ---
 This is the first and always going to be the first article for my publication.
 I am going to write about why I write and what I am going to write about.

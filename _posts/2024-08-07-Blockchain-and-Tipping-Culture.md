@@ -7,9 +7,6 @@ lang: en
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
-  - en-US
 ---
 
 ### Blockchain and Tipping Culture

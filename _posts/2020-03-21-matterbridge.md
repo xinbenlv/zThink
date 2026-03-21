@@ -4,11 +4,14 @@ title: "3min connect Slack and Discord with matterbridge"
 excerpt: "A quick guide to bridging Slack and Discord channels using matterbridge with Docker in just 3 minutes."
 date: 2020-03-21T14:41:00-08:00
 lang: en
+cover_image:
+  src: http://blog.zzn.im/wp-content/uploads/2020/03/2020-03-21_14-09-45-300x61.png
+  x: 119
+  y: 0
+  size: 61
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
 ---
 
 In our case, we want to have a bridge to connect channels between Slack and Discord.

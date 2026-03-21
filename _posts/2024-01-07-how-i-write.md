@@ -7,8 +7,6 @@ lang: en
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
 ---
 This site you are reading is my public blog and study notes. To understand why I publish my blog posts, essays or notes, read [Why I Write](https://b.zzn.im/blog/why-i-write/). This article describe how I write, and it's intended to be a live essay meaning it will be updated from time to time. Please feel free to come over and check for update.
 
