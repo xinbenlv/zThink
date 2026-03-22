@@ -2,6 +2,7 @@
 title: "Referral Links"
 permalink: /refer/
 sitemap: false
+excerpt: "Referral links for products and services Victor Zhou personally uses."
 ---
 
 Here is a list of referral links of things I am using and personally like.

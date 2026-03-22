@@ -1,5 +1,103 @@
+{% assign seo_title = page.title | default: site.title %}
+{% assign seo_description = page.excerpt | default: page.description | default: site.description | markdownify | strip_html | normalize_whitespace | strip %}
+{% assign seo_locale = page.locale | default: site.locale | default: "en_US" %}
+{% assign seo_lang = page.lang | default: page.filter_lang | default: page.locale | default: "en" %}
+{% assign site_root = site.url | append: site.baseurl %}
+{% assign canonical_url = site_root | append: page.url %}
+{% assign seo_type = "website" %}
+{% assign schema_type = "WebPage" %}
+{% if page.collection == "posts" or page.layout == "single" and page.date %}
+  {% assign seo_type = "article" %}
+  {% assign schema_type = "BlogPosting" %}
+{% elsif page.layout == "home" or paginator %}
+  {% assign schema_type = "CollectionPage" %}
+{% endif %}
+
+{% assign seo_image = page.image | default: page.header.image | default: page.cover_image.src | default: site.logo | default: site.author.avatar %}
+{% if seo_image %}
+  {% assign seo_image_url = site_root | append: seo_image %}
+{% endif %}
+{% assign twitter_card = "summary" %}
+{% if page.cover_image.src or page.image or page.header.image %}
+  {% assign twitter_card = "summary_large_image" %}
+{% endif %}
+
+<link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/favicon-16x16.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon-32x32.png' | relative_url }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="512x512" href="{{ '/assets/images/favicon-512x512.png' | relative_url }}">
+
+{% if seo_image_url %}
+<meta property="og:image" content="{{ seo_image_url }}">
+<meta property="og:image:secure_url" content="{{ seo_image_url }}">
+<meta name="twitter:image" content="{{ seo_image_url }}">
+{% endif %}
+<meta name="twitter:card" content="{{ twitter_card }}">
+{% if site.twitter_username %}
+<meta name="twitter:site" content="@{{ site.twitter_username | replace: '@', '' }}">
+<meta name="twitter:creator" content="@{{ site.twitter_username | replace: '@', '' }}">
+{% endif %}
+<meta name="twitter:title" content="{{ seo_title | escape_once }}">
+<meta name="twitter:description" content="{{ seo_description | escape_once }}">
+
 <link rel="preload" href="{{ '/assets/fonts/inter-400.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ '/assets/fonts/inter-700.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 {% if page.author_profile %}
 <link rel="preload" href="{{ site.author.avatar | relative_url }}" as="image">
 {% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ site_root }}#person",
+  "name": {{ site.author.name | jsonify }},
+  "url": {{ site_root | jsonify }},
+  "description": {{ site.author.bio | jsonify }},
+  "image": {{ site_root | append: site.author.avatar | jsonify }},
+  "sameAs": [{% for link in site.social.links %}{{ link | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "{{ site_root }}#website",
+  "url": {{ site_root | jsonify }},
+  "name": {{ site.title | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "inLanguage": {{ site.locale | default: 'en_US' | jsonify }},
+  "publisher": {
+    "@id": "{{ site_root }}#person"
+  },
+  "image": {{ site_root | append: site.logo | jsonify }}
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": {{ schema_type | jsonify }},
+  "@id": {{ canonical_url | append: "#webpage" | jsonify }},
+  "url": {{ canonical_url | jsonify }},
+  "name": {{ seo_title | jsonify }},
+  "headline": {{ seo_title | jsonify }},
+  "description": {{ seo_description | jsonify }},
+  "inLanguage": {{ seo_lang | jsonify }},
+  "isPartOf": {
+    "@id": "{{ site_root }}#website"
+  },
+  "author": {
+    "@id": "{{ site_root }}#person"
+  },
+  "publisher": {
+    "@id": "{{ site_root }}#person"
+  }{% if seo_image_url %},
+  "image": {{ seo_image_url | jsonify }}
+  {% endif %}{% if page.date %},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }}
+  {% endif %}
+}
+</script>
