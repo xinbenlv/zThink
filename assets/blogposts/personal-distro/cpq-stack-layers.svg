@@ -1,0 +1,32 @@
+<svg width="1200" height="860" viewBox="0 0 1200 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="860" fill="#0F172A"/>
+  <text x="60" y="80" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">CPQ stack layers</text>
+  <text x="60" y="116" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="20">A personal distro should look like a structured stack, not a random blob of commits.</text>
+
+  <rect x="170" y="180" width="860" height="90" rx="20" fill="#3F2A07" stroke="#FBBF24" stroke-width="2"/>
+  <text x="205" y="226" fill="#FEF3C7" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">cpq-base</text>
+  <text x="205" y="255" fill="#FDE68A" font-family="Inter, Arial, sans-serif" font-size="18">Pinned upstream anchor commit or tag</text>
+
+  <rect x="170" y="290" width="860" height="100" rx="20" fill="#1E3A8A" stroke="#60A5FA" stroke-width="2"/>
+  <text x="205" y="340" fill="#DBEAFE" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">cpq-cornerstone</text>
+  <text x="205" y="370" fill="#BFDBFE" font-family="Inter, Arial, sans-serif" font-size="18">Downstream identity: policy, brand, foundational local rules</text>
+
+  <rect x="170" y="410" width="860" height="250" rx="22" fill="#111827" stroke="#475569" stroke-width="2"/>
+  <text x="205" y="458" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">cpq-body</text>
+  <text x="205" y="488" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="18">The main carried patch mass</text>
+
+  <rect x="240" y="520" width="360" height="100" rx="18" fill="#3F1D2E" stroke="#F472B6" stroke-width="2"/>
+  <text x="270" y="565" fill="#FCE7F3" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">cpq-fix-patches</text>
+  <text x="270" y="595" fill="#FBCFE8" font-family="Inter, Arial, sans-serif" font-size="18">Apply test-fix first, then function-fix</text>
+
+  <rect x="640" y="520" width="320" height="100" rx="18" fill="#064E3B" stroke="#34D399" stroke-width="2"/>
+  <text x="670" y="565" fill="#D1FAE5" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">cpq-feat-patches</text>
+  <text x="670" y="595" fill="#A7F3D0" font-family="Inter, Arial, sans-serif" font-size="18">Distro-specific feature deltas</text>
+
+  <rect x="170" y="680" width="860" height="100" rx="20" fill="#4A044E" stroke="#E879F9" stroke-width="2"/>
+  <text x="205" y="728" fill="#FAE8FF" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">cpq-capstone</text>
+  <text x="205" y="758" fill="#F5D0FE" font-family="Inter, Arial, sans-serif" font-size="18">Regenerated metadata and release-state snapshot commit</text>
+
+  <text x="786" y="728" fill="#FAE8FF" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">Finalized state:</text>
+  <text x="786" y="758" fill="#F5D0FE" font-family="Inter, Arial, sans-serif" font-size="20">cpq-head → cpq-capstone</text>
+</svg>
