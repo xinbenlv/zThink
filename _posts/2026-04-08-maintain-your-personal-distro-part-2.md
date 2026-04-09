@@ -1,5 +1,5 @@
 ---
-title: "Maintain Your Personal Distro — Part 2: The How"
+title: "Maintain Your Personal Distro — Part 2: The How (revised)"
 excerpt: "A technical deep-dive into why Carried Patch Queue (CPQ) is the gold standard for individuals maintaining their own software stacks in 2026 — and why the old ways of managing downstreams will eventually kill your project."
 date: 2026-04-08
 lang: en
@@ -17,7 +17,7 @@ tags:
 
 > Software is not a building. It is a living organism. Buildings get renovated; organisms must continuously metabolize or die.
 
-In [Part 1](/blog/2026/04/08/maintain-your-personal-distro.html), I argued that maintaining a personal distro is now feasible for a single person with AI assistance. That was the "Why."
+In [Part 1](/blog/2026/04/07/maintain-your-personal-distro.html), I argued that maintaining a personal distro is now feasible for a single person with AI assistance. That was the "Why."
 
 This is the "How." And the "How" has a name: **Carried Patch Queue**, or CPQ.
 
