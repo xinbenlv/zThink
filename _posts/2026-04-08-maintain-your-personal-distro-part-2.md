@@ -135,7 +135,7 @@ If you're going to do this, do it right:
 
 ![CPQ naming map](/assets/blogposts/personal-distro/cpq-naming-map.jpg)
 
-4. **Structure the stack.** In a healthy personal distro, the stack is not just a blob of commits. It has layers: `cpq-cornerstone`, then `cpq-body`, then `cpq-capstone`. The cornerstone is your downstream identity — policy, branding, and foundational local rules. The body is the real patch mass: `cpq-fix-patches` first (test-fix before function-fix), then `cpq-feat-patches`. The capstone is a regenerated metadata and release-state snapshot commit. In finalized state, `cpq-head` points to `cpq-capstone`.
+4. **Structure the stack.** In a healthy personal distro, the stack is not just a blob of commits. It has layers: `cpq-cornerstone`, then `cpq-body`, then `cpq-capstone`. The cornerstone is your downstream identity — policy, branding, and foundational local rules. The body is the main carried patch set: `cpq-fix-patches` first (test fixes before functional fixes), then `cpq-feat-patches`. The capstone is a regenerated metadata and release-state snapshot commit. In finalized state, `cpq-head` points to `cpq-capstone`.
 
 ![CPQ stack layers](/assets/blogposts/personal-distro/cpq-stack-layers.jpg)
 
