@@ -131,13 +131,15 @@ If you're going to do this, do it right:
 
 2. **Atomic commits.** Each carried patch does one thing. One bug fix. One default change. One feature addition. If you can't describe the patch in one sentence, split it. This is [why OpenShift requires atomicity](https://github.com/openshift/kubernetes/blob/master/REBASE.openshift.md) in their carry patches — it's not pedantry, it's survival.
 
-3. **The `pa-main` convention.** Maintain a branch (I call mine `pa-main`) that equals `<latest-upstream-release-tag>` + your patches rebased linearly on top. This branch is your product. Push it to your fork's remote. It is always deployable, always reviewable, always bisectable.
+3. **Use explicit CPQ names, not vibes.** Your downstream should have a named `upstream-main`, a named `local-main`, and a named `distro-main`. More importantly, your carried stack should have a named `cpq-base` and a named `cpq-head`. `cpq-base` is the upstream anchor you are rebasing onto. `cpq-head` is a pointer to the top of the current carried stack.
 
-4. **Shadow Sync.** Set up CI (GitHub Actions, a cron job, whatever) that periodically attempts `git fetch upstream --tags && git rebase --onto <new-tag> <old-base> pa-main`. If it succeeds, you're green. If it fails, you get an early warning instead of a surprise at the worst possible time.
+4. **Structure the stack.** In a healthy personal distro, the stack is not just a blob of commits. It has layers: `cpq-cornerstone`, then `cpq-body`, then `cpq-capstone`. The cornerstone is your downstream identity — policy, branding, and foundational local rules. The body is the real patch mass: `cpq-fix-patches` first (test-fix before function-fix), then `cpq-feat-patches`. The capstone is a regenerated metadata and release-state snapshot commit. In finalized state, `cpq-head` points to `cpq-capstone`.
 
-5. **Patch ledger in commit messages.** Each carried commit's message should note: upstream status (merged/proposed/permanent), why it's carried, and drop condition (e.g., "drop when upstream ships v3.2"). This is your memory. Without it, you'll be afraid to drop patches, and fear of dropping patches is how downstreams get fat and stupid.
+5. **Shadow Sync.** Set up CI (GitHub Actions, a cron job, whatever) that periodically attempts to move from the current `cpq-base` to a newer upstream tag or commit and replay the carried stack. If it succeeds, you're green. If it fails, you get an early warning instead of a surprise at the worst possible time.
 
-6. **Upstream aggressively.** Every patch you carry is a liability. File PRs upstream. If they merge, drop the carry. The best patch queue is a short one.
+6. **Patch ledger in commit messages and metadata.** Each carried commit's message should note: upstream status (merged/proposed/permanent), why it's carried, and drop condition (e.g., "drop when upstream ships v3.2"). Then your capstone metadata should record the current patch-to-commit mapping after each rebase. This is your memory. Without it, you'll be afraid to drop patches, and fear of dropping patches is how downstreams get fat and stupid.
+
+7. **Upstream aggressively.** Every patch you carry is a liability. File PRs upstream. If they merge, drop the carry. The best patch queue is a short one.
 
 ---
 
@@ -147,11 +149,11 @@ I'm putting my money where my mouth is.
 
 I'm applying this CPQ model to my own projects right now:
 
-- **[OpenClaw](https://github.com/nicholasfleming/openclaw)**: A downstream of an open-source CLI tool where I carry patches for my own workflow defaults and bug fixes that upstream hasn't merged yet. Each fix lives on its own topic branch, filed as a separate PR upstream. `pa-main` is the union of all carried patches.
+- **[OpenClaw](https://github.com/nicholasfleming/openclaw)**: A downstream of an open-source CLI tool where I carry patches for my own workflow defaults and bug fixes that upstream hasn't merged yet. Each fix lives on its own topic branch, filed as a separate PR upstream. `local-main` is my local realization of `cpq-head`.
 
 - **Hermes**: My personal downstream of a messaging tool, carrying patches for notification defaults, UI tweaks, and integration hooks that are too opinionated for upstream.
 
-Both use the `pa-main` convention. Both rebase on every upstream release. Both have shadow sync CI that tells me when upstream has moved. And both are maintained by one person — me — with an AI agent handling the mechanical rebasing.
+Both use an explicit CPQ model: a named `cpq-base`, a structured carried stack, and a `cpq-head` that points at the finalized state. Both rebase on every upstream release. Both have shadow sync CI that tells me when upstream has moved. And both are maintained by one person — me — with an AI agent handling the mechanical rebasing.
 
 It's early. I'll report back.
 
