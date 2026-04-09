@@ -17,7 +17,7 @@ tags:
 
 > Software is not a building. It is a living organism. Buildings get renovated; organisms must continuously metabolize or die.
 
-In [Part 1](/blog/2026/04/07/maintain-your-personal-distro.html), I argued that maintaining a personal distro is now feasible for a single person with AI assistance. That was the "Why."
+In [Part 1](/blog/maintain-your-personal-distro/), I argued that maintaining a personal distro is now feasible for a single person with AI assistance. That was the "Why."
 
 This is the "How." And the "How" has a name: **Carried Patch Queue**, or CPQ.
 
