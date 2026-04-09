@@ -3,6 +3,7 @@ title: "Maintain Your Personal Distro — Part 2: The How (revised)"
 excerpt: "A technical deep-dive into why Carried Patch Queue (CPQ) is the gold standard for individuals maintaining their own software stacks in 2026 — and why the old ways of managing downstreams will eventually kill your project."
 date: 2026-04-08
 lang: en
+og_image: /assets/blogposts/personal-distro/cpq-naming-map.jpg
 categories:
   - blog
 tags:

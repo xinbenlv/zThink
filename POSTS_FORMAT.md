@@ -40,6 +40,8 @@ Notes:
 - Prefer the largest useful square from an existing article image.
 - For local assets, prefer paths under `/assets/...`.
 - If `cover_image` is absent, the home page falls back to an identicon generated from the post title.
+- If a post has a strong illustration image, set `og_image` (or `cover_image`) to that local asset so social cards use it.
+- Posts with `og_image` / `cover_image` automatically get large-image social cards (`summary_large_image`) in the parent site.
 
 ## Example
 
