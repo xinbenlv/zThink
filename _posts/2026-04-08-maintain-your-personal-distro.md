@@ -1,5 +1,5 @@
 ---
-title: "Maintain Your Personal Distro"
+title: "Maintain Your Personal Distro — Part 1: The Why"
 excerpt: "It is now possible for each person to maintain their own personal distro with AI: a fast-moving, opinionated downstream version of software that continuously rebases on upstream while preserving your own defaults, workflows, and carried patches."
 date: 2026-04-08
 lang: en
