@@ -133,11 +133,11 @@ If you're going to do this, do it right:
 
 3. **Use explicit CPQ names, not vibes.** Your downstream should have a named `upstream-main`, a named `local-main`, and a named `distro-main`. More importantly, your carried stack should have a named `cpq-base` and a named `cpq-head`. `cpq-base` is the upstream anchor you are rebasing onto. `cpq-head` is a pointer to the top of the current carried stack.
 
-![CPQ naming map](/assets/blogposts/personal-distro/cpq-naming-map.svg)
+![CPQ naming map](/assets/blogposts/personal-distro/cpq-naming-map.jpg)
 
 4. **Structure the stack.** In a healthy personal distro, the stack is not just a blob of commits. It has layers: `cpq-cornerstone`, then `cpq-body`, then `cpq-capstone`. The cornerstone is your downstream identity — policy, branding, and foundational local rules. The body is the real patch mass: `cpq-fix-patches` first (test-fix before function-fix), then `cpq-feat-patches`. The capstone is a regenerated metadata and release-state snapshot commit. In finalized state, `cpq-head` points to `cpq-capstone`.
 
-![CPQ stack layers](/assets/blogposts/personal-distro/cpq-stack-layers.svg)
+![CPQ stack layers](/assets/blogposts/personal-distro/cpq-stack-layers.jpg)
 
 5. **Shadow Sync.** Set up CI (GitHub Actions, a cron job, whatever) that periodically attempts to move from the current `cpq-base` to a newer upstream tag or commit and replay the carried stack. If it succeeds, you're green. If it fails, you get an early warning instead of a surprise at the worst possible time.
 
