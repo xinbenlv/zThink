@@ -3,6 +3,9 @@ title: "A Proposal for Common Sense Reform of Section 230: Reciprocal Choice"
 excerpt: "Your decision, your responsibility. Not your responsibility, not your decision to make. A common-sense framework for rethinking platform liability by tying responsibility to the specific decisions platforms actually make."
 date: 2026-05-25
 lang: en
+cover_image:
+  src: /assets/blogposts/2026-05-25-reciprocal-choice-section-230/cover.png
+og_image: /assets/blogposts/2026-05-25-reciprocal-choice-section-230/cover.png
 categories:
   - blog
 tags:
