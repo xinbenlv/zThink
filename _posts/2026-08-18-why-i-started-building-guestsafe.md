@@ -5,11 +5,11 @@ date: 2026-08-18
 lang: en
 published: true
 cover_image:
-  src: /assets/blogposts/2026-08-18-why-i-started-building-guestsafe/guestsafe-origin-og-en-v2.jpg
-  x: 285
+  src: /assets/blogposts/2026-08-18-why-i-started-building-guestsafe/guestsafe-origin-og-1200x630.jpg
+  x: 0
   y: 0
   size: 630
-og_image: /assets/blogposts/2026-08-18-why-i-started-building-guestsafe/guestsafe-origin-og-en-v2.jpg
+og_image: /assets/blogposts/2026-08-18-why-i-started-building-guestsafe/guestsafe-origin-og-1200x630.jpg
 categories:
   - blog
 tags:
