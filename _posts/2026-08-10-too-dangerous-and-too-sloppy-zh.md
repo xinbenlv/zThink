@@ -70,7 +70,7 @@ tags:
 
 > [*Est virgo hec penna, meretrix est stampificata.*](#ref-strata-title-quote)
 >
-> [常见英译](#ref-chartier-writing)：**“The pen is a virgin; the printing press a whore.”**
+> 通常在[英文里被译为](#ref-chartier-writing)：**“The pen is a virgin; the printing press a whore.”**
 
 这里保留原话，不是认同它的性别秩序，而是让它作为一件历史原物呈现在读者面前：手写被塑造成纯洁而克制，印刷则被描绘成逐利而无度。
 
