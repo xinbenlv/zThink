@@ -1,5 +1,5 @@
 ---
-title: "笔是 Virgin，印刷机是 Whore——AI 之毁誉似曾相识"
+title: "翰墨贞洁、铅梓荒淫"
 excerpt: "五百年前，印刷术也曾同时被指控危险而粗劣；它留下的答案不是封死生产工具，而是让验证也变得便宜。"
 date: 2026-08-10
 lang: zh
@@ -34,7 +34,7 @@ tags:
 
 前几天，我以一种不太舒服的方式，看见同一套机制在 AI 时代重演。
 
-我在英文维基百科创建了一篇题为《“容易取消”规定》（*Easy-to-cancel mandate*）的条目，讨论一类要求“取消订阅必须像开通订阅一样容易”的法律。后来，这篇条目被提交到维基百科的 [人工智能公告板（AI noticeboard）](#ref-wikipedia-ai-noticeboard)。编辑们怀疑我借助了 AI 起草，事实也确实如此。其中一位编辑核对引用时发现了一处真正的错误：条目把一项“两步取消”的要求归到了研究者头上，但那篇论文其实只是在测试企业有没有遵守法律。
+我在英文维基百科创建了一篇题为《“容易取消”规定》（*Easy-to-cancel mandate*）的条目，讨论一类要求“取消订阅必须像开通订阅一样容易”的法律。后来，这篇条目被提交到维基百科的 [人工智能公告板（AI noticeboard）](#ref-wikipedia-ai-noticeboard)。编辑们怀疑我借助了 AI 起草，事实也确实如此。其中一位编辑核对引用时发现了一处措辞上的瑕疵：稿件中某项“两步取消”要求本来已由德国法律确立，我的写法却可能让人误以为，那是研究者自行设定的测试标准。
 
 我本来就无意隐瞒——甚至觉得，到了 2026 年，写作时使用 AI 辅助，难道不已经是默认了吗？作为软件工程师，我的工作流早已从自动补全（auto-complete），逐步走到让 AI 修正语法和拼写、重构代码、生成单个文件与测试；到 2023—2025 年，它已经参与我大部分代码库的生成和新项目的规划。
 
@@ -64,7 +64,15 @@ tags:
 
 《古腾堡圣经》很可能在 [1455 年末](#ref-loc-gutenberg-bible)于今德国美因茨完成。到 1500 年，欧洲已有[约 250 个地点出现印刷作坊](#ref-dnb-printing-spread)。我们今天熟悉的两种抱怨——危险与劣化——很早就出现了，只是它们并非来自同一个阵营，也不是在同一时刻整齐登场。
 
-关于“垃圾内容”的抱怨，听上去几乎就是今天的原话。15 世纪末，在今意大利威尼斯，多明我会修士斯特拉塔（Filippo di Strata）攻击印刷术。他用了一个带有强烈性别意味的比喻，常见英译是：**“The pen is a virgin; the printing press a whore.”** 这里保留原话，不是认同它的性别秩序，而是让它作为一件历史原物呈现在读者面前：手写被塑造成纯洁而克制，印刷则被描绘成逐利而无度。
+关于“垃圾内容”的抱怨，听上去几乎就是今天的原话。15 世纪末，在今意大利威尼斯，[天主教道明会（亦称多明我会；正式名“宣道会”，拉丁文 *Ordo Praedicatorum*，简称 O.P.）](#ref-dominican-order-name)修士兼抄写员斯特拉塔（Filippo da Strada；文献中亦作 Filippo di Strata 或 Filippo de Strata）批评印刷术。
+
+1473 年 8 月，尼科洛·马尔切洛（Nicolò Marcello）当选威尼斯总督。此后不久，斯特拉塔向他呈上一部手抄的《黄金传奇》（*Legenda aurea*）意大利文译本，并在卷首附上一篇拉丁诗，请求禁止在威尼斯从事印刷业。这不是一句孤立的辱骂：他把印刷商比作伪币制造者，指责他们为了利润生产错漏与淫秽作品、败坏青年，也担心抄写员因此失去生计。题目所化用的那句话，就出自[这首呈给总督的诗](#ref-strata-title-quote)：
+
+> [*Est virgo hec penna, meretrix est stampificata.*](#ref-strata-title-quote)
+>
+> [常见英译](#ref-chartier-writing)：**“The pen is a virgin; the printing press a whore.”**
+
+这里保留原话，不是认同它的性别秩序，而是让它作为一件历史原物呈现在读者面前：手写被塑造成纯洁而克制，印刷则被描绘成逐利而无度。
 
 他的论点不只是印刷术力量太大。他说，为逐利而仓促赶工的版本会败坏文本；不道德和异端作品会逃出教会控制；知识落到他认为没有资格的读者手中，也会因此贬值。历史学家夏蒂埃（Roger Chartier）在[《书写的实际影响》（*The Practical Impact of Writing*）](#ref-chartier-writing)中概括了这套指控（PDF 第 6 页；原书第 123 页）。
 
@@ -102,9 +110,17 @@ tags:
 
 威尼斯出版家马努提乌斯（Aldus Manutius）提供了最好的象征。他的印刷所推动了斜体字和小开本古典作品的流行。竞争者——尤其是法国里昂的印刷商——制作了[冒牌的阿尔丁版图书](#ref-cambridge-manutius-counterfeits)，有时连他的海豚与锚标志也一并照抄。
 
+这个标志并非单纯的装饰：它把一本书与马努提乌斯的印刷所和校勘声誉联系起来，帮助买家辨认来源。用今天的话说，它确实近似商标；耶鲁法学院图书馆称这类印刷商标志为[“一种商标”](#ref-yale-printers-devices-function)，既是营销工具，也像一则版权声明。
+
 1503 年，马努提乌斯公开发出警告。他列出正版与仿本之间的差异，还附上[一张排印错误清单](#ref-manutius-warning)，让买家可以据此识别赝品。标志本身并非证明——盗版商也能复制——但标志、具名印刷商和可以复核的差异放在一起，构成了一套原始的验证系统。
 
 马努提乌斯并没有发明出版品牌。已知最早的印刷商标志出现在 [1457 年的《美因茨诗篇》](#ref-yale-printers-devices)，比他的警告早了几十年。他真正做到的，是让学术校勘、视觉身份和公开防伪互相加强。
+
+但不能因此把十五世纪写成一个完全没有版权或商标观念的世界。马努提乌斯已经持有威尼斯授予的印刷特许；问题在于，这些权利不是自动产生、普遍适用的财产权，而是政府逐案授予、受期限、对象和疆域限制的垄断。威尼斯早在 [1469 年授予第一项印刷垄断特许，1486 年又出现已知第一项直接授予作者的特许](#ref-sabellico-privilege)。里昂处在威尼斯管辖之外，那里的印刷商并不受[威尼斯元老院授予马努提乌斯的特许](#ref-cambridge-manutius-counterfeits)约束。海豚与锚可以告诉读者“这是谁的书”，却还没有一套稳定而跨境的法律机制阻止别人冒用。
+
+1710 年的《安妮法令》（*Statute of Anne*）通常被视为[世界第一部版权成文法](#ref-statute-anne)。它不是把版权从无到有地发明出来，而是把此前零散的印刷特许、行会规则和书商惯例，推进成具有一般适用性和固定期限的法律。商标也走过相似的道路：商人和印刷商很早就在使用来源标记，现代的全国商标注册制度却要到十九世纪才逐渐形成；法国在 1857 年建立存放制度，英国则由 [1875 年《商标注册法》建立全国统一的注册簿](#ref-modern-trademark-registration)。
+
+所以，更准确的历史因果并不是“先有盗版，后来才发明版权和商标”，而是：**来源标记和有限的排他权已经出现，跨境市场却跑得比统一的权利和执法更快。**
 
 故事另一端也需要同样的校正。1665 年，奥尔登堡（Henry Oldenburg）创办《皇家学会哲学汇刊》（*Philosophical Transactions*），由此建立了一份长寿的科学期刊；现代同行评审并不是在这一刻凭空完成的。皇家学会到 1752 年才引入委员会集体遴选，到 [19 世纪 30 年代才采用更系统的专家同行评审](#ref-royal-society-philosophical-transactions)。从古腾堡到科学期刊，大约用了两个世纪；到系统化的专家评审，则接近四个世纪。
 
@@ -149,7 +165,9 @@ tags:
 - <span id="ref-xiaohongshu-ai-governance"></span>新浪科技 — 原始来源：[小红书发布 AI 治理规则公告](https://finance.sina.com.cn/2026-04-27/doc-inhvxtre9124679.shtml#:~:text=AI低质：套用模板批量生产同质化内容)。原文：“平台欢迎创作者以AI为创意工具，提升内容质量与信息价值”；违规行为可被“限制分发、封禁账号” — fetched [2026-08-20](https://web.archive.org/web/20260818000000/https://finance.sina.com.cn/2026-04-27/doc-inhvxtre9124679.shtml)
 - <span id="ref-loc-gutenberg-bible"></span>美国国会图书馆 — 原始来源：[The Gutenberg Bible](https://www.loc.gov/exhibits/bibles/the-gutenberg-bible.html#:~:text=The%20printing%20of%20the%20Bible%20was%20probably%20completed%20late%20in%201455) — fetched [2026-08-20](https://web.archive.org/web/20260817234136/https://www.loc.gov/exhibits/bibles/the-gutenberg-bible.html)
 - <span id="ref-dnb-printing-spread"></span>德国书籍与文字博物馆 — 原始来源：[Spread of printing](https://mediengeschichte.dnb.de/DBSMZBN/Content/EN/Printing/04-ausbreitung-des-buchdrucks-en.html#:~:text=By%201500%20printing%20offizins%20had%20emerged%20at%20around%20250%20locations) — fetched [2026-08-20](https://web.archive.org/web/20260817234356/https://mediengeschichte.dnb.de/DBSMZBN/Content/EN/Printing/04-ausbreitung-des-buchdrucks-en.html)
-- <span id="ref-chartier-writing"></span>Roger Chartier — 原始来源：[“The Practical Impact of Writing”](https://users.manchester.edu/Facstaff/SSNaragon/Online/LP/Readings/11-Chartier%2C%20Practical%20Impact%20of%20Writing%20%28abridged%29.pdf#page=6)，PDF 第 6 页；原书第 123 页。原文：“texts, which were circulated in hastily manufactured, faulty editions composed solely for profit.” — fetched [2026-08-20](https://web.archive.org/web/20260817234425/https://users.manchester.edu/Facstaff/SSNaragon/Online/LP/Readings/11-Chartier%2C%20Practical%20Impact%20of%20Writing%20%28abridged%29.pdf)
+- <span id="ref-dominican-order-name"></span>何雅钦，《公教报》（天主教香港教区周报）— 原始来源：[《道明会的神恩（上）》](https://kkp.org.hk/past/detail/51094/#:~:text=%E8%81%96%E9%81%93%E6%98%8E%E6%89%80%E5%89%B5%E7%AB%8B%E7%9A%84%E3%80%8C%E9%81%93%E6%98%8E%E6%9C%83%E3%80%8D%E5%8F%88%E5%8F%AF%E8%AD%AF%E7%82%BA%E3%80%8C%E5%A4%9A%E6%98%8E%E6%88%91%E6%9C%83%E3%80%8D)，文中说明“道明会”亦译“多明我会”，正式名称为“宣道会”（*Ordo Praedicatorum*，O.P.）— fetched [2026-08-20](https://web.archive.org/web/20260820192205/https://kkp.org.hk/past/detail/51094/)
+- <span id="ref-strata-title-quote"></span>佩特雷拉（Giancarlo Petrella）— 原始来源：[“Domenicani contro l’arte della stampa: Non comprate quei libri!”](https://bibliotecadiviasenato.it/wp-content/uploads/BVS_N12_DICEMBRE_2022-web_abbass.pdf#page=30)，载 *la Biblioteca di via Senato Milano*，2022 年 12 月。身份、呈递背景见 PDF 第 29 页（刊物第 27 页，约全文 27%）；禁印请求与引文见 PDF 第 30 页（刊物第 28 页，约全文 28%）。该文将文本定位为威尼斯马尔恰纳国家图书馆（Biblioteca Nazionale Marciana）手稿 It. I 72，原文：“Est virgo hec penna, meretrix est stampificata.” — fetched [2026-08-20](https://web.archive.org/web/20230209030303/https://bibliotecadiviasenato.it/wp-content/uploads/BVS_N12_DICEMBRE_2022-web_abbass.pdf)。另见菊池（Catherine Kikuchi）的[手稿书目信息与异文](https://arche.unistra.fr/websites/arche/Productions/Publications/Source_s/Numeros_et_couvertures/sources_13_web.pdf#page=24)，PDF 第 24 页（刊物第 23 页，约全文 11%），定位至 Marciana, Mss. Italiani, cl. I, cod. 72, n° 5054, fol. 2r，并转写作 “meretrix que est stampificata” — fetched [2026-08-20](https://web.archive.org/web/20260820192504/https://arche.unistra.fr/websites/arche/Productions/Publications/Source_s/Numeros_et_couvertures/sources_13_web.pdf)
+- <span id="ref-chartier-writing"></span>夏蒂埃（Roger Chartier）— 原始来源：[“The Practical Impact of Writing”](https://users.manchester.edu/Facstaff/SSNaragon/Online/LP/Readings/11-Chartier%2C%20Practical%20Impact%20of%20Writing%20%28abridged%29.pdf#page=6)，PDF 第 6 页；原书第 123 页。原文：“The pen is a virgin, the printing press a whore”；“texts, which were circulated in hastily manufactured, faulty editions composed solely for profit.” — fetched [2026-08-20](https://web.archive.org/web/20260817234425/https://users.manchester.edu/Facstaff/SSNaragon/Online/LP/Readings/11-Chartier%2C%20Practical%20Impact%20of%20Writing%20%28abridged%29.pdf)
 - <span id="ref-brann-monastic-dilemma"></span>Noel L. Brann — 原始来源：[“A Monastic Dilemma Posed by the Invention of Printing”](https://www.journals.uc.edu/index.php/vl/article/view/5268) — fetched [2026-08-20](https://web.archive.org/web/20260817234438/https://www.journals.uc.edu/index.php/vl/article/view/5268)
 - <span id="ref-ddb-de-laude"></span>德国数字图书馆 — 原始来源：[*De laude scriptorum* bibliographic record](https://www.deutsche-digitale-bibliothek.de/item/Y7EKMZBKNWE5OYMA2SIROTFG2PWURZV4) — fetched [2026-08-20](https://web.archive.org/web/20260817234501/https://www.deutsche-digitale-bibliothek.de/item/Y7EKMZBKNWE5OYMA2SIROTFG2PWURZV4)
 - <span id="ref-uchicago-luther"></span>芝加哥大学图书馆 — 原始来源：[Martin Luther as print media’s first influencer](https://www.lib.uchicago.edu/collex/exhibits/media-revolutions-then-now-martin-luther-and-the-making-of-modern-communication/type-casting-selves/#:~:text=Unknown%20in%201517%2C%20by%201520%20he%20was%20the%20most%20published%20author) — fetched [2026-08-20](https://web.archive.org/web/20260817234534/https://www.lib.uchicago.edu/collex/exhibits/media-revolutions-then-now-martin-luther-and-the-making-of-modern-communication/type-casting-selves/)
@@ -162,6 +180,10 @@ tags:
 - <span id="ref-moseley-wicked-bible"></span>莫斯利（David Moseley），坎特伯雷大学 — 原始来源：[*“Not” Funny? Humour, Embarrassment, and the “Wicked Bible”*](https://ir.canterbury.ac.nz/server/api/core/bitstreams/7e8a0935-0cdc-4f4c-ae4e-8a1e332fe695/content#page=18)，论文第 17–18、54 页（PDF 文件第 18–19、55 页）。原文：“There is however no evidence that the Bibles were ordered to be destroyed”；“the printers did not lose their licence”；“the £300 fine … be remitted.” — fetched [2026-08-20](https://web.archive.org/web/20260813145200/https://ir.canterbury.ac.nz/server/api/core/bitstreams/7e8a0935-0cdc-4f4c-ae4e-8a1e332fe695/content)
 - <span id="ref-cambridge-manutius-counterfeits"></span>剑桥大学图书馆 — 原始来源：[Enchiridia, counterfeits, and the dolphin-and-anchor device](https://exhibitions.lib.cam.ac.uk/manutius/case/enchiridia/#:~:text=counterfeit%20editions%20by%20both%20Italian%20and%20foreign%20competitors) — fetched [2026-08-20](https://web.archive.org/web/20260211181353/https://exhibitions.lib.cam.ac.uk/manutius/case/enchiridia/)
 - <span id="ref-manutius-warning"></span>Primary Sources on Copyright — 原始来源：[Aldus Manutius’s warning against the printers of Lyon](https://copyrighthistory.org/cam/tools/request/showRecord.php?id=commentary_i_1503#:~:text=He%20even%20furnishes%20a%20list%20of%20typographical%20errors) — fetched [2026-08-20](https://web.archive.org/web/20260817234940/https://copyrighthistory.org/cam/tools/request/showRecord.php?id=commentary_i_1503)
+- <span id="ref-yale-printers-devices-function"></span>耶鲁大学法学院图书馆 — 原始来源：[Printers’ devices as source marks](https://library.law.yale.edu/news/printers-devices-law-books#:~:text=A%20printer%E2%80%99s%20device%20is%20a%20trademark%20of%20sorts)。原文：“A printer’s device is a trademark of sorts, serving both as a marketing tool and a copyright notice of sorts” — fetched [2026-08-20](https://web.archive.org/web/20260817235011/https://library.law.yale.edu/news/printers-devices-law-books)
 - <span id="ref-yale-printers-devices"></span>耶鲁大学法学院图书馆 — 原始来源：[Printers’ devices from law books](https://library.law.yale.edu/news/printers-devices-law-books#:~:text=The%20very%20first%20printer%E2%80%99s%20device) — fetched [2026-08-20](https://web.archive.org/web/20260817235011/https://library.law.yale.edu/news/printers-devices-law-books)
+- <span id="ref-sabellico-privilege"></span>科斯蒂洛（Joanna Kostylo），Primary Sources on Copyright — 原始来源：[Commentary on Marcantonio Sabellico’s privilege (1486)：1469 年印刷垄断与 1486 年作者特许](https://www.copyrighthistory.org/cam/commentary/i_1486/i_1486_com_2162008205354.html#:~:text=The%20printing%20monopoly%20granted%20to%20Johannes%20of%20Speyer%20in%201469)；[特许权的性质](https://www.copyrighthistory.org/cam/commentary/i_1486/i_1486_com_2162008205354.html#:~:text=In%20contrast%20to%20modern%20copyright%2C%20printing%20privileges%20were%20not%20conceived%20as%20the%20inherent%20right)。原文：“the first known privilege to an author”；“printing privileges were not conceived as the inherent right” — fetched [2026-08-20](https://web.archive.org/web/20260514232223/https://www.copyrighthistory.org/cam/commentary/i_1486/i_1486_com_2162008205354.html)
+- <span id="ref-statute-anne"></span>德兹利（Ronan Deazley），Primary Sources on Copyright — 原始来源：[Commentary on the Statute of Anne 1710](https://www.copyrighthistory.org/cam/tools/request/showRecord.php?id=commentary_uk_1710#:~:text=on%205%20April%201710%2C%20the%20world%27s%20first%20copyright%20statute%20was%20passed)。原文：“the world's first copyright statute was passed”；法令规定新书专有权的首个期限为 14 年 — fetched [2026-08-20](https://web.archive.org/web/20241013225756/https://www.copyrighthistory.org/cam/tools/request/showRecord.php?id=commentary_uk_1710)
+- <span id="ref-modern-trademark-registration"></span>英国知识产权局 — 原始来源：[The red triangle that made history: celebrating 150 years of UK trade mark no. 1](https://ipo.blog.gov.uk/2026/01/08/the-red-triangle-that-made-history-celebrating-150-years-of-uk-trade-mark-no-1/#:~:text=France%20introduced%20a%20deposit%20system%20in%201857)。原文：“France introduced a deposit system in 1857”；英国 1875 年法令建立了 “a systematic, nationally centralised register” — fetched [2026-08-20](https://web.archive.org/web/20260421133909/https://ipo.blog.gov.uk/2026/01/08/the-red-triangle-that-made-history-celebrating-150-years-of-uk-trade-mark-no-1/)
 - <span id="ref-royal-society-philosophical-transactions"></span>英国皇家学会 — 原始来源：[History of *Philosophical Transactions*](https://royalsociety.org/journals/publishing-activities/publishing350/history-philosophical-transactions/#:~:text=The%20Royal%20Society%20responded%20by%20introducing%20more%20rigorous%20and%20systematic%20expert%20peer%20review) — fetched [2026-08-20](https://web.archive.org/web/20260609032321/https://royalsociety.org/journals/publishing-activities/publishing350/history-philosophical-transactions/)
 - <span id="ref-princeton-illumination"></span>普林斯顿大学图书馆 — 原始来源：[Inside the Milberg Gallery: Illumination](https://library.princeton.edu/about/library-news/2019/inside-milberg-gallery-illumination#:~:text=continued%20to%20find%20work%20for%20patrons%20with%20a%20taste%20for%20brilliantly%20colored%20luxury%20books) — fetched [2026-08-20](https://web.archive.org/web/20251220020759/https://library.princeton.edu/about/library-news/2019/inside-milberg-gallery-illumination)
