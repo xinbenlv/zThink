@@ -1,15 +1,11 @@
 ---
 title: "翰墨贞洁、铅梓荒淫"
-excerpt: "回看五百年前围绕印刷术的争论，许多场景似曾相识。未来究竟会怎样？历史或许能提供一些启发；也可能，这一次不同。"
+excerpt: "今天的 AI，一面被视为足以撼动秩序的危险工具，一面又被嘲为粗劣内容的生产机器。五百年前，围绕印刷术，也曾有过一场似曾相识的争论。历史不会提前剧透未来，但有些台词，我们显然不是第一次听见。"
 date: 2026-08-10
 lang: zh
 published: true
-cover_image:
-  src: /assets/blogposts/2026-08-10-too-dangerous-and-too-sloppy/cover-wechat-zh.jpg
-  x: 200
-  y: 0
-  size: 383
-og_image: /assets/blogposts/2026-08-10-too-dangerous-and-too-sloppy/cover-wechat-zh.jpg
+cover_image: /assets/blogposts/2026-08-10-too-dangerous-and-too-sloppy/cover-hanmo-qianzi.png
+og_image: /assets/blogposts/2026-08-10-too-dangerous-and-too-sloppy/cover-hanmo-qianzi.png
 translationKey: printing-press-ai-2026-08-10
 categories:
   - blog
