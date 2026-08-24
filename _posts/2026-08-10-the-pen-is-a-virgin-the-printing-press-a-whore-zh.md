@@ -1,6 +1,6 @@
 ---
 title: "翰墨贞洁、铅梓荒淫"
-excerpt: "今天的 AI，一面被视为足以撼动秩序的危险工具，一面又被嘲为粗劣内容的生产机器。五百年前，围绕印刷术，也曾有过一场似曾相识的争论。历史不会提前剧透未来，但有些台词，我们显然不是第一次听见。"
+excerpt: "今天，人们一面担心 AI 强大到足以扰乱秩序，一面又嘲笑它只会制造粗劣内容。五百多年前，印刷术也曾同时招来这两种批评。历史不能替我们预测 AI 的未来，却能让我们认出一些熟悉的争论。"
 date: 2026-08-10
 lang: zh
 published: true
@@ -28,57 +28,57 @@ tags:
 
 前几天，一场关于 AI 的争论让我有些不情愿地想起了这个故事。
 
-我在英文维基百科创建了一个名为《“容易取消”规定》（*Easy-to-cancel mandate*）的条目，讨论一类要求“取消订阅必须像开通订阅一样容易”的法律。后来，这篇条目被提交到维基百科的 [人工智能公告板（AI noticeboard）](#ref-wikipedia-ai-noticeboard)。编辑们怀疑我借助了 AI 起草，事实也确实如此。其中一位编辑核对引用时发现了一处措辞上的瑕疵：他认为，来源似乎表明某项“两步取消”要求来自德国法律，而我的写法却可能让人误以为，那是研究者自行设定的测试标准。
+我在英文维基百科创建了一篇题为《“容易取消”规定》（*Easy-to-cancel mandate*）的条目，介绍一类法律：商家必须让取消订阅和开通订阅一样容易。后来，这篇条目被提交到维基百科的[人工智能公告板（AI noticeboard）](#ref-wikipedia-ai-noticeboard)。编辑们怀疑我借助了 AI 起草，事实也的确如此。一位编辑核对来源时发现，有句话可能引起误解：来源似乎表明，某项“两步取消”规定是德国法律的要求，我的写法却像是在说，这是研究者自行设定的测试标准。
 
-我本来就无意隐瞒——甚至觉得，到了 2026 年，写作时使用 AI 辅助，难道不已经是默认了吗？作为软件工程师，我的工作流早已从自动补全（auto-complete），逐步走到让 AI 修正语法和拼写、重构代码、生成单个文件与测试；到 2023—2025 年，它已经参与我大部分代码库的生成和新项目的规划。
+我本来就无意隐瞒——甚至觉得，到了 2026 年，写作时使用 AI 辅助，难道不已经是默认了吗？作为软件工程师，我最初只用自动补全（auto-complete），后来逐渐让 AI 修正语法和拼写、重构代码、生成文件和测试。2023 到 2025 年间，我写的大部分代码都有 AI 参与，规划新项目时也离不开它。
 
-我在公告板上甚至给出了一个直白的数字：[新增代码行中“almost 90–95%”由 AI 生成](#ref-wikipedia-ai-noticeboard)。公告板上的原话只有这个数字；下面则是我事后的解释，而不是那条讨论所记录的统计方法：90–95% 不是逐行统计出来的字符比例，而是我按信息生产过程中投入的“劳动时间”作出的粗略估算。我花大约一分钟写提示词，AI 往往接着运行十到二十分钟；按这个口径，绝大部分时间发生在机器一侧。如果改按最终文本或代码的字符量计算，我个人估计 AI 生成的部分超过 99%——毕竟它生成文字远比人快。
+我在公告板上甚至给出了一个直白的数字：[新增代码行中“almost 90–95%”由 AI 生成](#ref-wikipedia-ai-noticeboard)。不过，那条回复只写了这个数字，没有说明我是怎么算的。这里补充一下：90–95% 不是逐行统计的字符比例，我粗略估算的其实是人和机器各自花了多少时间。我大约用一分钟写提示词，AI 往往接着运行十到二十分钟；按这种算法，耗时的大头在 AI 这边。如果改按最终文本或代码的字符量计算，我估计 AI 生成的部分超过 99%——毕竟它生成文字远比人快。
 
-这篇条目的制作方式也是如此：我向 Claude Code 和 Codex 下指令，让它们研究、引注和事实核查；发现问题时，我通常修改提示、要求继续修订，而不是直接改写输出。我把文章先放在草稿命名空间，主动向相关维基专题寻求编辑审阅和指导，得到反馈后才移入条目空间；连草稿讨论页也借助了 LLM。问题不是我藏起了 AI，而是我没有意识到，这个社区已经对这种制作过程本身划下了一条新界线。
+这篇条目也是这样完成的：我向 Claude Code 和 Codex 下指令，请它们查资料、添加引用并核对事实；发现问题时，我通常修改提示，要求它们继续修订，而不是直接改写输出。我先把文章放在草稿命名空间，主动请相关维基专题的编辑审阅并给意见，收到反馈后才移入条目空间；就连草稿讨论页上的文字也借助了 LLM。问题不是我藏起了 AI，而是我没有意识到，这个社区已经为这种写作方式定下了新的规则。
 
 我当时并不知道，英文维基百科在 2026 年 3 月通过了一项内容指引：除少数例外，[不得使用大语言模型生成或改写条目内容](#ref-wikipedia-llm-guideline)。我说明了自己的工作方式，道了歉，撤回“你知道吗”（Did You Know）栏目的提名，也暂停了编辑。
 
-我写这些，不是为了抱怨维基百科。那些编辑谨慎、克制，也很讲道理。公告板上的编辑关注的是：对依靠志愿者核查来源的社区来说，大量迅速生成、外观可信的文字可能把审阅成本转嫁给别人；从这个位置看，限制制作过程是在保护稀缺的编辑时间。站在我的位置，AI 辅助早已成为日常工作流，我原以为主动披露、逐项引注和接受审阅，比是否使用某种工具更重要。这场争论涉及的不只是 AI 好不好，也包括谁应当承担验证成本，以及怎样留下可以追责的编辑记录。
+我写这些，不是为了抱怨维基百科。那些编辑谨慎、克制，也很讲道理。他们担心，AI 能迅速产出大量看似可信的文字，核对来源却要由志愿编辑一点点完成。结果是作者省下了时间，审阅者却多了工作。因此，限制 AI 生成内容，也是在保护有限的编辑时间。而我早已把 AI 当作日常工具，原以为如实说明使用了 AI、给每项事实注明出处并接受审阅，比是否使用某种工具更重要。双方的分歧还在于：核查工作该由谁承担，整个写作和修改过程又该留下怎样的记录，才能在出错后追责。
 
-维基百科并不孤单。黑客新闻（Hacker News）在评论规则里同样明令禁止生成文本，连经过 AI 编辑的文字也不接受，理由是：[“HN is for conversation between humans”](#ref-hacker-news-ai-rule)。这可以理解为一种直接按制作方式划界的规则；至少在条文中，它没有为质量较高的生成文字另设例外。
+黑客新闻（Hacker News）也有类似规定。它在评论规则里明令禁止生成文本，连经过 AI 编辑的文字也不接受，理由是：[“HN is for conversation between humans”](#ref-hacker-news-ai-rule)。它判断的是文字如何产生，而不是成品质量如何；规则没有为质量较高的生成文字留下例外。
 
-内容平台采用了不同的划线方式。短视频平台 TikTok [要求对包含写实图像、音频或视频的 AIGC 作出标识](#ref-tiktok-aigc-policy)，鼓励标识完全生成或经过显著 AI 编辑的其他内容；违反社区规则、构成有害误导或未按要求标识的内容可能被移除，某些人物冒充类内容即使标识也不允许发布。小红书一面欢迎把 AI 当作提高质量和信息价值的创作工具，一面把自动托管账号、造假、侵权和批量生产同质化低质内容列为违规，并可采取[限制分发或封禁账号](#ref-xiaohongshu-ai-governance)。这些规则分别以制作过程、身份披露、内容风险或分发后果作为判断标准。
+其他内容平台的规则又不一样。短视频平台 TikTok 要求对包含写实图像、音频或视频的 AIGC [作出标识](#ref-tiktok-aigc-policy)，也鼓励用户标识完全生成或经过显著 AI 编辑的其他内容。如果内容违反社区规则、造成有害误导或没有按要求标识，平台可能将其删除；某些冒充他人的内容即使已经标识，也不允许发布。小红书表示欢迎创作者用 AI 提高内容质量和信息价值，但把自动托管账号、造假、侵权以及批量生产同质化低质内容列为违规，并可采取[限制分发或封禁账号](#ref-xiaohongshu-ai-governance)等措施。
 
-真正让我在难堪过后反复琢磨的，是同一周里信息流上两种看似互相矛盾的 AI 叙事。一种强调 AI **太危险**。2026 年《国际人工智能安全报告》（*International AI Safety Report*）认为，通用 AI 已能协助发现软件漏洞和编写恶意代码，也可能提供与生化武器开发有关的技术信息；报告同时反复提醒，这些能力究竟把现实风险提高了多少，[仍有很大不确定性](#ref-international-ai-safety-report)。另一种批评则把 AI 内容称为 **垃圾内容（slop）**：廉价、粗劣、不可靠，并且把筛选与核查的压力留给接收者。
+难堪过去之后，我反复想起同一周在信息流里看到的两种说法。它们听起来彼此矛盾。一种强调 AI **太危险**。2026 年《国际人工智能安全报告》（*International AI Safety Report*）认为，通用 AI 已能协助发现软件漏洞和编写恶意代码，也可能提供与生化武器开发有关的技术信息；报告同时也一再提醒，这些能力在现实中究竟增加了多少风险，[仍有很大不确定性](#ref-international-ai-safety-report)。另一种批评则把 AI 内容称为 **垃圾内容（slop）**：廉价、粗劣、不可靠，并且把筛选和核查的麻烦留给看到这些内容的人。
 
 既危险得必须严防，又愚蠢得不值一看。怎么会同时成立？
 
-把这组争论放到印刷术的历史旁边，并不能证明 AI 会重演同一条道路。它至少提供了一批可以比较的材料：新工具出现后，谁感到受威胁，谁从中获益，各类机构又尝试了什么办法。
+回头看印刷史，并不能证明 AI 会重演同一条道路。但把两者放在一起，至少可以比较几个问题：一种新工具出现后，谁觉得受到威胁，谁从中获益，各类机构又想过哪些办法来管它。
 
 ## 威尼斯的一场早期印刷争论
 
 ![一支蘸水笔与早期印刷机隔桌相对，成堆的小册子从印刷机中涌出，淹过威尼斯抄写室的桌面](/assets/blogposts/2026-08-10-too-dangerous-and-too-sloppy/01-venice.jpg)
 
-《古腾堡圣经》很可能在 [1455 年末](#ref-loc-gutenberg-bible)于今德国美因茨完成。到 1500 年，欧洲已有[约 250 个地点出现印刷作坊](#ref-dnb-printing-spread)。我们今天熟悉的两种抱怨——危险与劣化——很早就出现了，只是它们并非来自同一个阵营，也不是在同一时刻整齐登场。
+《古腾堡圣经》很可能在 [1455 年末](#ref-loc-gutenberg-bible)于今德国美因茨完成。到 1500 年，欧洲已有[约 250 个地点出现印刷作坊](#ref-dnb-printing-spread)。今天针对 AI 的两种批评——太危险、做出来的东西太差——在印刷术早期也出现过。不过，说这些话的不是同一批人，时间也有先后。
 
-关于粗劣印刷品的抱怨，很早便出现在今意大利威尼斯。15 世纪 70 年代，[天主教道明会（亦称多明我会；正式名“宣道会”，拉丁文 *Ordo Praedicatorum*，简称 O.P.）](#ref-dominican-order-name)修士兼抄写员[斯特拉塔（Filippo da Strada；文献中亦作 Filippo di Strata 或 Filippo de Strata）](#ref-strata-title-quote)批评印刷术。
+威尼斯很早就有人抱怨印刷品粗制滥造。15 世纪 70 年代，天主教[道明会](#ref-dominican-order-name)修士兼抄写员[斯特拉塔](#ref-strata-title-quote)（Filippo da Strada）公开批评印刷术。
 
-1473 年 8 月，尼科洛·马尔切洛（Nicolò Marcello）当选威尼斯总督。此后不久，斯特拉塔向他呈上一部手抄的《黄金传奇》（*Legenda aurea*）意大利文译本，并在卷首附上一篇拉丁诗，请求禁止在威尼斯从事印刷业。这不是一句孤立的辱骂：他把印刷商比作伪币制造者，指责他们为了利润生产错漏与淫秽作品、败坏青年，也担心抄写员因此失去生计。题目所化用的那句话，就出自[这首呈给总督的诗](#ref-strata-title-quote)：
+1473 年 8 月，马尔切洛（Nicolò Marcello）当选威尼斯总督。此后不久，斯特拉塔向他呈上一部手抄的《黄金传奇》（*Legenda aurea*）意大利文译本，并在卷首附上一首拉丁诗，请求他下令禁止在威尼斯印书。这首诗不只是在骂人：斯特拉塔把印刷商比作伪币制造者，指责他们为了赚钱印制充满错漏或内容淫秽的书，败坏年轻人；他也担心抄写员因此失去生计。本文标题化用的那句话，就出自[这首呈给总督的诗](#ref-strata-title-quote)：
 
 > [*Est virgo hec penna, meretrix est stampificata.*](#ref-strata-title-quote)
 >
-> 在[夏蒂埃的英文文本中译为](#ref-chartier-writing)：**“The pen is a virgin, the printing press a whore.”**
+> 在[夏蒂埃的英文文本](#ref-chartier-writing)中译为：**“The pen is a virgin, the printing press a whore.”**
 
-这里保留原话，不是认同它的性别秩序，而是让它作为一件历史原物呈现在读者面前：手写被塑造成纯洁而克制，印刷则被描绘成逐利而无度。
+我把这句原话放在这里，并不意味着认同其中的性别观念。它直白地表现了斯特拉塔的态度：手写被塑造成纯洁而克制，印刷则被描绘成逐利而无度。
 
-他的论点不只是印刷术力量太大。他说，为逐利而仓促赶工的版本会败坏文本；不道德和异端作品会逃出教会控制；知识落到他认为没有资格的读者手中，也会因此贬值。历史学家夏蒂埃（Roger Chartier）在[《书写的实际影响》（*The Practical Impact of Writing*）](#ref-chartier-writing)中概括了这套指控。
+斯特拉塔还列出了几项具体危害。在他看来，印刷商为了赚钱匆忙赶工，印出来的书会错漏百出；不道德和异端著作会逃过教会控制；知识落入那些被他视为没有资格的读者手中，也会跟着贬值。历史学家夏蒂埃（Roger Chartier）在[《书写的实际影响》](#ref-chartier-writing)（*The Practical Impact of Writing*）中概括了这套指控。
 
 二十年后，本笃会修道院长特里特米乌斯（Johannes Trithemius）写了《赞美抄写员》（*De laude scriptorum manualium*）。这部作品[写于 1492 年](#ref-brann-monastic-dilemma)，1494 年在[今德国美因茨印刷出版](#ref-ddb-de-laude)。人们通常把它讲成一个笑话：反对印刷的人，最后把自己的反印刷宣言送去印了。
 
-但这层反讽省略了作品的具体场合。特里特米乌斯维护的是手抄作为修道纪律的价值；研究者布兰（Noel L. Brann）指出，他[并不从原则上敌视印刷](#ref-brann-monastic-dilemma)，反而把印刷看成传播修道学问的工具。《赞美抄写员》针对的是修士是否还应继续抄写，而不是一项要求全社会弃用印刷的主张。
+不过，这种讲法忽略了他写作时真正关心的问题。特里特米乌斯要捍卫的，是修士把抄书当作修行的传统。研究者布兰（Noel L. Brann）指出，他[并非一概反对印刷](#ref-brann-monastic-dilemma)，反而把印刷看成传播修道学问的工具。《赞美抄写员》讨论的是修士是否还应继续抄书，并不是要求整个社会抛弃印刷。
 
-批评也不只来自以手抄为业的人。人文学者伊拉斯谟（Desiderius Erasmus）深度参与印刷出版：1508 年，他在威尼斯与马努提乌斯合作扩充《格言集》（*Adagiorum chiliades*）。在其中“欲速则不达”（*Festina lente*）一条的评注里，他先赞扬阿尔丁印刷所扩大古典学问的传播，随后又攻击那些宁愿让好书塞满六千处错误、也不肯花钱请人校样的印刷商，并抱怨“成群的新书”及其数量[有害于学术](#ref-willinsky-erasmus)。他同时是印刷传播的受益者、参与者和批评者。
+批评也不只来自以手抄为业的人。人文学者伊拉斯谟（Desiderius Erasmus）本人与印刷出版关系密切：1508 年，他在威尼斯与马努提乌斯合作扩充《格言集》（*Adagiorum chiliades*）。在其中“欲速则不达”（*Festina lente*）一条的评注里，他先称赞阿尔丁印刷所让古典学问传播得更广，随后又痛斥那些宁愿让好书塞满六千处错误、也不肯花钱请人校样的印刷商，并抱怨“成群的新书”及其数量[有害于学术](#ref-willinsky-erasmus)。他从印刷中获益，也亲自参与出版，但照样批评它。
 
-宗教改革期间，关于印刷术政治与宗教影响的争论有了新的现实背景。印刷术并非宗教改革的单一原因；在路德（Martin Luther）身上，可以直接看到出版数量和公共身份的迅速变化。1517 年，他还默默无闻；[到 1520 年，他已经是当时出版量最高的作者](#ref-uchicago-luther)。芝加哥大学图书馆称他为书籍史上的第一位畅销书作者。
+到了宗教改革时期，印刷在政治和宗教中的影响变得更加明显。印刷术当然不是宗教改革的唯一原因，但路德（Martin Luther）的经历足以说明，印刷能多快地把一个人推到公众面前。1517 年，他还默默无闻；到 1520 年，他[已经是当时出版量最高的作者](#ref-uchicago-luther)。芝加哥大学图书馆称他为书籍史上的第一位畅销书作者。
 
-宗教权威与印刷的关系也不只有抵制。1454 年，在《古腾堡圣经》尚未准备好上市时，负责组织塞浦路斯教宗赎罪券销售的保利努斯·查佩（Paulinus Chappe）便委托古腾堡（Johannes Gutenberg）印制了[可能数以千计的表格](#ref-princeton-mainz)。同一宗教体系既在早年委托印刷，后来也对印刷内容设限。
+宗教权威与印刷的关系也不只有抵制。1454 年，在《古腾堡圣经》尚未准备好上市时，负责为教宗推销塞浦路斯赎罪券的查佩（Paulinus Chappe）便委托古腾堡（Johannes Gutenberg）印制了[可能数以千计的表格](#ref-princeton-mainz)。宗教机构既会使用印刷，也会限制印刷内容。
 
-这些材料呈现的并不是一个整齐划分的“支持印刷”或“反对印刷”阵营。斯特拉塔关心文本质量、宗教道德和抄写员的生计；特里特米乌斯关心修道实践；路德及其支持者利用印刷扩大传播；教会机构既购买印刷品，也试图约束它。不同参与者所说的“危险”或“粗劣”，指向的风险、利益与责任并不相同。
+因此，当时并没有泾渭分明的“支持印刷派”和“反对印刷派”。斯特拉塔关心文本质量、宗教道德和抄写员的生计；特里特米乌斯关心修道实践；路德及其支持者利用印刷扩大传播；教会机构既购买印刷品，也试图约束它。他们说“危险”或“粗劣”时，指的其实不是同一件事。
 
 ## 各地如何约束印刷
 
@@ -86,51 +86,51 @@ tags:
 
 面对迅速增加的印刷活动，欧洲的王权、教会和同业组织采用过禁令、书目审查、特许与牌照等不同办法。
 
-法国一度采用非常严厉的方案。1535 年 1 月 13 日，法国国王弗朗索瓦一世（François Ier）颁布敕令，在法国境内全面停止印刷，并威胁把任何擅自印书的人处以绞刑。[大约六周后便出现了一道修订命令](#ref-farge-france-ban)：巴黎高等法院先提名二十四名印刷商，再由国王选定十二名，只准他们在巴黎印制经批准且被认为符合公共利益的书，并禁止印刷新作；新安排完成前，禁印和绞刑威胁仍然有效。
+法国一度选择全面禁印。1535 年 1 月 13 日，法国国王弗朗索瓦一世（François Ier）颁布敕令，下令法国境内停止印刷，并以绞刑威胁任何擅自印书的人。[大约六周后](#ref-farge-france-ban)，禁令便被修改：巴黎高等法院先提名二十四名印刷商，再由国王选定十二名，只有他们可以在巴黎印制经过批准且被认为符合公共利益的书，新作仍不准印；新安排完成前，禁印和绞刑威胁继续有效。
 
-罗马教廷选择了清单。教宗的《禁书目录》（*Index Librorum Prohibitorum*）[首次颁布于 1559 年](#ref-upenn-index)，此后修订了几个世纪。1966 年，梵蒂冈宣布它[不再具有教会法效力](#ref-vatican-index)，同时称它仍具有道德约束力，继续警示基督徒的良知提防危及信仰与道德的著作。
+罗马教廷采取的办法是列书目。教宗的《禁书目录》（*Index Librorum Prohibitorum*）[首次颁布于 1559 年](#ref-upenn-index)，此后修订了几个世纪。1966 年，梵蒂冈宣布它[不再具有教会法效力](#ref-vatican-index)，但同时表示它在道德上仍有约束力，基督徒仍应警惕危及信仰与道德的著作。
 
-英格兰选择了同业公会与牌照制度。书商公会在 [1557 年的特许状中取得对英格兰印刷业近乎独占的控制权](#ref-stationers-charter)，但持有王室特许者仍可印刷。1662 年《印刷法》（*Printing Act*，后世也常称 *Licensing Act*）建立法定许可制度；它在 1662—1679 年及 1685—1695 年间生效，最后于 [1695 年失效](#ref-cambridge-printing-acts)。
+英格兰则依靠同业公会和牌照来管理印刷。书商公会凭借 [1557 年的特许状](#ref-stationers-charter)，几乎垄断了英格兰印刷业；不过，另获王室特许的人仍可印书。1662 年《印刷法》（*Printing Act*，后世也常称 *Licensing Act*）建立了法定许可制度；它在 1662—1679 年及 1685—1695 年间生效，最后于 [1695 年失效](#ref-cambridge-printing-acts)。
 
-这三种制度的存续时间并不相同：法国的全面禁令大约六周便被修订；英格兰的法定许可制度在 1695 年失效；罗马教廷的目录直到 1966 年才失去教会法效力。把它们统称为“禁令”，容易遮住各自不同的对象、执行方式与寿命。
+这些制度维持的时间相差很大：法国的全面禁令大约六周便被修改；英格兰的法定许可制度在 1695 年失效；罗马教廷的目录直到 1966 年才失去教会法效力。如果一概称为“禁令”，就看不出它们管什么、怎样执行，又维持了多久。
 
 开篇那本《邪恶圣经》也说明，除了书中写了什么，印得是否准确同样令人担忧。不过，据当时的法院记录，这笔罚款后来[获准免除](#ref-moseley-wicked-bible)；被扣押的书也[退还给印刷商](#ref-moseley-wicked-bible)，改正错误后仍可出售，牌照并未吊销。后世转述却越传越走样：罚款获免的结果被略去，印本销毁和牌照吊销的情节则被添了进去。
 
 一个印刷错误，后来又衍生出一段流传数百年的历史讹传。
 
-## 印刷世界逐渐形成的制度
+## 印刷业后来有了哪些规矩
 
 ![正版扉页上的海豚与锚印记和一册粗糙仿本并排放置，中间是一枚用于辨认真伪的放大镜](/assets/blogposts/2026-08-10-too-dangerous-and-too-sloppy/03-anchor.jpg)
 
-在禁令和牌照之外，印刷世界还逐渐形成了另一批做法：印刷商署名、出版地与日期、特许权、可识别的标志、期刊，以及后来更正式的审稿程序。这些制度有的帮助读者判断来源，有的保护商业利益，有的服务于行政管理或审查；同一种制度也可能同时承担几种功能。
+除了禁令和牌照，人们还慢慢想出了其他办法：印刷商署名，注明出版地和日期，授予特许权，使用容易辨认的标志，创办期刊，以及后来建立更正式的审稿程序。有些办法帮助读者判断来源，有些保护商业利益，还有些用于行政管理或审查。同一种办法也可能兼有几种用途。
 
-今意大利威尼斯的出版家马努提乌斯（Aldus Manutius）提供了一个具体案例。他的印刷所从 1501 年起推出以斜体字排印的袖珍本（*enchiridia*），收录拉丁、希腊古典作者和意大利俗语诗人；剑桥大学图书馆称这是他[最成功的编辑创新](#ref-cambridge-manutius)。竞争者——尤其是法国里昂一带的印刷者——制作了冒牌的阿尔丁版图书；一部据推测在里昂印成、仿冒 1502 年阿尔丁版但丁的版本，[连海豚与锚标志也试图照抄](#ref-cambridge-manutius-counterfeits)。
+威尼斯出版家马努提乌斯（Aldus Manutius）就是一个例子。他的印刷所从 1501 年起推出以斜体字排印的袖珍本（*enchiridia*），收录拉丁、希腊古典作者和意大利俗语诗人的作品；剑桥大学图书馆称这是他[最成功的编辑创新](#ref-cambridge-manutius)。法国里昂一带的印刷商很快开始仿制阿尔丁版图书。现存的一部仿本据推测印于里昂，仿的是 1502 年阿尔丁版的但丁作品，连[海豚与锚标志](#ref-cambridge-manutius-counterfeits)也试图照抄。
 
-海豚与锚印在阿尔丁版图书上，标明它与马努提乌斯印刷所的关联。耶鲁法学院图书馆把这类印刷商标志称为[“某种意义上的商标”](#ref-yale-printers-devices)：它既用来营销，也像一则版权声明。
+海豚与锚印在阿尔丁版图书上，表明这本书出自马努提乌斯的印刷所。耶鲁法学院图书馆把这类印刷商标志称为[“某种意义上的商标”](#ref-yale-printers-devices)：它既用来营销，也起到类似版权声明的作用。
 
-1503 年，马努提乌斯公开发出警告。他列出正版与仿本之间的差异，并在警告中[逐书列出一份排印错误清单](#ref-manutius-warning)，让买家可以据此识别赝品。标志本身并非证明——仿冒者也能复制——但买家至少可以同时核对标志、印刷商、出版地、日期、纸张、字体和具体错字。
+1503 年，马努提乌斯公开发出警告。他列出正版与仿本之间的差异，还逐书列出一份[排印错误清单](#ref-manutius-warning)，让买家据此识别赝品。单凭一个标志并不能证明真伪，仿冒者也能照抄；但买家仍可以把标志、印刷商、出版地、日期、纸张、字体和具体错字放在一起核对。
 
-马努提乌斯并没有发明印刷商标志。已知最早的实例出现在 [1457 年的《美因茨诗篇》](#ref-yale-printers-devices)，比他的警告早了几十年；海豚与锚只是后来影响很大的一个实例。
+马努提乌斯并没有发明印刷商标志。已知最早的实例出现在 [1457 年的《美因茨诗篇》](#ref-yale-printers-devices)，比他的警告早了几十年；海豚与锚只是后来较有名的一种。
 
-但不能因此把十五世纪写成一个完全没有版权或商标观念的世界。马努提乌斯已经持有威尼斯授予的印刷特许；这些权利不是自动产生、普遍适用的财产权，而是政府逐案授予、受期限、对象和疆域限制的垄断。威尼斯早在 [1469 年便曾授予约翰内斯·德·斯皮拉一项印刷垄断特许，1486 年又出现已知第一项直接授予作者的特许](#ref-sabellico-privilege)。[剑桥展览的说明](#ref-cambridge-manutius-counterfeits)特别指出，里昂的竞争者处在威尼斯疆域和马努提乌斯特许的适用范围之外；仿本仍在法国被印出，海豚与锚标志也遭到仿冒。
+十五世纪也并非完全没有版权或商标观念。马努提乌斯已经持有威尼斯授予的印刷特许。这种特许不是自动产生、普遍适用的财产权，而是政府逐案授予的垄断，期限、对象和适用地域都有限制。威尼斯早在 [1469 年](#ref-sabellico-privilege)便曾授予斯皮拉（Johannes de Speyer）一项印刷垄断特许，[1486 年](#ref-sabellico-privilege)又出现已知第一项直接授予作者的特许。[剑桥展览的说明](#ref-cambridge-manutius-counterfeits)特别指出，里昂不在威尼斯的管辖范围内，马努提乌斯的特许也管不到那里；仿本仍在法国被印出，海豚与锚标志也遭到仿冒。
 
-1710 年的《安妮法令》（*Statute of Anne*）通常被视为[世界第一部版权成文法](#ref-statute-anne)。与旧制度相比，法令允许书商公会成员之外的作者或受让人持有书籍的限期独占印刷、重印权，并给尚未出版的新书规定了十四年的初始期限。商人和印刷商此前已经使用来源标记；到十九世纪，若干国家才陆续建立全国性的商标存放或集中注册制度。法国在 1857 年建立商标存放制度，英国由 [1875 年《商标注册法》建立全国统一的注册簿](#ref-modern-trademark-registration)。
+1710 年的《安妮法令》（*Statute of Anne*）通常被视为[世界第一部版权成文法](#ref-statute-anne)。与旧制度相比，书籍的印刷权不再只属于书商公会成员；作者或受让人也可以在一定期限内独占书籍的印刷和重印权。尚未出版的新书，初始保护期为十四年。在此之前，商人和印刷商早已用标志说明商品或书籍的来源。直到十九世纪，一些国家才陆续建立全国性的商标存放或集中注册制度：法国在 1857 年建立商标存放制度，英国则通过 1875 年《商标注册法》[建立全国统一的注册簿](#ref-modern-trademark-registration)。
 
-因此，来源标记和有限的排他权早于全国注册制度和一般版权法；早期特许的范围、期限与跨境执行能力仍很有限。
+也就是说，用标志说明来源、给予一定期限的专有权，都比全国商标注册和普遍适用的版权法出现得早。不过，早期特许的适用对象、期限和地域都有限，跨境执行也很困难。
 
-故事另一端也需要同样的校正。1665 年，奥尔登堡（Henry Oldenburg）创办《皇家学会哲学汇刊》（*Philosophical Transactions*），由此建立了一份长寿的科学期刊；现代同行评审并不是在这一刻凭空完成的。皇家学会到 1752 年才引入委员会集体遴选，到 [19 世纪 30 年代才采用更系统的专家同行评审](#ref-royal-society-philosophical-transactions)。从古腾堡到科学期刊，大约用了两个世纪；到系统化的专家评审，则接近四个世纪。
+审稿制度形成得更慢。1665 年，奥尔登堡（Henry Oldenburg）创办《皇家学会哲学汇刊》（*Philosophical Transactions*），但现代同行评审并没有随这份期刊一起诞生。皇家学会到 1752 年才引入委员会集体遴选，到 19 世纪 30 年代才[采用更系统的专家同行评审](#ref-royal-society-philosophical-transactions)。从《古腾堡圣经》问世算起，科学期刊大约过了两个世纪才出现，较为系统的专家评审则又晚了近两个世纪。
 
-这些做法并非一次设计完成，也没有消除所有问题：印刷标志可以被仿冒，特许权既用于保护投资也用于管制印刷，编辑仍会漏掉错误，皇家学会的集体遴选与系统化专家评审也相隔近一个世纪。
+这些制度不是一次设计出来的，也没能杜绝问题：印刷商标志会被仿冒，特许权既能保护投资也能管制出版，编辑和审稿人也照样会漏掉错误。
 
 ## 抄写员后来做了什么
 
 ![印刷工坊的空椅旁放着一枚海豚与锚手印，木制工作台的纹理逐渐化作电路走线](/assets/blogposts/2026-08-10-too-dangerous-and-too-sloppy/05-empty-seat.jpg)
 
-抄写员并没有在印刷机出现后同时消失。以英格兰为例，剑桥大学出版社的一部文学史概括说，在卡克斯顿（William Caxton）1476 年于威斯敏斯特开设印刷所后的许多年里，多数文本仍通过手写和口述“出版”；印刷较适合篇幅较长、需求量较大的文本，短篇和面向专门读者的文本仍常由笔来传播。识字人口增加时，[两套生产方式一度同时扩张](#ref-cambridge-manuscript-print)，并不只是新技术立即挤掉旧技术。
+抄写员并没有随着印刷机出现而消失。以英格兰为例，剑桥大学出版社的一部文学史指出，卡克斯顿（William Caxton）1476 年在威斯敏斯特开设印刷所之后的许多年里，多数文本仍通过手写和口述“出版”。印刷更适合篇幅较长、需求量较大的文本，短篇和面向专门读者的文本仍常靠手写传播。随着识字人口增加，[手写和印刷一度同时扩张](#ref-cambridge-manuscript-print)，并不是一场简单的新技术淘汰旧技术。
 
-早期印本本身也没有完全离开手工劳动。印刷商会为首字母和题注（*rubrics*）留出空白，再由人手用红、蓝墨填入，或以金彩装饰；普林斯顿大学图书馆还记录到，原先装饰手抄本的彩饰者继续替偏爱[华丽奢侈书籍](#ref-princeton-illumination)的赞助人工作，无论书中文字是手写还是印刷。到了 1470 年代，木刻首字母和印刷标题逐渐减少了部分手工描红的需要，但彩饰者并未立刻失去所有工作，仍为奢侈书市场服务。
+早期印本也离不开手工。印刷商会为首字母和题注（*rubrics*）留出空白，再由人手用红、蓝墨填入，或以金彩装饰。普林斯顿大学图书馆还记录到，原本为手抄本作彩饰的工匠仍能找到工作；只要赞助人喜欢[华丽的奢侈书](#ref-princeton-illumination)，无论书中文字是手写还是印刷，这些工匠都还能接到装饰工作。到了 1470 年代，木刻首字母和印刷标题逐渐减少了对手工描红的需求，但奢侈书市场仍需要彩饰者。
 
-这些材料能够证明共存、分工和市场变化，却不足以支持一个过于整齐的结局，例如“抄写员普遍转行做了校对员和排字师”。不同地区的修道院、行政机构、商业书坊和奢侈品市场经历并不相同。剑桥的概述还提到，英格兰修道院抄写室在 1530 年代末消失，随后新教文化对个人书写的重视，以及私人和公共档案记录的扩张，又构成了另一重变化；这段职业史不能只写成印刷机对手抄的单线替代。
+现有材料只能说明手写与印刷曾经共存、分工，市场也随之变化，却不能据此断言“抄写员普遍转行做了校对员和排字师”。不同地区的修道院、行政机构、商业书坊和奢侈品市场经历并不相同。剑桥的概述还提到，英格兰修道院抄写室在 1530 年代末消失；此后，新教文化更加重视个人书写，私人和公共档案也不断增加。所以，抄写员的职业变化不能简化成印刷机单方面取代手抄。
 
 ## 印刷史没有现成答案
 
@@ -140,15 +140,15 @@ tags:
 
 对维基百科的志愿编辑来说，限制 AI 生成内容，首先是为了控制审核工作量：AI 可以迅速产出大量文字，社区用来审阅的时间却有限。但对已经习惯使用 AI 的创作者来说，这条规则却没有进一步区分：作者是否公开使用了 AI，引用的证据能否核查，出了问题又是否愿意负责。
 
-各个平台担心的事情也不一样。TikTok 主要防范写实合成内容造成误导；小红书关注自动运营和批量生产的低质内容；黑客新闻则不接受 AI 生成或编辑的文字，强调那里应当是人与人交谈的地方。这些差异至少说明，平台的用途和审核条件不同，制定出来的规则也不会一样。
+各个平台担心的事情也不一样。TikTok 主要防范写实合成内容造成误导；小红书关注自动运营和批量生产的低质内容；黑客新闻则不接受 AI 生成或编辑的文字，强调那里应当是人与人交谈的地方。这些差异至少说明，平台的用途和审核条件不同，定下的规则也会不同。
 
 因此，与其笼统地问“应该支持还是禁止 AI”，不如把问题拆得更具体一些。
 
-真正棘手的是责任如何分配。谁应该花时间核查一个说法：作者、平台、编辑，还是读者？有些内容可以先发布再修正，有些风险却必须事先限制，这条界线又该画在哪里？注明使用了 AI 能说明什么，保留引用来源、修改记录和作者署名又能在多大程度上方便核查？这些要求同样可能把一些人挡在门外，让少数人掌握更大的决定权。至于按制作方式设限的规则会长期保留，还是会被其他办法取代，现在还无法判断。
+真正棘手的是责任如何分配。谁应该花时间核查一个说法：作者、平台、编辑，还是读者？有些内容可以先发布再修正，有些风险却必须事先限制，这条界线又该画在哪里？另一个问题是，注明使用了 AI 究竟有多大用处。引用来源、修改记录和作者署名也许能方便核查，但这些要求同样可能把一些人挡在门外，让少数人掌握更大的决定权。至于按制作方式设限的规则会长期保留，还是会被其他办法取代，现在还无法判断。
 
 印刷史没有提供现成答案，但至少说明，制度往往是在试错中慢慢变化。法国的全面禁令只维持了约六周，《禁书目录》却延续了几个世纪；印刷商标志可以帮助读者辨认出处，也会被人仿冒；科学期刊创办以后，较为系统的专家评审又经过近两个世纪才逐渐形成。
 
-斯特拉塔的诗不是关于 AI 的预言。它记录的是一位十五世纪抄写员如何理解眼前的新机器。今天再读这首诗，我们至少可以追问：哪些担忧确有根据，哪些判断又受到自身身份和利益的影响？我们看见的相似，究竟来自技术的一般规律，还是因为人们面对变化时总会说出相似的话？至于 AI 最终会怎样改变写作、审核和出版，印刷史不能替我们回答。
+斯特拉塔的诗不是关于 AI 的预言。它记录的是一位十五世纪抄写员如何理解眼前的新机器。今天再读这首诗，我们至少可以追问：哪些担忧确有根据，哪些判断又受到自身身份和利益的影响？我们看见的相似，究竟是因为新技术总会带来相似的问题，还是因为人们面对变化时总会说出相似的话？至于 AI 最终会怎样改变写作、审核和出版，印刷史不能替我们回答。
 
 ## 参考资料与原文定位
 
@@ -173,12 +173,12 @@ tags:
 - <span id="ref-vatican-index"></span>梵蒂冈信理部 — 原始来源：[《关于〈禁书目录〉的通知》（1966 notification regarding the Index）](https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_19660614_de-indicis-libr-prohib_en.html#:~:text=it%20no%20longer%20has%20the%20force%20of%20ecclesiastical%20law)。原文一面称目录 “remains morally binding”，一面宣布它 “no longer has the force of ecclesiastical law” — fetched [2026-08-20](https://web.archive.org/web/20260817234825/https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_19660614_de-indicis-libr-prohib_en.html)
 - <span id="ref-stationers-charter"></span>版权史原始资料库（Primary Sources on Copyright）— 原始来源：[1557 年书商公会王室特许状](https://www.copyrighthistory.org/cam/tools/request/showRecord.php?id=record_uk_1557#:~:text=exclusive%20control%20over%20printing%20within%20England)。特许状规定，除公会成员或取得王室牌照者外，不得在英格兰及其领地从事印刷；德兹利的概括是 “exclusive control over printing within England” — fetched [2026-08-20](https://web.archive.org/web/20260817234650/https://www.copyrighthistory.org/cam/tools/request/showRecord.php?id=record_uk_1557)
 - <span id="ref-cambridge-printing-acts"></span>剑桥大学出版社 — 原始来源：[《17 世纪末的书商公会与印刷法》（The Stationers and the Printing Acts at the end of the seventeenth century）](https://www.cambridge.org/core/books/abs/cambridge-history-of-the-book-in-britain/stationers-and-the-printing-acts-at-the-end-of-the-seventeenth-century/4999BBB8F8581DE94B9C2AAD75A01D75#:~:text=The%20Act%20of%20Parliament%20whose%20expiry%20on%203%20May%201695)。书章概述确认 1662 年法令于 1695 年 5 月 3 日失效，并说明当时人称其为 *Printing Act*，后世常称 *Licensing Act* — fetched [2026-08-20](https://web.archive.org/web/20260817234716/https://www.cambridge.org/core/books/abs/cambridge-history-of-the-book-in-britain/stationers-and-the-printing-acts-at-the-end-of-the-seventeenth-century/4999BBB8F8581DE94B9C2AAD75A01D75)。许可制度与两段生效期另见版权史原始资料库的 [1662 年《许可法》记录](https://www.copyrighthistory.org/cam/tools/request/showRecord.php?id=record_uk_1662)，原文称其规定 “licensing of the press”，并在 “1662 and 1679, and then again between 1685 and 1695” 生效 — fetched 2026-08-20（Archive.org 新快照暂未取得）
-- <span id="ref-moseley-wicked-bible"></span>莫斯利（David Moseley），坎特伯雷大学 — 原始来源：[《“不”好笑？幽默、难堪与〈邪恶圣经〉》（*“Not” Funny? Humour, Embarrassment, and the “Wicked Bible”*）](https://ir.canterbury.ac.nz/server/api/core/bitstreams/7e8a0935-0cdc-4f4c-ae4e-8a1e332fe695/content#page=3)，共 79 个 PDF 页面；PDF 第 2 页为空白。漏字及完整误句见 PDF 第 3 页（论文第 1 页，约全文 4%），原文：“Thou shalt commit adultery.”；[1855 年由亨利·史蒂文斯赋予“Wicked”之名](https://ir.canterbury.ac.nz/server/api/core/bitstreams/7e8a0935-0cdc-4f4c-ae4e-8a1e332fe695/content#page=17)见 PDF 第 17 页；[没被销毁及退回修正](https://ir.canterbury.ac.nz/server/api/core/bitstreams/7e8a0935-0cdc-4f4c-ae4e-8a1e332fe695/content#page=18)见 PDF 第 18 页（论文第 16 页，约全文 23%）；[牌照未撤](https://ir.canterbury.ac.nz/server/api/core/bitstreams/7e8a0935-0cdc-4f4c-ae4e-8a1e332fe695/content#page=19)见 PDF 第 19 页（论文第 17 页，约全文 24%）；[罚款与希腊文印刷所](https://ir.canterbury.ac.nz/server/api/core/bitstreams/7e8a0935-0cdc-4f4c-ae4e-8a1e332fe695/content#page=55)见 PDF 第 55 页（论文第 53 页，约全文 70%）。原文：“no evidence that the Bibles were ordered to be destroyed”；“the printers did not lose their licence” — fetched [2026-08-20](https://web.archive.org/web/20260813145200/https://ir.canterbury.ac.nz/server/api/core/bitstreams/7e8a0935-0cdc-4f4c-ae4e-8a1e332fe695/content)
+- <span id="ref-moseley-wicked-bible"></span>莫斯利（David Moseley），坎特伯雷大学 — 原始来源：[《“不”好笑？幽默、难堪与〈邪恶圣经〉》（*“Not” Funny? Humour, Embarrassment, and the “Wicked Bible”*）](https://ir.canterbury.ac.nz/server/api/core/bitstreams/7e8a0935-0cdc-4f4c-ae4e-8a1e332fe695/content#page=3)，共 79 个 PDF 页面；PDF 第 2 页为空白。漏字及完整误句见 PDF 第 3 页（论文第 1 页，约全文 4%），原文：“Thou shalt commit adultery.”；[1855 年由史蒂文斯（Henry Stevens）赋予“Wicked”之名](https://ir.canterbury.ac.nz/server/api/core/bitstreams/7e8a0935-0cdc-4f4c-ae4e-8a1e332fe695/content#page=17)见 PDF 第 17 页；[没被销毁及退回修正](https://ir.canterbury.ac.nz/server/api/core/bitstreams/7e8a0935-0cdc-4f4c-ae4e-8a1e332fe695/content#page=18)见 PDF 第 18 页（论文第 16 页，约全文 23%）；[牌照未撤](https://ir.canterbury.ac.nz/server/api/core/bitstreams/7e8a0935-0cdc-4f4c-ae4e-8a1e332fe695/content#page=19)见 PDF 第 19 页（论文第 17 页，约全文 24%）；[罚款与希腊文印刷所](https://ir.canterbury.ac.nz/server/api/core/bitstreams/7e8a0935-0cdc-4f4c-ae4e-8a1e332fe695/content#page=55)见 PDF 第 55 页（论文第 53 页，约全文 70%）。原文：“no evidence that the Bibles were ordered to be destroyed”；“the printers did not lose their licence” — fetched [2026-08-20](https://web.archive.org/web/20260813145200/https://ir.canterbury.ac.nz/server/api/core/bitstreams/7e8a0935-0cdc-4f4c-ae4e-8a1e332fe695/content)
 - <span id="ref-cambridge-manutius"></span>剑桥大学图书馆 — 原始来源：[《袖珍本、仿本与海豚锚标志》（Enchiridia, counterfeits and the dolphin-and-anchor device）](https://exhibitions.lib.cam.ac.uk/manutius/case/enchiridia/#:~:text=published%20as%20pocket-size%20books%20(enchiridia)%20was%20Aldus%E2%80%99s%20most%20successful%20editorial%20innovation)。原文把 1501 年开始的袖珍古典版本称为 “Aldus’s most successful editorial innovation”；同一展览介绍称这组袖珍本使用 “Italic type”。原站审计时连接超时，以下判断由完整存档正文复核 — fetched [2026-08-20](https://web.archive.org/web/20260211181353/https://exhibitions.lib.cam.ac.uk/manutius/case/enchiridia/)
 - <span id="ref-cambridge-manutius-counterfeits"></span>剑桥大学图书馆 — 原始来源：[《但丁〈神曲〉仿本标志》（Dante *Commedia* counterfeit device）](https://exhibitions.lib.cam.ac.uk/manutius/artifacts/dante-1265-1321-commedia-counterfeit-device/#:~:text=The%20forgers%20also%20attempted%20to%20copy%20Aldus%E2%80%99s%20dolphin-and-anchor%20device)。该仿本据推测约于 1502–1503 年在里昂印成，原文：“The forgers also attempted to copy Aldus’s dolphin-and-anchor device.” [同一展览总览](https://exhibitions.lib.cam.ac.uk/manutius/case/enchiridia/)说明竞争者主要在里昂活动，处在威尼斯疆域及其印刷特许之外 — fetched [2026-08-20](https://web.archive.org/web/20230924211011/https://exhibitions.lib.cam.ac.uk/manutius/artifacts/dante-1265-1321-commedia-counterfeit-device/)
 - <span id="ref-yale-printers-devices"></span>耶鲁大学法学院图书馆 — 原始来源：[《法律书籍中的印刷商标志》（Printers’ devices from law books）](https://library.law.yale.edu/news/printers-devices-law-books#:~:text=A%20printer%E2%80%99s%20device%20is%20a%20trademark%20of%20sorts)。原文称印刷商标志是 “a trademark of sorts”（某种意义上的商标），兼具营销和类似版权声明的功能；同页称最早的已知实例 “first appeared in their 1457 Mainz Psalter” — fetched [2026-08-20](https://web.archive.org/web/20260817235011/https://library.law.yale.edu/news/printers-devices-law-books)
 - <span id="ref-manutius-warning"></span>马努提乌斯，版权史原始资料库（Primary Sources on Copyright）— 原始来源：[1503 年《告里昂印刷商书》英译与转写](https://www.copyrighthistory.org/cam/tools/request/showRepresentation.php?id=representation_i_1503#:~:text=It%20happens%20that%20in%20the%20city%20of%20Lyon%20our%20books%20appeared%20both%20full%20of%20errors%20and%20under%20my%20name)，原件定位为法国国家图书馆 BN, Ms. Gr. 3064, fol. 85。原文称里昂书 “full of errors and under my name”，随后列出印刷商、出版地、日期、标志、纸张和字体差异及逐书错字 — fetched [2026-08-20](https://web.archive.org/web/20251207185927/https://www.copyrighthistory.org/cam/tools/request/showRepresentation.php?id=representation_i_1503)
-- <span id="ref-sabellico-privilege"></span>科斯蒂洛（Joanna Kostylo），版权史原始资料库（Primary Sources on Copyright）— 原始来源：[《评 1486 年萨贝利科特许》（Commentary on Marcantonio Sabellico’s privilege）](https://www.copyrighthistory.org/cam/commentary/i_1486/i_1486_com_2162008205354.html#:~:text=The%20printing%20monopoly%20granted%20to%20Johannes%20of%20Speyer%20in%201469)。原文称 1469 年约翰内斯·德·斯皮拉（Johannes de Speyer）所得为 “printing monopoly”，1486 年萨贝利科所得是 “the first known privilege to an author”；这些权利 “were not conceived as the inherent right” — fetched [2026-08-20](https://web.archive.org/web/20260514232223/https://www.copyrighthistory.org/cam/commentary/i_1486/i_1486_com_2162008205354.html)
+- <span id="ref-sabellico-privilege"></span>科斯蒂洛（Joanna Kostylo），版权史原始资料库（Primary Sources on Copyright）— 原始来源：[《评 1486 年萨贝利科特许》（Commentary on Marcantonio Sabellico’s privilege）](https://www.copyrighthistory.org/cam/commentary/i_1486/i_1486_com_2162008205354.html#:~:text=The%20printing%20monopoly%20granted%20to%20Johannes%20of%20Speyer%20in%201469)。原文称 1469 年斯皮拉（Johannes de Speyer）所得为 “printing monopoly”，1486 年萨贝利科所得是 “the first known privilege to an author”；这些权利 “were not conceived as the inherent right” — fetched [2026-08-20](https://web.archive.org/web/20260514232223/https://www.copyrighthistory.org/cam/commentary/i_1486/i_1486_com_2162008205354.html)
 - <span id="ref-statute-anne"></span>德兹利（Ronan Deazley），版权史原始资料库（Primary Sources on Copyright）— 原始来源：[《评 1710 年〈安妮法令〉》（Commentary on the Statute of Anne 1710）](https://www.copyrighthistory.org/cam/tools/request/showRecord.php?id=commentary_uk_1710#:~:text=not%20just%20the%20members%20of%20the%20company%2C%20but%20also%20any%20author)。德兹利称它是世界第一部版权成文法，并指出 “not just the members of the company, but also any author … was free to own and deal in the copies of books”；未出版新书的首个期限为 “Fourteen Years” — fetched [2026-08-20](https://web.archive.org/web/20241013225756/https://www.copyrighthistory.org/cam/tools/request/showRecord.php?id=commentary_uk_1710)
 - <span id="ref-modern-trademark-registration"></span>英国知识产权局 — 原始来源：[《创造历史的红色三角》（The red triangle that made history）](https://ipo.blog.gov.uk/2026/01/08/the-red-triangle-that-made-history-celebrating-150-years-of-uk-trade-mark-no-1/#:~:text=France%20introduced%20a%20deposit%20system%20in%201857)。原文：“France introduced a deposit system in 1857”；英国 1875 年法令建立 “a systematic, nationally centralised register” — fetched [2026-08-20](https://web.archive.org/web/20260421133909/https://ipo.blog.gov.uk/2026/01/08/the-red-triangle-that-made-history-celebrating-150-years-of-uk-trade-mark-no-1/)
 - <span id="ref-royal-society-philosophical-transactions"></span>英国皇家学会 — 原始来源：[《〈皇家学会哲学汇刊〉史》（History of *Philosophical Transactions*）](https://royalsociety.org/journals/publishing-activities/publishing350/history-philosophical-transactions/#:~:text=The%20Royal%20Society%20responded%20by%20introducing%20more%20rigorous%20and%20systematic%20expert%20peer%20review)。原文记载期刊由奥尔登堡于 1665 年创办；1752 年改由 21 人委员会集体选稿；到 1830 年代才引入 “more rigorous and systematic expert peer review” — fetched [2026-08-20](https://web.archive.org/web/20260609032321/https://royalsociety.org/journals/publishing-activities/publishing350/history-philosophical-transactions/)
