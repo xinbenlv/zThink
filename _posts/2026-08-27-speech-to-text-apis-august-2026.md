@@ -4,6 +4,12 @@ excerpt: "Five roundups of the best speech-to-text APIs, five different winners,
 date: 2026-08-27
 lang: en
 published: true
+cover_image:
+  src: /assets/blogposts/2026-08-27-speech-to-text-apis-august-2026/speech-to-text-apis-2026-00-cover.jpg
+  x: 285
+  y: 0
+  size: 630
+og_image: /assets/blogposts/2026-08-27-speech-to-text-apis-august-2026/speech-to-text-apis-2026-00-cover.jpg
 categories:
   - blog
 tags:
@@ -18,6 +24,8 @@ tags:
 
 ## The bug that started this
 
+![Two stereo waveform lanes with identical shapes above a flat left-minus-right difference line, beside a transcript in which every row carries the same single speaker marker](/assets/blogposts/2026-08-27-speech-to-text-apis-august-2026/speech-to-text-apis-2026-01-dual-mono.jpg)
+
 An 87-minute two-person phone call, recorded through a meeting bot, came back as a clean transcript: 777 sentences, correct words, good punctuation. Every single sentence was attributed to one speaker.
 
 The transcription was fine. The diarization, the part that decides who spoke when, had collapsed on the phone leg and merged both people into one. The usual escape hatch is to split the stereo channels and transcribe each separately, but that failed too: the file was dual-mono, with the left-minus-right difference sitting around −84 dB. Two identical channels wearing a stereo container.
@@ -27,6 +35,8 @@ Nothing in a headline word error rate predicts this. WER told me the words were 
 So I went looking for a benchmark that would tell me which API to use instead. That is where the real problem started.
 
 ## Five roundups, five winners
+
+![Five identical award podiums built from bar charts, each crowning a different bar in orange, showing five vendor benchmarks that disagree about the winner](/assets/blogposts/2026-08-27-speech-to-text-apis-august-2026/speech-to-text-apis-2026-02-five-winners.jpg)
 
 Search for the best speech-to-text API in 2026 and you will get a well-written, confident, comparison-table-bearing article. It will almost always be published by one of the companies in the comparison.
 
@@ -48,6 +58,8 @@ Same two companies. Opposite conclusions. Both charts are real, and I opened bot
 
 ## Why the metric decides the ranking
 
+![The same recording measured as a time ruler on the left and as word tokens on the right, each producing a ranked list in a different order](/assets/blogposts/2026-08-27-speech-to-text-apis-august-2026/speech-to-text-apis-2026-03-der-vs-cpwer.jpg)
+
 The two charts disagree partly because they measure different things, and the difference is the single most useful concept here.
 
 **DER (diarization error rate)** is measured in *time*. Take the audio timeline, add up every second that was missed, falsely detected as speech, or attributed to the wrong speaker, and divide by total speech time. It scores the segmentation and says nothing about the words.
@@ -67,6 +79,8 @@ Two details are worth noticing in AssemblyAI's table anyway. The dataset is undi
 Credit where it is due: the author states outright that he runs Voice AI at AssemblyAI. That is more disclosure than most of the genre offers.
 
 ## The reality check nobody markets
+
+![A grouped bar chart in which error rates climb for every system as audio moves from quiet speech to restaurants, meetings and web video](/assets/blogposts/2026-08-27-speech-to-text-apis-august-2026/speech-to-text-apis-2026-04-hard-audio.jpg)
 
 The most useful number I found in a vendor benchmark is one that makes the whole category look bad.
 
@@ -114,6 +128,8 @@ The leaderboard has one limitation you must not overlook: it covers **English an
 
 ## What it actually costs
 
+![A row of hanging price tags, some carrying an added orange surcharge sticker and others with the same feature already printed in, illustrating bundled versus add-on pricing](/assets/blogposts/2026-08-27-speech-to-text-apis-august-2026/speech-to-text-apis-2026-05-price-tags.jpg)
+
 Prices normalized to US dollars per hour of audio, read from each vendor's pricing page on 2026-08-27. The diarization column is the one people get wrong.
 
 | Provider / model | Batch $/hr | Realtime $/hr | Diarization |
@@ -153,6 +169,8 @@ You can have clean readable text, or you can know who spoke when and at what tim
 Two more from the same page: diarization supports [up to 8 speakers, with 3 or more marked experimental](#ref-gemini-transcribe-docs), where the launch blog says three and the docs say eight; the docs are more specific. And "enabling word-level timestamps may degrade overall transcription accuracy."
 
 ## Chinese, and what the leaderboards will not tell you
+
+![A ranked leaderboard table ending at a torn paper edge, with an unmeasured Chinese character block sitting in the blank space beyond it](/assets/blogposts/2026-08-27-speech-to-text-apis-august-2026/speech-to-text-apis-2026-06-missing-column.jpg)
 
 The neutral scoreboard covers no Chinese. The vendor pages that do are the weakest evidence in this entire survey, and ElevenLabs' Mandarin page is the clearest example of why.
 
