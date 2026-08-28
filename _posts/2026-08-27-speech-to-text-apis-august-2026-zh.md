@@ -21,7 +21,7 @@ tags:
   - tooling
 ---
 
-*这是一篇写给「要挑一家用」的开发者的市场调研，时间点是 2026 年 8 月。文中每个数字都标注了发布方，因为在这个品类里，这一点恰恰是最关键的信息。价格均为 2026-08-27 当天从各厂商定价页读取，变动很快。*
+*2026 年 8 月的语音转文字市场是什么样子，写给需要挑一家、然后赶紧把活干完的人。每个数字我都标了是谁发布的，因为在这个品类里，这大概是你最需要知道的一件事。价格是 2026-08-27 当天从各家定价页读的，变动很快。*
 
 ## 起因：777 句话，只有一个说话人
 
@@ -29,9 +29,9 @@ tags:
 
 转写本身没问题，出问题的是**说话人分离**（speaker diarization）——判断「谁在什么时候说话」的那一层。它在电话这一路音频上整个塌掉了，把两个人合并成了一个。通常的补救办法是把左右声道拆开分别转写，但这条路也断了：文件是伪立体声，左右声道相减的差值大约在 −84 dB，两条完全相同的声道套了个立体声的壳。
 
-这种故障，看词错误率（WER）是看不出来的。WER 告诉我用词是对的；坏掉的是下游所有依赖「这句话是谁说的」的东西。
+这种故障，看词错误率（WER）是看不出来的。用词确实是对的，坏掉的是下游所有需要知道「这句话是谁说的」的环节。
 
-于是我去找一份能告诉我该换哪家的评测。真正的麻烦从这里开始。
+于是我去找一份评测，想看看该换哪家。
 
 ![两条波形完全相同的立体声轨道，下方左减右的差值是一条死平的直线；右侧的转写稿每一行都盖着同一个说话人印章](/assets/blogposts/2026-08-27-speech-to-text-apis-august-2026/speech-to-text-apis-2026-01-dual-mono.jpg)
 
@@ -49,43 +49,41 @@ tags:
 | ["Best speech-to-text APIs in 2026"](#ref-gladia-roundup) | Gladia | Gladia Solaria-3 | WER，来源混杂 |
 | ["State of Speaker Diarization"](#ref-picovoice-diarization) | Picovoice | **没有人**——pyannote 在 DER 上赢了它自家的 Falcon | JER 与 DER |
 
-这不是五次独立测量收敛到同一个真相。其中四份是营销材料，每一份都把发布方放在最上面。
+其中四份是营销材料，每一份都把发布方放在最上面。
 
-值得把例外单独说清楚，因为它说明这是一种倾向而不是铁律。Picovoice 卖 Falcon，拿它和 pyannote 对比，然后[明确拒绝评出赢家](#ref-picovoice-diarization)：「Our goal was not to crown a single "winner", but to understand tradeoffs between research accuracy and production efficiency.」按它自己给的数字，[DER 上 pyannote 9.0%、Falcon 10.3%](#ref-picovoice-diarization)，pyannote 领先；Falcon 只在 Jaccard 错误率上占优。一家厂商发布一份自家产品输掉的评测，是这次调研里最少见的事。
+第五份我特意留着，因为它不合这个规律。Picovoice 卖 Falcon，拿它和 pyannote 对比，然后[明确拒绝评出赢家](#ref-picovoice-diarization)：「Our goal was not to crown a single "winner", but to understand tradeoffs between research accuracy and production efficiency.」按它自己给的数字，[DER 上 pyannote 9.0%、Falcon 10.3%](#ref-picovoice-diarization)，pyannote 领先；Falcon 只在 Jaccard 错误率上占优。这是这次调研里唯一一家发布了自家产品输掉的评测的厂商。
 
 ![五座一模一样的奖杯，每座后面伸出一只手，给它自己别上空白绶带](/assets/blogposts/2026-08-27-speech-to-text-apis-august-2026/speech-to-text-apis-2026-02-five-winners.jpg)
 
-最能说明问题的，是其中两份对同一家公司的判断。在 [AssemblyAI 自己的表里](#ref-assemblyai-diarization-roundup)，AssemblyAI 第一。在 [pyannoteAI 的 DIHARD Broadcast 图里](#ref-pyannote-benchmark)，AssemblyAI 的 Universal-3 **在十二个系统里垫底**，DER 31.1%，而 pyannoteAI 自己是 9.4%。换到 DIHARD Clinical，它还是最后一名，48.1% 对 13.3%。
-
-同样两家公司，结论完全相反。两张图都是真的，我都打开看过。
+其中两份对同一家公司的判断，反差最大。在 [AssemblyAI 自己的表里](#ref-assemblyai-diarization-roundup)，AssemblyAI 第一。在 [pyannoteAI 的 DIHARD Broadcast 图里](#ref-pyannote-benchmark)，AssemblyAI 的 Universal-3 **在十二个系统里垫底**，DER 31.1%，而 pyannoteAI 自己是 9.4%。换到 DIHARD Clinical，它还是最后一名，48.1% 对 13.3%。两张图我都打开看过，说的是同一家公司，结论完全相反。
 
 ## 为什么换个指标就换个排名
 
-两张图打架，一部分原因是它们量的根本不是同一件事。这个区别是全文最有用的一个概念。
+两张图打架，有一部分原因是它们量的根本不是同一件事。这大概是全文唯一值得记住的一点理论。
 
 **DER（diarization error rate，分离错误率）以「时间」计**。把音频时间轴摊开，把漏检的、误检成人声的、以及分给错误说话人的秒数加起来，除以总语音时长。它衡量切分，完全不管文字。
 
 **cpWER（concatenated minimum-permutation word error rate）以「词」计**。把每个说话人说过的话各自拼接起来，穷举你的说话人标签映射到真实说话人的所有排列，取最优的一种，再算词错误率。转写错误和说话人归属错误，它一起罚。
 
-AssemblyAI 自己那段话是我见过对这个区别最清楚的公开表述——尽管出处如此，或者说，正因为出处如此，值得引用：
+这个区别，AssemblyAI 讲得比我读到的任何人都清楚。考虑到这段话最后导向哪里，这一点有点尴尬：
 
 > DER is a fine academic metric, but [it measures diarization in isolation from the transcript](#ref-assemblyai-diarization-roundup). In production what you care about is whether the right speaker label lands on the right words—which is what cpWER measures. Keep that distinction in mind, because it changes how the leaderboard looks.
 
 （大意：DER 是个不错的学术指标，但它把分离和转写稿割裂开来衡量。生产环境里你真正在意的，是正确的说话人标签有没有落在正确的词上——这正是 cpWER 衡量的。记住这个区别，因为它会改变榜单的样子。）
 
-最后那句话分量很重。它确实会改变榜单的样子，而且改变的方向，正好朝着写这句话的公司。
+它确实会改变榜单的样子，而且是朝着有利于 AssemblyAI 的方向改变——这句话大概就是为此而写的。
 
 ![同一段录音，左边用卷尺和秒表按时间量，右边被拆成词块用镊子分拣；两边下方的排名绶带顺序并不相同](/assets/blogposts/2026-08-27-speech-to-text-apis-august-2026/speech-to-text-apis-2026-03-der-vs-cpwer.jpg)
 
-平心而论：这未必是恶意。pyannoteAI 只卖分离，本身不产出转写稿，DER 是它的产品唯一能被打分的指标；AssemblyAI 把转写和分离作为一条流水线卖，cpWER 才是对它实际交付内容的诚实度量。**指标跟着产品走。**这也正是你不能把任何单独一家的图表当成行业排名的原因。
+这些都未必是恶意。pyannoteAI 只卖分离，本身不产出转写稿，DER 根本就是它的产品唯一能被打分的指标；AssemblyAI 把转写和分离作为一条流水线卖，cpWER 才是对它实际交付内容更诚实的度量。指标是跟着产品走的。这也是为什么任何单独一家的图表都不能当成行业排名来读。
 
-即便如此，AssemblyAI 那张表还有两处值得注意。一是数据集不公开——这些数字[「come from our internal diarization benchmark, run across a mix of real-world datasets」](#ref-assemblyai-diarization-roundup)，这样的结果无从复现。二是表里列了八个系统，只有它赢过的那四家商业竞品有 cpWER 数值，pyannote、NeMo、Kaldi 一律标注为「DER-reported only」。最可能在分离质量上赢的那个系统，恰好是没有可比数字的那个。
+即便如此，那张表还是有两处扎眼。一是数据集不公开——这些数字[「come from our internal diarization benchmark, run across a mix of real-world datasets」](#ref-assemblyai-diarization-roundup)，这样的结果无从复现。二是表里列了八个系统，只有它赢过的那四家商业竞品有 cpWER 数值，pyannote、NeMo、Kaldi 一律标注为「DER-reported only」。于是最有可能在分离质量上赢过它的那个系统，旁边恰好没有可比的数字。
 
-也该给一句公道话：作者在文中直接写明自己在 AssemblyAI 负责语音 AI 业务。这比这个品类里的大多数文章都坦率。
+公道地说，作者在文中直接写明自己在 AssemblyAI 负责语音 AI 业务，这比同类文章里的大多数都坦率。
 
 ## 没人拿去做营销的那个数字
 
-这次调研里最有用的一个数字，来自一份厂商评测，而它让整个品类都不好看。
+这次调研里最有用的一个数字来自一份厂商评测，而它让整个品类都不好看。
 
 [pyannoteAI 的流式评测](#ref-pyannote-streaming)在 DIHARD III 上衡量流式说话人分离。以下是它自己的结果，当然是按对自己最有利的方式呈现的：
 
@@ -96,17 +94,17 @@ AssemblyAI 自己那段话是我见过对这个区别最清楚的公开表述—
 | Deepgram Nova 3 | 39.1% | 25.3% |
 | AssemblyAI Universal Streaming v3 | 39.2% | 20.4% |
 
-冠军的成绩是 19.8% DER。也就是说，大约每五秒语音里仍有一秒是错的——而给出这个成绩的，正是把图表做得最有利于自己的那一家。
+冠军的成绩是 19.8% DER，也就是大约每五秒语音里仍有一秒是错的，而这张图还是它自家做的。
 
 难音频上更糟。即便是 pyannote，在自己的评测里，[餐厅场景 DER 54.4%](#ref-pyannote-streaming)、会议 44.6%、网络视频 44.9%。竞品在这三个场景落在 51% 到 76% 之间。
 
-如果你 2026 年要在嘈杂的多人音频上做产品，没有任何一家解决了这个问题。务实的假设是：在难音频上，流式说话人分离对所有厂商都不可靠。产品要能在标签出错时平稳退化，而不是默认它总是对的。
+如果你要在嘈杂的多人音频上做产品，没有任何一家解决了这个问题。稳妥的假设是：无论选谁，难音频上的流式说话人分离都不可靠，产品得能扛住标签有时候是错的。
 
 ![四个玻璃罐里的彩色线团一个比一个缠得厉害，最后一个溢出罐口，放大镜下依然理不清](/assets/blogposts/2026-08-27-speech-to-text-apis-august-2026/speech-to-text-apis-2026-04-hard-audio.jpg)
 
 ## 最接近中立的一份记分牌
 
-[Hugging Face Open ASR Leaderboard](#ref-open-asr-leaderboard) 是这里唯一一份不由竞争对手发布的排名。模型通过 pull request 提交，评测脚本公开，平均分里还有一部分来自 Appen 和 DataoceanAI 持有的私有数据集。这一点很重要：没人能下载的测试集，也就没人能拿去训练。
+[Hugging Face Open ASR Leaderboard](#ref-open-asr-leaderboard) 是这里唯一一份不由竞争对手发布的排名。模型通过 pull request 提交，评测脚本公开，平均分里还有一部分来自 Appen 和 DataoceanAI 持有的私有数据集。这一点很重要，因为没人能下载的测试集，也就没人能拿去训练。
 
 以下是它 2026 年 8 月 25 日更新时的名次，按默认数据集组合的平均 WER 排序，越低越好：
 
@@ -121,15 +119,13 @@ AssemblyAI 自己那段话是我见过对这个区别最清楚的公开表述—
 | 11 | gladia/solaria-3 | 5.58 |
 | 12 | nvidia/canary-qwen-2.5b | 5.63 |
 
-从这张表能读出两件事。
+前十二名的差距只有半个百分点。这些产品在实际使用中的区别，无论是什么，都不会是英文的整体识别准确率。
 
-第一，前十二名的差距只有半个百分点。这些产品在实际使用中的区别，无论是什么，都不是英文的整体识别准确率。
+把这份榜单和 Gladia 自己那篇文章对照，也很有意思。[Gladia 称 Solaria-3 在 Earnings22 上以 6.4% WER 排第一](#ref-gladia-solaria3)，领先 AssemblyAI 的 6.9% 和 ElevenLabs 的 7.7%。而在榜单的 Earnings22 那一列，ElevenLabs Scribe v2 是 4.8，Gladia Solaria-3 是 5.94，AssemblyAI 是 6.05。名次倒过来了，绝对数值也对不上——两套评测流程本来就不是同一套，所以厂商说的「我们在 Earnings22 排第一」，说的其实是它自己那套流程里的第一。
 
-第二，把它和 Gladia 自己的文章对照。[Gladia 称 Solaria-3 在 Earnings22 上以 6.4% WER 排第一](#ref-gladia-solaria3)，领先 AssemblyAI 的 6.9% 和 ElevenLabs 的 7.7%。而在榜单的 Earnings22 那一列，ElevenLabs Scribe v2 是 4.8，Gladia Solaria-3 是 5.94，AssemblyAI 是 6.05。名次倒过来了，绝对数值也对不上——两套评测流程本来就不是同一套，所以厂商说的「我们在 Earnings22 排第一」，说的其实是它自己那套流程里的第一。
+还有一个关于动机的旁证。[Coval 的 2026 年选型指南](#ref-coval-guide)是我找到的另一篇由「不卖语音转文字模型」的公司写的对比，它卖的是评测工具。它也是唯一一篇不点名冠军的，只说头部厂商彼此相差「within 1-2 percentage points」。自家有产品下场，和最后能评出一个明确冠军，这两件事似乎总是一起出现。
 
-还有一个关于动机的旁证。[Coval 的 2026 年选型指南](#ref-coval-guide)是我找到的另一篇由「不卖语音转文字模型」的公司写的对比，它卖的是评测工具。它也是唯一一篇拒绝点名冠军的，只说头部厂商彼此相差「within 1-2 percentage points」。自家有没有产品下场，和最后有没有评出一个明确的冠军，这两件事几乎完全同步。
-
-这份榜单有一个不能忽略的局限：它只覆盖**英语和欧洲语言**。没有中文，没有日语，没有阿拉伯语，没有印地语。如果你的音频不是英语或西欧语言，这份记分牌对你无话可说。
+有一个局限比其余的都重要：这份榜单只覆盖英语和欧洲语言。没有中文，没有日语，没有阿拉伯语，没有印地语。如果你的音频不在其中，它帮不上什么忙。
 
 ## 真实价格是多少
 
@@ -148,12 +144,12 @@ AssemblyAI 自己那段话是我见过对这个区别最清楚的公开表述—
 | [Gemini 3.5 Transcribe](#ref-gemini-pricing) | 约 $0.30 | 约 $0.54（Live） | 包含，但只能在 verbatim 模式下用 |
 | [Qwen3-ASR，自建](#ref-qwen3-asr) | 自付算力 | 自付算力 | 没有，需搭配 pyannote |
 
-几条会改变账怎么算的注意事项：
+几条关于账最后怎么算出来的注意事项：
 
 - **说话人分离的打包方式两个方向都不一致。**Deepgram 离线免费送，流式却按 $0.0020/分钟收；AssemblyAI 两种模式都收 $0.02/小时。只比基础价，选哪家都会算错。
-- **Gladia 的标价是表里最贵的离线价格，$0.61/小时**，大约是 Deepgram 的三倍，只有承诺量的 Growth 方案才降到 $0.20。它包含的分离用的是 [pyannoteAI 的 Precision-2](#ref-gladia-pyannote)，组合确实强，但按量付费这一档谈不上便宜。
-- **Google Cloud 的动态批处理 $0.18/小时是表里最低的托管价格**，代价是按「较低的紧急程度」排队处理。
-- **Gemini 那一格是谷歌自己的估算。**它按 token 计费，页面把它折算成[「an effective blended rate of ~$0.005 per min for Transcribe」](#ref-gemini-pricing)，假设输入每秒 25 个音频 token、输出每分钟 175 个文本 token。话密的音频输出 token 更多、更贵，所以 $0.30/小时 应当当作下限而不是报价。
+- Gladia 的 $0.61/小时 是表里最贵的离线价，大约是 Deepgram 的三倍，而且只有承诺量的 Growth 方案才降到 $0.20。它打包的分离用的是 [pyannoteAI 的 Precision-2](#ref-gladia-pyannote)，组合确实强，但按量付费这一档实在谈不上便宜。
+- Google Cloud 的动态批处理 $0.18/小时 是表里最低的托管价，代价是按「较低的紧急程度」排队处理。
+- Gemini 那一格是谷歌自己的估算。它按 token 计费，页面把它折算成[「an effective blended rate of ~$0.005 per min for Transcribe」](#ref-gemini-pricing)，假设输入每秒 25 个音频 token、输出每分钟 175 个文本 token。话密的音频输出 token 更多、更贵，所以 $0.30/小时 应当当作下限而不是报价。
 - AssemblyAI 的免费额度意外地大：离线 185 小时、流式 333 小时。Gladia 给一次性 50 欧元额度，大约相当于 80 小时离线转写。
 - Deepgram 的流式折扣页面上明写是「limited-time promotional rate」，所以做明年的预算时应该按 $0.46 算。
 
@@ -165,11 +161,11 @@ AssemblyAI 自己那段话是我见过对这个区别最清楚的公开表述—
 - **Gemini 3.5 Transcribe** 于 [2026-08-26 进入公开预览](#ref-gemini-blog)，比我写这篇文章早一天。两个模型 `gemini-3.5-transcribe` 和 `gemini-3.5-transcribe-live`，85 种以上语言，自定义词表[最多 1000 条](#ref-gemini-transcribe-docs)。谷歌给出流式 4.0%、非流式 2.6% 的 WER，并[把这两个数字归给 Artificial Analysis](#ref-gemini-blog) 而不是自家评测流程。因为它才上线一天，目前没有任何第三方复测，这一点应当直说。
 - **直接用 Gemini 多模态提示词转写**，灵活，但输出结构取决于提示词。
 
-Gemini 3.5 Transcribe 有这次调研里最尖锐的一个坑。它的 `smart` 模式负责去掉口头禅、整理自我更正，而文档写得很直白：
+Gemini 3.5 Transcribe 有一个坑，我觉得在照着它做设计之前最好先知道。它的 `smart` 模式负责去掉口头禅、整理自我更正，文档对代价写得很直白：
 
 > Note: Smart transcription ("smart") is [incompatible with `timestamp_granularities` and `diarization_mode`](#ref-gemini-transcribe-docs). If you need word timestamps or speaker diarization, configure mode with `{"type": "verbatim", ...}`.
 
-也就是说：你可以要干净好读的文字，也可以要知道谁在什么时间说了什么，但同一次调用里不能兼得。对一个会议纪要类产品——恰恰两者都要——这是实打实的架构约束，不是脚注。
+也就是说，干净好读的文字，和「谁在什么时间说了什么」，同一次调用里只能二选一。而会议纪要类产品恰恰两样都要，所以这是个架构决策，不是脚注。
 
 同一页还有两点：分离[最多支持 8 个说话人，3 个及以上标为实验性](#ref-gemini-transcribe-docs)（发布博客写的是三个，文档写的是八个，以文档为准）；以及「enabling word-level timestamps may degrade overall transcription accuracy」。
 
@@ -179,15 +175,15 @@ Gemini 3.5 Transcribe 有这次调研里最尖锐的一个坑。它的 `smart` �
 
 它的营销正文声称 Scribe 达到[「a word error rate of just 3.1% on the FLEURS benchmark and 5.5% on Common Voice」](#ref-elevenlabs-chinese)。而同一页往下几百像素的评测表格里写着 **Scribe v1 在 FLEURS 上 7.2% WER**。同一个页面，自己和自己差了两倍多。这张表还给 Deepgram Nova 2 记了「98.2% WER」——这个数字意味着几乎全错，更可能的解释是 Nova 2 当时根本不支持这门语言。而且表格标的仍是 v1，在售的产品已经是 v2 了。
 
-我引用这一页，不是为了说明中文准确率，而是为了说明：一张厂商评测表可以在活跃页面上挂着无人核对好几个月。
+我引用这一页，不是为了说明中文准确率，而是因为一张厂商评测表居然可以在活跃页面上挂好几个月都没人核对。
 
 中文这边更值得认真看的是 [**Qwen3-ASR**](#ref-qwen3-asr)，阿里 2026-01-29 以 Apache-2.0 发布，有 0.6B 和 1.7B 两个尺寸，外加一个做时间戳的强制对齐模型。它覆盖 52 种语言和方言，其中包含 22 种中文方言——粤语、吴语、闽南语都在内，这是本文其他任何一家基本都不碰的部分。
 
-阿里自己报的数字，也确实是阿里自己报的：AISHELL-2 上 Qwen3-ASR-1.7B 2.71，Whisper large-v3 是 5.06；粤语 Fleurs-yue 上 3.98 对 9.18。中文错误率大约是 Whisper 的一半，而且这是一个你可以自己跑起来的模型。
+阿里自己报的数字，也确实是阿里自己报的：AISHELL-2 上 Qwen3-ASR-1.7B 2.71，Whisper large-v3 是 5.06；粤语 Fleurs-yue 上 3.98 对 9.18。中文错误率大约是 Whisper 的一半，而且这个模型你可以自己跑起来。
 
-有两个独立信号让我愿意认真对待它，而不是把它归进厂商宣传那一堆。一是在 Open ASR Leaderboard 上，Qwen3-ASR-1.7B **英文总榜第 7**，5.31，排在 AssemblyAI 旗舰型号前面；在私有对话数据集那一列它拿到全场最好成绩 13.9，而那份数据它不可能训练过。同时，它是榜上最靠前的、有实测吞吐数字的模型——排在它前面的都是你无法自建的 API。二是[布朗大学的科研计算中心](#ref-brown-ccv)在自家转写服务的文档里推荐用 Qwen3-ASR 处理嘈杂环境和非英语方言，而他们在这里没有任何东西要卖。
+有两件事让我没把它归进厂商宣传那一堆。一是在 Open ASR Leaderboard 上，Qwen3-ASR-1.7B **英文总榜第 7**，5.31，排在 AssemblyAI 旗舰型号前面；在私有对话数据集那一列它拿到全场最好成绩 13.9，而那份数据它不可能训练过。同时，它是榜上最靠前的、有实测吞吐数字的模型——排在它前面的都是你无法自建的 API。二是[布朗大学的科研计算中心](#ref-brown-ccv)在自家转写服务的文档里推荐用 Qwen3-ASR 处理嘈杂环境和非英语方言，而他们在这里没有任何东西要卖。
 
-Qwen3-ASR 本身不做说话人分离，需要和 pyannote 搭配。
+它本身不做说话人分离，所以还得配一个 pyannote。
 
 ![账簿的表格栏在撕裂的纸边处戛然而止，边外的桌面上立着一枚刻着「榜」字的石印，红色印泥盒开着，桌面却干干净净](/assets/blogposts/2026-08-27-speech-to-text-apis-august-2026/speech-to-text-apis-2026-06-missing-column.jpg)
 
@@ -199,11 +195,11 @@ Gladia 宣传 Solaria-1 覆盖 [100 多种语言并原生支持语码转换](#re
 
 我没有找到任何一份中立评测，对上述任何一家在语码转换音频上打过分。公开的研究资源是 [CS-Dialogue](#ref-cs-dialogue)：104 小时、200 位说话人的中英自发对话语料，面向学术用途开放；论文作者也指出，Whisper 这类预训练模型在这项任务上仍有提升空间。另有一篇 [2025 年的系统性文献综述](#ref-cs-survey)可作背景，但它并没有给出一个可引用的总体提升幅度。
 
-所以，如果你要做中英西三语混说，没有任何已发表的数字能替你做决定。拿 CS-Dialogue，或者你自己的音频样本，去跑两三家候选。这就是全部建议。
+所以如果你要做中英西三语混说，没有任何已发表的数字能替你做决定。拿 CS-Dialogue，或者你自己的音频样本，去跑两三家候选。
 
 ## 如果是我，会怎么选
 
-没有单一冠军，因为诚实的答案本来就因场景而异。
+这里没有单一冠军，所以按场景分开说。
 
 **多人英语、且说话人归属重要。**瓶颈是分离质量而不是 WER，在这件事上专业厂商胜过打包方案。把转写和分离分开走：用一家强的 ASR API 出文字，用 pyannoteAI 出说话人。如果一定要一家搞定，Gladia 以 $0.61/小时 打包了 Precision-2，可以省掉自己做集成。无论选谁，都要为重叠语音的失败留余地：19.8% DER 已经是公开的**最好**流式成绩。
 
@@ -217,17 +213,17 @@ Gladia 宣传 Solaria-1 覆盖 [100 多种语言并原生支持语码转换](#re
 
 **自建或数据不出内网。**Qwen3-ASR，Apache-2.0，分离交给 pyannote。它也是价格表里唯一一行：账单不会随音频时长无止境地线性增长。
 
-**最后回到开头那个 bug：**如果录制端在你手里，就按参与者分轨录，不要把本可以在采集阶段解决的问题丢给分离模型。说话人分离是给「你没能在源头分好轨」的音频准备的补救手段，而目前对所有厂商来说，这个补救都是有损的。
+**最后回到开头那个 bug：**如果录制端在你手里，就按参与者分轨录，别把采集阶段本来就能留住的信息，丢给分离模型去还原。说话人分离是对「源头没分好轨」的一种修补，而目前对所有厂商来说，这种修补都是有损的。
 
 ## 怎么读这些数字
 
-这次调研让我养成三个习惯：
+在相信任何一张图之前，有三件事值得先确认：
 
 1. **先看发布方，再看图表。**在这个品类里，发布方对冠军的预测力高得离谱。
 2. **确认它选了哪个指标。**同一段音频，DER 和 cpWER 会给出不同的排名，而厂商会挑自家产品天生擅长的那个。
 3. **问数据集能不能被指名。**「我们内部的、跨多个真实数据集的评测」不是一个你能核对、复现或据以追责的结果。
 
-我起初拿到的线索里，有好几条打开原始出处后就不成立了：一张 cpWER 表被归给了错误的发布方；一项「包含在内」的分离其实要另外付费；一个价格差了三倍；一份榜单的第一名早已掉到第十二；还有一个「WER 下降 55%」的说法，在被引用的那篇论文里根本找不到。这些错误，任何一条都能在一次自信的改写中存活下来。但没有一条能在打开页面之后存活。
+我起初拿到的线索里，有好几条打开原始出处后就散了：一张 cpWER 表被归给了错误的发布方；一项「包含在内」的分离其实要另外付费；一个价格差了三倍；一份榜单的第一名早已掉到第十二；还有一个「WER 下降 55%」的说法，在被引用的那篇论文里根本找不到。这些说法读起来都完全合理。这正是这个品类最麻烦的地方——合理是很廉价的，真数字和编出来的数字之间，唯一的区别就是你有没有真的去看一眼。
 
 ## 参考资料与原文定位
 
