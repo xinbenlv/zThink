@@ -10,6 +10,7 @@ cover_image:
   y: 0
   size: 630
 og_image: /assets/blogposts/2026-08-27-speech-to-text-apis-august-2026/speech-to-text-apis-2026-00-cover.jpg
+translationKey: speech-to-text-apis-2026-08-27
 categories:
   - blog
 tags:
