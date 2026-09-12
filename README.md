@@ -1,5 +1,17 @@
 # zThink Blog
 
+### Content and local media
+
+Articles live in `_posts/` and follow [POSTS_FORMAT.md](POSTS_FORMAT.md). Article media and verification notes belong in [assets/blogposts/](assets/blogposts/README.md).
+
+```text
+_posts/             # dated Markdown articles
+assets/blogposts/   # images and source notes grouped by article
+.worktrees/         # ignored isolated content editing worktrees
+```
+
+The parent `xinbenlv/zzn-im-2026` site consumes this repository as `content/zThink`. Merging a content PR requires a separate site submodule-pointer update to deploy it.
+
 ### Building this Blog
 
 Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
