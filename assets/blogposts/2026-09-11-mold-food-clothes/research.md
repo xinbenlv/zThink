@@ -72,3 +72,13 @@ Procedural sections (food handling table, laundry, prevention) and the short hel
 ## Delivery status
 
 The GitHub connector can read repository metadata but its create-blob call returned HTTP 403 (resource not accessible by integration). GuestSafe metadata lists only GitHub credentials described for reading journal activity, not content writes; those were not repurposed. The in-app browser was signed out. Automatic approval rejected checking another browser session as an access-control bypass; no further authentication workaround was attempted. The completed content is committed locally; remote branch/PR creation remains pending suitable GitHub write access.
+
+## 2026-09-14 severity clarification
+
+Reader feedback: the original section named hazards but did not adequately explain why allergy can matter or distinguish a possible severe outcome from its likelihood in an ordinary healthy person.
+
+Reopened WHO Mycotoxins and CDC Mold. Read two additional primary sources in full relevant passages: CDC About Invasive Mold Infections (Overview; Who is at risk) and NIH/NHLBI Asthma Attack (introductory airway explanation; When to go to the ER). Both new Wayback availability queries returned HTTP 429 on 2026-09-14 UTC. No archive URL is claimed.
+
+Rewrote the existing health section around bodily effects and affected populations: airway narrowing during asthma attacks; rare tissue/organ-invasive infections primarily in immunosuppressed people; foodborne toxin injury independent of allergy, using aflatoxin liver injury as the concrete example. Explicitly retained the CDC statement that most people inhale spores daily without illness, and avoided extending foodborne cancer evidence to clothing odor. Did not assign an invented percentage risk or imply that a single exposure predicts cancer.
+
+Manual deslop pass checked seriousness-versus-frequency distinctions and removed the former vague infection sentence. The existing exposure illustration remains accurate; no new major section or image is needed. Directory structure is unchanged, so ancestor README descriptions remain accurate. Initial validation counts above describe the initial draft; updated rendering is checked separately.

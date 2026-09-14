@@ -49,15 +49,19 @@ og_image: /assets/blogposts/2026-09-11-mold-food-clothes/cover.jpg
 
 *图示只区分接触途径，不表示风险大小相同，也不是清理操作示范。*
 
-**吃进去**，可能出现恶心、呕吐、腹泻或腹痛，也可能发生过敏反应。霉变食品里还可能同时有细菌，不能把吃坏肚子的原因都归给霉菌。健康人偶尔误食少量霉变食品，[也可能没有症状](#ref-ingestion)；这不构成继续吃的理由。
+如果只是健康人偶尔接触少量环境中的霉菌，确实不必把它想成一碰就中毒的东西。CDC 指出，**多数人每天都会吸入霉菌孢子，并不会因此生病。** 但“霉菌对身体有什么影响”，至少要分清以下三种情况：身体发生过敏或炎症反应、霉菌侵入组织造成感染，以及吃下霉菌产生的毒素。[日常接触与感染风险](#ref-invasive)、[毒素的定义](#ref-mycotoxins)
 
-这里还要分清霉菌和**霉菌毒素**：前者是生物，后者是某些霉菌产生的有毒化合物，并非所有霉菌都会产毒。WHO 指出，某些食源性霉菌毒素可导致急性中毒，也有长期健康影响；例如黄曲霉毒素与肝损伤和人类肝癌有关。[这些证据针对特定毒素及其暴露](#ref-mycotoxins)，不能据此推断“闻过一次霉味就会致癌”，更不能凭一口食物估算个人后果。
+**第一类是刺激、过敏和呼吸道反应，严重程度不止打喷嚏。** 有人只是鼻塞、眼痒或皮疹，也有人咳嗽、喘息；已有哮喘的人，霉菌暴露可能诱发或加重症状。[CDC 的健康影响说明](#ref-respiratory)。哮喘发作时，气道因肿胀或收缩而变窄，空气更难进出，严重发作可能危及生命，需要急诊处理。[哮喘发作的机制和严重程度](#ref-asthma-severity)。所以，如果“过敏”仅指轻微鼻痒，你觉得危害有限可以理解；但不能把所有霉菌相关的呼吸道反应都归入这个程度。
 
-**吸进去**，家庭潮湿霉变环境较有依据的风险是呼吸道症状、过敏和哮喘加重。有人会鼻塞、咳嗽、喘息或眼睛不适，也有人没有反应。霉菌引起的刺激可发生在不过敏的人身上；免疫功能受抑制者和慢性肺病患者还可能面临霉菌感染风险。[感染、过敏和刺激是不同问题](#ref-respiratory)，不能用一个“霉菌中毒”概括。
+皮肤接触发霉织物，可能产生刺激或过敏性皮疹；这不等于霉菌已经在皮肤里生长。清理时即使杀死了霉菌，也要去除污染，因为[死掉的霉菌仍可能引起过敏](#ref-dead-mold)。
 
-**碰到皮肤**，可能引起刺激或过敏性皮疹。这不等于霉菌已经在皮肤里生长，也不能仅凭穿过发霉衣服就诊断真菌感染。EPA 提醒，[死掉的霉菌仍可能引起过敏](#ref-dead-mold)，所以处理衣物和环境需要去除污染，不能只追求“杀死”。
+**第二类是感染：霉菌确实侵入了人体组织。** CDC 所说的侵袭性霉菌感染，会累及深部组织、血管或器官，可危及生命；它和眼痒、皮疹不是同一回事。但这种感染**少见，多数人并不属于高风险人群**。需要特别警惕的是接受器官或干细胞移植、化疗等导致免疫功能受抑制的人；大量霉菌暴露会进一步增加这些人的风险。感染可由吸入孢子引起，也可能经伤口进入。不能把这类严重后果说成健康人穿过一件发霉衣服后的通常结局。[感染的含义、严重程度与人群](#ref-invasive)
 
-有霉菌过敏、哮喘、慢阻肺、基础肺病或免疫抑制情况的人，应[避免参与除霉](#ref-cleanup-protection)。这一建议尤其适用于清理大量受潮物品和霉变房间，并非要求每个家庭都把生活环境变成无菌室。
+**第三类是食源性毒素损伤，这与是否过敏无关。** 某些霉菌会在食物里产生有毒化合物，统称霉菌毒素。例如，WHO 说明，大剂量黄曲霉毒素可造成急性肝损伤，严重时危及生命；也有人类肝癌的证据。这意味着，不对霉菌过敏，也不能因此放心吃受污染食品。不过，并非所有霉菌都产毒，也不是所有毒素都会造成相同损伤；一件食品的霉斑，不能告诉我们毒素种类或摄入剂量，更不能直接换算成个人患癌概率。[食源性毒素与黄曲霉毒素](#ref-mycotoxins)
+
+误食霉变食品还可能出现恶心、呕吐、腹泻和腹痛，食品中也可能同时有致病细菌；健康人误食少量后则可能没有症状。[误食后的可能反应](#ref-ingestion)。没有马上不舒服，不是剩下的食物安全的证明；反过来，误吃一口也不能据此断定自己会发生肝损伤或癌症。
+
+因此，**衣柜霉味与霉变食品，不能按同一种危险来理解。** 对家庭织物和环境，要注意皮肤与呼吸道反应，并保护哮喘、肺病或免疫受抑制的人；对食品，还要防范吃进去的毒素和其他微生物污染。前述食源性黄曲霉毒素证据，不能直接拿来证明“闻到衣服霉味会致癌”。有霉菌过敏、哮喘、慢阻肺、基础肺病或免疫抑制情况的人，应[避免参与除霉](#ref-cleanup-protection)。
 
 ## 食物发霉，哪些该扔，哪些有例外
 
@@ -127,7 +131,7 @@ og_image: /assets/blogposts/2026-09-11-mold-food-clothes/cover.jpg
 
 ## 参考资料
 
-以下原始资料均于 2026-09-12（UTC）实际读取，文章日期保留选题日期。参考项列出具体章节；同一页面支持不同主张时分别定位。本次为全部十个来源查询 Wayback 存档，均返回 HTTP 429 限流，未取得可验证的快照，因此访问日期保留为纯文本。
+初稿资料于 2026-09-12（UTC）实际读取；健康影响部分于 2026-09-14 复核并补充 CDC 侵袭性感染和 NIH 哮喘资料，文章日期保留选题日期。参考项列出具体章节；同一页面支持不同主张时分别定位。初稿十个来源及新增两个来源的 Wayback 存档查询均返回 HTTP 429 限流，未取得可验证的快照，因此访问日期保留为纯文本。
 
 - <span id="ref-mold-basics"></span>[USDA／FSIS：Molds on Food: Are They Dangerous?](https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/molds-food-are-they-dangerous#:~:text=root%20threads%20that%20invade%20the%20food%20it%20lives%20on)。定位：What Are Molds?；Are Molds Only on the Surface of Food? 访问：2026-09-12（UTC）。
 
@@ -139,13 +143,13 @@ og_image: /assets/blogposts/2026-09-11-mold-food-clothes/cover.jpg
 
 - <span id="ref-food-storage"></span>[USDA／FSIS：冷藏、清洁与预防](https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/molds-food-are-they-dangerous#:~:text=Why%20Can%20Mold%20Grow%20in%20the%20Refrigerator%3F)。定位：Why Can Mold Grow in the Refrigerator?；How Can You Minimize Mold Growth?；How Can You Protect Food from Mold?。只采用相关食品与清洁建议；室内湿度见 EPA／CDC 项。 访问：2026-09-12（UTC）。
 
-- <span id="ref-cdc-home"></span>[CDC：Mold](https://www.cdc.gov/mold-health/about/index.html#:~:text=Home%20testing)。定位：Overview、Common types 和 Home testing：织物上也能生长、潮湿条件和家庭检测的限制。 访问：2026-09-12（UTC）。
+- <span id="ref-cdc-home"></span>[CDC：Mold](https://www.cdc.gov/mold-health/about/index.html#:~:text=Home%20testing)。定位：Overview、Common types 和 Home testing：织物上也能生长、潮湿条件和家庭检测的限制。 初次访问：2026-09-12；复核：2026-09-14（UTC）。
 
 - <span id="ref-hidden-mold"></span>[EPA：隐藏的霉菌](https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home#:~:text=Suspicion%20of%20hidden%20mold)。定位：Hidden Mold → Suspicion of hidden mold 和 Investigating hidden mold problems。霉味是查找线索，不是毒素鉴定。 访问：2026-09-12（UTC）。
 
-- <span id="ref-mycotoxins"></span>[WHO：Mycotoxins](https://www.who.int/news-room/fact-sheets/detail/mycotoxins#:~:text=Most%20mycotoxins%20are%20chemically%20stable%20and%20survive%20food%20processing.)。定位：Overview；Mycotoxins commonly found in food 中的 aflatoxins 段；Reducing risk。这里讨论食源性毒素，不外推为一次气味暴露的癌症风险。 访问：2026-09-12（UTC）。
+- <span id="ref-mycotoxins"></span>[WHO：Mycotoxins](https://www.who.int/news-room/fact-sheets/detail/mycotoxins#:~:text=Most%20mycotoxins%20are%20chemically%20stable%20and%20survive%20food%20processing.)。定位：Overview；Mycotoxins commonly found in food 中的 aflatoxins 段；Reducing risk。这里讨论食源性毒素，不外推为一次气味暴露的癌症风险。 初次访问：2026-09-12；复核：2026-09-14（UTC）。
 
-- <span id="ref-respiratory"></span>[CDC：呼吸道反应和易感人群](https://www.cdc.gov/mold-health/about/index.html#:~:text=Possible%20health%20effects)。定位：Possible health effects：可有症状或没有症状；过敏／哮喘及免疫受抑制、慢性肺病人群感染风险。另见 EPA《A Brief Guide》Can mold cause health problems? 的过敏与非过敏性刺激说明。 [对照原文](https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home)。 访问：2026-09-12（UTC）。
+- <span id="ref-respiratory"></span>[CDC：呼吸道反应和易感人群](https://www.cdc.gov/mold-health/about/index.html#:~:text=Possible%20health%20effects)。定位：Possible health effects：可有症状或没有症状；过敏／哮喘及免疫受抑制、慢性肺病人群感染风险。另见 EPA《A Brief Guide》Can mold cause health problems? 的过敏与非过敏性刺激说明。 [对照原文](https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home)。 初次访问：2026-09-12；复核：2026-09-14（UTC）。
 
 - <span id="ref-dead-mold"></span>[EPA：清理效果和死霉菌](https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home#:~:text=Dead%20mold%20may%20still%20cause%20allergic%20reactions)。定位：Can mold cause health problems?；Mold Cleanup Guidelines；How Do I Know When the Remediation or Cleanup is Finished?；Cleanup and Biocides。 访问：2026-09-12（UTC）。
 
@@ -166,3 +170,7 @@ og_image: /assets/blogposts/2026-09-11-mold-food-clothes/cover.jpg
 - <span id="ref-leftovers"></span>[USDA／FSIS：Leftovers and Food Safety](https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/leftovers-and-food-safety#:~:text=Keep%20Food%20out%20of%20the%20Danger%20Zone)。定位：Keep Food out of the Danger Zone；Cool Food Rapidly；Store Leftovers Safely。2 小时／高于 90°F 时 1 小时、40°F 以下冷藏、3–4 天。 访问：2026-09-12（UTC）。
 
 - <span id="ref-ingestion"></span>[National Capital Poison Center：Spoiled food and drinks](https://www.poison.org/articles/spoiled-food-and-drinks#:~:text=Symptoms%20of%20consuming%20moldy%20food)。定位：Symptoms of consuming moldy food；Worried you’ve consumed moldy food or drinks? Here’s what to do.。这是美国毒物咨询机构的临床科普；没有把个案恢复时间推广为等待就医的期限。 访问：2026-09-12（UTC）。
+
+- <span id="ref-invasive"></span>[CDC：About Invasive Mold Infections](https://www.cdc.gov/fungal/about/about-invasive-mold-infections.html#:~:text=Most%20people%20are%20not%20at%20risk%20for%20an%20IMI.)。定位：At a glance；Overview（深部组织、血管或器官感染，少见但可危及生命）；Who is at risk（移植、化疗等免疫抑制及大量霉菌暴露）。访问：2026-09-14（UTC）；存档查询 HTTP 429。
+
+- <span id="ref-asthma-severity"></span>[NIH／NHLBI：Asthma Attack](https://www.nhlbi.nih.gov/health/asthma/attacks#:~:text=swelling%20or%20tightening%20narrows%20the%20airways)。定位：开头解释气道变窄、呼吸困难和可能危及生命的段落；When to go to the ER。该资料说明哮喘发作的严重程度，并不声称每次霉菌暴露都会造成严重发作。访问：2026-09-14（UTC）；存档查询 HTTP 429。
