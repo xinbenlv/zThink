@@ -1,0 +1,308 @@
+{
+  "scope": "Read-only source research; no generation-service benchmarking. Excerpts are short dated records, not full-page or third-party archival snapshots.",
+  "sources": [
+    {
+      "id": "hi3dgen",
+      "title": "Hi3DGen: High-fidelity 3D Geometry Generation from Images via Normal Bridging",
+      "url": "https://stable-x.github.io/Hi3DGen/hi3dgen_paper.pdf#page=7",
+      "evidence_type": "作者论文",
+      "locator": "PDF pp. 1–3：RGB 歧义与法线桥接；pp. 6–8 §4.1、4.3、4.4、Limitations：对照版本、用户研究、消融与限制",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "It is our future work to pursue reconstruction-level 3D generations.",
+      "verified_claims": "法线是几何线索；消融和用户偏好限于作者测试；背面只评合理性；不是新版工具排行榜。"
+    },
+    {
+      "id": "trellis",
+      "title": "TRELLIS.2 README",
+      "url": "https://github.com/microsoft/TRELLIS.2#-features",
+      "evidence_type": "作者项目文档",
+      "locator": "Features §1–3；Installation / Prerequisites；Usage / Export to GLB；License",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "Tested on NVIDIA H100 GPU.",
+      "verified_claims": "4B；O-Voxel；PBR；512³/1024³/1536³约3/17/60秒；Linux，NVIDIA至少24GB；模型及代码MIT，依赖另列。"
+    },
+    {
+      "id": "unity",
+      "title": "Unity’s AI tools in beta: Create props with the 3D Object Generator",
+      "url": "https://unity.com/blog/unity-ai-3d-object-generator",
+      "evidence_type": "厂商技术介绍",
+      "locator": "2026-05-21；What the 3D Object Generator produces；Using the in-editor AI Assistant",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "The 3D Object Generator creates static 3D mesh prefabs.",
+      "verified_claims": "简单单部件道具和占位；助手负责准备图和预处理，再调用生成。"
+    },
+    {
+      "id": "wonder3d",
+      "title": "Wonder3D README（原版）",
+      "url": "https://github.com/xxlong0/Wonder3D#common-questions",
+      "evidence_type": "作者项目文档",
+      "locator": "开篇流程；Inference / Mesh Extraction；Common questions 条目2及 focal length",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "We assume the input images are captured by orthographic camera",
+      "verified_claims": "原版六视图、256×256，RGB与法线联合生成后融合；不把局限泛化到后续版本。"
+    },
+    {
+      "id": "instantmesh",
+      "title": "InstantMesh（arXiv v2）",
+      "url": "https://arxiv.org/abs/2404.07191v2",
+      "evidence_type": "作者论文摘要",
+      "locator": "2024-04-14 v2，Abstract",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "an off-the-shelf multiview diffusion model and a sparse-view reconstruction model based on the LRM architecture",
+      "verified_claims": "多视图扩散加稀疏视图重建；正文不使用速度或新版本胜负结论。"
+    },
+    {
+      "id": "unique3d",
+      "title": "Unique3D（arXiv v3）",
+      "url": "https://arxiv.org/abs/2405.20343v3",
+      "evidence_type": "作者论文摘要",
+      "locator": "2024-10-28 v3，Abstract",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "an instant and consistent mesh reconstruction algorithm called ISOMER",
+      "verified_claims": "多视图、法线、逐级升分辨率、ISOMER；不延伸为2026最高保真。"
+    },
+    {
+      "id": "keentools",
+      "title": "KeenTools Examples",
+      "url": "https://keentools.io/help/examples",
+      "evidence_type": "厂商制作案例目录",
+      "locator": "GeoTracker / Blender",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "Model generation with ComfyUI",
+      "verified_claims": "页面提供ComfyUI、SAM 3D生成相关示例；仅核实目录与下载入口，不冒称已运行或看完教程。"
+    },
+    {
+      "id": "uv-project",
+      "title": "Blender UV Project Modifier",
+      "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/modify/uv_project.html#options",
+      "evidence_type": "官方手册",
+      "locator": "Options / Projectors；Known Limitations；通过浏览器成功读取；页面更新时间2026-09-06",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "If the projector is a camera, the projection will adhere to its perspective/orthographic setting.",
+      "verified_claims": "UV投影支持透视/正交；手册列出低面数透视插值伪影和相机背后顶点限制。"
+    },
+    {
+      "id": "sharp",
+      "title": "SHARP 项目页",
+      "url": "https://apple.github.io/ml-sharp/",
+      "evidence_type": "作者项目",
+      "locator": "Abstract 首段及展示说明",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "high-resolution photorealistic images for nearby views",
+      "verified_claims": "单照片回归3D Gaussian，目标附近视角；不当成语义可编辑网格。"
+    },
+    {
+      "id": "sharp-code",
+      "title": "SHARP README",
+      "url": "https://github.com/apple/ml-sharp#rendering-trajectories-cuda-gpu-only",
+      "evidence_type": "作者项目文档",
+      "locator": "Using the CLI；Rendering trajectories (CUDA GPU only)",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "rendering videos via the `--render` option currently requires a CUDA GPU.",
+      "verified_claims": "输出3DGS PLY；预测CPU/CUDA/MPS与视频渲染CUDA要求分开。"
+    },
+    {
+      "id": "dreamgaussian",
+      "title": "DreamGaussian（arXiv v2）",
+      "url": "https://arxiv.org/abs/2309.16653v2",
+      "evidence_type": "作者论文摘要",
+      "locator": "2024-03-29 v2，Abstract",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "mesh extraction and texture refinement in UV space",
+      "verified_claims": "Gaussian路线也可能最终导出纹理网格；正文不作性能排名。"
+    },
+    {
+      "id": "meshy-api",
+      "title": "Meshy Image to 3D API",
+      "url": "https://docs.meshy.ai/en/api/image-to-3d",
+      "evidence_type": "官方API文档",
+      "locator": "Create / ai_model、model_type、should_texture、enable_pbr",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "Setting it to `false` skips the texture phase, providing a mesh without textures.",
+      "verified_claims": "显式meshy-7模型，纹理和PBR开关；Smart Topology与standard不同，比较需记录模式。"
+    },
+    {
+      "id": "tripo",
+      "title": "Tripo H3.1",
+      "url": "https://developers.tripo3d.ai/en/models/v3-1",
+      "evidence_type": "官方模型文档",
+      "locator": "顶部参数卡；Parameters；Snapshots",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "v3.1-20260211",
+      "verified_claims": "单图/多视图、Mesh+PBR，最多200万面；无纹理40秒/有纹理120秒为页面估计，未披露统一硬件测试。"
+    },
+    {
+      "id": "hunyuan",
+      "title": "Hunyuan3D 2.1 README",
+      "url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1#-models-zoo",
+      "evidence_type": "作者项目文档",
+      "locator": "Models Zoo；Introduction",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "It takes 10 GB VRAM for shape generation, 21GB for texture generation",
+      "verified_claims": "正文另核实原句后半：组合29GB；公开2.1形状和PBR流程，不混用在线其他版本。"
+    },
+    {
+      "id": "rodin",
+      "title": "Rodin Gen-2.5",
+      "url": "https://docs.hyper3d.ai/en/api-specification/rodin-gen2-5#tier",
+      "evidence_type": "官方API文档",
+      "locator": "Input / Image-to-3D；Tier；mesh_mode",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "If `tier` is omitted, the endpoint falls back to `Regular` and generates a Gen-1/1.5 asset.",
+      "verified_claims": "Gen-2.5可输入1–5图；Raw/Quad可选；需要显式tier。"
+    },
+    {
+      "id": "hitem",
+      "title": "Hitem3D 2.0: Multi-View Guided Native 3D Texture Generation",
+      "url": "https://arxiv.org/html/2604.09231v1#S3",
+      "evidence_type": "团队论文",
+      "locator": "2026-04-10 v1；Abstract；§3.1–3.4",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "a multi-view synthesis framework and a native 3D texture generation model",
+      "verified_claims": "生成多视图与原生3D纹理，改善覆盖与跨视图一致性是团队方法/实验主张；不代指当前网站版本。"
+    },
+    {
+      "id": "sam3d",
+      "title": "SAM 3D Objects README",
+      "url": "https://github.com/facebookresearch/sam-3d-objects#single-or-multi-object-3d-generation",
+      "evidence_type": "作者项目文档",
+      "locator": "SAM 3D Objects 简介；Single or Multi-Object 3D Generation",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "3D models with pose, shape, texture, and layout",
+      "verified_claims": "掩码对象，几何/外观/姿态/布局，遮挡和杂乱自然场景；不外推工业结构精度。"
+    },
+    {
+      "id": "meshy-benchmark",
+      "title": "Meshy 7: Pushing the frontier of 3D alignment",
+      "url": "https://www.meshy.ai/blog/meshy-7-image-to-3d-geometry-alignment",
+      "evidence_type": "厂商自建基准",
+      "locator": "2026-08-12；How to Measure 3D Geometry Alignment；Building the Benchmark；Where Quality Is Still Limited；Availability",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "The pattern itself drifts: the floor bands wobble, their spacing varies",
+      "verified_claims": "已知相机和真值几何；三类几何分数非图片相似百分比；完整基准称另行发布；细结构粘连、重复楼层窗格漂移。"
+    },
+    {
+      "id": "plants",
+      "title": "Evaluation of one-image 3D reconstruction for plant model generation",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12888700/",
+      "evidence_type": "独立领域研究",
+      "locator": "Plant Methods 22:18，2026-01-13；Methods / Dataset characteristics、Evaluated generative methods；Tables 1–2；Results 对CD尺度的说明",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "the Chamfer Distance values should be interpreted only in a relative sense.",
+      "verified_claims": "六方法、10株Bean定量；mint/kale定性；Hunyuan2.0 CD/F-score、Direct3D LPIPS较好；不同在线平台和预处理，归一化真值，不外推建筑。",
+      "authors": [
+        "Zihe Gao",
+        "Zane K J Hartley",
+        "Andrew P French"
+      ],
+      "affiliation": "University of Nottingham"
+    },
+    {
+      "id": "unreal",
+      "title": "Unreal Engine FBX Static Mesh Pipeline",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/fbx-static-mesh-pipeline-in-unreal-engine",
+      "evidence_type": "官方文档",
+      "locator": "开篇支持列表；General Setup；Collision",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "Multiple separate Static Meshes (can also be combined into a single mesh at import)",
+      "verified_claims": "导入静态网格、材质、碰撞、LOD；导入约定不证明重建精度。"
+    },
+    {
+      "id": "realityscan",
+      "title": "RealityScan 官网：功能、教程及样例",
+      "url": "https://www.realityscan.com/",
+      "evidence_type": "官方产品与教程目录",
+      "locator": "开篇；Get started in RealityScan；Sample datasets",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "A 14-image dataset taken with a small compact camera.",
+      "verified_claims": "摄影测量；公开多图、激光扫描及CLI样例；与单图生成分开，不写价格/许可证优惠。"
+    },
+    {
+      "id": "realityscan-cli",
+      "title": "RealityScan Project and Image Commands",
+      "url": "https://dev.epicgames.com/documentation/realityscan/project-and-image-commands",
+      "evidence_type": "官方文档",
+      "locator": "Commands 表的 add、addFolder；Examples",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "Import one or more images from a specified file path or from an image list.",
+      "verified_claims": "CLI可批量导入照片；正文不把单个导入命令说成单图重建。"
+    },
+    {
+      "id": "gltf",
+      "title": "Three.js GLTFLoader",
+      "url": "https://threejs.org/docs/pages/GLTFLoader.html#load",
+      "evidence_type": "官方API文档",
+      "locator": "开篇；Code Example；load",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "A loader for the glTF 2.0 format.",
+      "verified_claims": "加载已有glTF资产，而非从二维图生成几何。"
+    },
+    {
+      "id": "three-splat",
+      "title": "Another Splat implementation for Threejs",
+      "url": "https://discourse.threejs.org/t/another-splat-implementation-for-threejs/58883",
+      "evidence_type": "实现作者社区分享",
+      "locator": "drcmda，2023-12-04，首帖及后续代码示例",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "each splat is a regular object3d and behaves as such",
+      "verified_claims": "SplatLoader/ShaderMaterial和demo用于渲染集成；不视为Three.js核心重建承诺。"
+    },
+    {
+      "id": "depth-material",
+      "title": "Three.js MeshDepthMaterial",
+      "url": "https://threejs.org/docs/pages/MeshDepthMaterial.html",
+      "evidence_type": "官方API文档",
+      "locator": "开篇定义",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "A material for drawing geometry by depth.",
+      "verified_claims": "由已有几何和相机绘制深度，不是照片深度估计模型。"
+    },
+    {
+      "id": "fspy",
+      "title": "fSpy Basics",
+      "url": "https://fspy.io/basics/",
+      "evidence_type": "官方教程",
+      "locator": "Camera matching；Vanishing points；Limitations",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "3D images rendered with an orthographic camera",
+      "verified_claims": "该摘录位于不适用列表；消失点相机匹配适用于透视，不能硬套正交图。"
+    },
+    {
+      "id": "nvdiffrec",
+      "title": "Extracting Triangular 3D Models, Materials, and Lighting From Images",
+      "url": "https://nvlabs.github.io/nvdiffrec/",
+      "evidence_type": "作者项目／CVPR 2022论文介绍",
+      "locator": "Abstract；3D model reconstruction and intrinsic decomposition from images",
+      "fetched": "2026-09-06",
+      "archive_type": "dated-local-short-excerpt",
+      "excerpt": "Our reconstruction from 100 images.",
+      "verified_claims": "多视图联合几何、材质、光照优化；仅作方法参考，非单图即用保证。"
+    }
+  ]
+}
