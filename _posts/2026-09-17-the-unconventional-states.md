@@ -18,158 +18,164 @@ cover_image:
 og_image: /assets/blogposts/the-unconventional-states/cover.jpg
 ---
 
+How far a community can go has always interested me, and I recently had a reason to look into the ones that went furthest.
+
 A pope governing Italian towns, merchants sending fleets against a king, a trading company collecting taxes: political history has room for rulers who began with another occupation. Some organizations acquired territory almost as an extension of their everyday work. Others fought for it. Still others secured privileges and influence without becoming states at all.
 
-How did those changes happen? A charter, a tax account, or a letter appointing an administrator can make the question more concrete than a map with borders already drawn. They show people arranging authority before its eventual shape was settled.
+How did those changes happen? A charter, a tax account, or a letter appointing an administrator answers that better than a map with the borders already drawn on it.
 
-The cases below follow several routes: a church accumulating administrative responsibilities, cities coordinating trade and war, companies exercising powers granted by governments, communities migrating and building institutions, and reformers attempting to reorganize daily life. They ended in different political arrangements. Putting them beside one another is a way to notice those differences, including who gained authority and who came under it.
+The cases below follow several routes: a church accumulating administrative responsibilities, cities coordinating trade and war, companies exercising powers granted by governments, communities migrating and building institutions, and reformers attempting to reorganize daily life. None of them is well described by asking when it became a state. The better question is which particular powers of government each one acquired, from whom, and at whose expense.
 
 ## The church that became a territorial ruler
 
 <figure>
   <img src="/assets/blogposts/the-unconventional-states/church.jpg" alt="Letters, accounts, grain stores, and an armed escort in an imagined city illustrate the material work behind papal administration." width="1200" height="675" loading="lazy" decoding="async" />
-  <figcaption>Correspondence, administration, and territorial protection require different kinds of power. Conceptual illustration.</figcaption>
+  <figcaption>The papacy's work, around 590. Conceptual illustration.</figcaption>
 </figure>
 
 ### Letters before territory
 
-Romans 16 offers a small, concrete view of an early Christian network. Paul [recommends Phoebe of Cenchreae](#ref-romans) and asks his readers to receive and assist her. He greets Prisca and Aquila and the church meeting in their house. The passage connects named people, hospitality, and local gatherings across distance. It shows how an introduction could carry obligations from one community to another.
+Romans 16 offers a small, concrete view of an early Christian network. Paul [recommends Phoebe of Cenchreae](#ref-romans) and asks his readers to receive and assist her. He greets Prisca and Aquila and the church meeting in their house. Names, hospitality, and a house with a room big enough: that is the whole apparatus.
 
-That is a useful starting point precisely because it is modest. A letter recommending a traveler is evidence of mutual recognition, not a constitution for a future state. Reading the later papacy backward into every early congregation would make the outcome seem intended from the beginning.
+By the time Gregory the Great became pope in 590, the scale and character of church administration had changed. His [first letter to the bishops of Sicily](#ref-gregory-letter) appointed a delegate responsible for the Roman church's patrimony there, called for regular episcopal meetings, and directed attention to poor and oppressed people.
 
-By the time Gregory the Great became pope in 590, the scale and character of church administration had changed. His [first letter to the bishops of Sicily](#ref-gregory-letter) appointed a delegate responsible for the Roman church's patrimony there, called for regular episcopal meetings, and directed attention to poor and oppressed people. An organization that could delegate responsibility over distant estates had capabilities that a circle of correspondents did not.
-
-Historian Carole Straw describes Gregory's papacy [taking responsibility for food and water supplies](#ref-straw), soldiers' pay, negotiations, estates, and charitable operations. These were material demands in a troubled city, not merely declarations of spiritual authority.
-
-The work had acquired an administrative life of its own. Someone had to keep accounts, distribute supplies, supervise property, and answer complaints. The church could draw on religious allegiance, but it also needed people capable of managing these responsibilities across distance.
+Historian Carole Straw describes Gregory's papacy [taking responsibility for food and water supplies](#ref-straw), soldiers' pay, negotiations, estates, and charitable operations. Someone had to keep the accounts, distribute the supplies, supervise the property, and answer the complaints. Religious allegiance did not produce those people. Salaries and appointments did.
 
 ### A protector with an army
 
-The next step depended on a changing balance of power. After the Lombard capture of Ravenna in 751, Pope Stephen II sought help from the Frankish king Pepin. [Frankish campaigns in 754 and 756](#ref-stephen) forced concessions from the Lombards; the ensuing grants helped establish the territorial basis of papal rule. Paolo Delogu's account also warns against treating the grants as a perfectly preserved founding document: the scope of the 754 promise is disputed, and the donation instrument associated with 756 is lost.
+After the Lombard capture of Ravenna in 751, Pope Stephen II sought help from the Frankish king Pepin. [Frankish campaigns in 754 and 756](#ref-stephen) forced concessions from the Lombards; the ensuing grants helped establish the territorial basis of papal rule. Paolo Delogu's account also warns against treating the grants as a perfectly preserved founding document: the scope of the 754 promise is disputed, and the donation instrument associated with 756 is lost.
 
-The territorial settlement rested on military intervention. The papacy needed an armed protector. Its territorial position emerged through war, negotiation, and competing claims to former imperial lands. A religious institution's capacity to administer property and a ruler's willingness to enforce a territorial settlement did different work.
+Administering estates was something the papacy could do by itself. Holding territory took Pepin's army.
 
-The later history prevents an equally misleading conclusion: that the worldwide church and its Italian territory were the same institution. Italy [annexed Rome in 1870](#ref-papal-end), ending the remaining Papal States. The [Lateran settlement created Vatican City in 1929](#ref-vatican). The Holy See, which represents the church diplomatically, is distinct from that territorial state.
+Italy [annexed Rome in 1870](#ref-papal-end), ending the remaining Papal States. The [Lateran settlement created Vatican City in 1929](#ref-vatican). The Holy See, which represents the church diplomatically, is distinct from that territorial state.
 
-A transnational institution can outlast the loss of most of its territory. Territorial sovereignty can serve its independence without encompassing its membership. That relationship is more complicated, and more interesting, than a community gradually coloring in a map.
+So the church lost nearly all of its territory in 1870 and went on being an international power. In 1929 it received a walled enclave inside Rome, and that was enough.
 
 ## Two ways to organize the sea
 
 <figure>
   <img src="/assets/blogposts/the-unconventional-states/sea.jpg" alt="Three merchant harbors with separate councils face a fortified maritime capital in a conceptual comparison of Hanseatic cooperation and Venetian rule." width="1200" height="675" loading="lazy" decoding="async" />
-  <figcaption>An imagined coastline contrasts cooperation among cities with a government extending its territorial reach. Conceptual illustration.</figcaption>
+  <figcaption>Two ways to hold a coastline. Conceptual illustration.</figcaption>
 </figure>
 
 ### The Hanse: power without a single state
 
 The medieval Hanseatic League [grew from merchants' need for protection](#ref-hanse) and favorable conditions abroad. Town governments became increasingly involved, and assemblies brought representatives together. Its major trading establishments, or *Kontore*, included those in London, Bruges, Bergen, and Novgorod.
 
-These establishments were not uniform miniature countries. Their arrangements depended on the host city and the privileges negotiated there. In Bruges, Hanseatic merchants [stayed with local hosts](#ref-kontore) rather than occupying a single enclosed compound. Elected officers defended merchants' interests; collective withdrawal could put pressure on a trading center.
+Their arrangements depended on the host city and the privileges negotiated there. In Bruges, Hanseatic merchants [stayed with local hosts](#ref-kontore) rather than occupying a single enclosed compound. Elected officers defended merchants' interests, and a collective withdrawal could cost a trading center its business.
 
-Law also traveled between towns. [Lübeck's municipal law influenced other Baltic cities](#ref-lubeck), but that circulation should not be confused with a sovereign legislature governing the entire league. A town's legal institutions, an overseas merchant establishment, and an alliance of cities operated at different levels.
+Law traveled between towns as well. [Lübeck's municipal law influenced other Baltic cities](#ref-lubeck), though it spread city by city rather than through any league-wide legislature.
 
-The distinction matters when the Hanse appears on the battlefield. The [coalition formed against Denmark in 1367](#ref-stralsund) included both Hanseatic and non-Hanseatic towns, with princely allies alongside them. Its war led to the Treaty of Stralsund in 1370. City archivist Dirk Schleinert emphasizes the restoration of commercial privileges: the towns could obtain their objectives without overthrowing the Danish monarchy.
+The [coalition formed against Denmark in 1367](#ref-stralsund) included both Hanseatic and non-Hanseatic towns, with princely allies alongside them. Its war led to the Treaty of Stralsund in 1370. City archivist Dirk Schleinert emphasizes the restoration of commercial privileges: the towns could obtain their objectives without overthrowing the Danish monarchy.
 
-Here was a capacity for collective coercion and diplomacy without a corresponding project to turn all participating cities into one territorial state. It would be strange to call that an unfinished attempt at nation-building. For merchants who wanted access, security, and enforceable privileges, bargaining with rulers could be the desired outcome.
+They fought a king, won, and asked for their trading privileges back. Calling that a failed bid for statehood gets it backwards. The privileges were the point.
 
 ### Venice: a government extending its reach
 
-Venice looks similar from a distance: ships, commercial connections, and scattered positions along the sea. Its political starting point was different. Pietro II Orseolo was already doge when he negotiated imperial privileges and led the [Dalmatian expedition conventionally dated to 1000](#ref-orseolo). An existing government was projecting power outward.
+Venice looks similar from a distance: ships, commercial connections, and scattered positions along the sea. But Pietro II Orseolo was already doge when he negotiated imperial privileges and led the [Dalmatian expedition conventionally dated to 1000](#ref-orseolo). The Hanseatic towns sent merchants. Venice sent a head of state.
 
-Nor can commercial expansion be separated neatly from conquest. In 1204, the [Fourth Crusade sacked Constantinople](#ref-crusade), and Venetians shared in the spoils. The event belongs to the history of Venice's maritime power alongside its trade agreements and voyages.
+In 1204 the [Fourth Crusade sacked Constantinople](#ref-crusade), and Venetians shared in the spoils. That belongs on the ledger alongside the trade agreements.
 
-The later *Stato da Mar*, Venice's maritime dominion, required fortifications. UNESCO's account of its [surviving sixteenth- and seventeenth-century defenses](#ref-venice-defenses) describes the protection of ports and routes from the Adriatic toward the Levant. These works sustained the republic's authority as well as its commerce.
+The later *Stato da Mar*, Venice's maritime dominion, required fortifications. UNESCO's account of its [surviving sixteenth- and seventeenth-century defenses](#ref-venice-defenses) describes the protection of ports and routes from the Adriatic toward the Levant.
 
-The resemblance between Hanseatic and Venetian trade routes can conceal their different arrangements of power. One joined towns in bargaining and occasional war; the other extended the reach of an existing government. Connected ports on a map tell us little until we know who appointed officials, who could use force, and whose authority the inhabitants faced.
+Two maps of ports can look alike and tell you nothing until you know who appointed the officials, who could use force, and whose authority the inhabitants woke up under.
 
 ## When trading companies governed
 
 <figure>
   <img src="/assets/blogposts/the-unconventional-states/companies.jpg" alt="A merchant ledger and charter overlook an inhabited Asian harbor, fortified warehouses, cultivated fields, and a tax collection table in a conceptual illustration of company rule." width="1200" height="675" loading="lazy" decoding="async" />
-  <figcaption>Commercial accounts, armed trade, and territorial revenue became intertwined under company rule. Conceptual illustration.</figcaption>
+  <figcaption>The ledger and the tax table. Conceptual illustration.</figcaption>
 </figure>
 
 ### Britain's East India Company: from trading posts to tax revenue
 
 The English East India Company began with a [royal charter in 1600](#ref-eic-origins) granting a monopoly over English trade with a vast part of Asia. Its overseas “factories” were trading establishments: factors stayed behind to arrange purchases and sales while ships made the long return voyage. Directors elected by shareholders in London sent instructions to councils overseas. The original business was moving goods between markets.
 
-The change in Bengal involved armies and local political struggles. Before the [Battle of Plassey in 1757](#ref-eic-plassey), Robert Clive and the Jagat Seth banking family arranged to support Mir Jafar as nawab if Siraj-ud-Daulah were defeated. Clive's force contained about 2,100 Indian sepoys out of roughly 3,000 men. Company power depended on Indian soldiers, financiers, and allies whose interests intersected with its own.
+Before the [Battle of Plassey in 1757](#ref-eic-plassey), Robert Clive and the Jagat Seth banking family arranged to support Mir Jafar as nawab if Siraj-ud-Daulah were defeated. Clive's force contained about 2,100 Indian sepoys out of roughly 3,000 men. The company took Bengal with Indian soldiers, Indian money, and an Indian claimant to the throne.
 
-A decisive change followed in 1765, when the Mughal emperor [granted the company the diwani](#ref-eic-origins), the right to collect revenues in Bengal, Bihar, and Orissa. Taxes could now support troops and further expansion. The company had acquired claims on agricultural revenue as well as profits from trade. Its authority over a taxpayer no longer resembled its relationship with a customer.
+In 1765 the Mughal emperor [granted the company the diwani](#ref-eic-origins), the right to collect revenues in Bengal, Bihar, and Orissa. Taxes could now support troops and further expansion. The company had acquired claims on agricultural revenue as well as profits from trade. Its authority over a taxpayer no longer resembled its relationship with a customer.
 
-The resulting government remained entangled with politics in Britain. After the company's financial crisis, [Parliament intervened in 1773](#ref-eic-parliament) with a loan and a regulating act. The 1784 India Act created a government Board of Control to supervise its Indian affairs. Shareholders and directors still mattered, but they operated within increasing state oversight.
+None of this went unnoticed at home. After the company's financial crisis, [Parliament intervened in 1773](#ref-eic-parliament) with a loan and a regulating act. The 1784 India Act created a government Board of Control to supervise its Indian affairs.
 
-The separation between commerce and government became especially clear when the company [stopped trading in 1833](#ref-eic-crown) yet continued administering territory. Following the rebellion of 1857, Parliament transferred its administrative powers, possessions, and armed forces to the Crown in 1858. The corporation survived until its formal dissolution in 1874. A business could cease doing business before it ceased governing.
+The company [stopped trading in 1833](#ref-eic-crown) and went on administering territory. Following the rebellion of 1857, Parliament transferred its administrative powers, possessions, and armed forces to the Crown in 1858. The corporation survived until its formal dissolution in 1874. A business could cease doing business before it ceased governing.
 
 ### The Dutch VOC: powers written into the charter
 
-The Dutch East India Company, usually known as the VOC, combined commerce with governmental powers from its foundation in 1602. The States General [authorized treaties, forts, troops, and war](#ref-voc-charter), as well as the administration of justice. These powers accompanied an exclusive Dutch trading privilege across a huge overseas region. Permission from the Dutch government, however, did not mean consent from the societies where the company exercised it.
+The Dutch East India Company, usually known as the VOC, combined commerce with governmental powers from its foundation in 1602. The States General [authorized treaties, forts, troops, and war](#ref-voc-charter), as well as the administration of justice. These powers accompanied an exclusive Dutch trading privilege across a huge overseas region.
 
-The VOC established its Asian headquarters at [Batavia in 1619](#ref-voc-batavia), on the site of Jakarta after its destruction. Fortified bases could become centers of administration. The company dealt with Asian rulers and trading communities through negotiation, competition, and force; its authority varied from place to place.
+The VOC established its Asian headquarters at [Batavia in 1619](#ref-voc-batavia), on the site of Jakarta after its destruction. The company dealt with Asian rulers and trading communities through negotiation, competition, and force; its authority varied from place to place.
 
-The Banda Islands show what enforcing a monopoly could mean. Islanders traded spices with several buyers and resisted the company's demands. In [Jan Pieterszoon Coen's campaign of 1621](#ref-voc-banda), the VOC used mass killing, enslavement, and forced removal to impose its control over the nutmeg trade. The Dutch National Archives presents Coen's own correspondence alongside its account of the devastation. Commercial exclusion was being enforced over people and land.
+Islanders in the Banda Islands traded spices with several buyers and resisted the company's demands. In [Jan Pieterszoon Coen's campaign of 1621](#ref-voc-banda), the VOC used mass killing, enslavement, and forced removal to impose its control over the nutmeg trade. The Dutch National Archives presents Coen's own correspondence alongside its account of the devastation.
 
-These companies complicate the boundary between a private organization and a state. Their officials answered to corporate institutions, while their powers depended on charters, armies, revenue systems, and relationships with existing rulers. The question is less when a company became a country than how particular powers of government ended up in its hands—and what it did with them.
+Both companies had shareholders and a board. Both raised troops, held courts, and collected taxes. The charter is the document worth reading, because it names who handed each of those powers over.
 
 ## Belief, migration, and the people already there
 
 <figure>
   <img src="/assets/blogposts/the-unconventional-states/migration.jpg" alt="Travelers carrying belongings meet residents beside established homes and cultivated fields in an imagined inhabited valley." width="1200" height="675" loading="lazy" decoding="async" />
-  <figcaption>People seeking a new home encounter people who already live there. Conceptual illustration.</figcaption>
+  <figcaption>Arrival, and the people already there. Conceptual illustration.</figcaption>
 </figure>
 
 ### Printed arguments meet territorial rulers
 
-The Reformation spread arguments about religious authority across political borders. Print was part of that history, but it also served established institutions. Cambridge University Library's exhibition of [printed indulgences](#ref-print) shows standardized religious documents with blanks that could be completed for individual buyers. The same medium could carry a challenge to authority and help administer it.
+The Reformation spread arguments about religious authority across political borders. Print was part of that history, but it also served established institutions. Cambridge University Library's exhibition of [printed indulgences](#ref-print) shows standardized religious documents with blanks that could be completed for individual buyers. Printing carried Luther's objections and mass-produced the documents he objected to.
 
-The political settlement did not give every reader the freedom to choose a government. The [Peace of Augsburg in 1555](#ref-augsburg) protected Catholic and Lutheran imperial estates while excluding other confessions from that settlement. Its arrangements largely placed religious choice with territorial rulers. Section 24 permitted subjects of the two covered religions to emigrate with their families and sell their property, subject to obligations and payments.
+The [Peace of Augsburg in 1555](#ref-augsburg) protected Catholic and Lutheran imperial estates while excluding other confessions from that settlement. Its arrangements largely placed religious choice with territorial rulers. Section 24 permitted subjects of the two covered religions to emigrate with their families and sell their property, subject to obligations and payments.
 
-That right of departure mattered. It also meant leaving a home and dealing with the costs of moving. The spread of a belief, legal permission to practice it, and the practical ability to leave an intolerant ruler were separate achievements.
+A right to leave is a real right. It is also an instruction to sell the farm.
 
 ### The Latter-day Saints: making a place to live
 
-The Latter-day Saint migration puts the organizational problem in physical form. The movement had suffered violent expulsion in Missouri, and Joseph Smith had been killed before Brigham Young led the [1847 migration west](#ref-mormon-trek). The journey required preparation, route information, supplies, and coordinated labor. In the Salt Lake Valley, early arrivals were already preparing irrigation and crops when Young arrived in July.
+The movement had suffered violent expulsion in Missouri, and Joseph Smith had been killed before Brigham Young led the [1847 migration west](#ref-mormon-trek). The journey required preparation, route information, supplies, and coordinated labor. In the Salt Lake Valley, early arrivals were already preparing irrigation and crops when Young arrived in July.
 
-An organized community could move people and begin building settlements. It could not settle the political status of the destination by doing so. The proposed State of Deseret did not receive congressional approval. Congress instead [established Utah Territory in 1850](#ref-utah) under federal authority; Utah became a U.S. state in 1896. In that last phrase, *state* means a member of a federation, not an independent sovereign country.
+Moving thousands of people did not settle what the destination would be. The proposed State of Deseret did not receive congressional approval. Congress instead [established Utah Territory in 1850](#ref-utah) under federal authority; Utah became a U.S. state in 1896. In that last phrase, *state* means a member of a federation, not an independent sovereign country.
 
 The destination was also inhabited. Historian David Rich Lewis describes [Ute and Shoshone use of the Salt Lake Valley](#ref-ute) and the conflicts that followed expanding settlement. Settlers' demands on land and resources, violence, and federal reservation policy constrained Indigenous life and contributed to dispossession.
 
-The migrants' search for refuge deserves to be understood on its own terms. So does the position of the people whose homeland became their refuge. Religious solidarity explains why settlers undertook the journey; it does not establish that everyone affected consented to the resulting order.
+People fleeing violence in Missouri went where they could. The Ute and Shoshone were not asked.
 
 ### The Yishuv: institutions before independence
 
-The Jewish community in Palestine before Israeli independence, the Yishuv, provides a particularly strong example of institutions preceding a sovereign state. The United Nations Special Committee on Palestine reported in 1947 on [an elected assembly and the Vaad Leumi](#ref-unscop), which administered education, health, and social services. It described the Jewish Agency's extensive departments and the Histadrut's role in organized economic and social life.
+The Yishuv, the Jewish community in Palestine before Israeli independence, had most of a government before it had a state. The United Nations Special Committee on Palestine reported in 1947 on [an elected assembly and the Vaad Leumi](#ref-unscop), which administered education, health, and social services. It described the Jewish Agency's extensive departments and the Histadrut's role in organized economic and social life.
 
-These institutions were substantial, but the community was not politically unanimous. The same report recorded internal disagreements, the [British Mandate's governing role and Arab demands for independence](#ref-unscop). It also described the destruction and persecution facing European Jews. The urgency of refuge and the depth of institution-building belong in the account together with the conflicting claims of people living in Palestine.
+The same report recorded internal disagreements, the [British Mandate's governing role and Arab demands for independence](#ref-unscop). It also described the destruction and persecution facing European Jews.
 
 Israel [declared independence in May 1948](#ref-israel), following the United Nations' 1947 partition recommendation and amid armed conflict. U.S. recognition followed the declaration.
 
-That sequence cannot be narrated adequately as a well-organized community achieving its goal. Palestinian Arabs [fled or were expelled on a vast scale](#ref-palestine) during the war; the UN's historical overview describes more than half of the Palestinian Arab population being displaced.
+Palestinian Arabs [fled or were expelled on a vast scale](#ref-palestine) during the war; the UN's historical overview describes more than half of the Palestinian Arab population being displaced.
 
-The history demonstrates that institutions can prepare a community for statehood. It also demonstrates why institutional preparedness cannot be the whole test of a political project. Schools, funds, and representative bodies can explain capacity. They cannot, by themselves, resolve competing rights to a homeland or justify what happens to those outside the founding community.
+The institutions explain how a state could be assembled so quickly. They do not settle who had a right to the ground it was assembled on.
 
 ## Living with the constitution
 
 <figure>
   <img src="/assets/blogposts/the-unconventional-states/community.jpg" alt="Members of an imagined intentional community discuss work and resources around a shared table while one person leaves through an open doorway." width="1200" height="675" loading="lazy" decoding="async" />
-  <figcaption>Institutions take shape through ordinary decisions about work, resources, disagreement, and departure. Conceptual illustration.</figcaption>
+  <figcaption>The questions a founding document leaves open. Conceptual illustration.</figcaption>
 </figure>
 
-Robert Owen's New Harmony and the communities inspired by Charles Fourier bring the question down to daily life. Their ambitions concerned how people would work and live together. Their settlements allow us to see institutional experiments at the scale of a shared workplace and a shared table.
+Robert Owen's New Harmony and the communities inspired by Charles Fourier ran the same experiment at the scale of a shared workplace and a shared table.
 
 In 1825, Owen [bought an existing settlement at New Harmony, Indiana](#ref-utopias), from the religious community that had built it. His communal experiment soon fragmented. The National Park Service's account describes disagreements over rules and labor, successive reorganizations, and a breakdown within roughly two years. Educational work continued beyond the communal project's failure.
 
-The Fourier-inspired [North American Phalanx, founded in 1843](#ref-utopias), lasted longer. It used a joint-stock arrangement, organized work through groups, and differentiated compensation rather than abolishing it. It dissolved in 1856 after financial difficulties that included losses from a fire. Different rules produced a different history, though neither community became a sovereign state.
+The Fourier-inspired [North American Phalanx, founded in 1843](#ref-utopias), lasted longer. It used a joint-stock arrangement, organized work through groups, and differentiated compensation rather than abolishing it. It dissolved in 1856 after financial difficulties that included losses from a fire. Thirteen years against two, and the Phalanx was the one that kept paying people differently. It is hard not to connect the two facts.
 
-The short life of an experiment does not establish that its ideals were foolish, any more than longevity establishes that its government was just. It does force attention to matters a founding declaration can leave vague. Who will do unpleasant work? How are contributions valued? What happens when people disagree about whether someone is contributing enough? Can a departing member recover the resources needed to start elsewhere?
+A founding declaration can leave four questions vague for years. Who does the unpleasant work? How are contributions valued? What happens when people disagree about whether someone is contributing enough? Can a member who leaves take anything with them? New Harmony proposed to settle all four for a whole society, by declaration, in advance.
 
-These were small communities, but their problems were concrete: land had to be paid for, work divided, and disagreements settled. A settlement could retain schools or residents after its original governing arrangement failed. Its history did not have to end with the constitution that first brought its members together.
+These were small communities, and their problems were the ordinary ones: land had to be paid for, work divided, disagreements settled.
 
-### Different destinations
+## Different destinations
 
-The word *state* can flatten what makes these histories worth reading. Papal territorial rule, Hanseatic privileges, Venetian dominion, company administration, federal statehood, national independence, and communal property describe different arrangements. Some emerged from organizations founded for other purposes; some required alliances with established rulers; some depended on conquest. Several endured without sovereign independence.
+Ask when each of these became a state and most of them give no answer. The Hanse never did and never tried. The East India Company did it in pieces, across a century, and was still a corporation when it stopped. The papacy did it, lost it, and got a fragment back. Deseret asked and was refused. Israel has a date, which makes it the exception in this essay rather than the template for it.
 
-Following the changes at a smaller scale makes them easier to understand. A letter assigns responsibility for an estate. A treaty protects merchants. A charter permits a company to raise troops. A revenue grant funds an army. At each step, authority changes hands, often before anyone can know the eventual borders. The histories become more interesting when we leave those outcomes open long enough to see how they happened.
+Ask instead who handed over which power, and every case answers at once. A letter assigns responsibility for an estate. A treaty protects merchants. A charter permits a company to raise troops. A revenue grant funds an army. Each of those is dated, signed, and usually still readable. None of them mentions a border, because when they were written nobody knew where the borders would be.
+
+## Why I went looking
+
+I founded [ZaiGeZaiGu](https://zgzg.io), a Silicon Valley cultural nonprofit that began as a Lunar New Year gala, and I have started several other communities. Running them raises a question I could not answer from inside any of them. A mailing list becomes a club, a club becomes a nonprofit, and somewhere past that, apparently, is a state. I wanted to know what that last step consists of.
+
+The four questions New Harmony left vague are not abstract to me either. For ZaiGeZaiGu's 2018 singing competition a few of us built a peer-recognition system for volunteers, modeled on the one Google used internally. We redesigned it for the next year's gala and gave it a new name. Usage went up. Most volunteers still ignored it. That is one of the four questions, in one community, at the scale of a single event, and we did not solve it.
+
+So I went looking for the ceiling of a community. I did not find one. I found a filing cabinet.
 
 ## Sources and further reading
 
