@@ -1,5 +1,7 @@
 # Research and editorial verification
 
+<!-- Kept together despite its size to preserve the original-publication and revision evidence records for one article. -->
+
 Evidence record for *The Unconventional States*, consulted September 17, 2026. The article's reference entries contain original URLs and precise locators; this file records editorial decisions and verification limits.
 
 ## Factual and interpretive decisions
@@ -27,7 +29,7 @@ The deslop pass checked factual overreach, omitted affected populations, unsuppo
 
 Initial Wayback availability API checks on September 17, 2026 failed at connection level; a separate curl request also timed out after 15 seconds. The added company sources were read at their original public URLs; no archive snapshots have been verified for them. This is an access limitation, not evidence that snapshots do not exist. No timestamped archive URLs are invented or presented as verified. The article retains the successfully consulted originals, access dates, and passage locators.
 
-## Validation
+## Original-publication validation
 
 - All 29 unique reference anchors resolve from 32 inline citations. No detached paragraph-end citation labels remain.
 - All six referenced JPEGs exist; five section images declare dimensions and lazy loading.
@@ -37,3 +39,26 @@ Initial Wayback availability API checks on September 17, 2026 failed at connecti
 - Deslop phrase scan reported zero weighted markers after the substantive editorial pass.
 
 The parent website is used only for validation. This content PR does not update its submodule pointer or deploy the article.
+
+## Historical expansion, September 17, 2026
+
+The English revision uses en-US prose. Each case now opens with its period and geography, establishes the preceding setting, and follows early institutions into mature power and later decline, absorption, or dissolution. The Reformation remains contextual material, not a newly founded state.
+
+- Papacy: added the Italian setting, medieval consolidation, Albornoz, Julius II’s military diplomacy, central and provincial government, and the nineteenth-century territorial losses. The Catholic Encyclopedia is labeled as a dated confessional source; its normative judgments are not adopted. Treccani and the linked Wikipedia overview provide cross-checks and administrative context.
+- Overseas authority: the May 4, 1493 Inter caetera and June 7, 1494 Treaty of Tordesillas are distinct. The papal 100-league demarcation and the crowns’ negotiated 370-league line are not conflated. The treaty text verifies the parties, assignment, and joint survey provisions; NPS supports the consequence for Brazil’s coast. Modern national boundaries and Indigenous consent are not inferred from European grants.
+- Hanse and Venice: added the northern trading region, the lagoon/Byzantine background, later institutional limits, the 1669 final Hanseatic assembly without formal dissolution, and Venice’s 1797 end.
+- Companies: added commercial context and stages of military/fiscal government; the VOC’s 1799 dissolution and transfer of possessions and debt are distinguished from the end of colonial rule.
+- Migration and communities: added the LDS route and federal/statehood settlement, the Mandate background and immediate 1948 outcome, New Harmony’s predecessor settlement, and the Phalanx’s working organization and liquidation. Duration is no longer offered as evidence that one compensation policy caused survival.
+- Author motivation: the user supplied the digital-trust and jurisdiction connection. The existing manifesto source was read and its published route returned HTTP 200 with the expected title. ERC-5485’s official text confirms authorship, Review status, the jurisdiction/accreditation distinction, and enforcement-proposal semantics. No claim of finalized adoption or automatic legal validity is made.
+
+### Access and citation checks for the expansion
+
+New evidence entries were opened and relevant passages read. The UN historical overview and the Dutch historical canon were readable in a public browser despite automated retrieval failures. The Library of Congress map essay encountered an automated verification page, so the draft does not cite it or rely on its longitude discussion. Existing citations outside the changed claims retain their original verification record; this revision is not represented as a fresh full audit of every unchanged sentence.
+
+The revision adds 21 anchored source entries, bringing the total to 50, plus background Wikipedia links. All 53 distinct Wikipedia article destinations (55 URLs including section fragments) and the manifesto route returned HTTP 200 with appropriate titles. These background-link checks establish reachability and identity, not independent verification of every statement on Wikipedia. References retain the actual fetch date; no new archive snapshots have been verified.
+
+### Revision validation
+
+Astro’s Markdown processor renders the article successfully. YAML frontmatter parses, citation targets are unique and complete, and all six referenced local images exist. The existing cover and five section illustrations are retained: this changes the depth of the existing subjects, not the image manifest. The papal illustration remains explicitly captioned as the early administrative stage, rather than presented as a picture of Renaissance or global papal authority. The article remains below 500 lines; its long-form rationale explains why narrative and citation anchors share one file.
+
+The revision is prepared in an isolated content worktree; it does not change the website submodule pointer or production deployment.

@@ -16,3 +16,5 @@ Conceptual editorial illustrations accompanying [_posts/2026-09-17-the-unconvent
 Generated with OpenAI's built-in image-generation tool on September 17, 2026. Shared prompt direction: full-bleed textured cut-paper and ink illustration; warm ivory, charcoal, terracotta, muted blue, and olive; no logos or documentary claims. Section illustrations have no explanatory text. Abstract marks in pictured ledgers do not reproduce source documents. Each composition was inspected before use. Sharp resized and compressed the outputs as JPEGs; the original generated PNGs are not included.
 
 The manifest was planned before generation. The cover uses a centered 630-pixel square crop beginning at (285, 0) for list thumbnails; the full landscape composition is retained for article and social display. Total JPEG weight is approximately 859 KiB.
+
+The expanded historical narrative retains this image set. The church image illustrates the early administrative stage; the article separately discusses later territorial government and overseas demarcation. The updated verification record includes source and background-link checks.
