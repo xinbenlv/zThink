@@ -92,3 +92,8 @@ No new historical sources, quotations, dialogue, or factual episodes were introd
 ## Author-approved final revisions, September 17, 2026
 
 The author replaced the volunteer-recognition anecdote with his experience founding ZGZG and DotLift.org, contributing to Wikipedia, and belonging to Tsinghua and Johns Hopkins alumni communities. These autobiographical details are author-supplied. The final conclusion follows his argument that state formation has multiple paths and that statehood is socially constructed through relationships and recognition inside and outside a group, with unequal power explicitly acknowledged. The discussion of national historical narratives adds links to Oxford's “Nationalism and Historical Writing” and Cambridge's “Memory and the nation.” These additions supersede the earlier descriptions of the ending above.
+
+
+## Scope reduction requested by the author, September 17, 2026
+
+Removed the Yishuv/Israel case study and its four exclusive reference entries at the author’s request. Adjusted the migration transition and concluding example to match the remaining cases. The generic migration illustration still accompanies the Latter-day Saints section. Earlier audit notes above record the history of prior drafts; the published article now has 46 anchored source entries.

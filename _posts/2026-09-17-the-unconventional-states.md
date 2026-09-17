@@ -212,7 +212,7 @@ The [Peace of Augsburg](https://en.wikipedia.org/wiki/Peace_of_Augsburg), agreed
 
 The surrounding text concerns wives and children, arrears, and payment for release from obligations. A provision for religious difference thus reaches into a household's possessions. To exercise the right, someone may have to sell the things that make departure possible and the things that make staying desirable.
 
-Augsburg regulated religious difference within an existing empire. The later migrations considered here arose from their own circumstances, rather than from this settlement. But they return us to the household's difficulty: sharing a faith with others does not ensure that any government will make room for the life the community wants to lead.
+Augsburg regulated religious difference within an existing empire. The later migration considered here arose from its own circumstances, rather than from this settlement. But it returns us to the household's difficulty: sharing a faith with others does not ensure that any government will make room for the life the community wants to lead.
 
 ### The Latter-day Saints: the ditches came before recognition
 
@@ -231,24 +231,6 @@ That arrangement produced a long struggle over the conditions of self-government
 In 1890, [Wilford Woodruff](https://en.wikipedia.org/wiki/Wilford_Woodruff)'s Manifesto changed the church's official position on plural marriage. The subsequent constitutional process culminated in [Utah's admission on January 4, 1896](#ref-utah-statehood). Here *state* meant a member of the United States, not an independent country. The destination was negotiated participation in a federation, reached after decades of pressure and accommodation.
 
 The ditches, towns, and political nominations show how much the community could organize for itself. Congress's decisions show where that capacity met another authority. Indigenous dispossession shows what the settlement could mean to people outside both the settlers' institutions and the negotiations over their admission. There was no single community whose consent answered for everyone in the valley.
-
-### The Yishuv: offices already at work
-
-The United Nations' 1947 report on Palestine describes an elected assembly and offices responsible for schools, health, and social services. Its account of the [Vaad Leumi, Jewish Agency, and Histadrut](#ref-unscop) reads in places like an inventory of government. Yet the community whose institutions it described had not declared an independent state.
-
-The [Yishuv](https://en.wikipedia.org/wiki/Yishuv), the Jewish community in Palestine before Israeli independence, developed these institutions in a territory under Ottoman and then British rule. Palestine had an existing Arab population and competing national claims. The British Mandate incorporated the 1917 [Balfour Declaration](https://en.wikipedia.org/wiki/Balfour_Declaration)'s support for a Jewish national home. The interwar years brought [large-scale Jewish immigration, intensified by Nazi persecution](#ref-palestine-background).
-
-By the 1940s, the Yishuv possessed substantial capacity to organize services and collective life. The [Jewish Agency](https://en.wikipedia.org/wiki/Jewish_Agency_for_Israel) had extensive departments; the [Histadrut](https://en.wikipedia.org/wiki/Histadrut) linked economic and social organization. These institutions help explain how a community could prepare for government while British authorities still governed the territory.
-
-The same UN report records internal disagreements, Britain's governing role, and [Arab demands for independence](#ref-unscop). It also records the persecution and destruction facing European Jews. Its institutional inventory is evidence of capacity, not an impartial verdict resolving competing claims to Palestine; the committee itself noted the limitations caused by the Arab boycott of its work.
-
-In this case, the institutional history did acquire a decisive public date. Following the UN's 1947 partition recommendation and amid armed conflict, Israel [declared independence in May 1948](#ref-israel). U.S. recognition followed. Institutions that had operated under a mandate became resources for an independent state, while war determined much of the territory over which that state would exercise power.
-
-For Palestinian Arabs, the same war brought [flight and expulsion on a vast scale](#ref-palestine). The UN's historical overview describes more than half of the Palestinian Arab population being displaced. The formation of a state and the loss of a home belonged to the same unfolding events, experienced from radically different positions.
-
-The immediate territorial outcome also differed from the partition proposal. Israel expanded beyond the proposed Jewish state's boundaries; Jordan and Egypt controlled the remaining areas allocated to the proposed Arab state. That [Arab state did not emerge from the 1948 settlement](#ref-palestine).
-
-The later history of Israel and Palestine extends far beyond this comparison. At the transition in 1948, however, the distinction is already visible: institutions could prepare a community to govern, while recognition, territorial control, and the rights of other inhabitants remained separate and bitterly contested questions.
 
 ## Living with the constitution
 
@@ -307,7 +289,7 @@ The history we carry in our heads often arrives through the country we grow up i
 
 Seen through that frame, other political forms can slip out of view. Some are forgotten; some are deliberately minimized or erased; others survive as curiosities, given little weight in the story of how the present came to be. Work on [memory and the nation](https://www.cambridge.org/core/journals/social-science-history/issue/F9913567B8890B557371E807039EB83A) draws attention to the alternative stories and identities that national self-understanding can leave behind. Looking again at the institutions in this essay brings some of those possibilities back into view.
 
-Taken together, these histories show how many different roads can lead toward statehood. A church becomes a territorial ruler. Merchants build institutions to protect their trade. A company acquires armies and the power to tax. A community of migrants develops governing institutions before securing recognition of a state. Some of these paths produce states; others lead to forms of authority that remain difficult to fit into that category. There is no single, straight line along which a community becomes a country.
+Taken together, these histories show how many different roads can lead toward statehood. A church becomes a territorial ruler. Merchants build institutions to protect their trade. A company acquires armies and the power to tax. A migrating congregation builds settlements and seeks recognition for a new political community. Some of these paths produce states; others lead to forms of authority that remain difficult to fit into that category. There is no single, straight line along which a community becomes a country.
 
 For me, tracing these paths makes the idea of the state as a [social construct](https://en.wikipedia.org/wiki/Social_constructionism) more concrete. Statehood takes shape through relationships among people: those within a group who build institutions, accept or contest their authority, and come to see themselves as a political community; and those outside it who recognize its representatives, negotiate with it, dispute its claims, or refuse to acknowledge it. These judgments accumulate across generations and can change. A founding declaration is one moment in that process, whose outcome its authors cannot determine alone.
 
@@ -394,15 +376,6 @@ The research, historical expansion, and narrative revision were conducted on Sep
 <a id="ref-ute" style="display: block; scroll-margin-top: 6rem;"></a>
 **Indigenous inhabitants and dispossession.** David Rich Lewis, [“Ute Indians”](https://historytogo.utah.gov/post/ute-indians/), *Utah History Encyclopedia* (1994), reproduced by Utah History to Go. See Salt Lake Valley use, settler competition for resources, the Walker War, and reservation policy. The Ute account does not stand for every Indigenous people's history. Fetched 2026-09-17.
 
-<a id="ref-unscop" style="display: block; scroll-margin-top: 6rem;"></a>
-**Institutions and competing political claims in Palestine.** United Nations Special Committee on Palestine, [*Report to the General Assembly*, A/364 (1947)](https://www.un.org/unispal/document/auto-insert-179435/), chapter II, §§80–83 (Jewish institutions and persecution), §§81 and 88–96 (disagreements, British policy, and Arab demands). Also see §120 on the Arab boycott and the committee's resulting limitations in ascertaining Arab attitudes. This is a contemporary committee report, not a politically neutral view from outside the dispute. Fetched 2026-09-17.
-
-<a id="ref-israel" style="display: block; scroll-margin-top: 6rem;"></a>
-**Declaration and recognition in 1948.** U.S. Department of State, Office of the Historian, [“Creation of Israel, 1948”](https://history.state.gov/milestones/1945-1952/creation-israel), opening paragraph and the discussion of the 1947 UN recommendation. This historical *Milestones* series is no longer maintained. Fetched 2026-09-17.
-
-<a id="ref-palestine" style="display: block; scroll-margin-top: 6rem;"></a>
-**Palestinian displacement.** United Nations, [“History of the Question of Palestine”](https://www.un.org/unispal/history/), section “1947–1977: Partition plan, 1948, 1967, 1973 wars, inalienable rights,” opening paragraph on the 1948 war and flight or expulsion. Used here for displacement and the immediate territorial outcome, not as a substitute for a full history of the conflict. Fetched 2026-09-17.
-
 <a id="ref-utopias" style="display: block; scroll-margin-top: 6rem;"></a>
 **Owen and Fourier-inspired communities.** U.S. National Park Service, [“Secular Utopias in America”](https://home.nps.gov/articles/000/secular-utopias-in-america.htm), sections on New Harmony and the North American Phalanx. The essay distinguishes the communal experiments from the educational institutions and other activities that survived them. Fetched 2026-09-17.
 
@@ -456,9 +429,6 @@ The research, historical expansion, and narrative revision were conducted on Sep
 
 <a id="ref-utah-statehood" style="display: block; scroll-margin-top: 6rem;"></a>
 **Religious authority under territorial and federal government.** [Maren Peterson, “Utah’s Road to Statehood: 125 Years,” Utah State Archives](https://archives.utah.gov/2021/01/04/utahs-road-to-statehood-125-years/). “A Brief History”: Young’s governorship, church influence over elections, congressional opposition, the 1890 Manifesto, and January 4, 1896 statehood. Its acknowledgment of continued secret plural marriages is why the article describes a change in official position, not an instantaneous end to the practice. Fetched 2026-09-17.
-
-<a id="ref-palestine-background" style="display: block; scroll-margin-top: 6rem;"></a>
-**The setting before independence.** [United Nations, “History of the Question of Palestine”](https://www.un.org/unispal/history/). “1917–1947: British mandate”: former Ottoman territory, the Balfour Declaration, immigration, and Nazi persecution. The next section supplies the immediate wartime outcome. Read in a public browser after automated retrieval failed. Fetched 2026-09-17.
 
 <a id="ref-new-harmony-background" style="display: block; scroll-margin-top: 6rem;"></a>
 **The settlement before Owen.** [Town of New Harmony, “About”](https://www.in.gov/towns/newharmony/about/). Opening five paragraphs: Wabash River location, the Harmony Society’s 1814–1825 settlement, sale to Owen, and educational work with Maclure. Fetched 2026-09-17.
