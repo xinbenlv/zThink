@@ -10,3 +10,5 @@ blogposts/<article>/
 ```
 
 The [2026-09-11 mold article assets](2026-09-11-mold-food-clothes/README.md) contain three conceptual illustrations and dated evidence notes. They are not medical or laboratory images.
+
+[The Unconventional States](the-unconventional-states/README.md) has five conceptual illustrations and a source-verification record for its comparison of historical political communities.
