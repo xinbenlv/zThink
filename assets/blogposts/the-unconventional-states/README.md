@@ -17,4 +17,4 @@ Generated with OpenAI's built-in image-generation tool on September 17, 2026. Sh
 
 The manifest was planned before generation. The cover uses a centered 630-pixel square crop beginning at (285, 0) for list thumbnails; the full landscape composition is retained for article and social display. Total JPEG weight is approximately 859 KiB.
 
-The expanded historical narrative retains this image set. The church image illustrates the early administrative stage; the article separately discusses later territorial government and overseas demarcation. The updated verification record includes source and background-link checks.
+The expanded historical narrative and subsequent scene-led revision retain this image set. The church image illustrates the early administrative stage; the article separately discusses later territorial government and overseas demarcation. The updated verification record includes source and background-link checks.

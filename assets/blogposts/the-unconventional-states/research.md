@@ -62,3 +62,33 @@ The revision adds 21 anchored source entries, bringing the total to 50, plus bac
 Astro’s Markdown processor renders the article successfully. YAML frontmatter parses, citation targets are unique and complete, and all six referenced local images exist. The existing cover and five section illustrations are retained: this changes the depth of the existing subjects, not the image manifest. The papal illustration remains explicitly captioned as the early administrative stage, rather than presented as a picture of Renaissance or global papal authority. The article remains below 500 lines; its long-form rationale explains why narrative and citation anchors share one file.
 
 The revision is prepared in an isolated content worktree; it does not change the website submodule pointer or production deployment.
+
+
+## Narrative revision, September 17, 2026
+
+Revised the complete en-US article using selective narrative history and documentary close-ups. Period, geography, prior institutions, early development, mature powers, and endings remain in the prose rather than repeated stage labels. The existing six conceptual illustrations remain appropriate; no new images were generated.
+
+- The Sicilian bishop and clerk are invented, with the disclosure immediately after the short scene. No delivery, compliance, private thoughts, or dialogue are asserted as historical evidence. Gregory's Book I, Letter 1 was reopened: the short quotation comes from its first appointment paragraph in James Barmby's translation.
+- The Bruges merchant's departure is imagined and immediately identified as such. The HANSA Kontore account was reopened and supports lodgings with local hosts/brokers and coordinated withdrawals.
+- The Tordesillas close-up is documentary: its closing notarial attestation describes six leaves and the page bearing names and the notarial sign. Article 3 supplies the short boundary quotation, proposed survey, and physical markers. The treaty also requests papal confirmation. These passages were reopened and read; the 1493 papal grant remains distinct from the 1494 negotiated treaty.
+- The British Library/Qatar Digital Library account was reopened for the factor left behind after ships depart. This is a description of the documented trading system, not a named invented incident.
+- Coen's May 6, 1621 letter caption and transcription were reread on the Dutch National Archives page. No invented quotation or disputed casualty count was introduced.
+- Cambridge's printed-indulgence exhibit, Augsburg §24, NPS's 1847 arrival account, the New Harmony town history, and the NPS Phalanx account were reopened. These support the filled-in blanks, the short emigration quotation, irrigation before Young's arrival, the preexisting purchased town, and differential pay for cleaning stalls.
+- The ERC-5485 page was reopened to confirm Review status and the distinction between jurisdiction, accreditation, and enforcement. The personal digital-trust link and author's existing volunteer-system account are retained.
+- The historical and Wikipedia sources verified during the previous expansion are retained. This revision checks new narrative details and quotations; it is not a fresh claim to have re-audited every unchanged source.
+
+The initial local preview accidentally used the older website checkout. The corrected preview uses website origin/main at afc944f (v2.3.2), including the dark blog layout and unified article navigation, with its own dependencies under Node 24. It is local only and does not update the published submodule pointer.
+
+Corrected-preview validation: HTTP 200 for the article and digital-trust manifesto; all six article images return 200 and declare dimensions; 66 inline source links resolve to 50 distinct reference targets, with no missing or duplicated IDs. Three quotation blocks render in the current blog layout. The browser displays the current dark design and the mobile drawer lists the revised headings.
+
+
+## Magazine-style synthesis, September 17, 2026
+
+A further whole-article editorial pass combines spatial and temporal context, close attention to documents, and a sustained argument about whom an organization can bind. These are general editorial techniques, not borrowed wording from any publication. The papal chronology now places Tordesillas before Julius II's 1506 campaign and the 1527 sack before later administrative consolidation. Transitions connect the different forms of authority across all cases. The ending begins with the author's existing volunteer-recognition experience before discussing digital trust and ERC-5485. It distinguishes effective coercion from consent and legitimacy rather than explaining all government through trust.
+
+No new historical sources, quotations, dialogue, or factual episodes were introduced. Existing verified evidence and the two immediately disclosed imagined scenes remain; the six-image set still matches the article. All 50 source anchors remain used, and the three quoted passages retain their wording and attribution. The current v2.3.2 blog preview is updated from the revised Markdown.
+
+
+## Author-approved final revisions, September 17, 2026
+
+The author replaced the volunteer-recognition anecdote with his experience founding ZGZG and DotLift.org, contributing to Wikipedia, and belonging to Tsinghua and Johns Hopkins alumni communities. These autobiographical details are author-supplied. The final conclusion follows his argument that state formation has multiple paths and that statehood is socially constructed through relationships and recognition inside and outside a group, with unequal power explicitly acknowledged. The discussion of national historical narratives adds links to Oxford's “Nationalism and Historical Writing” and Cambridge's “Memory and the nation.” These additions supersede the earlier descriptions of the ending above.

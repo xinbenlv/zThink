@@ -21,4 +21,4 @@ _posts/YYYY-MM-DD-slug.md
 
 The 2026-09-11 mold explainer keeps food-handling exceptions beside the advice and links each claim to a local reference item. Its verification record is in `assets/blogposts/2026-09-11-mold-food-clothes/research.md`.
 
-The 2026-09-17 *Unconventional States* comparison follows each case from geographic and historical context through later developments; its source notes live in `assets/blogposts/the-unconventional-states/research.md`.
+The 2026-09-17 *Unconventional States* comparison combines documented episodes, explicitly marked imagined scenes, and a sustained argument about jurisdiction, following each case from geographic and historical context through later developments; its source notes live in `assets/blogposts/the-unconventional-states/research.md`.
