@@ -1,5 +1,5 @@
 ---
-title: "The Unconventional States"
+title: "The Unconventional Paths to Statehood"
 excerpt: "How churches, trading cities, companies, and communities acquired the power to govern—and what their histories reveal about trust and jurisdiction."
 date: 2026-09-17
 lang: en
