@@ -31,7 +31,12 @@ Known contributors:
 | id | name | profile |
 | --- | --- | --- |
 | `zainan-victor-zhou` | Zainan Victor Zhou (aka Victor Zhou, Zainan Zhou) | https://zzn.im |
-| `aileen-wright` | Aileen Wright — Art & History Writer, Namefi | https://namefi.io/r/en/authors/aileen-wright |
+| `aileen-wright` | Aileen Wright — zThink guest contributor | https://b.zzn.im/en/authors/aileen-wright |
+| `fenwei-bian` | Fenwei Bian (卞芬薇) — zThink guest contributor | https://b.zzn.im/en/authors/fenwei-bian |
+
+Guest profiles also have `/zh/authors/<id>` pages. They list each contributor's
+published zThink posts and link to the corresponding Namefi author profile for
+the source biography.
 
 ```yaml
 # Written by a guest, edited by Zainan Victor Zhou (the default editor)
