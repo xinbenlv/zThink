@@ -3,6 +3,9 @@ title: "原来“大学”的第一个 PMF 就是律师"
 excerpt: "从博洛尼亚的法学课堂到王廷与教廷，再与战国和科举对照：大学最早为谁训练法律人才，学位又何时成为可辨认的凭据？"
 date: 2026-09-19
 lang: zh
+author: Fenwei Bian
+editors:
+  - Zainan Victor Zhou
 categories:
   - blog
 tags:
