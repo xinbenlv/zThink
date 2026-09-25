@@ -124,6 +124,3 @@ That is probably the biggest lesson this small piece of internet archaeology gav
 
 **It may also be that many people who never had the skill or the tools to create can, for the first time, express themselves.**
 
----
-
-*Postscript: [the full ChatGPT conversation I used for this internet archaeology](https://chatgpt.com/share/6ab60b3f-ec10-83ed-a964-21b097ca4b3b).*
