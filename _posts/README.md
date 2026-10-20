@@ -24,3 +24,5 @@ The 2026-09-11 mold explainer keeps food-handling exceptions beside the advice a
 The 2026-09-17 *Unconventional States* comparison combines documented episodes, explicitly marked imagined scenes, and a sustained argument about jurisdiction, following each case from geographic and historical context through later developments; its source notes live in `assets/blogposts/the-unconventional-states/research.md`.
 
 The 2026-09-19 Chinese essay on the university's early legal-training market compares Bologna with Chinese official selection. It keeps 67 local reference anchors in the post; its eight conceptual images and provenance notes live in `assets/blogposts/2026-09-19-university-first-pmf-lawyers/README.md`.
+
+The 2026-10-20 Chinese survey of Linux Chinese input (fcitx5 engines, voice-input addons, WeType ports, and Lima VM pitfalls) pins every GitHub claim to a README line at a fixed commit; its hand-drawn SVG sources and regeneration steps live in `assets/blogposts/2026-10-20-linux-chinese-input-methods/README.md`.
