@@ -3,6 +3,9 @@ title: "前沿实验室怎么说：用 AI 提升企业效率的方法与证据"
 excerpt: "综述 Anthropic、OpenAI、xAI、Google 和各家 neo lab 的官方博客，整理企业用 AI 提效的做法；neo lab 部分只收有独立证据的案例。新增一节谈多智能体和长时间运行的智能体：何时值得用、怎么部署、怎么记账。"
 date: 2026-10-20
 lang: zh
+author: Aileen Wright
+editors:
+  - Zainan Victor Zhou
 categories: [AI]
 tags: [AI, 企业效率, Agent, 多智能体, 长时间运行, Anthropic, OpenAI, xAI, Gemini, DeepMind]
 published: true
