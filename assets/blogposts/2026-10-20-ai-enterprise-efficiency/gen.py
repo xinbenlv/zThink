@@ -167,4 +167,48 @@ for x, y, rot in [(470, 520, -5), (720, 560, 6)]:
     b += f'<g transform="rotate({rot} {x} {y})"><rect x="{x-80+6}" y="{y-34+8}" width="160" height="68" fill="{G2}"/><rect x="{x-80}" y="{y-34}" width="160" height="68" fill="{BG}" stroke="{INK}" stroke-width="3"/>' + lines(x - 60, y - 8, 80, 2, 20, G2, 6) + f'<circle cx="{x+48}" cy="{y}" r="24" fill="none" stroke="{OR}" stroke-width="5"/>' + check(x + 33, y, 0.55, OR) + '</g>'
 b += f'<path d="M 600 400 v 60" stroke="{INK}" stroke-width="4" stroke-dasharray="8 8"/>'
 open(f"{S}/04.svg", "w").write(svg(1200, 675, b))
+
+# ---------- 05 parallel lanes + shift relay 1200x675 ----------
+def clock(cx, cy, r, hh, mm):
+    s = f'<circle cx="{cx+6}" cy="{cy+8}" r="{r}" fill="{G2}"/><circle cx="{cx}" cy="{cy}" r="{r}" fill="{BG}" stroke="{INK}" stroke-width="5"/>'
+    for k in range(12):
+        a = math.radians(k * 30)
+        s += f'<line x1="{cx+(r-12)*math.sin(a)}" y1="{cy-(r-12)*math.cos(a)}" x2="{cx+(r-4)*math.sin(a)}" y2="{cy-(r-4)*math.cos(a)}" stroke="{INK}" stroke-width="3"/>'
+    ah, am = math.radians(hh * 30 + mm / 2), math.radians(mm * 6)
+    s += f'<line x1="{cx}" y1="{cy}" x2="{cx+r*0.45*math.sin(ah)}" y2="{cy-r*0.45*math.cos(ah)}" stroke="{INK}" stroke-width="7" stroke-linecap="round"/>'
+    s += f'<line x1="{cx}" y1="{cy}" x2="{cx+r*0.7*math.sin(am)}" y2="{cy-r*0.7*math.cos(am)}" stroke="{OR}" stroke-width="5" stroke-linecap="round"/>'
+    return s + f'<circle cx="{cx}" cy="{cy}" r="6" fill="{INK}"/>'
+
+def notebook(x, y, rot):
+    s = f'<g transform="rotate({rot} {x} {y})"><rect x="{x-62+6}" y="{y-44+8}" width="124" height="88" rx="6" fill="{G2}"/>'
+    s += f'<rect x="{x-62}" y="{y-44}" width="124" height="88" rx="6" fill="{GR}" stroke="{INK}" stroke-width="4"/>'
+    s += f'<rect x="{x-48}" y="{y-30}" width="96" height="40" rx="4" fill="{BG}" stroke="{INK}" stroke-width="3"/>'
+    s += text(x, y - 1, "进度", 26, INK, "middle", "700") + lines(x - 40, y + 26, 80, 1, 0, BG, 5)
+    return s + '</g>'
+
+b = paper(1200, 675)
+b += f'<rect x="0" y="372" width="1200" height="303" fill="{G1}"/><line x1="0" y1="372" x2="1200" y2="372" stroke="{INK}" stroke-width="4"/>'
+# three parallel lanes forking from one line and merging back
+lanes = [(110, BL), (195, OR), (280, GR)]
+b += f'<line x1="0" y1="195" x2="150" y2="195" stroke="{INK}" stroke-width="10" stroke-linecap="round"/>'
+for y, col in lanes:
+    b += f'<path d="M 150 195 C 220 195 220 {y} 290 {y} H 860 C 930 {y} 930 195 1000 195" fill="none" stroke="{INK}" stroke-width="16" stroke-linecap="round"/>'
+    b += f'<path d="M 150 195 C 220 195 220 {y} 290 {y} H 860 C 930 {y} 930 195 1000 195" fill="none" stroke="{col}" stroke-width="9" stroke-linecap="round"/>'
+for i, (y, col) in enumerate(lanes):
+    x = 360 + i * 150
+    b += card(x, y - 34, 150, 68, BG, 10, 4) + lines(x + 20, y - 8, 110, 2, 20, G2, 6)
+    b += f'<rect x="{x+150-30}" y="{y-56}" width="40" height="34" rx="6" fill="{col}" stroke="{INK}" stroke-width="3"/><path d="M {x+150-20} {y-56} v -10 a 10 10 0 0 1 20 0 v 10" fill="none" stroke="{INK}" stroke-width="3"/>'
+b += f'<line x1="1000" y1="195" x2="1200" y2="195" stroke="{INK}" stroke-width="10" stroke-linecap="round"/>'
+b += f'<circle cx="1060" cy="195" r="36" fill="{BG}" stroke="{INK}" stroke-width="5"/>' + check(1042, 196, 0.85)
+# shift timeline with a progress notebook passed between clocks
+b += f'<line x1="0" y1="600" x2="1200" y2="600" stroke="{INK}" stroke-width="4" stroke-dasharray="14 10"/>'
+for cx, (hh, mm) in zip([150, 470, 790], [(9, 0), (3, 0), (11, 0)]):
+    b += f'<line x1="{cx}" y1="545" x2="{cx}" y2="600" stroke="{INK}" stroke-width="4"/>' + clock(cx, 480, 62, hh, mm)
+for x in [310, 630]:
+    b += f'<path d="M {x-70} 440 Q {x} 400 {x+70} 440" fill="none" stroke="{INK}" stroke-width="4"/><path d="M {x+70} 440 l -18 -4 l 9 -14 z" fill="{INK}"/>'
+    b += notebook(x, 515, -4 if x == 310 else 4)
+# pause button: a human can stop the run
+b += f'<circle cx="{1040+7}" cy="{490+9}" r="70" fill="{G2}"/><circle cx="1040" cy="490" r="70" fill="{OR}" stroke="{INK}" stroke-width="5"/>'
+b += f'<rect x="1012" y="456" width="18" height="68" rx="4" fill="{BG}"/><rect x="1050" y="456" width="18" height="68" rx="4" fill="{BG}"/>'
+open(f"{S}/05.svg", "w").write(svg(1200, 675, b))
 print("ok")
