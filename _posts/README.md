@@ -26,3 +26,5 @@ The 2026-09-17 *Unconventional States* comparison combines documented episodes, 
 The 2026-09-19 Chinese essay on the university's early legal-training market compares Bologna with Chinese official selection. It keeps 67 local reference anchors in the post; its eight conceptual images and provenance notes live in `assets/blogposts/2026-09-19-university-first-pmf-lawyers/README.md`.
 
 The 2026-10-20 Chinese survey of Linux Chinese input (fcitx5 engines, voice-input addons, WeType ports, and Lima VM pitfalls) pins every GitHub claim to a README line at a fixed commit; its hand-drawn SVG sources and regeneration steps live in `assets/blogposts/2026-10-20-linux-chinese-input-methods/README.md`.
+
+The 2026-10-20 Chinese survey of what Anthropic, OpenAI, xAI, Google and the neo labs publish about enterprise AI efficiency keeps its source rules in the article itself: the three named labs are cited directly, Google customer numbers are marked as Google's claims, and neo-lab effects need independent evidence. Its illustrations live in `assets/blogposts/2026-10-20-ai-enterprise-efficiency/README.md`.
