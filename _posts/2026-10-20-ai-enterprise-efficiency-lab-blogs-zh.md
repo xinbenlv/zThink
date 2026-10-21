@@ -14,109 +14,71 @@ cover_image:
 og_image: /assets/blogposts/2026-10-20-ai-enterprise-efficiency/ai-efficiency-00-cover.jpg
 ---
 
-*这篇文章写给打算在公司里推行 AI 的管理者和工程负责人。2026 年 10 月 20 日，我把 Anthropic、OpenAI、xAI 和 Google 的官方博客、研究报告和客户案例读了一遍，又查了十几家 neo lab 的官网和外部报道。文中的数字都链接到文末的参考条目，参考条目再指向原文的具体段落和存档。厂商的数字更新得很快，引用之前最好回原文再核对一次。*
+OpenAI 在 2025 年 9 月发布了一个叫 GDPval 的评测，让模型去做专业人士的活儿。发布文章里有一句很抓眼的话：前沿模型完成这些任务，比行业专家快约 100 倍，也便宜约 100 倍。但同一篇文章里还有一句小字，说这个数字[只算了模型推理的时间和 API 的价格，没有算人工监督](#ref-oai-gdpval-100x)。论文第 15 页的表 2 把审核和返工也算进去之后，GPT-5 的速度优势从 90 倍掉到了[1.39 倍](#ref-oai-gdpval-table)。
+
+我读完几家实验室的官方文章，最大的感受就是这个：同一件事，换一种算法，数字能差出两个数量级。公司里想推 AI 的人，往往拿到手的是第一种数字，但真正落地以后过的是第二种日子。所以这篇文章不打算复述各家发了什么新闻，而是想回答三个问题：AI 到底在哪些活儿上见了效，这些公司是怎么做的，效果又该怎么量才不容易被数字骗到。
 
 ![一张分成四栏的工作台，四栏分别放着代码、客服工单、文档和账本，一盏台灯照着中间的一张检查清单](/assets/blogposts/2026-10-20-ai-enterprise-efficiency/ai-efficiency-01-four-workflows.jpg)
 
-## 先说结论
+先交代一下我是怎么读的。2026 年 10 月 20 日这天，我读了 Anthropic、OpenAI、xAI 和 Google 的官方博客、研究报告和客户案例，又查了十几家 neo lab 的官网和外部报道。文中每个数字都链到文末的参考条目，参考条目再指向原文的具体段落和存档。厂商的数字更新得很快，真要引用，最好回原文再看一眼。
 
-1. **见效最快的是结果容易检查的工作。** 编码、客服工单、文档处理和后台流程，证据最多。Anthropic 的工程师说，他们最先交给 AI 的就是[容易验证的任务](#ref-ant-work-verify)。
-2. **自报的省时数字普遍偏高。** 在 GDPval 论文里，只算模型推理时间，GPT-5 比专家[快 90 倍](#ref-oai-gdpval-table)；把专家审核和返工算进去，就只快 1.39 倍。
-3. **各家给的落地方法大同小异。** 从最简单的方案做起，上线前先建评测，高风险操作留给人审批，再一步步放权。
-4. **卡脖子的已经不是模型，而是组织。** OpenAI 的企业报告说，主要约束[不再是模型性能或工具](#ref-oai-sea-org)，而是组织有没有准备好。Anthropic 也认为，复杂任务[更受制于能不能拿到信息](#ref-ant-ei-sep25-ctx)。
-5. **neo lab 几乎拿不出经过独立核实的效果数字。** 我能找到的，只有少数客户自己公布的数字、港交所文件，以及媒体报道里的“预期”。
+## 我怎么挑来源
 
-## 来源怎么选
+Anthropic、OpenAI 和 xAI 的官方博客、研究报告和客户案例，我直接采用，照常注明出处。不过这些数字终究出自厂商，所以正文里我会尽量交代每个数字是怎么来的：问卷自报的，模型估算的，用量统计的，还是真的量出来的。
 
-**Anthropic、OpenAI 和 xAI。** 这三家的官方博客、研究报告和客户案例，本文直接采用并注明出处。不过这些数字终究出自厂商，所以正文会交代每个数字是怎么来的：问卷自报、模型估算、用量统计，还是实际测量。
+Google 的情况稍微复杂。Gemini、Google DeepMind 和 Google Research 三个博客里的方法和研究结论，我直接引用；但 Google 转述的客户提效数字，我一律写成“Google 称”，只有找到客户本人或第三方的佐证，才当作事实写。另外，Google Brain 现在已经不是独立团队了：2023 年 4 月 20 日，Sundar Pichai [宣布把 Google Research 的 Brain 团队和 DeepMind 合并](#ref-g-merge)，成立 Google DeepMind。所以后文只提 Google DeepMind 和 Google Research。xAI 的网站现在以 SpaceXSI 的名义发文，我仍然沿用 xAI 这个名字。
 
-**Google。** Gemini、Google DeepMind 和 Google Research 三个博客里的方法和研究结论，本文直接引用；Google 转述的客户数字，一律写成“Google 称”，只有找到客户本人或第三方的佐证时才当作事实。
+neo lab 我定得最严。这里说的 neo lab，指 2017 年以后成立、自己训练基础模型、又不隶属于上面四家或其他大型科技公司的 AI 实验室；Cohere 和 AI21 成立得早一些，但业务完全面向企业，也一并收入。一条效果数字要被我当成事实，至少得有下面四种证据之一：客户自己署名发布的数据，上市公司的财报或监管文件，同行评审或可复现的独立评测，可信媒体的独立报道。只在 neo lab 自家博客和新闻稿里出现的说法，我放进文末的一张“只有自述”的表里，写明为什么不采信。
 
-顺带一提，Google Brain 现在已经不是独立团队。2023 年 4 月 20 日，Sundar Pichai [宣布把 Google Research 的 Brain 团队和 DeepMind 合并](#ref-g-merge)，成立 Google DeepMind。所以本文不再单列 Google Brain。
+## AI 被拿去做什么
 
-**neo lab。** 本文说的 neo lab，是 2017 年以后成立、自己训练基础模型、又不隶属于上述四家或其他大型科技公司的 AI 实验室。Cohere 和 AI21 成立得早一些，但业务完全面向企业，也一并收入。neo lab 的效果要算数，至少得有下面一种证据：
+先看企业员工实际拿 AI 做什么。Anthropic 2026 年 6 月的报告统计了工作类对话的产出，最常见的是[文档和报告（20%）、解释（9%）和邮件草稿（7%）](#ref-ant-ei-jun26)。OpenAI 统计消费者版 ChatGPT 里的工作消息，[写作占了 40%](#ref-oai-usage-writing)。通过 API 接入的企业又不太一样：Anthropic 发现 API 对话里[77% 是自动化，只有 12% 是增强](#ref-ant-ei-sep25)，也就是说企业在 API 上更习惯把一整件事交给模型，而不是跟模型一来一回地商量。
 
-- 客户自己署名发布的数据；
-- 上市公司的财报或监管文件；
-- 同行评审或可复现的独立评测；
-- 可信媒体的独立报道。
+把各家案例摊开看，有证据的活儿大致集中在四类：写代码，处理客服工单，查文档和审合同，还有开票、对账、采购这类后台流程。它们有个共同点：结果比较容易检查。Anthropic 的工程师就说过，他们最先交给 Claude 的，是[容易验证的任务](#ref-ant-work-verify)。
 
-只在 neo lab 自家博客和新闻稿里出现的说法，我统一放进后文的“只有自述”表，并写明原因。
+### 写代码：证据最扎实
 
-另外，xAI 的网站现在以 SpaceXSI 的名义发文，本文仍然沿用 xAI 这个名字。
+在我读到的材料里，只有编码同时有内部实测和随机对照试验。
 
-## 四类工作流
+Anthropic 在 2025 年 8 月[调查了 132 名工程师和研究员](#ref-ant-work-n)，受访者[自报 Claude 承担了约 60% 的工作，生产率提高 50%](#ref-ant-work-survey)。自报当然靠不住，但 Anthropic 拿出了另一组实测数据来对照：推广 Claude Code 之后，工程团队[每人每天合并的 PR 增加了 67%](#ref-ant-work-pr)。受访者还估计，有 [27% 的 Claude 辅助工作，原本根本不会去做](#ref-ant-work-new)。这一点值得想一想：一部分收益不是把旧活干得更快，而是让原来没人顾得上的活有人干了。
 
-先看企业员工拿 AI 做什么。Anthropic 2026 年 6 月的报告统计了工作类对话的产出，最常见的是[文档和报告（20%）、解释（9%）和邮件草稿（7%）](#ref-ant-ei-jun26)。OpenAI 统计消费者版 ChatGPT 的工作消息，发现[写作占了 40%](#ref-oai-usage-writing)。
+在 Claude Code 里，[79% 的对话带有某种自动化，Claude.ai 上只有 49%](#ref-ant-swdev)。另一项研究发现，人大约做了 [70% 的规划决策，执行决策只占 20%](#ref-ant-cc-expertise)，也就是人定做什么，模型管怎么做。落到具体案例，Stripe 用 4 天[把 1 万行 Scala 代码迁移到了 Java](#ref-ant-stripe)，按 Anthropic 的说法，人工估计要 10 个工程周；Cisco 用 Codex 优化构建，构建时间[缩短约 20%，每月省下 1,500 多个工程小时](#ref-oai-cisco)。这两个都是厂商案例，没有说明测量方法。
 
-通过 API 接入的企业用法又不一样。Anthropic 发现 API 对话里 [77% 属于自动化，只有 12% 属于增强](#ref-ant-ei-sep25)。换句话说，企业在 API 上更习惯把一整件事交给模型去做，而不是和模型一来一回地商量。
+Google 的证据更像学术研究。它的工程师做过一次[有 96 名全职工程师参加的随机对照试验](#ref-g-rct-96)，AI 功能让任务用时缩短约 21%，但论文作者自己也说，[置信区间很大](#ref-g-rct)。Google Research 报告，代码里[由 AI 补全的字符已经和手敲的一样多](#ref-g-research-se)；在一次 ID 类型迁移中，落地的改动有 [80% 是 AI 写的](#ref-g-migration-80)，参与的工程师[估计总耗时减少了一半](#ref-g-migration)。至于 Pichai 的说法，2024 年 10 月是 Google [超过四分之一的新代码由 AI 生成](#ref-g-code25)，到 2026 年 4 月是[75%](#ref-g-code75)。这个比例的分母到底是字符、行数还是提交数，Google 没有交代，我只当它是个方向。
 
-| 工作流 | 适合先交给 AI 的环节 | 本文引用的例子 | 证据类型 |
-| --- | --- | --- | --- |
-| 编码和软件维护 | 代码迁移、补全、测试、构建优化 | Anthropic 内部、Stripe、Cisco、Google 内部 | 内部实测、随机对照试验、厂商案例 |
-| 客服和工单处理 | 分类、退款、批量关闭重复工单 | Klarna、Intercom、Zendesk、xAI 自用 | 厂商案例 |
-| 文档、检索和分析 | 查内部文档、审合同、写调研报告 | Morgan Stanley、Spellbook、BBVA | 厂商案例 |
-| 后台流程 | 开票、对账、采购审查、邮件管理 | Qonto、xAI 自用、Anthropic 的 API 统计 | 厂商案例、用量统计 |
+也不全是好消息。OpenAI 的 Codex 指南里有一句提醒：AI 代码审查[不一定能让 PR 流程变快](#ref-oai-codex-review)。写得快了，审得慢了，整体未必就快。
 
-### 编码：证据最扎实
+### 客服工单：自动化走得最远
 
-在本文引用的材料里，只有编码同时有内部实测和随机对照试验。
+客服工单量大、格式相近、对错容易判断，是最适合交给 AI 的活儿之一。Klarna 的案例经常被引用，但要注意 OpenAI 页面上写的只是上线第一个月的数据：客户[解决问题的时间从 11 分钟降到 2 分钟以内](#ref-oai-klarna)。Intercom 的语音客服 Fin Voice，据 OpenAI 的企业报告，[平均能端到端解决 53% 的来电](#ref-oai-sea-intercom)。Anthropic 的案例里，使用自建智能体的 Zendesk 客户，[自动解决率最多提高 10%，人工处理时间最多减少 80%](#ref-ant-zendesk)。Carvana 则让 Claude 去修告警的根因，一个频道的[告警因此减少了 56%](#ref-ant-carvana)。
 
-- **Anthropic 内部。** 2025 年 8 月，Anthropic [调查了 132 名工程师和研究员](#ref-ant-work-n)。受访者[自报 Claude 承担了约 60% 的工作，生产率提高 50%](#ref-ant-work-survey)。Anthropic 认为这和另一项实测大致对得上：推广 Claude Code 之后，工程团队[每人每天合并的 PR 增加了 67%](#ref-ant-work-pr)。受访者还估计，有 [27% 的 Claude 辅助工作原本根本不会去做](#ref-ant-work-new)。
-- **Claude Code 的用法。** 在 Claude Code 里，[79% 的对话带有某种自动化，Claude.ai 上只有 49%](#ref-ant-swdev)。另一项研究发现，人大约做了 [70% 的规划决策，执行决策只占 20%](#ref-ant-cc-expertise)。
-- **Stripe。** 据 Anthropic 的客户案例，Stripe 用 4 天[把 1 万行 Scala 代码迁移到 Java](#ref-ant-stripe)，而人工估计要 10 个工程周。
-- **Cisco。** 据 OpenAI 的客户案例，Cisco 用 Codex 优化构建，构建时间[缩短约 20%，每月省下 1,500 多个工程小时](#ref-oai-cisco)。
-- **Google 内部。** Google 的工程师做过一次[有 96 名全职工程师参加的随机对照试验](#ref-g-rct-96)，AI 功能让任务用时缩短约 21%，但作者也说明[置信区间很大](#ref-g-rct)。Google Research 报告，代码里[由 AI 补全的字符已经和手敲的一样多](#ref-g-research-se)。在一次 ID 类型迁移中，落地的改动有 [80% 是 AI 写的](#ref-g-migration-80)，参与的工程师[估计总耗时减少了一半](#ref-g-migration)。
-- **Google 称。** Pichai 2024 年 10 月说，Google [超过四分之一的新代码由 AI 生成](#ref-g-code25)；到 2026 年 4 月，他说这一比例[已经达到 75%](#ref-g-code75)。Google 没有说明分母是字符、行数还是提交数。
-
-OpenAI 的 Codex 指南也提醒，AI 代码审查[不一定能让 PR 流程变快](#ref-oai-codex-review)。
-
-### 客服和工单：自动化规模最大
-
-客服工单量大、格式相近、对错容易判断，很适合交给 AI。
-
-- **Klarna。** OpenAI 的案例只给了上线第一个月的数据：客户[解决问题的时间从 11 分钟降到 2 分钟以内](#ref-oai-klarna)。案例标题称，这个 AI 助手干的活相当于 700 名全职客服。
-- **Intercom。** 据 OpenAI 的企业报告，Intercom 的语音客服 Fin Voice [平均能端到端解决 53% 的来电](#ref-oai-sea-intercom)。
-- **Zendesk。** 据 Anthropic 的案例，在使用自建智能体的 Zendesk 客户中，[自动解决率最多提高 10%，人工处理时间最多减少 80%](#ref-ant-zendesk)。
-- **xAI 自用。** xAI 说，合并后的客服团队[工单量涨了 175%，却没有新招一个人](#ref-x-support)。另一篇文章写到，一次事故中，智能体[约 10 分钟清完了 204 张工单，整批操作由一名客服工程师审批](#ref-x-incident)。
-- **Carvana。** 据 Anthropic 的案例，Carvana 让 Claude 去修告警的根因，一个频道的[告警因此减少了 56%](#ref-ant-carvana)。
+xAI 公布了自家客服团队的情况：合并之后，工单量[涨了 175%，却没有新招一个人](#ref-x-support)；另一篇文章写到，一次事故中，智能体[约 10 分钟清完了 204 张工单，整批操作由一名客服工程师审批](#ref-x-incident)。这些都是 xAI 自己说自己，没有第三方核实。
 
 ### 文档、检索和分析：用量最大
 
-文档类工作在用量里占比最高，但结果很难自动打分。
+文档类工作在用量里占比最高，但结果很难自动打分，所以案例里的数字都要多留个心眼。据 OpenAI 的指南，Morgan Stanley 的顾问[能查到的文档从 20% 升到了 80%](#ref-oai-aie-ms)。Spellbook 用 Claude 审合同，据 Anthropic 的案例，一份协议的完成时间[从律师约 10 小时缩短到约 1 小时](#ref-ant-spellbook)。BBVA 墨西哥的法务聊天机器人，据 OpenAI 的企业报告，[每年自动处理 9,000 多次查询，相当于腾出 3 名全职员工](#ref-oai-sea-bbva)。
 
-- **Morgan Stanley。** 据 OpenAI 的指南，Morgan Stanley 的顾问[能查到的文档从 20% 升到了 80%](#ref-oai-aie-ms)。Morgan Stanley 的具体做法，放在后面“先建评测”一节里讲。
-- **Spellbook。** 据 Anthropic 的案例，Spellbook 用 Claude 审合同，一份协议的完成时间[从律师约 10 小时缩短到约 1 小时](#ref-ant-spellbook)。
-- **BBVA。** 据 OpenAI 的企业报告，BBVA 墨西哥的法务聊天机器人[每年自动处理 9,000 多次查询，相当于腾出 3 名全职员工](#ref-oai-sea-bbva)。
-- **Anthropic 的调研智能体。** Anthropic 让多个子智能体并行检索，复杂问题的[调研时间最多缩短 90%](#ref-ant-multi-90)。代价是 token 用量：多智能体系统[约为普通对话的 15 倍](#ref-ant-multi)。
+Anthropic 自己的调研智能体是个有意思的例子：让多个子智能体并行检索，复杂问题的[调研时间最多缩短 90%](#ref-ant-multi-90)，代价是 token 用量[约为普通对话的 15 倍](#ref-ant-multi)。快是快了，是要花钱的。
 
 ### 后台流程：从对话走向自动执行
 
-后台流程规则清楚，但往往牵涉钱。下面 Qonto 和 xAI 的例子，都把“执行”和“审批”分开处理。
+Anthropic 2026 年 1 月的报告说，企业[越来越多地用 Claude 自动处理后台流程](#ref-ant-ei-jan26-admin)，比如邮件管理。这一类活儿牵涉钱，所以案例里普遍把“执行”和“审批”分开。Qonto 的智能体把[开票时间缩短到原来的三分之一，每张发票都要客户确认后才发出](#ref-ant-qonto)。xAI 的采购智能体[找出了超过 10 万美元的直接节省](#ref-x-proc)，其中一个产品有 [43 个付费席位 90 天没人用过](#ref-x-proc-seats)；但花钱、接受条款、给供应商发东西，[都必须由人明确批准](#ref-x-proc-approval)。
 
-- **Anthropic 的统计。** Anthropic 2026 年 1 月的报告说，企业[越来越多地用 Claude 自动处理后台流程](#ref-ant-ei-jan26-admin)，比如邮件管理。
-- **Qonto。** 据 Anthropic 的案例，Qonto 的智能体把[开票时间缩短到原来的三分之一，每张发票都要客户确认后才发出](#ref-ant-qonto)。
-- **xAI 自用。** xAI 的采购智能体[已经找出超过 10 万美元的直接节省](#ref-x-proc)，其中一个产品有 [43 个付费席位 90 天没人用过](#ref-x-proc-seats)。花钱、接受条款、给供应商发东西，[都必须由人明确批准](#ref-x-proc-approval)。
+## 照着做，大概是这六步
 
-## 落地分六步
-
-把各家的工程文章和企业指南放在一起读，可以把建议归纳成六个步骤。下面每一步只写原文里有依据的做法。
+把各家的工程文章和企业指南放在一起读，建议其实高度重合，大致可以排成六步。
 
 ![六级编号台阶，依次标着挑任务、简单方案、先评测、接数据、人审批和共享，台阶上分别放着筛子、齿轮、尺子、插头、印章和一本打开的手册](/assets/blogposts/2026-10-20-ai-enterprise-efficiency/ai-efficiency-02-six-steps.jpg)
 
-### 第一步：挑影响大、投入小、容易验证的任务
+### 第一步，挑对任务
 
-OpenAI 的用例指南建议从三类工作里找机会：[重复的低价值任务、技能瓶颈，以及需要在模糊中做判断的问题](#ref-oai-usecases-3)。指南分析了 600 多个客户用例，发现大多可以归入[六类基本用例](#ref-oai-usecases-prim)：内容创作、自动化、研究、构思与策略、编码和数据分析。
+OpenAI 的用例指南建议，先从三类工作里找机会：[重复的低价值任务、技能瓶颈，以及需要在模糊中做判断的问题](#ref-oai-usecases-3)。指南分析了 600 多个客户用例，发现大多可以归入[六类基本用例](#ref-oai-usecases-prim)：内容创作、自动化、研究、构思与策略、编码和数据分析。挑的时候按影响和投入打分，先做[影响大、投入小的](#ref-oai-usecases-quick)，并且[每个季度重新打一次分](#ref-oai-usecases-q)，因为模型变强以后，原先难做的用例可能变容易。指南还建议让熟练的员工[把工作流拆成一个个具体任务](#ref-oai-usecases-map)。
 
-指南建议按影响和投入给用例打分，先做[影响大、投入小的项目](#ref-oai-usecases-quick)，并且[每个季度重新打一次分](#ref-oai-usecases-q)，因为模型变强以后，原先难做的用例可能变得容易。指南还建议让熟练的员工[把工作流拆成一个个具体任务](#ref-oai-usecases-map)。
+挑任务要看整条流程，不能只盯一个环节。Anthropic 指出，AI 帮不上太多忙的环节，[可能变成新的瓶颈](#ref-ant-prod-bottle)。OpenAI 的智能体指南也说得很实在：如果用例不满足那几个条件，[普通的确定性程序可能就够了](#ref-oai-agents-det)。
 
-挑任务时要看整条流程，而不只是单个环节。Anthropic 指出，AI 帮不上太多忙的环节[可能变成新的瓶颈](#ref-ant-prod-bottle)。OpenAI 的智能体指南也说，如果用例不满足那几个条件，[普通的确定性程序可能就够了](#ref-oai-agents-det)。
+### 第二步，从最简单的做起
 
-### 第二步：先用最简单的方案，不够再上智能体
-
-Anthropic 的《Building effective agents》建议[先找最简单的方案，确有需要再增加复杂度](#ref-ant-bea)；很多场景一次模型调用加上检索就能解决。OpenAI 的智能体指南给出了同样的建议：[先把单个智能体的能力用足](#ref-oai-agents-single)。
-
-Anthropic 把常见的工作流归纳成五种模式，下表“适用场景”一栏转述原文：
+Anthropic 的《Building effective agents》建议[先找最简单的方案，确有需要再增加复杂度](#ref-ant-bea)，很多场景一次模型调用加检索就能解决。OpenAI 的智能体指南给了同样的建议：[先把单个智能体的能力用足](#ref-oai-agents-single)。真要上复杂的，Anthropic 把常见的工作流归成了五种模式：
 
 | 模式 | 做法 | 适用场景 |
 | --- | --- | --- |
@@ -126,55 +88,35 @@ Anthropic 把常见的工作流归纳成五种模式，下表“适用场景”�
 | 编排者与执行者 | [一个模型动态拆分任务、分派下去，再汇总结果](#ref-ant-bea-orch) | 事先无法预知需要哪些子任务 |
 | 评估者与优化者 | [一个模型生成，另一个模型评价并反馈](#ref-ant-bea-eval) | 评价标准清楚，迭代能带来可测的改进 |
 
-Rocket Money 用的就是路由模式：据 Anthropic 的案例，它[先用 Haiku 4.5 给请求分类，再分派给职责单一的子智能体](#ref-ant-rocket)。
+Rocket Money 用的就是路由：据 Anthropic 的案例，它[先用 Haiku 4.5 给请求分类，再分派给职责单一的子智能体](#ref-ant-rocket)。至于多智能体，前面说过 token 用量约为普通对话的 15 倍，我的看法是，只有任务价值高、又能并行的时候才值得上。
 
-多智能体系统要算账。前面提到，它的 token 用量约为普通对话的 15 倍。我的看法是，只有任务价值高、又能并行的时候才值得上。
+### 第三步，上线之前先建评测
 
-### 第三步：上线前先建评测
+OpenAI 的《AI in the Enterprise》总结了七条经验，第一条就是[用系统的评测流程，衡量模型在自己用例上的表现](#ref-oai-aie-evals)。Morgan Stanley 是个典型：[每个 AI 用例上线前都先跑评测](#ref-oai-ms-eval)，上线后还[每天用一组示例问题跑回归测试](#ref-oai-ms-reg)。
 
-OpenAI 的《AI in the Enterprise》总结了七条经验，第一条就是[用系统的评测流程，衡量模型在自己用例上的表现](#ref-oai-aie-evals)。Morgan Stanley 是典型例子：[每个 AI 用例上线前都先跑评测](#ref-oai-ms-eval)，上线后还[每天用一组示例问题跑回归测试](#ref-oai-ms-reg)。
+评测集不必一开始就很大。Anthropic 的评测文章说，[20 到 50 个取自真实失败的简单任务](#ref-ant-evals)就够起步；它自己做多智能体系统时，起步也只用了[约 20 个贴近真实用法的查询](#ref-ant-multi-20)。回归评测的[通过率应接近 100%](#ref-ant-evals-reg)，能力评测则用来衡量智能体还做不稳的事。评测还有个附带的好处，就是换模型变快：按 Anthropic 的说法，[没有评测的团队要花几周测试新模型](#ref-ant-evals-days)，有评测的团队很快就能下判断。OpenAI 也建议[先用最强的模型做原型，定下性能基线](#ref-oai-agents-base)，再换小模型省钱，Indeed 就这样微调了一个小模型，[少用 60% 的 token，结果差不多](#ref-oai-aie-indeed)。
 
-评测集不必一开始就很大：
+对写代码来说，评测就是测试。OpenAI 的 Codex 指南说，[先写好测试，往往是让智能体开发功能的第一步](#ref-oai-codex-tests)；Claude Code 的文档也建议[给 Claude 一个能自己运行的检查](#ref-ant-ccbp)，比如测试、构建或截图对比。
 
-- Anthropic 的评测文章说，[20 到 50 个取自真实失败的简单任务](#ref-ant-evals)就够起步；
-- Anthropic 的多智能体团队起步时也只用了[约 20 个贴近真实用法的查询](#ref-ant-multi-20)；
-- 回归评测的[通过率应接近 100%](#ref-ant-evals-reg)，能力评测则用来衡量智能体还做不稳的事。
+### 第四步，把数据和工具接上
 
-评测还能让换模型变快。按 Anthropic 的说法，[没有评测的团队要花几周测试新模型](#ref-ant-evals-days)，有评测的团队很快就能下判断。OpenAI 建议[先用最强的模型做原型，定下性能基线](#ref-oai-agents-base)，再换小模型省钱。Indeed 就微调了一个小模型，[少用 60% 的 token，结果差不多](#ref-oai-aie-indeed)。
+Anthropic 推测，复杂任务[更受制于能不能拿到信息](#ref-ant-ei-sep25-ctx)，模型能力反而在其次。OpenAI 的企业报告说得更直白：主要约束[不再是模型性能或工具](#ref-oai-sea-org)，而是组织有没有准备好。它的数据也能佐证：企业版月活用户里，[19% 从没用过数据分析，14% 从没用过推理，12% 从没用过搜索](#ref-oai-sea-unused)。接的时候有三件事要注意。上下文要精简，Anthropic 说它是[边际收益递减的有限资源](#ref-ant-ctx)。工具要少而精，Anthropic 建议[先做几个针对高价值工作流的工具](#ref-ant-tools)，别把每个 API 都包一层；它做 SWE-bench 智能体时，[花在工具上的时间比花在提示词上的还多](#ref-ant-bea-tools)。权限则要先定好，OpenAI 建议管理者[给智能体接上完成工作所需的上下文和工具，同时定清权限、审核和治理规则](#ref-oai-signals-agenda)。
 
-在编码场景里，评测就是测试。OpenAI 的 Codex 指南说，[先写好测试，往往是让智能体开发功能的第一步](#ref-oai-codex-tests)。Claude Code 的文档也建议[给 Claude 一个能自己运行的检查](#ref-ant-ccbp)，比如测试、构建或截图对比。
-
-### 第四步：把数据和工具接给模型
-
-Anthropic 推测，复杂任务[更受制于能不能拿到信息](#ref-ant-ei-sep25-ctx)，模型能力反而在其次。OpenAI 的数据也显示，企业版月活用户中，[19% 从没用过数据分析，14% 从没用过推理，12% 从没用过搜索](#ref-oai-sea-unused)。
-
-接数据、接工具，有三条具体建议：
-
-- **上下文要精简。** Anthropic 说，上下文是[边际收益递减的有限资源](#ref-ant-ctx)。
-- **工具要少而精。** Anthropic 建议[先做几个针对高价值工作流的工具](#ref-ant-tools)，不要把每个 API 都包一层。Anthropic 做 SWE-bench 智能体时，[花在工具上的时间比花在提示词上的还多](#ref-ant-bea-tools)。
-- **先把权限定好。** OpenAI 建议管理者[给智能体接上完成工作所需的上下文和工具，同时定清权限、审核和治理规则](#ref-oai-signals-agenda)。
-
-### 第五步：高风险操作交给人审批，再逐步放权
+### 第五步，高风险的操作留给人，再逐步放权
 
 OpenAI 的智能体指南写道，[敏感、不可逆或高风险的操作应当触发人工监督](#ref-oai-agents-human)，直到团队对智能体的可靠性有了信心。
 
-xAI 在自己公司部署 Grok Bot 时，也是这样一步步放权的。下面三条分别出自 xAI 的三篇文章：
-
-- 《Grok Bot for Enterprise》：Grok Bot [默认没有任何权限](#ref-x-ent-access)，只能进入用户替它登录的账户。
-- 客服案例：一开始[只让 Grok Bot 写内部备注，每个写操作都要人工批准](#ref-x-support-method)；第一天人工复核之后，才[让它直接回复客户](#ref-x-support-direct)。
-- 采购案例：花钱、接受条款、给供应商发东西，[都要人明确批准](#ref-x-proc-approval)。
+xAI 在自己公司部署 Grok Bot 时，走的也是这条路，只不过材料出自它自己的三篇文章，和 OpenAI 的指南是两回事。《Grok Bot for Enterprise》说，Grok Bot [默认没有任何权限](#ref-x-ent-access)，只能进入用户替它登录的账户。客服那篇说，一开始[只让它写内部备注，每个写操作都要人工批准](#ref-x-support-method)，第一天人工复核之后，才[让它直接回复客户](#ref-x-support-direct)。采购那篇则是前面提过的，花钱和对外发送[都要人明确批准](#ref-x-proc-approval)。
 
 放权的节奏可以跟着智能体的表现走。Anthropic 统计，Claude Code 在需要人介入之前，[能连续执行的操作从约 10 个增加到约 20 个](#ref-ant-work-steps)。OpenAI 的 Codex 指南把分工写得很直白：[智能体负责第一遍实现，工程师负责审阅、修改和把握方向](#ref-oai-codex-roles)。
 
-### 第六步：把个人用法变成团队共享的工作流
+### 第六步，把个人的用法变成团队的做法
 
-OpenAI 的企业报告说，[约 20% 的企业版消息是通过 Custom GPT 或 Project 处理的](#ref-oai-sea-gpts)。BBVA 的员工五个月里[建了 2,900 多个 Custom GPT](#ref-oai-aie-bbva)。
+OpenAI 的企业报告说，[约 20% 的企业版消息是通过 Custom GPT 或 Project 处理的](#ref-oai-sea-gpts)，BBVA 的员工五个月里[建了 2,900 多个 Custom GPT](#ref-oai-aie-bbva)。员工上手也需要时间：Anthropic 发现，用了 Claude 六个月以上的用户，[对话成功率要高 10%](#ref-ant-ei-mar26)。OpenAI 总结领先企业的做法是[衡量使用深度、为生产环境建立治理、投入培训、推广行之有效的做法](#ref-oai-signals-leading)，并逐步把工作从对话式辅助转为交给智能体去做。
 
-员工上手也需要时间。Anthropic 发现，用了 Claude 六个月以上的用户，[对话成功率要高 10%](#ref-ant-ei-mar26)。OpenAI 总结领先企业的做法是：[衡量使用深度、为生产环境建立治理、投入培训、推广行之有效的做法](#ref-oai-signals-leading)，并逐步把工作从对话式辅助转为交给智能体去做。
+## 效果怎么量，才不会被数字骗
 
-## 怎么衡量效果：别漏了审核和返工
-
-各家报告里的数字大致分三类，能说明的问题各不相同。
+各家报告里的数字，大致分三种，能说明的事情各不相同。
 
 | 数据类型 | 例子 | 能说明什么 | 说明不了什么 |
 | --- | --- | --- | --- |
@@ -182,44 +124,36 @@ OpenAI 的企业报告说，[约 20% 的企业版消息是通过 Custom GPT 或 
 | 自报数据 | 问卷里“每天省了多少分钟” | 员工的感受 | 实际省下的时间 |
 | 实测数据 | 合并 PR 数、处理时长、随机对照试验 | 指标的真实变化 | 换个团队能否复现 |
 
-**用量数据。** OpenAI 自己也承认，[token 并不能直接衡量业务价值](#ref-oai-signals-tokens)。OpenAI 说，前沿企业每个活跃用户的输出 token [是普通企业的 8.3 倍](#ref-oai-signals-83)。但它在 2025 年 12 月的报告里也用过“前沿”一词，当时指的是[处于第 95 百分位的员工](#ref-oai-sea-6x)，定义并不相同。几份报告里的倍数不能直接放在一起比。
+用量数据最容易被误读。OpenAI 自己就承认，[token 并不能直接衡量业务价值](#ref-oai-signals-tokens)。它说前沿企业每个活跃用户的输出 token [是普通企业的 8.3 倍](#ref-oai-signals-83)，但这里的“前沿”和它 2025 年 12 月报告里的“前沿员工”并不是一个意思，后者指的是[处于第 95 百分位的员工](#ref-oai-sea-6x)，几份报告里的倍数不能直接放在一起比。
 
-**自报数据。** OpenAI [调查了近 100 家企业的 9,000 名员工](#ref-oai-sea-n)，受访者[自报每个活跃日能省 40 到 60 分钟](#ref-oai-sea-time)。Google 称 Workspace 用户[每周平均省下 105 分钟](#ref-g-ws105)，依据是 [3,200 多份员工问卷](#ref-g-ws105-n)。Anthropic 的问卷里，分别有 [86%、82% 和 69% 的受访者说工作速度、范围和质量提高了](#ref-ant-ei-jun26-survey)，但 Anthropic 也承认这份问卷[不能代表总体人群](#ref-ant-ei-jun26-rep)。
+自报数据则要看是谁在报。OpenAI [调查了近 100 家企业的 9,000 名员工](#ref-oai-sea-n)，受访者[自报每个活跃日能省 40 到 60 分钟](#ref-oai-sea-time)；Google 称 Workspace 用户[每周平均省下 105 分钟](#ref-g-ws105)，依据是 [3,200 多份员工问卷](#ref-g-ws105-n)；Anthropic 的问卷里，[86%、82% 和 69% 的受访者说工作速度、范围和质量提高了](#ref-ant-ei-jun26-survey)，不过 Anthropic 也承认这份问卷[不能代表总体人群](#ref-ant-ei-jun26-rep)。这些都是员工的感受，不是计时器量出来的。
 
-**模型估算。** Anthropic 让 Claude 估算对话中任务的用时：没有 AI 时[平均要 90 分钟，有了 Claude 能缩短约 80%](#ref-ant-prod)。但这个估算没有算上对话之外花的时间，[包括核对 Claude 的工作质量和准确性](#ref-ant-prod-caveat)。
+还有一类是让模型自己估。Anthropic 让 Claude 估算对话中任务的用时：没有 AI 时[平均要 90 分钟，有了 Claude 能缩短约 80%](#ref-ant-prod)。但这个估算没有算上对话之外花的时间，[包括核对 Claude 的工作质量和准确性](#ref-ant-prod-caveat)。
 
 ![一个漏斗，顶端写着 90× 和“只算推理”，中段写着“审核 + 返工”，底部写着 1.39×；漏斗左边是一把放大镜，右边是一叠打了叉的稿纸](/assets/blogposts/2026-10-20-ai-enterprise-efficiency/ai-efficiency-03-measurement-funnel.jpg)
 
-### GDPval：同一个模型，两种算法差了 60 多倍
+### 回到 GDPval
 
-GDPval 是 OpenAI 2025 年 9 月发布的评测，[完整版有 1,320 个专业任务](#ref-oai-gdpval-scope)，专家[完成一个任务平均要 7 小时](#ref-oai-gdpval-7h)。首批结果里表现最好的是 Claude Opus 4.1，[47.6% 的交付物被评为不输专家](#ref-oai-gdpval-476)。
-
-OpenAI 在发布文章里说，前沿模型完成这些任务比专家快约 100 倍、便宜约 100 倍。但同一篇文章也说明，这个数字[只算了模型推理时间和 API 价格，没有算人工监督](#ref-oai-gdpval-100x)。论文的表 2 把审核和返工也算了进去：
+文章开头那个 90 倍和 1.39 倍，现在可以展开说了。GDPval [完整版有 1,320 个专业任务](#ref-oai-gdpval-scope)，专家[完成一个任务平均要 7 小时](#ref-oai-gdpval-7h)。首批结果里表现最好的是 Claude Opus 4.1，[47.6% 的交付物被评为不输专家](#ref-oai-gdpval-476)。至于“快 100 倍”，论文的表 2 给出了把审核和返工算进去之后的样子：
 
 | 模型 | 只算推理 | 审核一次，不合格就自己做 | 反复让模型重做，最后自己兜底 |
 | --- | --- | --- | --- |
 | GPT-5 | 快 90 倍 | 快 1.12 倍 | 快 1.39 倍 |
 | GPT-4o | 快 327 倍 | 0.87 倍（反而更慢） | 0.46 倍（反而更慢） |
 
-以上数字取自[论文第 15 页的表 2](#ref-oai-gdpval-table)。论文自己也写道，算上审核和返工，[用模型的收益会缩水](#ref-oai-gdpval-table)。在 GPT-5 输给专家的评分里，[约 29% 被评为“差”或“灾难性”](#ref-oai-gdpval-cat)。2025 年 12 月，OpenAI 又说 GPT-5.2 [在 70.9% 的比较中胜过或打平专家](#ref-oai-gpt52)，读这个数字时，同样要对照论文里的审核场景。
+数字取自[论文第 15 页的表 2](#ref-oai-gdpval-table)，论文自己也写道，算上审核和返工，[用模型的收益会缩水](#ref-oai-gdpval-table)。更值得管理者留意的是失败的代价：GPT-5 输给专家的那些评分里，[约 29% 被评为“差”或“灾难性”](#ref-oai-gdpval-cat)。2025 年 12 月，OpenAI 又说 GPT-5.2 [在 70.9% 的比较中胜过或打平专家](#ref-oai-gpt52)，读这个数字时，同样要对照论文里的审核场景。
 
-Anthropic 的估算也有类似问题。按任务成功率调整之后，[隐含的生产率提升大约减半，从每年 1.8 个百分点降到约 1.0 个百分点](#ref-ant-ei-jan26)。估计的任务成功率，Claude.ai 上是 67%，[API 上只有 49%](#ref-ant-ei-jan26-succ)。
+Anthropic 的估算也有类似的水分。按任务成功率调整之后，[隐含的生产率提升大约减半，从每年 1.8 个百分点降到约 1.0 个百分点](#ref-ant-ei-jan26)；估计的任务成功率，Claude.ai 上是 67%，[API 上只有 49%](#ref-ant-ei-jan26-succ)。
 
-### 设计度量的五条规则
+### 我自己会这样设计度量
 
-下面五条是我根据上述材料整理的，不是哪一家实验室的原话：
+下面这几条是我根据上面的材料整理的，不是哪一家实验室的原话。上线之前先把基线测下来，记下任务现在的用时、错误率和返工次数，否则上线之后的数字没有参照。用时要把审核和返工都算进去，GDPval 的表 2 已经说明，漏掉审核时间，收益会被放大几十倍。能做对照就做对照：Google 那次随机对照试验只有 96 人，作者仍然提醒置信区间很大，Google Research 也把[在线 A/B 实验](#ref-g-research-ab)视为上线 AI 功能的关键。失败要记录得有多严重，因为平均分会掩盖少数灾难性错误。最后，自报、用量和实测要分开报，混在一张表里，管理层很容易把感受当成结果。
 
-1. **上线前先测基线。** 记下任务现在的用时、错误率和返工次数，否则上线后的数字没有参照。
-2. **审核和返工要算进用时。** GDPval 的表 2 说明，漏掉审核时间会把收益放大几十倍。
-3. **能做对照就做对照。** Google 那次随机对照试验有 96 人，作者仍然提醒置信区间很大；Google Research 也把[在线 A/B 实验](#ref-g-research-ab)视为上线 AI 功能的关键。
-4. **记录失败有多严重。** 平均分会掩盖少数灾难性错误，GDPval 就专门统计了这一项。
-5. **自报、用量和实测分开报。** 三类数字混在一张表里，管理层很容易把感受当成结果。
+## Google 转述的客户数字
 
-## Google 转述的客户数字：多数找不到佐证
+Google DeepMind 公开的成果，大多发生在 Google 自家的基础设施上。DeepMind 称，AlphaEvolve 找到的一种调度方法[平均为 Google 收回了全球 0.7% 的算力](#ref-g-alphaevolve)；2016 年，它称机器学习把一座数据中心的制冷能耗最多降低了 40%，[相当于 PUE 开销降低 15%](#ref-g-cooling)。
 
-Google DeepMind 公开的成果，大多发生在 Google 自家的基础设施上。DeepMind 称，AlphaEvolve 找到的一种调度方法[平均为 Google 收回了全球 0.7% 的算力](#ref-g-alphaevolve)。2016 年，DeepMind 称机器学习把一座数据中心的制冷能耗最多降低了 40%，[相当于 PUE 开销降低 15%](#ref-g-cooling)。
-
-Google Cloud 维护着一份[客户用例清单，目前列了 1,302 个用例](#ref-g-usecases)。清单里的数字大多只有一句话，不说明怎么测的。我抽查了其中四条：
+客户数字就没这么好验证了。Google Cloud 维护着一份[客户用例清单，目前列了 1,302 个用例](#ref-g-usecases)，数字大多只有一句话，不说明怎么测的。我抽查了其中四条：
 
 | 客户 | Google 称 | 我找到的佐证 | 本文的处理 |
 | --- | --- | --- | --- |
@@ -230,13 +164,13 @@ Google Cloud 维护着一份[客户用例清单，目前列了 1,302 个用例](
 
 Google Cloud 的高管问卷也要仔细读。Google 称，在报告生产率有提升的高管中，[39% 说生产率至少翻了一番](#ref-g-roi)。注意分母只是“已经报告有提升”的那部分人，不是全部受访者。
 
-## neo lab：效果数字大多缺乏独立证据
+## neo lab 的数字，大多站不住
 
-我按前文的定义查了 15 家 neo lab：Mistral AI、Cohere、Thinking Machines Lab、Sakana AI、智谱、MiniMax、DeepSeek、月之暗面、Safe Superintelligence、Reflection AI、Poolside、Magic、AI21、Aleph Alpha 和 AMI Labs。阶跃星辰和零一万物的官网抓取不到，本文没有覆盖。
+我按前面的标准查了 15 家 neo lab：Mistral AI、Cohere、Thinking Machines Lab、Sakana AI、智谱、MiniMax、DeepSeek、月之暗面、Safe Superintelligence、Reflection AI、Poolside、Magic、AI21、Aleph Alpha 和 AMI Labs。阶跃星辰和零一万物的官网抓取不到，这次没有覆盖。
 
 ![一个筛子上方散落着写有百分比和“预计”的纸条，筛子下方只落下两张盖了对勾印章的纸条](/assets/blogposts/2026-10-20-ai-enterprise-efficiency/ai-efficiency-04-evidence-sieve.jpg)
 
-### 符合证据规则的说法
+结果有点出乎意料：没有哪一家的员工提效数字，同时经过客户确认和独立核实。符合收录标准的，只有下面这些，而且每一条都有保留：
 
 | 实验室 | 说法 | 证据 | 本文的判断 |
 | --- | --- | --- | --- |
@@ -248,9 +182,9 @@ Google Cloud 的高管问卷也要仔细读。Google 称，在报告生产率有
 | MiniMax | 开放平台和企业服务收入[增长 703.1%](#ref-nl-minimax-h1) | 港交所公告 | 只说明需求在增长，不说明效率提升 |
 | Mistral AI | CMA CGM 称，基于 Mistral 的平台面向[近 8 万名员工](#ref-nl-cmacgm)；路透社 2025 年报道的则是 CMA CGM 的[预期](#ref-nl-gcaptain) | 客户自己发布，媒体报道 | 只说明部署规模，没有效果数字 |
 
-福田区的数字需要配一条提醒。JMIR 上一篇同行评审的综述，统计了中国医院部署 DeepSeek 的公开信息，发现只有 [22% 的部署给出了评估结果](#ref-nl-jmir)，而且医院[往往报告更高的性能、更少的风险](#ref-nl-jmir-over)。
+福田区那个 90% 要配一条提醒。JMIR 上一篇同行评审的综述，统计了中国医院部署 DeepSeek 的公开信息，发现只有 [22% 的部署给出了评估结果](#ref-nl-jmir)，而且医院[往往报告更高的性能、更少的风险](#ref-nl-jmir-over)。机构自己公布的“提效”，要打个折扣来看。
 
-### 只有自述的说法
+更多的说法，只在 neo lab 自家的网站上出现，我没有采信，列在下面：
 
 | 实验室 | 自述的说法 | 剔除原因 |
 | --- | --- | --- |
@@ -264,24 +198,13 @@ Google Cloud 的高管问卷也要仔细读。Google 称，在报告生产率有
 | Thinking Machines Lab | Chroma 的检索智能体[推理速度最多快 10 倍](#ref-nl-tml-chroma) | 没找到 Chroma 自己的来源 |
 | Aleph Alpha | 一家全球芯片厂商的[检索时间缩短 90%](#ref-nl-aleph) | 客户没有具名 |
 
-### 没有公开企业提效内容的几家
+另有几家，官网上根本没有企业提效的内容。Safe Superintelligence 说公司只有[一个目标、一个产品：安全的超级智能](#ref-nl-ssi)；DeepSeek、Reflection AI、Poolside、Magic 和 AMI Labs 的官网和新闻页，我也都翻过，没有企业提效的案例或数字。
 
-Safe Superintelligence 的官网说，公司只有[一个目标、一个产品：安全的超级智能](#ref-nl-ssi)。DeepSeek、Reflection AI、Poolside、Magic 和 AMI Labs 的官网和新闻页，我也都翻过，没有找到企业提效的案例或数字。
+总的来看，neo lab 公开的多是部署规模和采用情况，客户也常常出面确认部署，但由客户本人确认、又经过实测的提效数字，我只找到上表那几条。
 
-总的来看，neo lab 公开的多是部署规模和采用情况，客户也常常出面确认部署。但由客户本人确认、又经过实测的提效数字，我只找到上表那几条。
+## 如果让我带第一个项目
 
-## 第一个项目的启动清单
-
-下面这份清单是我综合各家建议整理的：
-
-1. **从一条工作流入手，而不是从一个工具入手。** 写下工作流的每一步，标出哪些步骤重复、哪些结果容易验证。
-2. **先测基线。** 记下每件任务现在的用时、错误率和返工次数。
-3. **先做最简单的版本。** 一次模型调用加检索能解决的问题，就不要上智能体。
-4. **先写 20 到 50 条评测。** 题目取自真实的失败案例，每次改提示词或换模型都重跑一遍。
-5. **只接必要的数据和工具。** 给智能体最小的权限，并记录每一次调用。
-6. **花钱、对外发送、不可逆的操作留给人批准。** 让智能体先只出草稿，再根据评测结果逐步放权。
-7. **用时要包括审核和返工。** 用量、自报和实测三类数字分开报告。
-8. **把有效的做法做成共享模板。** 每个季度重新给用例打分，把变得容易的用例提前。
+综合上面这些，我会这样开头：先挑一条具体的工作流，而不是先挑一个工具，把每一步写下来，标出哪些步骤重复、哪些结果容易验证。接着把基线测下来，每件任务现在的用时、错误率和返工次数都记上。第一版做得越简单越好，一次模型调用加检索能解决的，就不要上智能体。上线前先写 20 到 50 条评测，题目取自真实的失败案例，以后每次改提示词或换模型都重跑。数据和工具只接必要的，给智能体最小的权限，并记录每一次调用。花钱、对外发送、不可逆的操作，一律留给人批准，智能体先只出草稿，再根据评测结果逐步放权。最后汇报效果时，用时要包括审核和返工，用量、自报和实测三类数字分开报；有效的做法做成团队共享的模板，每个季度把用例重新打一遍分，把变得容易的往前排。
 
 ## 参考来源
 
