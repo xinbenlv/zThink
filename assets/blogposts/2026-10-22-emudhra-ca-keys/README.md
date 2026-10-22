@@ -12,7 +12,7 @@ The built-in image generation tool produced four separate images on October
 
 | File | Placement | Caption |
 | --- | --- | --- |
-| `01-private-key-four.jpg` | After the integer 4 reveal | 包装很专业，里面是 4。 |
+| `01-private-key-four.jpg` | After the introductory incident explanation | 包装很专业，里面是 4。 |
 | `02-self-service-badges.jpg` | After the badge-mold analogy | 身份认证，自助领取。 |
 | `03-paper-audit.jpg` | After the compliance-versus-security sentence | 报告很厚，地基很薄。 |
 | `04-authentic-sign-impostor.jpg` | After the DNSSEC explanation | 路牌是真的，接你的人呢？ |
@@ -24,4 +24,4 @@ on the path, preserving the distinction between DNS authentication and TLS
 endpoint authentication. The manuscript states the remaining client checks.
 
 Visual review covers the final JPEGs: text, scene meaning, framing, and absence
-of branding. All four files are 1536 by 1024 pixels. The content draft remains unpublished for pull-request review.
+of branding. All four files are 1536 by 1024 pixels. The article is published; opening revisions remain subject to pull-request review.
