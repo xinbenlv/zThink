@@ -10,8 +10,8 @@ tags:
   - cybersecurity
   - DNSSEC
   - decentralization
-published: false
-draft: true
+published: true
+draft: false
 og_image: /assets/blogposts/2026-10-22-emudhra-ca-keys/02-self-service-badges.jpg
 cover_image:
   src: /assets/blogposts/2026-10-22-emudhra-ca-keys/02-self-service-badges.jpg
