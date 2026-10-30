@@ -1,6 +1,6 @@
 ---
 title: "如何准备软件工程师的系统面试——资料篇"
-excerpt: "准备系统设计面试该读哪些书：从 DDIA 打根基，到架构权衡、领域建模、可靠性和经典模式，再用 Alex Xu 的两卷书练题。每本书的作者、版本和中文版都已对照出版方页面核实。"
+excerpt: "准备系统设计面试该读哪些经典教材：从 DDIA 打根基，到架构权衡、领域建模、可靠性和经典模式，最后读 MIT 分布式系统课程的原始论文。每本书的作者、版本和中文版都已对照出版方页面核实。"
 date: 2026-10-30
 lang: zh
 author: aileen-wright
@@ -16,9 +16,7 @@ cover_image:
 og_image: /assets/blogposts/2026-10-30-system-design-interview-resources/sdi-00-cover-zh.jpg
 ---
 
-系统设计面试出题的方式很简单：面试官给一个题目，比如设计一个新闻流、一个聊天系统，候选人当场画出架构，再和面试官一起讨论取舍。ByteByteGo 的课程前言说，这类题目[在所有技术面试里最难对付](#ref-bbg-foreword-hardest)，因为题目范围大、要求模糊，而且[没有标准答案](#ref-bbg-foreword-answer)。
-
-没有标准答案，就没法靠背题过关。面试官想看的是候选人懂不懂数据怎么存、请求怎么分发、机器坏了怎么办，以及能不能说清楚每个选择付出了什么代价。这些功夫要靠读书积累。这篇文章整理一份书单，分成六组，最后给出我建议的阅读顺序。
+系统设计面试考的是设计大型软件系统的功夫：数据怎么存，请求怎么分发，机器坏了怎么办，以及每个选择要付出什么代价。这些功夫来自这个领域的经典教材。这篇文章只收教材和经典著作，不收专门讲面试题的书。书单分成六组，最后给出我建议的阅读顺序。
 
 每本书的作者、版本和出版时间，我都在 2026 年 10 月 30 日对照了出版社或作者本人的页面；中文版的信息来自豆瓣读书的书目页和作者本人的页面。书单里有几本出了新版，买书之前最好再确认一下版本。
 
@@ -102,19 +100,9 @@ Gregor Hohpe 和 Bobby Woolf 的《Enterprise Integration Patterns》由 Addison
 
 Erich Gamma、Richard Helm、Ralph Johnson 和 John Vlissides 合写的《Design Patterns》由 Addison-Wesley 在 [1994 年 10 月出版](#ref-informit-gof)。这本书讲面向对象代码层面的模式，对系统设计面试帮助有限。中文版[《设计模式：可复用面向对象软件的基础》](#ref-douban-gof)由机械工业出版社在 2000 年出版。
 
-## 第六组资料用来练题
+## 第六组资料是公开课程和原始论文
 
 ![一本摊开的速写本，同一座桥被反复画了很多遍，旁边立着一个沙漏](/assets/blogposts/2026-10-30-system-design-interview-resources/sdi-06-practice.jpg)
-
-### Alex Xu 的两卷书是练题的主力
-
-Alex Xu 的《System Design Interview – An Insider's Guide》第 1 卷出版于 [2020 年](#ref-openlibrary-sdi1)；第 2 卷由 Alex Xu 和 Sahn Lam 合写，[2022 年出版](#ref-goettingen-sdi2)。第 2 卷的简介说它是第 1 卷的续作，换了一批题目，而且[不必先读第 1 卷](#ref-goettingen-sdi2-standalone)。两卷书每章拆解一道题目，适合在读完原理书之后拿来练习。
-
-ByteByteGo 网站上有一门同名课程，开头引用的前言就出自这门课程。课程的第 4 章给了一个四步答题框架：[先弄清问题、划定设计范围，再提出高层设计并取得面试官认可，然后深入设计细节，最后收尾](#ref-bbg-framework)。练题的时候，可以拿这四步给自己计时。
-
-### 免费的资料可以补上题量和论文
-
-Donne Martin 在 GitHub 上维护的 [System Design Primer](#ref-primer) 是一份免费的系统设计学习资料，仓库简介写着“学习设计大规模系统，准备系统设计面试”，还附了 Anki 记忆卡片。仓库里有简体中文版的 README。
 
 MIT 的分布式系统课程 6.5840（[原课号 6.824](#ref-mit-6824-2022)）把课表、阅读材料和实验都公开在网上。2026 年春季学期的课表要求学生[课前读 GFS（2003）](#ref-mit-schedule-gfs)、[Raft（2014）](#ref-mit-schedule-raft)和 [Spanner（2012）](#ref-mit-schedule-spanner)等论文，实验要动手实现 MapReduce 和 Raft。想知道 DDIA 里那些原理出自哪篇论文，可以照着这份课表去读原文。
 
@@ -123,19 +111,13 @@ MIT 的分布式系统课程 6.5840（[原课号 6.824](#ref-mit-6824-2022)）�
 1. **先读 DDIA 打根基。** 工作经验少的读者，可以先用《Understanding Distributed Systems》过一遍全局，再读 DDIA。
 2. **再读《Fundamentals of Software Architecture》，建立比较架构方案的框架。** 读完之后，回答“为什么选这个方案”就有了章法。
 3. **按需选读领域驱动设计、微服务和 SRE 的书。** 目标岗位偏业务系统，多读 Evans、Vernon 和 Newman；偏基础设施，多读 SRE 的书、《Release It!》和《Database Internals》。
-4. **准备面试的最后阶段，用 Alex Xu 的两卷书练题。** 每做一道题，回头去原理书里找对应的章节，确认自己不只是记住了答案。
+4. **最后照着 MIT 6.5840 的课表读原始论文。** 读 GFS、Raft、Spanner 这些论文的时候，回头对照 DDIA 的相应章节，弄清楚书里的结论从哪里来。
 
-第五组的模式书不必通读，遇到不熟悉的模式名再去查。时间紧的读者，最少读 DDIA 和 Alex Xu 的两卷书；时间充裕的读者，再把 MIT 课表上的论文读几篇，面试时说起复制和共识会更有底气。
+第五组的模式书不必通读，遇到不熟悉的模式名再去查。时间紧的读者，最少读 DDIA 和《Fundamentals of Software Architecture》；时间充裕的读者，再做几个 MIT 课程的实验，面试时说起复制和共识会更有底气。
 
 ## 参考来源
 
-出版社页面和作者本人的页面是一手来源。豆瓣读书是书目数据库，只用来核实中文版信息。ByteByteGo 是课程平台，属于商家来源，只用来引用课程前言。我没有找到出版方 Byte Code LLC 为 Alex Xu 两卷书做的介绍页面，所以这两卷书的出版信息用图书馆目录核实。
-
-**系统设计面试**
-
-- <span id="ref-bbg-foreword-hardest"></span>ByteByteGo — [System Design Interview 课程前言](https://bytebytego.com/courses/system-design-interview/foreword#:~:text=System%20design%20interview%20questions%20are%20the%20most%20difficult%20to%20tackle%20among%20all%20the%20technical%20interviews)，原文：“System design interview questions are the most difficult to tackle among all the technical interviews.”（商家来源）— fetched [2026-10-30](https://web.archive.org/web/20260413171600/https://bytebytego.com/courses/system-design-interview/foreword)
-- <span id="ref-bbg-foreword-answer"></span>ByteByteGo — [System Design Interview 课程前言，没有标准答案](https://bytebytego.com/courses/system-design-interview/foreword#:~:text=without%20a%20standard%20or%20correct%20answer)，原文：“The processes are open-ended and unclear without a standard or correct answer.”（商家来源）— fetched [2026-10-30](https://web.archive.org/web/20260413171600/https://bytebytego.com/courses/system-design-interview/foreword)
-- <span id="ref-bbg-framework"></span>ByteByteGo — [System Design Interview 课程第 4 章“A Framework For System Design Interviews”](https://bytebytego.com/courses/system-design-interview/a-framework-for-system-design-interviews#:~:text=Step%201%20-%20Understand%20the%20problem%20and%20establish%20design%20scope)，四个步骤：“Step 1 - Understand the problem and establish design scope”“Step 2 - Propose high-level design and get buy-in”“Step 3 - Design deep dive”“Step 4 - Wrap up”（商家来源）— fetched [2026-10-30](https://web.archive.org/web/20260618014719/https://bytebytego.com/courses/system-design-interview/a-framework-for-system-design-interviews)
+出版社页面、作者本人的页面和课程主页是一手来源。豆瓣读书是书目数据库，只用来核实中文版信息。
 
 **数据系统和分布式系统**
 
@@ -201,12 +183,8 @@ MIT 的分布式系统课程 6.5840（[原课号 6.824](#ref-mit-6824-2022)）�
 - <span id="ref-informit-gof"></span>InformIT（Addison-Wesley）— [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.informit.com/store/design-patterns-elements-of-reusable-object-oriented-9780201633610#:~:text=Published%20Oct%2031%2C%201994)，书目信息：“By Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides”，“Published Oct 31, 1994 by Addison-Wesley Professional” — fetched [2026-10-30](https://web.archive.org/web/20261010172538/https://www.informit.com/store/design-patterns-elements-of-reusable-object-oriented-9780201633610)
 - <span id="ref-douban-gof"></span>豆瓣读书 — [《设计模式：可复用面向对象软件的基础》书目](https://book.douban.com/subject/1052241/)，译者：李英军等，出版社：机械工业出版社，出版年：2000-9 — fetched [2026-10-30](https://web.archive.org/web/20260923015143/https://book.douban.com/subject/1052241/)
 
-**面试练习**
+**公开课程**
 
-- <span id="ref-openlibrary-sdi1"></span>Open Library — [System Design Interview – An Insider's Guide 书目记录](https://openlibrary.org/books/OL30260884M)，ISBN 9798664653403，作者 Alex Xu，出版年 2020 — fetched 2026-10-30（无存档）
-- <span id="ref-goettingen-sdi2"></span>哥廷根大学计算机科学系图书馆 — [System Design Interview – An Insider's Guide: Volume 2 书目记录](https://bib.informatik.uni-goettingen.de/book/1800028660)，作者 Alex Xu、Sahn Lam，出版年 2022 — fetched 2026-10-30（无存档）
-- <span id="ref-goettingen-sdi2-standalone"></span>哥廷根大学计算机科学系图书馆 — [Volume 2 书目记录，内容简介](https://bib.informatik.uni-goettingen.de/book/1800028660#:~:text=Although%20reading%20Volume%201%20is%20helpful%2C%20it%20is%20not%20required)，原文：“This book can be seen as a sequel to the book: System Design Interview - An Insider's Guide. … Although reading Volume 1 is helpful, it is not required.” — fetched 2026-10-30（无存档）
-- <span id="ref-primer"></span>Donne Martin — [system-design-primer GitHub 仓库](https://github.com/donnemartin/system-design-primer#:~:text=Prep%20for%20the%20system%20design%20interview)，仓库简介：“Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.” — fetched [2026-10-30](https://web.archive.org/web/20261025031510/https://github.com/donnemartin/system-design-primer)
 - <span id="ref-mit-6824-2022"></span>MIT — [6.824 课程主页，Spring 2022](http://nil.csail.mit.edu/6.824/2022/)，页面标题：“6.824: Distributed Systems” — fetched [2026-10-30](https://web.archive.org/web/20260208023554/http://nil.csail.mit.edu/6.824/2022/)
 - <span id="ref-mit-schedule-gfs"></span>MIT 6.5840 — [Spring 2026 课表，第 3 讲](https://pdos.csail.mit.edu/6.824/schedule.html#:~:text=Read%20GFS%20%282003%29)，原文：“LEC 3 (fk): GFS. Preparation: Read GFS (2003)” — fetched [2026-10-30](https://web.archive.org/web/20261023180617/https://pdos.csail.mit.edu/6.824/schedule.html)
 - <span id="ref-mit-schedule-raft"></span>MIT 6.5840 — [Spring 2026 课表，第 6 讲](https://pdos.csail.mit.edu/6.824/schedule.html#:~:text=Read%20Raft%20%28extended%29%20%282014%29)，原文：“LEC 6 (fk): Fault Tolerance: Raft (1). Preparation: Read Raft (extended) (2014)” — fetched [2026-10-30](https://web.archive.org/web/20261023180617/https://pdos.csail.mit.edu/6.824/schedule.html)

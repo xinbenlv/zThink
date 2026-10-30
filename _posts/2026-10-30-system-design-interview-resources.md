@@ -1,6 +1,6 @@
 ---
 title: "How to Prepare for Software Engineer System Design Interviews: The Resources"
-excerpt: "A reading list for system design interviews: DDIA for the foundations, then architecture trade-offs, domain modeling, reliability, classic patterns, and Alex Xu's two volumes for practice. Each book is checked against its publisher's page."
+excerpt: "A list of classic textbooks for system design interviews: DDIA for the foundations, then architecture trade-offs, domain modeling, reliability, classic patterns, and the original papers from MIT's distributed systems course. Each book is checked against its publisher's page."
 date: 2026-10-30
 lang: en
 author: aileen-wright
@@ -16,9 +16,7 @@ cover_image:
 og_image: /assets/blogposts/2026-10-30-system-design-interview-resources/sdi-00-cover-en.jpg
 ---
 
-A system design interview has a simple format. The interviewer names a product, such as a news feed or a chat service. The candidate draws an architecture on the spot, and then the two of them discuss the trade-offs. The ByteByteGo course on this topic calls these questions [the most difficult of all the technical interviews](#ref-bbg-foreword-hardest), because the scope is large, the requirements are vague, and there is [no standard or correct answer](#ref-bbg-foreword-answer).
-
-When no single answer exists, memorizing answers does not help much. The interviewer wants to see whether you understand how data is stored, how requests are routed, and what happens when a machine fails. The interviewer also wants to hear you say what each choice costs. That knowledge comes from reading. This article gives a reading list in six groups and ends with the reading order that I recommend.
+A system design interview tests how you design a large software system: how you store data, how you route requests, what happens when a machine fails, and what each choice costs. That knowledge comes from the classic textbooks of the field. This article lists only textbooks and classic works. It does not include books that teach interview questions. The list has six groups and ends with the reading order that I recommend.
 
 On 30 October 2026, I checked the author, edition, and publication date of each book against the publisher's page or the author's own page. Several books on the list now have a new edition, so check the edition before you buy.
 
@@ -102,19 +100,9 @@ Gregor Hohpe and Bobby Woolf's *Enterprise Integration Patterns* was published b
 
 *Design Patterns*, by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides, was published by Addison-Wesley in [October 1994](#ref-informit-gof). It is about patterns in object-oriented code, so it helps less with system design interviews.
 
-## The sixth group is for practice
+## The sixth group is an open course and its original papers
 
 ![An open sketchbook with the same bridge drawn many times, next to an hourglass](/assets/blogposts/2026-10-30-system-design-interview-resources/sdi-06-practice.jpg)
-
-### Alex Xu's two volumes are the main practice books
-
-Volume 1 of Alex Xu's *System Design Interview – An Insider's Guide* came out in [2020](#ref-openlibrary-sdi1). Alex Xu and Sahn Lam wrote volume 2, which came out in [2022](#ref-goettingen-sdi2). The description of volume 2 calls it a sequel with a different set of questions, and says that [reading volume 1 is helpful but not required](#ref-goettingen-sdi2-standalone). Each chapter of the two volumes works through one question. Use them for practice after you read the books on principles.
-
-ByteByteGo has a course with the same name, and the foreword that I quote at the start of this article comes from that course. Chapter 4 of the course gives a four-step framework: [understand the problem and set the design scope, propose a high-level design and get buy-in, do a deep dive, and wrap up](#ref-bbg-framework). When you practice, use the four steps to time yourself.
-
-### Free resources add practice questions and papers
-
-Donne Martin maintains the [System Design Primer](#ref-primer) on GitHub. It is a free study guide for system design interviews, and it includes Anki flashcards.
 
 MIT's distributed systems course 6.5840 ([formerly 6.824](#ref-mit-6824-2022)) puts its schedule, readings, and labs online. The Spring 2026 schedule asks students to read papers before class, for example [GFS (2003)](#ref-mit-schedule-gfs), [Raft (2014)](#ref-mit-schedule-raft), and [Spanner (2012)](#ref-mit-schedule-spanner). The labs ask students to build MapReduce and Raft. If you want to find the original paper behind an idea in DDIA, use this schedule as a reading list.
 
@@ -123,19 +111,13 @@ MIT's distributed systems course 6.5840 ([formerly 6.824](#ref-mit-6824-2022)) p
 1. **Read DDIA first for the foundations.** If you have little experience, read *Understanding Distributed Systems* before DDIA.
 2. **Read *Fundamentals of Software Architecture* next.** It gives you a method to compare designs, so you can explain why you chose one.
 3. **Choose the books on domain-driven design, microservices, and SRE that fit your target role.** For product systems, read more of Evans, Vernon, and Newman. For infrastructure, read more of the SRE books, *Release It!*, and *Database Internals*.
-4. **Practice with Alex Xu's two volumes in the last stage.** After each question, find the related chapter in a book on principles. Make sure that you understand the answer and did not only memorize it.
+4. **Read the original papers on the MIT 6.5840 schedule last.** When you read GFS, Raft, or Spanner, compare the paper with the related chapter of DDIA. Find out where the conclusions of the book come from.
 
-You do not need to read the pattern books in the fifth group from start to finish. Look up a pattern when you need it. If you have little time, read at least DDIA and Alex Xu's two volumes. If you have more time, read some of the papers on the MIT schedule. Then you can talk about replication and consensus with more confidence.
+You do not need to read the pattern books in the fifth group from start to finish. Look up a pattern when you need it. If you have little time, read at least DDIA and *Fundamentals of Software Architecture*. If you have more time, do some of the MIT labs. Then you can talk about replication and consensus with more confidence.
 
 ## References
 
-Publisher pages and authors' own pages are primary sources. ByteByteGo is a course platform, so it is a commercial source, and I use it only for quotes from its course. I did not find a book page from Byte Code LLC, the publisher of Alex Xu's books, so library catalogs supply the publication data for those two volumes.
-
-**System design interviews**
-
-- <span id="ref-bbg-foreword-hardest"></span>ByteByteGo — [System Design Interview course, Foreword](https://bytebytego.com/courses/system-design-interview/foreword#:~:text=System%20design%20interview%20questions%20are%20the%20most%20difficult%20to%20tackle%20among%20all%20the%20technical%20interviews). Quote: “System design interview questions are the most difficult to tackle among all the technical interviews.” (commercial source) — fetched [2026-10-30](https://web.archive.org/web/20260413171600/https://bytebytego.com/courses/system-design-interview/foreword)
-- <span id="ref-bbg-foreword-answer"></span>ByteByteGo — [System Design Interview course, Foreword, on answers](https://bytebytego.com/courses/system-design-interview/foreword#:~:text=without%20a%20standard%20or%20correct%20answer). Quote: “The processes are open-ended and unclear without a standard or correct answer.” (commercial source) — fetched [2026-10-30](https://web.archive.org/web/20260413171600/https://bytebytego.com/courses/system-design-interview/foreword)
-- <span id="ref-bbg-framework"></span>ByteByteGo — [System Design Interview course, chapter 4, “A Framework For System Design Interviews”](https://bytebytego.com/courses/system-design-interview/a-framework-for-system-design-interviews#:~:text=Step%201%20-%20Understand%20the%20problem%20and%20establish%20design%20scope). Steps: “Step 1 - Understand the problem and establish design scope”, “Step 2 - Propose high-level design and get buy-in”, “Step 3 - Design deep dive”, “Step 4 - Wrap up” (commercial source) — fetched [2026-10-30](https://web.archive.org/web/20260618014719/https://bytebytego.com/courses/system-design-interview/a-framework-for-system-design-interviews)
+Publisher pages, authors' own pages, and course home pages are primary sources.
 
 **Data systems and distributed systems**
 
@@ -193,12 +175,8 @@ Publisher pages and authors' own pages are primary sources. ByteByteGo is a cour
 - <span id="ref-eip-toc"></span>Gregor Hohpe — [Enterprise Integration Patterns, pattern catalog](https://www.enterpriseintegrationpatterns.com/patterns/messaging/toc.html). The catalog lists “Publish-Subscribe Channel”, “Dead Letter Channel”, and “Idempotent Receiver” — fetched [2026-10-30](https://web.archive.org/web/20261019172151/https://www.enterpriseintegrationpatterns.com/patterns/messaging/toc.html)
 - <span id="ref-informit-gof"></span>InformIT (Addison-Wesley) — [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.informit.com/store/design-patterns-elements-of-reusable-object-oriented-9780201633610#:~:text=Published%20Oct%2031%2C%201994). Listing: “By Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides”, “Published Oct 31, 1994 by Addison-Wesley Professional” — fetched [2026-10-30](https://web.archive.org/web/20261010172538/https://www.informit.com/store/design-patterns-elements-of-reusable-object-oriented-9780201633610)
 
-**Interview practice**
+**Open course**
 
-- <span id="ref-openlibrary-sdi1"></span>Open Library — [System Design Interview – An Insider's Guide, catalog record](https://openlibrary.org/books/OL30260884M). ISBN 9798664653403, author Alex Xu, published 2020 — fetched 2026-10-30 (no archive found)
-- <span id="ref-goettingen-sdi2"></span>University of Göttingen, Computer Science Library — [System Design Interview – An Insider's Guide: Volume 2, catalog record](https://bib.informatik.uni-goettingen.de/book/1800028660). Authors Alex Xu and Sahn Lam, published 2022 — fetched 2026-10-30 (no archive found)
-- <span id="ref-goettingen-sdi2-standalone"></span>University of Göttingen, Computer Science Library — [Volume 2 catalog record, description](https://bib.informatik.uni-goettingen.de/book/1800028660#:~:text=Although%20reading%20Volume%201%20is%20helpful%2C%20it%20is%20not%20required). Quote: “This book can be seen as a sequel to the book: System Design Interview - An Insider's Guide. … Although reading Volume 1 is helpful, it is not required.” — fetched 2026-10-30 (no archive found)
-- <span id="ref-primer"></span>Donne Martin — [system-design-primer repository on GitHub](https://github.com/donnemartin/system-design-primer#:~:text=Prep%20for%20the%20system%20design%20interview). Description: “Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.” — fetched [2026-10-30](https://web.archive.org/web/20261025031510/https://github.com/donnemartin/system-design-primer)
 - <span id="ref-mit-6824-2022"></span>MIT — [6.824 course home page, Spring 2022](http://nil.csail.mit.edu/6.824/2022/). Page heading: “6.824: Distributed Systems” — fetched [2026-10-30](https://web.archive.org/web/20260208023554/http://nil.csail.mit.edu/6.824/2022/)
 - <span id="ref-mit-schedule-gfs"></span>MIT 6.5840 — [Spring 2026 schedule, lecture 3](https://pdos.csail.mit.edu/6.824/schedule.html#:~:text=Read%20GFS%20%282003%29). Quote: “LEC 3 (fk): GFS. Preparation: Read GFS (2003)” — fetched [2026-10-30](https://web.archive.org/web/20261023180617/https://pdos.csail.mit.edu/6.824/schedule.html)
 - <span id="ref-mit-schedule-raft"></span>MIT 6.5840 — [Spring 2026 schedule, lecture 6](https://pdos.csail.mit.edu/6.824/schedule.html#:~:text=Read%20Raft%20%28extended%29%20%282014%29). Quote: “LEC 6 (fk): Fault Tolerance: Raft (1). Preparation: Read Raft (extended) (2014)” — fetched [2026-10-30](https://web.archive.org/web/20261023180617/https://pdos.csail.mit.edu/6.824/schedule.html)
