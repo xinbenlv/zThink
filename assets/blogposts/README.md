@@ -16,3 +16,5 @@ The [2026-09-11 mold article assets](2026-09-11-mold-food-clothes/README.md) con
 [The university's first PMF](2026-09-19-university-first-pmf-lawyers/README.md) has a Chinese-title cover and seven conceptual illustrations for its comparison of medieval legal training and Chinese official selection. Its asset guide records the citation-audit provenance.
 
 [The 2026-10-20 enterprise AI efficiency survey](2026-10-20-ai-enterprise-efficiency/README.md) has a cover and four hand-drawn SVG illustrations, with regeneration steps.
+
+[The 2026-10-30 system design interview reading list](2026-10-30-system-design-interview-resources/README.md) has two titled covers (English and Chinese) and six ink-and-wash illustrations, with generation notes.
