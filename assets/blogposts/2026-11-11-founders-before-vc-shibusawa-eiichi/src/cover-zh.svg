@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#faf9f5"/>
+<rect x="0" y="0" width="1200" height="10" fill="#d97757"/>
+<rect x="800" y="10" width="400" height="620" fill="#f0eee6"/>
+<g transform="rotate(-6 980 320)"><rect x="850" y="150" width="260" height="340" fill="#e8e6dc" stroke="#141413" stroke-width="2"/><rect x="866" y="166" width="228" height="308" fill="none" stroke="#b0aea5" stroke-width="1.5"/></g><g transform="rotate(-6 1006 350)"><rect x="876" y="180" width="260" height="340" fill="#f0eee6" stroke="#141413" stroke-width="2"/><rect x="892" y="196" width="228" height="308" fill="none" stroke="#b0aea5" stroke-width="1.5"/></g><g transform="rotate(-6 1032 380)"><rect x="902" y="210" width="260" height="340" fill="#faf9f5" stroke="#141413" stroke-width="2"/><rect x="918" y="226" width="228" height="308" fill="none" stroke="#b0aea5" stroke-width="1.5"/></g>
+<g transform="rotate(-6 1032 380)">
+<circle cx="1032" cy="320" r="46" fill="none" stroke="#d97757" stroke-width="4"/>
+<text x="1032" y="336" text-anchor="middle" font-family="Georgia,serif" font-size="44" fill="#d97757">株</text>
+<line x1="952" y1="410" x2="1112" y2="410" stroke="#141413" stroke-width="2"/>
+<line x1="952" y1="440" x2="1092" y2="440" stroke="#b0aea5" stroke-width="2"/>
+<line x1="952" y1="470" x2="1102" y2="470" stroke="#b0aea5" stroke-width="2"/>
+</g>
+<text x="80" y="120" font-family="'PingFang SC',sans-serif" font-size="22" letter-spacing="0" fill="#d97757" font-weight="600">风投诞生之前的创业者</text>
+<text x="80" y="215" font-family="'PingFang SC',sans-serif" font-size="64" fill="#141413" font-weight="600">涩泽荣一：</text><text x="80" y="295" font-family="'PingFang SC',sans-serif" font-size="64" fill="#141413" font-weight="600">在没有股东的国家</text><text x="80" y="375" font-family="'PingFang SC',sans-serif" font-size="64" fill="#141413" font-weight="600">卖股份</text>
+<rect x="80" y="435" width="80" height="4" fill="#d97757"/>
+<text x="80" y="485" font-family="'PingFang SC',sans-serif" font-size="24" fill="#5e5d59">第一国立银行，1873：公开份额只卖出 44%</text>
+</svg>

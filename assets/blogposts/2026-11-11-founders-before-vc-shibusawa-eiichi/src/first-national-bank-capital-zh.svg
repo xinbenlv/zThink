@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<rect width="1200" height="675" fill="#faf9f5"/>
+<rect x="0" y="0" width="1200" height="10" fill="#d97757"/>
+<text x="110" y="110" font-family="'PingFang SC','Hiragino Sans GB',sans-serif" font-size="44" fill="#141413" font-weight="600">第一国立银行 1873 年的资本</text>
+<text x="110" y="160" font-family="'PingFang SC',sans-serif" font-size="26" fill="#5e5d59">计划 300 万日元，最终 244 万 800 日元</text>
+<!-- planned outline -->
+<rect x="110.0" y="300" width="980.0" height="110" fill="none" stroke="#141413" stroke-width="2"/>
+<text x="110.0" y="282" font-family="'PingFang SC',sans-serif" font-size="22" fill="#141413">计划资本 300 万日元</text>
+<!-- offer bracket -->
+<line x1="763.3333333333334" y1="270" x2="1090.0" y2="270" stroke="#6a9bcc" stroke-width="2"/>
+<line x1="763.3333333333334" y1="262" x2="763.3333333333334" y2="278" stroke="#6a9bcc" stroke-width="2"/>
+<line x1="1090.0" y1="262" x2="1090.0" y2="278" stroke="#6a9bcc" stroke-width="2"/>
+<text x="1090.0" y="252" text-anchor="end" font-family="'PingFang SC',sans-serif" font-size="20" fill="#3d6f9e">向公众招募 100 万日元</text>
+<rect x="110.0" y="300" width="653.3333333333334" height="110" fill="#d97757"/>
+<rect x="763.3333333333334" y="300" width="143.9946666666666" height="110" fill="#6a9bcc"/>
+<rect x="907.328" y="300" width="182.67200000000003" height="110" fill="url(#hatch)"/>
+<defs><pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="12" height="12" fill="#f0eee6"/><line x1="0" y1="0" x2="0" y2="12" stroke="#b0aea5" stroke-width="3"/></pattern></defs>
+<text x="134.0" y="350" font-family="'PingFang SC',sans-serif" font-size="26" fill="#faf9f5" font-weight="600">三井、小野认购</text>
+<text x="134.0" y="386" font-family="'PingFang SC',sans-serif" font-size="24" fill="#faf9f5">200 万日元</text>
+<!-- labels below for small segments -->
+<line x1="835.3306666666667" y1="410" x2="835.3306666666667" y2="450" stroke="#3d6f9e" stroke-width="2"/>
+<text x="703.3333333333334" y="482" font-family="'PingFang SC',sans-serif" font-size="24" fill="#3d6f9e" font-weight="600">公众认购</text>
+<text x="703.3333333333334" y="514" font-family="'PingFang SC',sans-serif" font-size="22" fill="#3d6f9e">44 万 800 日元</text>
+<line x1="998.664" y1="410" x2="998.664" y2="450" stroke="#5e5d59" stroke-width="2"/>
+<text x="1090.0" y="482" text-anchor="end" font-family="'PingFang SC',sans-serif" font-size="24" fill="#5e5d59" font-weight="600">公开份额中未售出</text>
+<text x="1090.0" y="514" text-anchor="end" font-family="'PingFang SC',sans-serif" font-size="22" fill="#5e5d59">55 万 9,200 日元</text>
+<line x1="110" y1="590" x2="1090" y2="590" stroke="#e8e6dc" stroke-width="2"/>
+<text x="110" y="625" font-family="'PingFang SC',sans-serif" font-size="20" fill="#141413">71 名股东 · 24,408 股 · 创立证书，1873 年 6 月 11 日</text>
+<text x="110" y="655" font-family="'PingFang SC',sans-serif" font-size="16" fill="#87867f">资料：《涩泽荣一传记资料》第 4 卷第 22—24、33 页</text>
+</svg>
