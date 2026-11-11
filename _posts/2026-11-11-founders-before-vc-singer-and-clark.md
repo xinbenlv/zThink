@@ -7,6 +7,12 @@ categories: [history, entrepreneurship]
 tags: [founders-before-vc, product-market-fit, singer-and-clark]
 translationKey: founders-before-vc-singer-and-clark
 published: true
+og_image: /assets/blogposts/2026-11-11-founders-before-vc-singer-and-clark/cover-en.jpg
+cover_image:
+  src: /assets/blogposts/2026-11-11-founders-before-vc-singer-and-clark/cover-en.jpg
+  x: 285
+  y: 0
+  size: 630
 ---
 
 In the summer of 1851, Edward Clark, a New York lawyer of about forty, had just become a partner of Isaac Merritt Singer. He soon wanted out. Singer was loud, barely schooled, a former actor, and supported several households at once. Clark's wife gave him [blunt advice](#ref-lyon-opening): "Sell out, and leave the nasty brute." Clark stayed. Over the next twelve years, the two men built the company that made the sewing machine an ordinary household purchase.
@@ -46,6 +52,8 @@ I could not reconcile the two figures from a primary document, so I give both.
 
 The war ended in 1856. Cooper credits Orlando B. Potter, president of Grover & Baker, with [proposing the "Combination"](#ref-cooper-combination): Howe, Wheeler & Wilson, I. M. Singer & Co., and Grover & Baker would pool their key patents. Howe agreed on conditions, including that at least twenty-four manufacturers would receive licenses. Other makers paid one fee, [$15 per machine](#ref-cooper-combination-fee), in place of four. Each member still built and sold its own machine. Lyon tells the same event from Clark's side: the parties met at [Congress Hall](#ref-lyon-albany), a hotel in Albany, before a court hearing in a suit Clark had brought, and they signed during the night.
 
+![Four sealed scrolls represent the members’ key patents converging into one license; a Congress Hall hotel key recalls the negotiations](/assets/blogposts/2026-11-11-founders-before-vc-singer-and-clark/03-patent-pool-en.jpg)
+
 The pool outlived Howe's participation. Howe stayed in until his patent [ran out in 1867](#ref-cooper-combination-end), and the other members kept the Combination going until 1877.
 
 The modern names for this move are a **patent pool** and **cross-licensing**. The lesson for a founder is narrower than "make peace." Clark had first [bought the rights to several early patents](#ref-lyon-howe-settlement), so Singer had claims to trade. A pool only works when each member brings something the others need.
@@ -61,6 +69,8 @@ Lyon also credits Clark with a trade-in offer. [By February 1856](#ref-lyon-trad
 ## Move four: lower the price at the door with hire purchase
 
 The best-known move came in 1856. Cooper writes that because machines were expensive and family income low, [Clark suggested the hire-purchase plan](#ref-cooper-hire-purchase). Lyon dates the plan to [September 1856](#ref-lyon-installment). Baker Library at Harvard Business School quotes the company's own newspaper, *I. M. Singer & Co.'s Gazette*, in 1856: ["Why not rent a sewing machine to the housewife](#ref-hbs-gazette) and apply the rental fee to the purchase price of the machine?"
+
+![A sewing machine divided into conceptual payment strips, with an arrow showing monthly payments over time and no stated amount or duration](/assets/blogposts/2026-11-11-founders-before-vc-singer-and-clark/05-hire-purchase-en.jpg)
 
 Hire purchase was not new. Lyon says Clark took the idea from New York furniture makers and New England clockmakers. What was new was a manufacturer using credit across a national sales network.
 

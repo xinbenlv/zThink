@@ -12,6 +12,12 @@ tags:
   - richard-arkwright
 translationKey: founders-before-vc-richard-arkwright
 published: true
+og_image: /assets/blogposts/2026-11-11-founders-before-vc-richard-arkwright/cover-en.jpg
+cover_image:
+  src: /assets/blogposts/2026-11-11-founders-before-vc-richard-arkwright/cover-en.jpg
+  x: 285
+  y: 0
+  size: 630
 ---
 
 > **TL;DR:** Richard Arkwright did not invent the factory, and the courts did not accept that he invented all of his machines. What the record does show is a founder who found partners inside his first customer industry, built his own downstream demand when the obvious buyers refused his product, and sold licences on a patent that he had written to be hard to copy. The licence business collapsed in court in 1785. The operating business did not.
@@ -92,6 +98,8 @@ Two observations, both my interpretation. First, the secrecy that protected the 
 ## Several popular claims do not survive a check against the sources
 
 **"Arkwright's water-frame patent was revoked in 1785."** Not quite. The 1785 *scire facias* was against [the patent "granted on the sixteenth of December 1775"](#ref-trial-1785-title), the carding and preparing patent. The 1769 spinning patent had [already expired in 1783](#ref-baines-expiry).
+
+![Two separate patents: the 1769 spinning patent expired in 1783; the courts cancelled the 1775 carding and preparing patent in 1785](/assets/blogposts/2026-11-11-founders-before-vc-richard-arkwright/patent-endings-en.jpg)
 
 **"Arkwright invented the water frame."** The inventor question was argued at the 1785 trial, and it stays open. A reed-maker named Thomas Highs (spelled "Hayes" in the trial report) testified that he told Arkwright ["he had got my invention"](#ref-trial-1785-hayes) through the clockmaker John Kay. Kay testified that he [met Arkwright at Warrington in 1767](#ref-trial-1785-kay). Arkwright's counsel attacked both men's credibility. The jury's general verdict did not say which of the Crown's grounds it accepted, so the verdict is not a finding that Highs was the inventor. Baines, after weighing both sides, [notes that "no witness but Kay" supports the story of a machine made for Highs, that Kay had quarrelled with Arkwright, and that Highs never publicly claimed the invention until 1785](#ref-baines-highs-doubt). Baines also [offers the alternative that Arkwright hired Kay to build a machine that Arkwright had designed](#ref-baines-highs). His own conclusion is that the machines were ["though invented by others, owed their perfection to his finishing hand"](#ref-baines-after). That is a judgement by an 1835 historian, not a settled fact.
 

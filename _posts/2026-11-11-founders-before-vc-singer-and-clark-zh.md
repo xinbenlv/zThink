@@ -7,6 +7,12 @@ categories: [history, entrepreneurship]
 tags: [founders-before-vc, product-market-fit, singer-and-clark]
 translationKey: founders-before-vc-singer-and-clark
 published: true
+og_image: /assets/blogposts/2026-11-11-founders-before-vc-singer-and-clark/cover-zh.jpg
+cover_image:
+  src: /assets/blogposts/2026-11-11-founders-before-vc-singer-and-clark/cover-zh.jpg
+  x: 285
+  y: 0
+  size: 630
 ---
 
 1851 年夏天，四十岁上下的纽约律师爱德华·克拉克（Edward Clark）刚刚成为艾萨克·梅里特·胜家（Isaac Merritt Singer）的合伙人，很快就后悔了。胜家脾气火爆，几乎没读过书，当过演员，同时和好几个女人维持着家庭。克拉克的妻子劝得很直白：[“卖掉股份，离那个下流胚远点。”](#ref-lyon-opening)克拉克没有走。此后十二年，两人一起把缝纫机变成了普通家庭买得起、用得上的东西。
@@ -46,6 +52,8 @@ published: true
 
 专利战在 1856 年收场。库珀把主意归功于格罗弗与贝克公司（Grover & Baker）的总裁奥兰多·波特（Orlando B. Potter）：他[提议组建“联合体”](#ref-cooper-combination)（Combination），由豪、惠勒与威尔逊公司（Wheeler & Wilson）、胜家公司和格罗弗与贝克公司把各自的关键专利放进一个池子。豪提了条件才同意，其中一条是至少要向二十四家厂商发放许可。池子外的厂商从此只需交一笔费用，[每台十五美元](#ref-cooper-combination-fee)，不必向四家分别付钱。各成员照旧各造各的机器，各自竞争。莱昂从克拉克这边讲了同一件事：克拉克在奥尔巴尼的联邦巡回法院提起诉讼，开庭前各方都住在同一家旅馆[国会大厦饭店](#ref-lyon-albany)（Congress Hall），连夜谈判，赶在开庭前签了协议。
 
+![四份盖印卷轴代表成员的关键专利，箭头汇入一份许可；国会大厦饭店钥匙呼应连夜谈判的场景](/assets/blogposts/2026-11-11-founders-before-vc-singer-and-clark/03-patent-pool-zh.jpg)
+
 联合体比豪的参与维持得更久。豪的专利 [1867 年到期](#ref-cooper-combination-end)，他随之退出；其余成员一直把联合体维持到 1877 年。
 
 这一招今天叫**专利池**和**交叉许可**。对创业者来说，教训不只是“握手言和”。克拉克事先已经[买下了好几项早期专利](#ref-lyon-howe-settlement)，胜家公司手里才有筹码可换。只有每个成员都握着别人需要的东西，专利池才组得起来。
@@ -61,6 +69,8 @@ published: true
 ## 第四招：用分期付款降低第一笔支出
 
 最有名的一招出现在 1856 年。库珀写道，缝纫机价格高、家庭收入低，于是[克拉克提议采用租购制](#ref-cooper-hire-purchase)（hire purchase）。莱昂把时间定在 [1856 年 9 月](#ref-lyon-installment)。哈佛商学院贝克图书馆引用了公司自办的报纸《I. M. Singer & Co.'s Gazette》1856 年的一句话：[“何不把缝纫机租给主妇，](#ref-hbs-gazette)再把租金抵作机器的价款？”
+
+![缝纫机以纸条分隔，箭头表示按月付款；纸条仅作概念示意，不表示实际金额或期限](/assets/blogposts/2026-11-11-founders-before-vc-singer-and-clark/05-hire-purchase-zh.jpg)
 
 分期付款并非胜家公司首创。莱昂说，克拉克借鉴的是纽约的家具商和新英格兰的钟表商。真正的新意在于，一家制造商通过遍布全国的销售网络提供赊购。
 

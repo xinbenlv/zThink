@@ -1,24 +1,18 @@
-# Illustration plan: Founders Before VC — Singer and Clark
+# Singer and Clark illustrations
 
-This folder will hold the images for `_posts/2026-11-11-founders-before-vc-singer-and-clark.md` and its `-zh` twin.
-No images exist yet. The post ships text-only until someone generates the set below and wires it in.
+The illustrations were generated with Codex image_gen on 2026-11-11 and are conceptual, not historical records.
 
-Style: Anthropic-inspired editorial palette (`#faf9f5` background, `#141413` ink, accents `#d97757`, `#6a9bcc`, `#788c5d`), full-bleed, text-light, 19th-century artifacts drawn as flat engravings. No Singer logo or trademark "S" device.
+| Image | Dimensions | Use |
+| --- | --- | --- |
+| [cover-en.jpg](cover-en.jpg) | 1200 × 630 | English cover, OpenGraph image and square thumbnail |
+| [cover-zh.jpg](cover-zh.jpg) | 1200 × 630 | Simplified Chinese cover, OpenGraph image and square thumbnail |
+| [03-patent-pool-en.jpg](03-patent-pool-en.jpg) | 1200 × 675 | English patent-pool section, after the Congress Hall negotiations paragraph |
+| [03-patent-pool-zh.jpg](03-patent-pool-zh.jpg) | 1200 × 675 | Chinese patent-pool section, after the Congress Hall negotiations paragraph |
+| [05-hire-purchase-en.jpg](05-hire-purchase-en.jpg) | 1200 × 675 | English hire-purchase section, after the Gazette quotation paragraph |
+| [05-hire-purchase-zh.jpg](05-hire-purchase-zh.jpg) | 1200 × 675 | Chinese hire-purchase section, after the Gazette quotation paragraph |
 
-## Image manifest
+All JPEGs use quality 88. Cover crops use `x: 285`, `y: 0`, `size: 630`, centered on the machine.
 
-| Slot | Section | Filename | Purpose | Prompt summary |
-| --- | --- | --- | --- | --- |
-| cover | Article cover | `cover-en.jpg`, `cover-zh.jpg` (1200x630) | OpenGraph/Twitter card, `cover_image` | Text-free background: a lockstitch sewing machine head on a parlor table, a ledger open beside it, and a lawyer's brief tied with ribbon. Title overlaid in post-processing: "Founders Before VC: Isaac Singer and Edward Clark" / "风投诞生之前的创业者：胜家与克拉克". |
-| section-01 | The market in 1850 | `01-three-obstacles.jpg` (1200x675) | Show the three obstacles | Machine behind three barriers: a price tag, a stack of court papers, and a closed parlor door. |
-| section-02 | Pay the lawyer in equity | `02-equity-for-law.jpg` | Equity for services | A balance scale: a law book and quill on one pan, a share certificate on the other. |
-| section-03 | Patent pool | `03-patent-pool.jpg` | Four patents into one license | Four patent scrolls with seals feeding one license document; one hotel key tag reading "Congress Hall". |
-| section-04 | Sell to the woman at home | `04-showroom.jpg` | Demonstration and showroom | A shop window with a seated demonstrator at a machine, viewed from the street. |
-| section-05 | Hire purchase | `05-hire-purchase.jpg` | Payment in parts | A machine split into equal slices like a calendar, each slice a month. No dollar amounts in the image. |
-| section-06 | Abroad and home service | `06-canvasser.jpg` | Canvasser and Scottish factory | A map line from New York to the Clyde, and a canvasser at a cottage door carrying a machine. |
+Prompt brief: warm-paper engraving and ink wash, restrained charcoal, sepia, terracotta and slate blue. Covers carry the exact post titles above a sewing machine, blank ledger and ribbon-tied legal brief. Patent-pool images show four conceptual patent holdings feeding one license, with a Congress Hall key. Hire-purchase images divide a machine into conceptual payment strips, with an arrow for monthly payments; strip count does not state a payment term. No prices, down payments, monthly amounts, logos or trademark devices appear.
 
-## Constraints for whoever generates the set
-
-- Do not draw prices, down payments, or monthly amounts. The post deliberately leaves them out (see the post's myths section).
-- Verify spelling of every overlaid title and label at the final size.
-- After saving the files, add `cover_image` / `og_image` to both posts' frontmatter and insert the section images.
+Each final JPEG was viewed and checked for spelling and dimensions. The English hire-purchase illustration received one correction to remove tiny ledger glyphs.
