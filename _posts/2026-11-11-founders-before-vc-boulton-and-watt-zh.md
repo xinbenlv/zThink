@@ -3,6 +3,9 @@ title: "博尔顿与瓦特：按省下的煤给蒸汽机定价"
 excerpt: "风投出现前约两百年，博尔顿和瓦特向矿主收取新机器所省燃煤价值的三分之一，并用计数器记下每一冲程来收这笔钱。"
 date: 2026-11-11
 lang: zh
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 published: true
 cover_image:
   src: /assets/blogposts/2026-11-11-founders-before-vc-boulton-and-watt/boulton-watt-00-cover-zh.jpg

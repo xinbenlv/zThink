@@ -3,6 +3,9 @@ title: "Boulton and Watt Priced Steam Power by the Coal It Saved"
 excerpt: "Two centuries before venture capital, Matthew Boulton and James Watt charged mine owners one third of the fuel their engine saved, and counted every stroke to collect it."
 date: 2026-11-11
 lang: en
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 published: true
 cover_image:
   src: /assets/blogposts/2026-11-11-founders-before-vc-boulton-and-watt/boulton-watt-00-cover.jpg

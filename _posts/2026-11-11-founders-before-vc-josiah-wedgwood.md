@@ -3,6 +3,9 @@ title: "Founders Before VC: Josiah Wedgwood Sold Pottery the Way Startups Sell S
 excerpt: "In the 1760s and 1770s a Staffordshire potter used a royal order, a London showroom, a printed catalogue, and a partner in town to find his market. His letters show which of these moves he planned, and which popular stories about him do not hold up."
 date: 2026-11-11
 lang: en
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 published: true
 translationKey: founders-before-vc-josiah-wedgwood
 cover_image: /assets/blogposts/2026-11-11-founders-before-vc-josiah-wedgwood/cover-en.jpg

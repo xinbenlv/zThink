@@ -3,11 +3,15 @@ title: "I have it now! —— 爱迪生在电灯做成前一年就宣布了成�
 excerpt: "1878 年 9 月，爱迪生对《纽约太阳报》说他已经解决了电灯问题，真正能用的灯要到十三个月以后才出现。这次宣布让投资人三天后就上门，一个月后成立了股本 30 万美元的公司；它也立下了一个期限，爱迪生晚了一年多才兑现。"
 date: 2026-11-11
 lang: zh
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 published: true
 translationKey: edison-i-have-it-now-2026-11-11
 categories:
   - blog
 tags:
+  - founders-before-vc
   - history
   - edison
   - announcements

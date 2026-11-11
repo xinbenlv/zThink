@@ -3,6 +3,9 @@ title: "Henry Ford Failed Twice Before Ford Motor Company"
 excerpt: "Before venture capital existed, Henry Ford lost two car companies within three years, then built a third with a coal dealer, a machine shop that supplied the parts and also bought in, and a checking account that nearly hit zero."
 date: 2026-11-11
 lang: en
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 categories: [history, entrepreneurship]
 tags: [founders-before-vc, product-market-fit, henry-ford]
 translationKey: founders-before-vc-henry-ford

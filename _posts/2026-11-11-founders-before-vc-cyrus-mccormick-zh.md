@@ -3,6 +3,9 @@ title: "风投诞生之前的创业者：麦考密克的收割机，从能用到
 excerpt: "麦考密克的收割机 1831 年就割下了燕麦，可到 1846 年底一共只卖出不到 100 台。真正改变局面的不只是机器本身，还有书面质保、收割后付款、建在芝加哥的工厂，以及按回款结算佣金的代理商。"
 date: 2026-11-11
 lang: zh
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 categories: [history, entrepreneurship]
 tags: [founders-before-vc, product-market-fit, cyrus-mccormick]
 translationKey: founders-before-vc-cyrus-mccormick

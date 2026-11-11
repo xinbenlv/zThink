@@ -3,6 +3,9 @@ title: "涩泽荣一：在没有股东的国家卖股份"
 excerpt: "风投出现之前，涩泽荣一在明治日本办企业，靠的是集众人之资、先写规则、居中制衡。原始记录里的他起步更难，角色也和传说不一样。"
 date: 2026-11-11
 lang: zh
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 categories:
   - history
   - entrepreneurship

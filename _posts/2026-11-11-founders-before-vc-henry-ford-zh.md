@@ -3,6 +3,9 @@ title: "福特在福特汽车之前失败过两次"
 excerpt: "风投出现之前，福特三年内先后失去两家汽车公司；第三家靠一位煤商、一家既供货又入股的机械厂，以及一个差点见底的支票账户起步。"
 date: 2026-11-11
 lang: zh
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 categories: [history, entrepreneurship]
 tags: [founders-before-vc, product-market-fit, henry-ford]
 translationKey: founders-before-vc-henry-ford

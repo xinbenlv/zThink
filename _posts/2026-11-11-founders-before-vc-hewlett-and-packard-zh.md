@@ -3,6 +3,9 @@ title: "风投诞生之前的创业者：休利特和帕卡德先开公司，后
 excerpt: "1937 年，休利特和帕卡德决定先合伙，“做什么产品”留待以后。1939 年，两人在帕洛阿尔托的车库里卖 54.40 美元一台的音频振荡器，本钱是 538 美元、一位妻子的工资和客户的订单。"
 date: 2026-11-11
 lang: zh
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 categories: [history, entrepreneurship]
 tags: [founders-before-vc, product-market-fit, hewlett-and-packard]
 translationKey: founders-before-vc-hewlett-and-packard

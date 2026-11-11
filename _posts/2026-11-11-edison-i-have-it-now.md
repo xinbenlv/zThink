@@ -3,11 +3,15 @@ title: "I have it now! — Edison Announced the Light Bulb a Year Before It Work
 excerpt: "In September 1878 Edison told the New York Sun he had solved electric lighting. The working lamp came thirteen months later. The announcement bought investors in three days and a $300,000 company in a month; it also set a deadline he missed by more than a year."
 date: 2026-11-11
 lang: en
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 published: true
 translationKey: edison-i-have-it-now-2026-11-11
 categories:
   - blog
 tags:
+  - founders-before-vc
   - history
   - edison
   - announcements

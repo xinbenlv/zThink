@@ -3,6 +3,9 @@ title: "风投诞生之前的创业者：胜家与克拉克"
 excerpt: "一个身无分文的发明家，加上一个拿股份抵律师费的合伙人，把一台昂贵又官司缠身的机器卖进了千家万户，全程没有外部投资人。"
 date: 2026-11-11
 lang: zh
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 categories: [history, entrepreneurship]
 tags: [founders-before-vc, product-market-fit, singer-and-clark]
 translationKey: founders-before-vc-singer-and-clark

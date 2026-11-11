@@ -3,6 +3,9 @@ title: "Founders Before Venture Capital: Hewlett and Packard Started a Company B
 excerpt: "In 1937 Bill Hewlett and Dave Packard postponed the question of what to make. By 1939 they sold a $54.40 audio oscillator from a Palo Alto garage, paid for by $538, a spouse's salary and customer orders."
 date: 2026-11-11
 lang: en
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 categories: [history, entrepreneurship]
 tags: [founders-before-vc, product-market-fit, hewlett-and-packard]
 translationKey: founders-before-vc-hewlett-and-packard

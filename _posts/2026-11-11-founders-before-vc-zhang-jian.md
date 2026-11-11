@@ -3,6 +3,9 @@ title: "Founders Before VC: Zhang Jian Paid for a Cotton Mill With Rusting Gover
 excerpt: "In 1895 a top imperial scholar set out to build a cotton mill in Nantong. He could not raise the cash, so he took idle official spinning machines as half of his capital and kept control of the company himself."
 date: 2026-11-11
 lang: en
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 categories: [history, entrepreneurship]
 tags: [founders-before-vc, product-market-fit, zhang-jian]
 translationKey: founders-before-vc-zhang-jian

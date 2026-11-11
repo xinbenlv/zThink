@@ -3,6 +3,9 @@ title: "Founders Before VC: Cyrus McCormick and the Seventeen Years Between a Wo
 excerpt: "McCormick's reaper cut oats in 1831, but he had sold fewer than 100 by the end of 1846. What changed was not the machine alone: a written warranty, pay-after-harvest terms, a factory in Chicago and agents paid on cash collected."
 date: 2026-11-11
 lang: en
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 categories: [history, entrepreneurship]
 tags: [founders-before-vc, product-market-fit, cyrus-mccormick]
 translationKey: founders-before-vc-cyrus-mccormick

@@ -3,6 +3,9 @@ title: "风投诞生之前的创业者：韦奇伍德用今天卖软件的办法
 excerpt: "1760 至 1770 年代，一位斯塔福德郡陶工靠一张宫廷订单、一间伦敦展厅、一本印刷目录和一位驻伦敦的合伙人打开市场。他的书信说明了哪些招数是他事先想清楚的，也说明了哪些流行说法站不住。"
 date: 2026-11-11
 lang: zh
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 published: true
 translationKey: founders-before-vc-josiah-wedgwood
 cover_image: /assets/blogposts/2026-11-11-founders-before-vc-josiah-wedgwood/cover-zh.jpg

@@ -3,6 +3,9 @@ title: "风投诞生之前的创业者：哈伯德、贝尔和只租不卖的电
 excerpt: "1877 年，电话的出资人决定每一部电话都只租不卖。现存文件怎样记录这个决定，西联“玩具备忘录”和“10 万美元”这两个流行故事又有多少出处。"
 date: 2026-11-11
 lang: zh
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 categories:
   - history
   - entrepreneurship

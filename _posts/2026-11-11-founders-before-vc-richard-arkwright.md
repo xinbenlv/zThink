@@ -3,6 +3,9 @@ title: "Founders Before VC: Richard Arkwright, Partner Money and Patent Licences
 excerpt: "Arkwright funded his spinning mills with partners from his first customer industry, built his own demand when buyers refused his yarn, and sold licences on a patent that the courts later struck down."
 date: 2026-11-11
 lang: en
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 categories:
   - history
   - entrepreneurship

@@ -3,6 +3,9 @@ title: "风投诞生之前的创业者：张謇拿一批快要报废的官机办
 excerpt: "1895 年，状元张謇在通州筹办纱厂。现银招不齐，他把一批闲置多年的官府纺机折价入股，凑成一半本钱，再牢牢握住经营权。"
 date: 2026-11-11
 lang: zh
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 categories: [history, entrepreneurship]
 tags: [founders-before-vc, product-market-fit, zhang-jian]
 translationKey: founders-before-vc-zhang-jian

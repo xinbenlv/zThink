@@ -3,6 +3,9 @@ title: "Founders Before VC: Gardiner Hubbard, Alexander Graham Bell, and the Tel
 excerpt: "In 1877 the telephone's backers chose to lease every instrument instead of selling it. What the surviving documents show about that decision, and which famous Western Union stories do not hold up."
 date: 2026-11-11
 lang: en
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 categories:
   - history
   - entrepreneurship

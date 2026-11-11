@@ -3,6 +3,9 @@ title: "Founders Before Venture Capital: George Eastman Sold the Darkroom, Not J
 excerpt: "In 1888 George Eastman sold a $25 camera that went back to his factory for developing. The camera was the front end; the product was the service behind it."
 date: 2026-11-11
 lang: en
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 categories: [history, entrepreneurship]
 tags: [founders-before-vc, product-market-fit, george-eastman]
 translationKey: founders-before-vc-george-eastman

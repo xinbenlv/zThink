@@ -3,6 +3,9 @@ title: "Founders Before VC: Isaac Singer and Edward Clark"
 excerpt: "An inventor with no money and a lawyer paid in equity turned an expensive, litigated machine into a household purchase, and they did it without outside investors."
 date: 2026-11-11
 lang: en
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 categories: [history, entrepreneurship]
 tags: [founders-before-vc, product-market-fit, singer-and-clark]
 translationKey: founders-before-vc-singer-and-clark

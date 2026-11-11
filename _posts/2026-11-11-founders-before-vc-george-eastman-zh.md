@@ -3,6 +3,9 @@ title: "风投诞生之前的创业者：伊士曼卖的不只是相机，还有
 excerpt: "1888 年，伊士曼卖出一台 25 美元的相机，拍完要整台寄回工厂冲洗。相机只是入口，真正的产品是相机背后的服务。"
 date: 2026-11-11
 lang: zh
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 categories: [history, entrepreneurship]
 tags: [founders-before-vc, product-market-fit, george-eastman]
 translationKey: founders-before-vc-george-eastman

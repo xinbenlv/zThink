@@ -3,6 +3,9 @@ title: "Shibusawa Eiichi Sold Shares in a Country That Had No Shareholders"
 excerpt: "Before venture capital, Shibusawa Eiichi helped start companies in Meiji Japan by pooling many investors' money, writing the rules, and standing between rivals. The records show a slower start and a different role than the legend."
 date: 2026-11-11
 lang: en
+author: aileen-wright
+editors: aileen-wright
+series: founders-before-vc
 categories:
   - history
   - entrepreneurship
