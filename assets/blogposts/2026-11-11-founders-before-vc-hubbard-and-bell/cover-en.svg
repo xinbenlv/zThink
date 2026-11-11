@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#faf9f5"/>
+  <g stroke="#e8e6dc" stroke-width="1"><line x1="0" y1="30" x2="1200" y2="30"/><line x1="0" y1="60" x2="1200" y2="60"/><line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="120" x2="1200" y2="120"/><line x1="0" y1="150" x2="1200" y2="150"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="210" x2="1200" y2="210"/><line x1="0" y1="240" x2="1200" y2="240"/><line x1="0" y1="270" x2="1200" y2="270"/><line x1="0" y1="300" x2="1200" y2="300"/><line x1="0" y1="330" x2="1200" y2="330"/><line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="390" x2="1200" y2="390"/><line x1="0" y1="420" x2="1200" y2="420"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="480" x2="1200" y2="480"/><line x1="0" y1="510" x2="1200" y2="510"/><line x1="0" y1="540" x2="1200" y2="540"/><line x1="0" y1="570" x2="1200" y2="570"/><line x1="0" y1="600" x2="1200" y2="600"/></g>
+  <rect x="0" y="0" width="14" height="630" fill="#d97757"/>
+  <text x="70" y="150" font-family="Georgia" font-size="22" fill="#b0aea5" letter-spacing="3">HUBBARD · BELL · 1877</text>
+  <text x="70" y="235" font-family="Georgia" font-weight="bold" font-size="58" fill="#141413">Founders Before VC:</text>
+  <text x="70" y="315" font-family="Georgia" font-weight="bold" font-size="58" fill="#141413">Rent, Don't Sell</text>
+  <rect x="70" y="350" width="120" height="6" fill="#d97757"/>
+  <g transform="translate(760,95) rotate(3)">
+    <rect x="0" y="0" width="360" height="440" fill="#fffdf7" stroke="#141413" stroke-width="2"/>
+    <rect x="12" y="12" width="336" height="416" fill="none" stroke="#b0aea5" stroke-width="1"/>
+    <text x="180" y="70" text-anchor="middle" font-family="Georgia" font-size="22" fill="#141413" letter-spacing="2">TELEPHONES</text>
+    <text x="180" y="100" text-anchor="middle" font-family="Georgia" font-style="italic" font-size="18" fill="#141413">to lease</text>
+    <line x1="40" y1="125" x2="320" y2="125" stroke="#141413" stroke-width="1"/>
+    <text x="40" y="180" font-family="Georgia" font-size="22" fill="#141413">Social, two</text><text x="320" y="180" text-anchor="end" font-family="Georgia" font-size="22" fill="#141413">$20 / yr</text>
+    <text x="40" y="235" font-family="Georgia" font-size="22" fill="#141413">Business, two</text><text x="320" y="235" text-anchor="end" font-family="Georgia" font-size="22" fill="#141413">$40 / yr</text>
+    <text x="40" y="290" font-family="Georgia" font-size="22" fill="#141413">Each extra</text><text x="320" y="290" text-anchor="end" font-family="Georgia" font-size="22" fill="#141413">$10 / yr</text>
+    <line x1="40" y1="320" x2="320" y2="320" stroke="#b0aea5" stroke-width="1" stroke-dasharray="4 4"/>
+    <text x="180" y="370" text-anchor="middle" font-family="Georgia" font-style="italic" font-size="18" fill="#788c5d">kept in order by the lessors</text>
+    <text x="180" y="405" text-anchor="middle" font-family="Georgia" font-size="16" fill="#b0aea5" letter-spacing="2">MAY 1877</text>
+  </g>
+</svg>
