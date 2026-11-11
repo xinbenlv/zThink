@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs><pattern id="p" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#faf9f5"/><circle cx="1" cy="1" r="0.6" fill="#e8e6dc"/></pattern></defs>
+<rect width="1200" height="630" fill="url(#p)"/>
+<rect x="0" y="0" width="470" height="630" fill="#e8e6dc"/>
+<!-- darkroom panel -->
+<rect x="300" y="0" width="170" height="630" fill="#141413"/>
+<rect x="330" y="70" width="110" height="70" rx="6" fill="#d97757" opacity="0.85"/>
+<rect x="335" y="200" width="100" height="16" fill="#b0aea5"/><rect x="335" y="230" width="100" height="16" fill="#b0aea5"/>
+<rect x="350" y="300" width="70" height="90" rx="4" fill="none" stroke="#faf9f5" stroke-width="3"/>
+<circle cx="385" cy="345" r="22" fill="none" stroke="#faf9f5" stroke-width="3"/>
+<rect x="335" y="440" width="100" height="10" fill="#788c5d"/><rect x="335" y="462" width="100" height="10" fill="#6a9bcc"/>
+<!-- mail slot -->
+<rect x="296" y="520" width="12" height="70" fill="#d97757"/>
+<!-- box camera -->
+<g transform="translate(60,215)">
+<rect x="0" y="0" width="200" height="150" rx="10" fill="#141413"/>
+<rect x="8" y="8" width="184" height="134" rx="6" fill="none" stroke="#b0aea5" stroke-width="2" stroke-dasharray="4 5"/>
+<circle cx="70" cy="75" r="38" fill="#faf9f5"/><circle cx="70" cy="75" r="22" fill="#6a9bcc"/><circle cx="62" cy="67" r="6" fill="#faf9f5"/>
+<rect x="150" y="-14" width="26" height="14" rx="3" fill="#d97757"/>
+<path d="M120 -2 l14 -16 l14 16" fill="none" stroke="#b0aea5" stroke-width="3"/>
+</g>
+<path d="M235 380 C 240 470, 255 545, 290 555" fill="none" stroke="#141413" stroke-width="4" stroke-dasharray="10 8"/>
+<path d="M280 543 l14 12 l-14 12" fill="none" stroke="#141413" stroke-width="4"/>
+<text x="60" y="440" font-family="Avenir Next" font-size="22" fill="#141413">$25, film loaded</text>
+<text x="60" y="160" font-family="Avenir Next" font-size="22" fill="#141413">press</text>
+<!-- title -->
+<rect x="530" y="150" width="70" height="6" fill="#d97757"/>
+<text x="530" y="120" font-family="Avenir Next" font-size="24" fill="#b0aea5" letter-spacing="1">FOUNDERS BEFORE VENTURE CAPITAL</text>
+<text x="530" y="235" font-family="Avenir Next" font-weight="700" font-size="54" fill="#141413">George Eastman Sold</text>
+<text x="530" y="305" font-family="Avenir Next" font-weight="700" font-size="54" fill="#141413">the Darkroom,</text>
+<text x="530" y="375" font-family="Avenir Next" font-weight="700" font-size="54" fill="#d97757">not just the camera</text>
+<text x="530" y="470" font-family="Georgia" font-style="italic" font-size="28" fill="#141413">“You press the button,</text>
+<text x="530" y="510" font-family="Georgia" font-style="italic" font-size="28" fill="#141413">we do the rest.” — Kodak ad, 1889</text>
+<text x="530" y="580" font-family="Avenir Next" font-size="22" fill="#b0aea5">zzn.im</text>
+</svg>
