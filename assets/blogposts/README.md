@@ -18,3 +18,5 @@ The [2026-09-11 mold article assets](2026-09-11-mold-food-clothes/README.md) con
 [The 2026-10-20 enterprise AI efficiency survey](2026-10-20-ai-enterprise-efficiency/README.md) has a cover and four hand-drawn SVG illustrations, with regeneration steps.
 
 [The 2026-10-30 system design interview reading list](2026-10-30-system-design-interview-resources/README.md) has two titled covers (English and Chinese) and six ink-and-wash illustrations, with generation notes.
+
+[The 2026-11-12 3-D Secure explainer](2026-11-12-credit-card-3ds-explained/README.md) has a titled cover and four ink-and-wash analogy illustrations, with generation notes.
