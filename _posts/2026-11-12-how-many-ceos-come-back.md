@@ -11,7 +11,7 @@ translationKey: how-many-ceos-come-back
 published: true
 cover_image:
   src: /assets/blogposts/2026-11-12-how-many-ceos-come-back/cover-zh.jpg
-  x: 570
+  x: 285
   y: 0
   size: 630
 og_image: /assets/blogposts/2026-11-12-how-many-ceos-come-back/cover-zh.jpg
