@@ -18,3 +18,5 @@ The [2026-09-11 mold article assets](2026-09-11-mold-food-clothes/README.md) con
 [The 2026-10-20 enterprise AI efficiency survey](2026-10-20-ai-enterprise-efficiency/README.md) has a cover and four hand-drawn SVG illustrations, with regeneration steps.
 
 [The 2026-10-30 system design interview reading list](2026-10-30-system-design-interview-resources/README.md) has two titled covers (English and Chinese) and six ink-and-wash illustrations, with generation notes.
+
+[The 2026-11-12 CEO comeback article](2026-11-12-how-many-ceos-come-back/README.md) has a Chinese-title cover and five hand-drawn illustrations, with generation notes.
