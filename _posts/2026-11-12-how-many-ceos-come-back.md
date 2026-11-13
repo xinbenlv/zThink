@@ -37,6 +37,14 @@ og_image: /assets/blogposts/2026-11-12-how-many-ceos-come-back/cover-zh.jpg
 
 新闻稿的最后一段写道：“[Jensen 对 NVIDIA 的贡献意义深远](#ref-nv-pr)……董事会和公司感谢 Jensen 对公司和整个行业不可估量的贡献。”
 
+发稿前，又有一个新消息：一些 NVIDIA 员工在呼吁黄仁勋回来。
+
+据 WIRED 11 月 12 日报道，黄仁勋辞职之前，一位在 NVIDIA 工作多年的工程师在公司内部的“意见箱”里发了一篇帖子。帖子请董事会把调查结论告诉员工，并且正式征求员工[对“Jensen 继续担任 CEO”的看法](#ref-wired-1112-survey)。这篇帖子此后收到[一千六百多条评论，其中好几条请董事会想办法让黄仁勋回来](#ref-wired-1112)。一条匿名评论写：“[如果你相信这份使命，就把老板请回来。](#ref-wired-1112-boss)”另一名员工给全公司发了一封邮件，要求公开黄仁勋离职的经过。邮件里写：“[我支持 Jensen。](#ref-wired-1112-email)”
+
+一千六百多条是评论数，不是签名数。同一天，X 上流传一张“数百名 NVIDIA 员工联名信”的图片。这封信要求董事会全体辞职，让黄仁勋复职。核查网站 TalkEsport 比对后发现，这封信[几乎逐句照抄](#ref-talkesport-1113)了 2023 年 OpenAI 员工要求 Sam Altman 回归的那封信，并且写明没有证据表明这封信是真的。
+
+董事会这边，NVIDIA 的新闻稿写明，董事会[已经开始寻找正式的 CEO，内部和外部的人选都会考虑](#ref-nv-pr-search)。
+
 ![手绘示意：黄仁勋穿着黑色皮夹克，站在一间空会议室门口，长桌首位的高背椅空着，被一束橙色的光照亮](/assets/blogposts/2026-11-12-how-many-ceos-come-back/01-jensen.jpg)
 *手绘示意，非真实场景。*
 
@@ -217,12 +225,18 @@ Friedman 和 Meyers 是例外。
 
 ## 参考资料
 
-本文作者不是律师，本文不构成法律意见。下列资料均在 2026-11-12 读取。SEC 文件中的原文引文以 EDGAR 版本为准。判例引文取自哈佛大学 Caselaw Access Project 的判例汇编扫描版，个别字词有扫描错误。
+本文作者不是律师，本文不构成法律意见。除另行注明外，下列资料均在 2026-11-12 读取。SEC 文件中的原文引文以 EDGAR 版本为准。判例引文取自哈佛大学 Caselaw Access Project 的判例汇编扫描版，个别字词有扫描错误。
 
 ### NVIDIA
 
 - <span id="ref-nv-8k"></span>NVIDIA — [Form 8-K, Item 5.02](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm#:~:text=accepted%20the%20resignation%20of%20Jen%2DHsun%20Huang)，2026-11-12 提交。原文：“the Board of Directors, or the Board, of NVIDIA Corporation accepted the resignation of Jen-Hsun Huang, as NVIDIA’s President, Chief Executive Officer and member of the Board, effective immediately.” — 2026-11-12 读取；[2026-11-12 存档](http://web.archive.org/web/20261112144435/https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm)
 - <span id="ref-nv-pr"></span>NVIDIA — [NVIDIA Announces CEO Transition](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvidiaannouncesceotransiti.htm#:~:text=contributions%20to%20NVIDIA%20are%20profound)，8-K 附件 99.1，2026-11-12。原文：“Harvey C. Jones Appointed First-Ever Chair of the Board”；“Jensen’s contributions to NVIDIA are profound.” — 2026-11-12 读取；[2026-11-12 存档](http://web.archive.org/web/20261112144523/https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvidiaannouncesceotransiti.htm)
+- <span id="ref-nv-pr-search"></span>同一份新闻稿 — [继任者搜寻](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvidiaannouncesceotransiti.htm#:~:text=will%20consider%20internal%20and%20external%20candidates)。原文：“The Board is initiating a search for a permanent Chief Executive Officer and will consider internal and external candidates.” — 2026-11-13 读取；[2026-11-12 存档](http://web.archive.org/web/20261112144523/https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvidiaannouncesceotransiti.htm)
+- <span id="ref-wired-1112"></span>Paresh Dave、Zoë Schiffer，WIRED — [‘Bring Back THE Boss’: Nvidia Employees Petition for Jensen Huang’s Return](https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/#:~:text=attracted%20more%20than%201%2C600%20comments)，2026-11-12。原文：“The submission has attracted more than 1,600 comments since then, with several asking board members to find a way to bring back Huang.” — 2026-11-13 读取；尚无存档
+- <span id="ref-wired-1112-boss"></span>同一篇 WIRED 报道 — [匿名评论](https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/#:~:text=bring%20back%20THE%20boss)。原文：“If you believe in the mission, bring back THE boss” — 2026-11-13 读取；尚无存档
+- <span id="ref-wired-1112-email"></span>同一篇 WIRED 报道 — [全公司邮件](https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/#:~:text=I%20stand%20by%20Jensen)。原文：“One employee went as far as sending a companywide email demanding transparency into Huang’s exit. ‘I stand by Jensen,’ the staffer wrote.” — 2026-11-13 读取；尚无存档
+- <span id="ref-wired-1112-survey"></span>同一篇 WIRED 报道 — [意见箱帖子的请求](https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/#:~:text=formally%20solicit%20their%20sentiment)。原文：“the suggestion-box post called on the board to share its findings with employees and formally solicit their sentiment ‘about Jensen’s continuing as our CEO.’” — 2026-11-13 读取；尚无存档
+- <span id="ref-talkesport-1113"></span>Lukas Brenner，TalkEsport — [Viral ‘Nvidia Employees’ Letter Demanding Jensen Huang’s Return Is a Copy of OpenAI’s 2023 Letter](https://www.talkesport.com/business/nvidia-employee-letter-jensen-huang-openai-copy-fact-check/#:~:text=There%20is%20no%20evidence%20that%20this%20letter%20is%20real)，2026-11-13。原文：“There is no evidence that this letter is real. Its wording follows, almost line for line, the letter OpenAI employees sent to their own board in November 2023” — 2026-11-13 读取；尚无存档
 - <span id="ref-nv-message"></span>NVIDIA Newsroom — [A Message to Our Company](https://nvidianews.nvidia.com/news/a-message-to-our-company#:~:text=I%20was%20unfaithful%20to%20my%20wife)，2026-11-08，黄仁勋致员工邮件全文。原文：“I owe my family and all of you an apology. I was unfaithful to my wife. My actions hurt her and our children. There is no excuse for what I did.” — 2026-11-12 读取；[2026-11-12 存档](http://web.archive.org/web/20261112135514/https://nvidianews.nvidia.com/news/a-message-to-our-company)
 - <span id="ref-nv-board-1108"></span>NVIDIA Newsroom — [Statement From NVIDIA Board of Directors](https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors#:~:text=target%20of%20a%20foreign%20intelligence%20effort)，2026-11-08。原文：“While the Board has no reason to believe that either national security or NVIDIA secrets were compromised”；“The Board has confidence in Jensen and his leadership team” — 2026-11-12 读取；[2026-11-12 存档](http://web.archive.org/web/20261112135451/https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors)
 - <span id="ref-nv-board-1110"></span>NVIDIA Newsroom — [Statement From the Independent Members of the NVIDIA Board](https://nvidianews.nvidia.com/news/statement-from-the-independent-members-of-the-nvidia-board#:~:text=Joon%20H.%20Kim)，2026-11-10。原文：“have retained former acting U.S. Attorney of the Southern District of New York Joon H. Kim and his firm Wachtell, Lipton, Rosen & Katz” — 2026-11-12 读取；[2026-11-12 存档](http://web.archive.org/web/20261112151700/https://nvidianews.nvidia.com/news/statement-from-the-independent-members-of-the-nvidia-board)
