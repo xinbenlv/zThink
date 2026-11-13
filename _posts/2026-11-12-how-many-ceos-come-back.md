@@ -3,6 +3,8 @@ title: "有多少 CEO 能够重来？"
 excerpt: "黄仁勋离开 NVIDIA 之后，本文回顾因丑闻、违规或争议离职的美国 CEO 有多少真正回到了原职，以及董事会怎样才能为重新任命做出经得起审查的决定。"
 date: 2026-11-12
 lang: zh
+author: aileen-wright
+editors: zainan-victor-zhou
 categories: [business]
 tags: [corporate-governance, ceo, nvidia, fiduciary-duty, business-judgment-rule]
 translationKey: how-many-ceos-come-back
